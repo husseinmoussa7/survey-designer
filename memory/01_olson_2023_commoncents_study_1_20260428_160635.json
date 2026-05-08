@@ -1,0 +1,635 @@
+{
+  "timestamp": "2026-04-28T16:06:35.634436",
+  "project": "01_olson_2023_commoncents_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Joint vs. Separate Bank Accounts and Relationship Quality",
+      "purpose": "To assess how the type of bank account couples use affects relationship quality and financial harmony over two years.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate your relationship quality over the past two years on a scale from 1 (very poor) to 7 (excellent).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Very poor",
+            "scale_max_label": "Excellent"
+          },
+          "comments": [
+            "The phrase 'relationship quality' is broad and could be clarified by specifying 'overall relationship satisfaction' for precision (Version 3).",
+            "The timespan 'past two years' is appropriate for longitudinal reflection (Versions 1, 2, 3).",
+            "Consider rephrasing slightly for neutrality, e.g., 'Considering your relationship during the past two years...' (Version 2).",
+            "The 7-point scale with well-labeled anchors is appropriate (all versions).",
+            "A slightly more descriptive label is recommended, such as 'Extremely dissatisfied' to 'Extremely satisfied' (Version 1)."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "What type of bank account do you and your partner currently use? Select one option.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Joint bank account",
+              "Separate bank accounts",
+              "No specific bank account arrangement"
+            ]
+          },
+          "comments": [
+            "Options are limited and may not capture real-life overlap (Version 1, 3 comments).",
+            "Add an option for couples who have both joint and separate accounts to enhance accuracy (Versions 1 and 3).",
+            "Clarify or define 'No specific bank account arrangement' because it is vague (all versions).",
+            "Consider allowing multiple selections for accounts that are not mutually exclusive, improving data accuracy (Version 1).",
+            "Suggested option rewording for clarity: 'Joint bank account only', 'Separate accounts only', 'Both joint and separate accounts', 'No formal bank account arrangement' (Version 3).",
+            "Alternatively, allow multi-select with clear options as in Version 1 with 'Joint bank account used by both partners', 'Separate individual bank accounts', 'Both joint and separate accounts', and 'No bank accounts used/shared' (Version 1)."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please rate your level of financial harmony with your partner on a scale from 1 (strongly disagree) to 7 (strongly agree): 'Our financial decisions are well coordinated.'",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Strongly disagree",
+            "scale_max_label": "Strongly agree"
+          },
+          "comments": [
+            "The item wording clearly captures coordination, a core aspect of financial harmony (Versions 2 and 3).",
+            "Though 'financial harmony' is introduced, the statement focuses on decision coordination; consider multiple items for construct robustness if possible (Version 1).",
+            "Likert agreement scale from 1 to 7 with anchors is standard and appropriate (all versions).",
+            "Suggested minor stylistic refinement: 'Please indicate your agreement with the following statement regarding your partner: \"Our financial decisions are well coordinated.\"' (Version 2)."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Manipulation Check: Please confirm if you were assigned to use a joint bank account for this study.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, joint bank account",
+              "No, separate or no-instruction account"
+            ]
+          },
+          "comments": [
+            "Wording presumes participant was assigned an account, which may cause confusion or bias; rephrasing recommended for neutrality, e.g., 'For this study, which bank account arrangement were you instructed to use?' (Version 2).",
+            "The option 'No, separate or no-instruction account' is ambiguous because it combines different conditions; consider splitting or clarifying options (Version 3).",
+            "Suggested rewording: 'Yes, assigned to use a joint bank account' and 'No, assigned to separate or no bank account condition' (Version 3), or 'Yes, I was assigned...' and 'No, I was not assigned...' (Version 1)."
+          ]
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Attention Check: Please select 'Strongly agree' for this question to verify your attention.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neither agree nor disagree",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          "comments": [
+            "Standard attention check format; straightforward and effective (all versions).",
+            "Consider less transparent forms of attention checks to reduce potential bias, though the current explicit instruction is acceptable (Version 2).",
+            "One version suggests selecting 'Agree' instead of 'Strongly agree' to verify attention, which may reduce bias but also reduce clarity (Version 2)."
+          ]
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Joint vs. Separate Bank Accounts and Relationship Quality",
+      "purpose": "To examine how different bank account arrangements used by couples relate to their relationship satisfaction and financial coordination over the past two years.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please rate your overall satisfaction with your romantic relationship during the past two years on a scale from 1 (Extremely dissatisfied) to 7 (Extremely satisfied).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Extremely dissatisfied",
+            "scale_max_label": "Extremely satisfied"
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Which of the following best describes the type of bank accounts you and your partner currently use? Please select all that apply.",
+          "input_type": "multiple_choice_multi_select",
+          "input_config": {
+            "options": [
+              "Joint bank account used by both partners",
+              "Separate individual bank accounts",
+              "Both joint and separate accounts",
+              "No bank accounts used or shared"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate your agreement with the following statement regarding your partner: \"Our financial decisions are well coordinated.\" Use a scale from 1 (Strongly disagree) to 7 (Strongly agree).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Strongly disagree",
+            "scale_max_label": "Strongly agree"
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Manipulation Check: For this study, which bank account arrangement were you instructed to use?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Assigned to use a joint bank account",
+              "Assigned to use separate bank accounts or no specific instruction"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Attention Check: To confirm you are paying attention, please select 'Strongly agree' for this question.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neither agree nor disagree",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Joint vs. Separate Bank Accounts and Relationship Quality",
+      "purpose": "To examine how different bank account arrangements used by couples relate to their relationship satisfaction and financial coordination, accounting for relationship dynamics and demographic factors.",
+      "instructions": "Throughout this survey, key terms are defined as follows: A 'joint bank account' is a bank account held in both partners' names and accessed by both. 'Financial decisions' include any choices about budgeting, spending, saving, or investing money. 'Financial coordination' refers to how partners communicate and align their financial decisions and behaviors.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please rate your overall satisfaction with your romantic relationship during the time you have been together on a scale from 1 (Extremely dissatisfied) to 7 (Extremely satisfied). If your relationship has ended, please answer based on the period you were together.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Extremely dissatisfied",
+            "scale_max_label": "Extremely satisfied"
+          }
+        },
+        {
+          "question_id": "q1b",
+          "question_text": "During your relationship, how often have you experienced conflicts with your partner related to financial matters? Please select the option that best describes your experience.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Never",
+              "Rarely",
+              "Sometimes",
+              "Often",
+              "Very often"
+            ]
+          }
+        },
+        {
+          "question_id": "q1c",
+          "question_text": "Please rate the overall quality of communication between you and your partner about financial matters, from 1 (Very poor) to 7 (Excellent).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Very poor",
+            "scale_max_label": "Excellent"
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Over the course of your relationship, which of the following bank account arrangements have you used with your partner? (Select all that apply.) Please consider all arrangements you have had, even if they changed over time.",
+          "input_type": "multiple_choice_multi_select",
+          "input_config": {
+            "options": [
+              "Only joint bank account(s) used together",
+              "Only separate individual bank accounts (no joint accounts)",
+              "Both joint and separate bank accounts used at different times or concurrently",
+              "No bank accounts used or shared by either partner"
+            ]
+          }
+        },
+        {
+          "question_id": "q2b",
+          "question_text": "Have your bank account arrangements with your partner changed over time? If yes, please briefly describe the main reason(s) for these changes.",
+          "input_type": "text"
+        },
+        {
+          "question_id": "q3a",
+          "question_text": "Please indicate your agreement with the following statement about your financial decision-making with your partner: \"We share common financial goals.\" (This relates to the extent to which you and your partner agree on your financial objectives and priorities.)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Strongly disagree",
+            "scale_max_label": "Strongly agree"
+          }
+        },
+        {
+          "question_id": "q3b",
+          "question_text": "Please indicate your agreement with the following statement about your financial decision-making with your partner: \"We understand each other\u2019s perspectives regarding money matters.\" (This relates to how well you and your partner comprehend each other\u2019s financial attitudes and concerns.)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Strongly disagree",
+            "scale_max_label": "Strongly agree"
+          }
+        },
+        {
+          "question_id": "q3c",
+          "question_text": "Please indicate your agreement with the following statement about your financial decision-making with your partner: \"We mutually approve major financial decisions (such as large purchases, investments, or loans).\" (This relates to whether important financial choices are jointly agreed upon.)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Strongly disagree",
+            "scale_max_label": "Strongly agree"
+          }
+        },
+        {
+          "question_id": "q3d",
+          "question_text": "Please indicate the extent to which you consider yourself financially literate (i.e., comfortable managing your personal finances and understanding financial concepts).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Not at all financially literate",
+            "scale_max_label": "Extremely financially literate"
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate which description best fits how financial decisions are made between you and your partner. If selecting 'Other,' please briefly describe how decisions are made:",
+          "input_type": "single_choice_with_text",
+          "input_config": {
+            "options": [
+              "We usually discuss and agree on financial decisions together",
+              "My partner generally makes most financial decisions",
+              "I generally make most financial decisions",
+              "We make financial decisions independently without much discussion",
+              "Other (please specify)"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Attention Check: To help us ensure data quality, please select 'I am paying attention' in the options below.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "I am not paying attention",
+              "I am paying attention"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Please indicate the length of your romantic relationship.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Less than 6 months",
+              "6 months to 1 year",
+              "1 to 3 years",
+              "3 to 5 years",
+              "5 to 10 years",
+              "More than 10 years"
+            ]
+          }
+        },
+        {
+          "question_id": "q7",
+          "question_text": "Please select the age range that includes your current age.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older",
+              "Prefer not to say"
+            ]
+          }
+        },
+        {
+          "question_id": "q8",
+          "question_text": "Please indicate your approximate total household income before taxes in the past year.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Less than $20,000",
+              "$20,000 to $39,999",
+              "$40,000 to $59,999",
+              "$60,000 to $79,999",
+              "$80,000 to $99,999",
+              "$100,000 to $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ]
+          }
+        },
+        {
+          "question_id": "q9",
+          "question_text": "Please indicate your cultural or ethnic background. (Select all that apply.) If you select 'Other,' please specify below.",
+          "input_type": "multiple_choice_with_text",
+          "input_config": {
+            "options": [
+              "White / Caucasian",
+              "Black or African American",
+              "Hispanic or Latino/a",
+              "Asian",
+              "Native American or Alaska Native",
+              "Native Hawaiian or Other Pacific Islander",
+              "Middle Eastern or North African",
+              "Other",
+              "Prefer not to say"
+            ]
+          }
+        },
+        {
+          "question_id": "q10",
+          "question_text": "We include the following indirect items to assess your response style and reduce social desirability bias. Please respond honestly:",
+          "input_type": "scale_items",
+          "input_config": {
+            "items": [
+              {
+                "item_id": "q10a",
+                "text": "I sometimes tell small lies to avoid hurting someone's feelings."
+              },
+              {
+                "item_id": "q10b",
+                "text": "I rarely compliment others even if I mean it."
+              },
+              {
+                "item_id": "q10c",
+                "text": "I try to be honest even when it is difficult."
+              }
+            ],
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_min_label": "Strongly disagree",
+            "scale_max_label": "Strongly agree"
+          }
+        },
+        {
+          "question_id": "q11",
+          "question_text": "What is your gender identity?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Male",
+              "Female",
+              "Non-binary / Third gender",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          }
+        },
+        {
+          "question_id": "q11b",
+          "question_text": "What is your sexual orientation? Please select the option that best describes you.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Heterosexual / Straight",
+              "Homosexual / Gay or Lesbian",
+              "Bisexual",
+              "Asexual",
+              "Pansexual",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          }
+        },
+        {
+          "question_id": "q12",
+          "question_text": "What is your current relationship status with this partner?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Married",
+              "Cohabiting (living together but not married)",
+              "Dating but not living together",
+              "Separated",
+              "No longer together"
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "q3a": {
+        "Change": "Added clarifying parenthetical note explaining 'common financial goals' to distinguish this item clearly from related constructs.",
+        "Reason": "To reduce construct overlap and improve respondent understanding given potential correlation with related items."
+      },
+      "q3b": {
+        "Change": "Added clarifying parenthetical note explaining 'understand each other\u2019s perspectives' to specify the financial focus.",
+        "Reason": "To help respondents differentiate this item from the others, decreasing ambiguity and construct overlap."
+      },
+      "q3c": {
+        "Change": "Added clarifying parenthetical note defining 'major financial decisions' with examples to clearly specify meaning.",
+        "Reason": "To improve clarity and help discern this item as distinct from other related financial coordination constructs."
+      }
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "The phrase 'romantic relationship' is fairly standard but could lead some to focus on certain aspects over others (e.g., emotional vs. practical). Asking about satisfaction 'during the time you have been together' poses ambiguity for respondents with long or complex relationship histories. The scale 1-7 Likert is appropriate but assumes respondents can accurately recall overall satisfaction across potentially long periods, which may introduce recall bias."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The multiple selection approach captures complexity but some options can overlap conceptually (e.g., 'Only joint bank account(s) used together' vs. 'Both joint and separate bank accounts used at different times or concurrently'). The wording encourages selecting multiple options but true mutually exclusive distinctions might not be clear. Social desirability bias may prompt overreporting of joint accounts as more collaborative. Lack of temporal granularity beyond 'over the course of your relationship' may blur changes over time."
+      },
+      {
+        "question_id": "q3a",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "'We share common financial goals' is fairly straightforward but 'common financial goals' could mean different things across respondents (e.g., saving for house vs. general financial security). Social desirability bias might inflate agreement. Scale is standard."
+      },
+      {
+        "question_id": "q3b",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "Phrase 'understand each other\u2019s perspectives regarding money matters' is somewhat vague and broad, potentially interpreted as emotional understanding, financial literacy, or alignment. Social desirability bias likely. Scale appropriate."
+      },
+      {
+        "question_id": "q3c",
+        "leading_language": 0,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "Combines 'mutually approve' and 'major financial decisions,' which may cause confusion if decisions are not jointly approved yet the respondent feels generally positive. Ambiguity in defining 'major' decisions. Strongly susceptible to social desirability bias. Scale appropriate."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Option phrasing like 'My partner generally makes most financial decisions' vs. 'I generally make most financial decisions' may elicit socially desirable responses concealing possible conflict or dissatisfaction. 'Other' option lacks clarity on how text responses will be used or coded. Response options could oversimplify nuanced decision processes."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 3,
+        "comments": "Attention check embedded as a Likert single choice mimicking scale, which can confuse some respondents. Asking to select 'Neither agree nor disagree' is straightforward but the scale is unnecessarily complex for this purpose. Risk of misclassification of inattentive respondents. Must fix."
+      },
+      {
+        "question_id": "q6",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 2,
+        "comments": "Duration brackets cover most relationship lengths, but 'Less than 6 months' may capture very new relationships not comparable to longer ones. No explicit handling of multiple significant relationships if relevant. Scale categories are mostly appropriate."
+      },
+      {
+        "question_id": "q7",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 2,
+        "comments": "Age ranges appropriate, including 'Prefer not to say.' Potential social desirability bias in sensitive age questions in some contexts but generally low."
+      },
+      {
+        "question_id": "q8",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 2,
+        "comments": "Income brackets are reasonably defined but top-coded bracket ($150,000 or more) lacks granularity, possibly losing precision for high earners. Social desirability bias significant in income reporting, potentially skewing data."
+      },
+      {
+        "question_id": "q9",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Multiple selections allowed which is good. 'Other' option allows self-description but survey does not specify how open-text will be handled. Mixing ethnicity and race categories can be ambiguous in classification. 'Prefer not to say' is appropriate privacy option."
+      },
+      {
+        "question_id": "q10",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Including indirect social desirability items is best practice; however, items like 'I sometimes tell small lies to avoid hurting someone\u2019s feelings' may still be susceptible to biased reporting as respondents may underreport socially undesirable behavior. Item q10b is negatively phrased, potentially causing misunderstanding or response errors without clear instructions about reverse coding. Scale is standard."
+      },
+      {
+        "question_id": "q11",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 2,
+        "comments": "Inclusive gender identity options reduce bias. 'Prefer to self-describe' lacks a prompt for open text which could reduce data quality. Social desirability bias possible but minimized by anonymity."
+      },
+      {
+        "question_id": "q12",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Response options are clear. However, 'Separated' and 'No longer together' could overlap or confuse respondents about timing. Social desirability bias may lead to underreporting of less stable relationship statuses."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "The survey lacks explicit questions about participants' sexual orientation or partner gender, which could be essential for understanding relationship dynamics and bank account arrangements, especially in non-heteronormative contexts.",
+        "severity": 3
+      },
+      {
+        "issue": "There is no measure of relationship quality components beyond overall satisfaction (e.g., conflict frequency, communication quality) limiting the theoretical depth linking financial arrangements to relationship quality.",
+        "severity": 3
+      },
+      {
+        "issue": "No measures address financial literacy or individual income contributions, which could moderate the relationship between bank account arrangements and relationship satisfaction.",
+        "severity": 2
+      },
+      {
+        "issue": "The survey does not appear to assess how financial arrangements changed over time or the reasons for change, which could be critical to causal inference about their impact on relationship quality.",
+        "severity": 2
+      },
+      {
+        "issue": "Redundancy appears minimal, but the three separate items q3a, q3b, q3c all relate to aspects of financial decision-making agreement and might be highly correlated, risking construct overlap without confirmatory factor analysis.",
+        "severity": 1
+      },
+      {
+        "issue": "While definitions are provided for key terms in the instructions, some terms used in questions (e.g., 'major financial decisions' in q3c) could benefit from explicit definition at the question level to avoid ambiguity.",
+        "severity": 2
+      },
+      {
+        "issue": "The attention check uses a Likert scale instruction which may confuse or frustrate respondents, risking data quality loss; a simpler forced-choice format may be more effective.",
+        "severity": 3
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q2: The response options are overlapping and ambiguous. \"Joint bank account used by both partners,\" \"Separate individual bank accounts,\" and \"Both joint and separate accounts\" are not mutually exclusive in the way they are presented, which can confuse respondents when selecting \"all that apply.\" For example, if a couple has both joint and separate accounts, they might select both just \"Separate individual bank accounts\" and \"Both joint and separate accounts,\" causing redundancy. The \"No bank accounts used or shared\" option is ambiguous as to whether it includes only those with no bank accounts at all, or those with individual accounts not jointly shared. The mixing of single and multiple selections complicates interpretation.\n\n2. Question q2: The wording \"currently use\" conflicts with the survey purpose focusing on the past two years. The bank account type may have varied during that period; therefore, \"currently\" may not capture the arrangement over the entire two years that is relevant to relationship satisfaction. This temporal mismatch may bias responses.\n\n3. Question q3: The statement \"Our financial decisions are well coordinated\" is vague and can be interpreted differently by respondents\u2014coordinate could mean synced timing, similar preferences, or shared approval. Without further clarification, responses may reflect different constructs, reducing validity.\n\n4. Question q4: The manipulation check assumes respondents were given an instruction to use specific bank account arrangements. However, this is not confirmed or explained prior, raising concerns about whether it is applicable or confuses participants. If this is an observational survey rather than an experimental manipulation, this question is inappropriate and may cause confusion or distrust.\n\n5. Question q5: The attention check item is obvious and may induce demand characteristics, causing some respondents to feel pressured to comply. The options are labeled on a 7-point scale, but it's a forced single-choice item rather than a rating, which is inconsistent with other scale items. Additionally, the instruction \"please select 'Strongly agree' for this question\" may irritate respondents or cause them to disengage if they recognize the test for attention rather than genuine response.\n\n6. General concern: The survey lacks demographic or contextual questions (e.g., length of relationship, age, income, cultural background) that are critical covariates to interpret relationship satisfaction and financial arrangements adequately, raising issues about omitted variable bias.\n\n7. General concern: The survey examines relationship satisfaction and financial coordination but relies heavily on self-report measures that may be influenced by social desirability bias, especially concerning financial coordination with one's partner, which is often a sensitive topic. There is no indication of controls or measures to mitigate this bias."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q2: Although improved, the forced single-choice format may oversimplify complex financial arrangements. Couples could have changed their bank account arrangements multiple times over the two-year period, but the question asks for \"the one option that best reflects your situation,\" forcing respondents to choose a single static category. This potentially biases recollections and misses nuanced or evolving patterns.\n\n2. Question q3: This question\u2019s statement combines multiple constructs\u2014shared goals, mutual understanding, and joint approval\u2014into a single item, representing a double-barreled question. Respondents may agree with one component but not others, causing confusion and reducing measurement validity.\n\n3. Question q4: Although more detailed, the options for financial decision-making processes may not capture the full range of decision dynamics. The option \"Other (please specify)\" requires open-ended responses, but the survey instrument does not indicate how these will be coded or analyzed. Additionally, \"One partner generally makes financial decisions\" could vary greatly depending on which partner and the context, which is not captured here.\n\n4. Question q5: The attention check is appropriate but uses a forced single-choice scale that mimics Likert scales rather than a straightforward instruction-response format. This may introduce confusion or response errors as respondents parse the 7-point scale to select the instructed option, which feels artificial and can be off-putting.\n\n5. Question q7: Asking for precise age with numeric input between 18 and 120 can lead to erroneous or inconsistent entries (e.g., typos or unrealistic ages). No prompts or validation details are mentioned to address potential invalid responses. Also, age could be grouped into categories to reduce such risks and improve privacy.\n\n6. Question q8: Income categories have a top-coded option \"$100,000 or more\" which is quite open-ended and lumps together very different economic situations. This limits granularity and may lead to loss of important variation in income impact on financial coordination.\n\n7. Question q9: The ethnicity question allows multiple selections but mixes explicit race/ethnicity categories with \"Other\" and \"Prefer not to say.\" There is no prompt to write in free text following \"Other,\" and no explicit instruction about how to handle multiple selections analytically, possibly resulting in ambiguous or inconsistent coding.\n\n8. Question q10: The social desirability item is overtly phrased, which could lead to underreporting due to self-presentation concerns. Respondents may not answer honestly because admitting to presenting oneself inaccurately conflicts with social desirability itself, thus potentially compromising the measure's validity as a control variable.\n\n9. General concern: No question assesses the gender or relationship status (e.g., married, cohabiting, dating) that might crucially moderate how joint versus separate bank accounts relate to relationship satisfaction and financial coordination. Omitting this threatens construct validity and limits interpretability.\n\n10. General concern: The survey timeframe consistently references \"the past two years,\" which may be difficult for some respondents to evaluate accurately in terms of relationship satisfaction and financial behaviors, particularly if relationships ended or bank arrangements changed. This may introduce recall bias.\n\n11. General concern: There is minimal control for social desirability bias beyond the single item in q10, which itself is vulnerable to demand characteristics. Given the sensitive nature of financial and relationship questions, more indirect or implicit measures might be needed to mitigate bias.\n\n12. General concern: No explicit instructions or definitions are provided for key terms such as \"joint bank account,\" \"financial decisions,\" or \"financial coordination,\" creating ambiguity around respondents' interpretation and reducing measurement comparability across participants."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+H4: The length of the unlocking period will moderate the effect of work-to-unlock rewards on persistence. Consumers will persist relatively more with work-to-unlock rewards (vs. work-to-receive rewards) when the initial goal is perceived as more (vs. less) attainable.

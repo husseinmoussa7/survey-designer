@@ -1,0 +1,703 @@
+{
+  "timestamp": "2026-04-28T16:12:09.988921",
+  "project": "05_ding_2025_animationspeedconvex_study_1b",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Animation speed and perceived waiting time",
+      "purpose": "To test the hypothesis that moderate-speed animations yield the shortest perceived waiting time compared to a blank page and a fast animation.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please rate the perceived waiting time when viewing the animation at moderate speed.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 7,
+            "scale_labels": [
+              "Very Long",
+              "Very Short"
+            ]
+          },
+          "_comment": "The Likert scale labels are reversed in terms of natural ordering: 'Very Long' (low) to 'Very Short' (high) is not symmetric. It is clearer to specify which end is 1 and which end is 7 explicitly and ensure directionality is intuitive. Also, consider rephrasing for clarity and standard scale usage as a semantic differential scale rather than Likert."
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please rate the perceived waiting time when viewing a blank page.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 7,
+            "scale_labels": [
+              "Very Long",
+              "Very Short"
+            ]
+          },
+          "_comment": "Same issue as q1 in scale labels and terminology."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please rate the perceived waiting time when viewing the animation at fast speed.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 7,
+            "scale_labels": [
+              "Very Long",
+              "Very Short"
+            ]
+          },
+          "_comment": "Same comments as q1 and q2. Also for uniformity, rephrase to 'Please rate your perceived waiting time'."
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Did you notice any animation during the waiting period?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Not sure"
+            ]
+          },
+          "_comment": "Added 'Not sure' option to allow participants to indicate uncertainty, improving data validity."
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Please select the speed of animation you experienced.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "No animation (blank page)",
+              "Moderate speed animation",
+              "Fast speed animation"
+            ]
+          },
+          "_comment": "Clear and appropriate for manipulation check."
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Please confirm that you paid attention throughout the task.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "_comment": "Original question is a binary self-report which can be biased. Suggested to use a more neutral and graduated scale to reduce social desirability bias."
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Animation speed and perceived waiting time",
+      "purpose": "To test the hypothesis that moderate-speed animations yield the shortest perceived waiting time compared to a blank page and a fast animation.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please rate your perceived waiting time when viewing the animation at moderate speed.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "semantic_differential",
+            "scale_points": 7,
+            "scale_labels": [
+              "Very Short",
+              "",
+              "",
+              "Neutral",
+              "",
+              "",
+              "Very Long"
+            ],
+            "label_positions": {
+              "1": "Very Short",
+              "7": "Very Long"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please rate your perceived waiting time when viewing a blank page.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "semantic_differential",
+            "scale_points": 7,
+            "scale_labels": [
+              "Very Short",
+              "",
+              "",
+              "Neutral",
+              "",
+              "",
+              "Very Long"
+            ],
+            "label_positions": {
+              "1": "Very Short",
+              "7": "Very Long"
+            }
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please rate your perceived waiting time when viewing the animation at fast speed.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "semantic_differential",
+            "scale_points": 7,
+            "scale_labels": [
+              "Very Short",
+              "",
+              "",
+              "Neutral",
+              "",
+              "",
+              "Very Long"
+            ],
+            "label_positions": {
+              "1": "Very Short",
+              "7": "Very Long"
+            }
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Did you notice any animation during the waiting period?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Not sure"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Which animation speed did you experience during the waiting period?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "No animation (blank page)",
+              "Moderate speed animation",
+              "Fast speed animation"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "To what extent did you pay attention throughout the task?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Not at all",
+              "A little",
+              "Moderately",
+              "Mostly",
+              "Completely"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Animation speed and perceived waiting time",
+      "purpose": "To test the hypothesis that moderate-speed animations yield the shortest perceived waiting time compared to a blank page and a fast animation. This survey emphasizes trial-level reporting, enhanced clarity, and mitigations for recall bias and social desirability. Additional measures are included to capture participants' time estimation ability, mood, expectations, and task perceptions to better interpret perceived waiting time.",
+      "instructions": "This survey is designed to collect your perceptions about the waiting time during individual trials where you experienced either a blank screen or an animation at a specific speed before the main task started. We define \"waiting time\" as the interval you spent viewing the screen (animated or blank) before the task began. You will answer questions focusing only on the most recent trial you completed. Please answer honestly and carefully. Note: It is important to answer immediately after each trial for accuracy.",
+      "questions": [
+        {
+          "question_id": "demographics1",
+          "question_text": "What is your age?",
+          "input_type": "number",
+          "input_config": {
+            "min_value": 18,
+            "max_value": 99,
+            "placeholder": "Enter your age in years",
+            "required": true
+          }
+        },
+        {
+          "question_id": "demographics2",
+          "question_text": "How often do you encounter computer animations in your daily activities (e.g., websites, apps, games)?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Never",
+              "Rarely",
+              "Sometimes",
+              "Often",
+              "Very often"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "demographics3",
+          "question_text": "How confident do you feel when using digital devices and interfaces (e.g., smartphones, computers)?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Not confident at all",
+              "Slightly confident",
+              "Moderately confident",
+              "Very confident",
+              "Extremely confident"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "demographics4",
+          "question_text": "How patient do you generally consider yourself when waiting for things (e.g., loading screens, queues)?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Not patient at all",
+              "Slightly patient",
+              "Moderately patient",
+              "Very patient",
+              "Extremely patient"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "baseline_time_estimation",
+          "question_text": "Before starting the trials, participants experience a fixed waiting period of 10 seconds with no animation. How long did that waiting time feel to you?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "semantic_differential",
+            "scale_points": 7,
+            "scale_labels": [
+              "Extremely short",
+              "Short",
+              "Somewhat short",
+              "About average",
+              "Somewhat long",
+              "Long",
+              "Extremely long"
+            ],
+            "label_positions": {
+              "1": "Extremely short",
+              "2": "Short",
+              "3": "Somewhat short",
+              "4": "About average",
+              "5": "Somewhat long",
+              "6": "Long",
+              "7": "Extremely long"
+            },
+            "required": true
+          }
+        },
+        {
+          "question_id": "mood_before_trial",
+          "question_text": "Before starting the last trial, how would you describe your overall mood?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Very positive/happy",
+              "Somewhat positive",
+              "Neutral",
+              "Somewhat negative",
+              "Very negative"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "expectancy_waiting",
+          "question_text": "Before the last trial, how much did you expect the waiting period to feel long or short?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Expected very short waiting time",
+              "Expected somewhat short waiting time",
+              "Expected average waiting time",
+              "Expected somewhat long waiting time",
+              "Expected very long waiting time"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "prior_experience_waiting",
+          "question_text": "How often do you experience waiting times like these (e.g., loading screens, task delays) in your daily life?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Never",
+              "Rarely",
+              "Sometimes",
+              "Often",
+              "Very often"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "perceived_task_importance",
+          "question_text": "How important or urgent did you consider the task following the waiting period in the last trial?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Not important or urgent at all",
+              "Slightly important/urgent",
+              "Moderately important/urgent",
+              "Very important/urgent",
+              "Extremely important/urgent"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "q_current_condition",
+          "question_text": "Which condition did you just experience in this trial before the main task? Please select the one that best matches.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Moderate speed animation",
+              "Fast speed animation",
+              "No animation (blank screen)",
+              "Not sure"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "q_waiting_time_rating",
+          "question_text": "How long did the waiting time feel during this last trial before the main task began?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "semantic_differential",
+            "scale_points": 7,
+            "scale_labels": [
+              "Extremely short",
+              "Short",
+              "Somewhat short",
+              "About average",
+              "Somewhat long",
+              "Long",
+              "Extremely long"
+            ],
+            "label_positions": {
+              "1": "Extremely short",
+              "2": "Short",
+              "3": "Somewhat short",
+              "4": "About average",
+              "5": "Somewhat long",
+              "6": "Long",
+              "7": "Extremely long"
+            },
+            "required": true
+          }
+        },
+        {
+          "question_id": "q_animation_noticed",
+          "question_text": "During the last waiting period, did you notice any animation before the main task started?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, I noticed an animation",
+              "No, I did not notice any animation",
+              "I am unsure"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "q_animation_feature_check",
+          "question_text": "To ensure you attended to the waiting period: Please select the dominant color or characteristic that best describes the animation (if any) you saw during the waiting time in the last trial.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Blue, calm motion",
+              "Red, fast motion",
+              "Grey or blank screen (no animation)",
+              "I did not see any animation",
+              "Not sure / Cannot recall"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "q_attention_level",
+          "question_text": "How would you rate your attention level during the waiting period (i.e., while viewing the animation or blank screen) in the last trial?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Not attentive at all",
+              "Slightly attentive",
+              "Moderately attentive",
+              "Very attentive",
+              "Completely attentive"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "q_emotional_state",
+          "question_text": "During the waiting period in the last trial, how would you describe your emotional state?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Calm/Relaxed",
+              "Anxious/Impatient",
+              "Neutral",
+              "Bored",
+              "Other (please specify)"
+            ],
+            "include_other": true,
+            "required": true
+          }
+        },
+        {
+          "question_id": "q_cognitive_load_focus_distract",
+          "question_text": "During the waiting period in the last trial, to what extent was your mind focused on the waiting versus distracted by other thoughts or tasks?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Completely focused on waiting",
+              "Mostly focused on waiting",
+              "Neutral",
+              "Mostly distracted",
+              "Completely distracted"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "q_cognitive_effort",
+          "question_text": "During the waiting period in the last trial, how much mental effort or concentration did you need to maintain your focus on the waiting period?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "No effort at all",
+              "Little effort",
+              "Moderate effort",
+              "High effort",
+              "Extremely high effort"
+            ],
+            "required": true
+          }
+        },
+        {
+          "question_id": "social_desirability_short",
+          "question_text": "In general, how often do you give answers in surveys that you think make you look better rather than what you truly think or feel?",
+          "input_type": "Likert",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Never",
+              "Rarely",
+              "Sometimes",
+              "Often",
+              "Always"
+            ],
+            "required": false
+          }
+        },
+        {
+          "question_id": "attention_check_response_time",
+          "question_text": "For this question only: Please select the option labeled 'Neutral' below.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Not attentive at all",
+              "Slightly attentive",
+              "Neutral",
+              "Very attentive",
+              "Completely attentive"
+            ],
+            "required": true
+          }
+        }
+      ],
+      "notes": "All trial-level questions (starting from q_current_condition through q_attention_check) must be answered immediately after each trial to minimize recall bias and confusion. Demographic and baseline questions appear only once at session start. The survey interface should enforce trial-by-trial answering and disallow skipping. Instructions and interface should randomize demographic question order when possible. Experiment administration must ensure counterbalancing or randomization of condition presentation across participants. The subtle embedded attention check (attention_check_response_time) serves to identify inattentive or non-compliant respondents without overtly signaling it."
+    },
+    "explanations": {
+      "demographics2_and_demographics3_rewording": "To reduce conceptual overlap and potential redundancy between demographics2 and demographics3, the frequency of computer animation exposure question was reworded to focus on encountering animations in daily activities, making it about exposure context and frequency. The comfort with digital devices question was reworded to focus on confidence using devices and interfaces to better distinguish it from exposure frequency, improving conceptual clarity and reducing participant confusion."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "demographics1",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability": 1,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 3,
+        "comments": "Age question is straightforward and required; minor social desirability possible if participants feel age impacts interpretation. Scale appropriateness is a non-issue since it is numerical input with bounded range; severity 3 because min/max constraints can exclude valid participants outside range."
+      },
+      {
+        "question_id": "demographics2",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The phrase 'use or observe' merges different experiences (active use vs passive observation), making it double-barreled in terms of behavior. The scale is frequency-based and labeled clearly but the midpoint 'Sometimes' could be interpreted variably; the category could benefit from clearer frequency definition. Social desirability bias may push participants to overreport use."
+      },
+      {
+        "question_id": "demographics3",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "'Comfortable with digital devices and interfaces' is slightly ambiguous (comfort with usage or frequency?) and invokes social desirability bias as participants may overstate their proficiency. The scale is suitable but assumes a unidimensional comfort construct."
+      },
+      {
+        "question_id": "demographics4",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 3,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "Self-report of patience tends to trigger social desirability bias, potentially inflating responses. Wording 'generally consider yourself' is somewhat vague and generic, possibly interpreted differently by participants. The scale fits the construct but social desirability and ambiguity warrant attention."
+      },
+      {
+        "question_id": "q_current_condition",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "Option 'Not sure' is appropriate to reduce forced guesses. Question presumes participant can correctly identify the condition experienced, which may be challenging and lead to misclassification. Wording 'best matches' adds ambiguity about precision of recall. Scale is adequate for forced-choice, but this relies on accurate memory."
+      },
+      {
+        "question_id": "q_waiting_time_rating",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Scale labels are detailed and seem to capture gradations, though subtle distinctions between 'Somewhat' and 'Short/Long' could confuse respondents. 'About average' midpoint may be hard to interpret without normative reference. No social desirability but subjective perception of time may vary widely. Scale is appropriate but may benefit from descriptors or anchors defining actual time ranges."
+      },
+      {
+        "question_id": "q_animation_noticed",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "Wording is clear, but social desirability bias could lead participants to claim noticing animation when uncertain. 'I am unsure' option appropriately mitigates forced responses. The forced three-choice scale suits the question."
+      },
+      {
+        "question_id": "q_animation_feature_check",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "Multiple-choice options mix sensory features (color) and motion descriptors, which might cause some confusion. The presence of 'Grey or blank screen' conflates feature and condition. Social desirability bias may lead to guessing to avoid 'I did not see'. Scale is adequate but could confuse participants unsure about specifics."
+      },
+      {
+        "question_id": "q_attention_level",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability": 3,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Question may lead participants toward reporting higher attention levels via instruction effect ('please answer honestly and carefully'). Self-report attention commonly suffers social desirability bias. 'Attention level' is somewhat vague without specifying sustained or momentary attention. Likert scale is appropriate but prone to inflated scores."
+      },
+      {
+        "question_id": "q_emotional_state",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "Options cover a reasonable range but grouping 'Anxious/Impatient' combines distinct emotional states, potentially double-barreled in meaning. 'Other (please specify)' inclusion is appropriate. Participants may underreport negative states due to social desirability bias. Wording 'describe your emotional state' is clear but subjective."
+      },
+      {
+        "question_id": "q_cognitive_load",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "Question mixes two constructs: focus on waiting vs distraction by other thoughts/tasks, which could be seen as double-barreled. Wording 'did you find your mind focused on waiting or distracted' could confuse respondents about how to indicate mixed experiences. The Likert scale is suitable but mid 'Neutral' category is ambiguous without anchor definitions. Social desirability bias might encourage claims of focus."
+      },
+      {
+        "question_id": "attention_check_response_time",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability": 0,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 3,
+        "comments": "Explicit attention check is straightforward and appropriate to detect disengagement. However, it may be too obvious and potentially cue participants to respond strategically. This could reduce its effectiveness if respondents notice the pattern. Inclusion is necessary."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing constructs",
+        "severity": 3,
+        "details": "The survey lacks a direct measure of participants' time estimation ability or baseline perception of actual waiting time duration, which is critical to interpret perceived waiting time ratings accurately. Further, no measures capture participants' mood or affect outside the waiting period that could influence waiting perception."
+      },
+      {
+        "issue": "Redundant items",
+        "severity": 2,
+        "details": "Demographics2 (frequency of animation exposure) and demographics3 (comfort with digital devices) may overlap conceptually, potentially increasing participant burden without adding distinct value. Consider testing for multicollinearity or redundancy."
+      },
+      {
+        "issue": "Theoretical gaps",
+        "severity": 3,
+        "details": "The survey does not assess expectancy effects or prior experience with waiting tasks, which may moderate perceived waiting time. Also, there is no measure of perceived task importance or urgency, factors that could influence perception of waiting time and attention. Cognitive load question is insufficiently targeted; cognitive effort vs distraction distinction is vague."
+      },
+      {
+        "issue": "Potential order effects and memory bias",
+        "severity": 3,
+        "details": "Though the notes recommend immediate post-trial survey completion, no mechanism is included to verify adherence in practice. Without strict procedural control, recall bias and contamination across trials remain threats, especially given reliance on self-report for multiple similar constructs."
+      },
+      {
+        "issue": "Social desirability and demand characteristics",
+        "severity": 3,
+        "details": "Repeated emphasis on honesty and attention may prime socially desirable responding. The survey would benefit from indirect questioning or validated social desirability scales for control. Attention check may be too overt, compromising its protective function."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. **Questions q1, q2, q3 (Perceived waiting time ratings):**  \n   - The use of a semantic differential scale labeled only at the endpoints and midpoint (7-point scale with only \"Very Short,\" \"Neutral,\" and \"Very Long\" labeled) may cause ambiguity for respondents on what the intermediate points represent. This can produce unreliable or inconsistent answers.  \n   - Asking participants to rate perceived waiting time separately for moderate-speed animation, blank page, and fast-speed animation may introduce order effects or carryover bias depending on the order these conditions are presented or rated. The survey does not indicate randomization or counterbalancing, which threatens internal validity.  \n   - The question wording assumes participants correctly remember and distinguish their experience with each animation speed, which may be difficult without a within-subject design control or clear presentation order.\n\n2. **Question q4 (Noticing animation during waiting period):**  \n   - The question is straightforward but lacks specification about \"during the waiting period\"\u2014whether it refers to the entire experiment, a particular trial, or a specific instance. This ambiguity can lead to inconsistent interpretations among respondents.  \n   - The response option \"Not sure\" may be influenced by social desirability or participant reluctance to admit uncertainty, potentially skewing distribution.\n\n3. **Question q5 (Identifying animation speed experienced):**  \n   - This question assumes participants can accurately identify which animation speed they experienced. Given that the fast and moderate animations might be perceptually similar or subtle, this may lead to misclassification or guessing, threatening data validity.  \n   - The ordering of options places \"No animation\" first, which may bias participants toward that option if uncertain.  \n   - If the experiment was designed to expose participants only to a single condition, this question could be redundant or confusing.\n\n4. **Question q6 (Extent of attention paid):**  \n   - The Likert scale labels seem generally appropriate, but \"pay attention throughout the task\" is vague\u2014does \u201ctask\u201d refer to watching the animation, rating questions, or the entire experiment? This ambiguity could affect response accuracy.  \n   - Self-reported attention level is vulnerable to social desirability bias, as respondents may overstate their attentiveness.\n\n5. **General concerns:**  \n   - The survey lacks demographic or control questions that could identify confounding variables affecting perception of waiting time (e.g., age, familiarity with animations, technical savviness).  \n   - The survey does not control for or mention the sequence in which the animation speeds or conditions were presented, critical for avoiding order or fatigue effects.  \n   - There are no manipulation check questions beyond q4 and q5, which have their own limitations, making it unclear if participants truly experienced the intended stimuli.  \n   - The overall survey assumes participants have a consistent interpretation of \"waiting time\" and \"animation speed\" without defining these terms, opening room for varied interpretations.  \n   - The phrasing of all rating questions uses the exact same scale structure, which might induce response sets or fatigue effects. Varying scales or question formats could help reduce this risk."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. **Questions q1_rev, q2_rev, q3_rev (Perceived waiting time ratings):**  \n   - Although the scale labels cover the full range, the difference between adjacent labels like \"Somewhat short\" and \"Very short\" may not be meaningfully distinct to all respondents, potentially causing confusion or inconsistent interpretation across participants.  \n   - Asking participants to rate waiting times for all three conditions in one survey could cause memory contamination or fatigue, especially if these trials were experienced in close succession; differentiating perceptions may be difficult without clear temporal separation or counterbalancing.  \n   - The instructions attempt to clarify the meaning of \"waiting time,\" but the cognitive burden of separately recalling and rating each condition\u2019s waiting time may reduce data accuracy, especially if participants saw multiple conditions in varying orders.  \n   - The note about randomizing the order of these questions is necessary but does not fully address potential carryover or contrast effects inherent in rating similar constructs repeatedly within a single session.\n\n2. **Question q_anim_order_check (Order recall of conditions):**  \n   - The question forces participants to select from a fixed set of six specific presentation orders plus an option for only one condition, which presumes all possible sequences are covered. If the actual sequence experienced does not exactly match these options (e.g., interleaved or repeated conditions), participants may be forced to choose inaccurately or select the wrong option, undermining data quality.  \n   - The complexity of the options could confuse respondents, especially those who had difficulty recalling the sequence, leading to guessing or random answers.  \n   - It also conflates session-level order with trial-level questions; if the survey collects responses trial-by-trial, this question may be mismatched or inconsistently interpreted.\n\n3. **Question q4_rev and q5_rev (Animation awareness and identification):**  \n   - Both questions rely heavily on participants' memory and perceptual discrimination skills, which may be weak or biased, especially if animations are subtle or brief. This is still a threat despite controls, affecting the validity of attentional and manipulation checks.  \n   - The inclusion of \"Not sure\" in q5_rev is good for reducing forced guessing, but may increase nonresponse data or ambiguous analyses.  \n   - The phrasing of q4_rev (\"did you notice any animation\") is clear; however, the transition from this to q5_rev (\"which animation speed did you experience\") might cause confusion if participants noticed something but cannot recall speed specifics, potentially producing inconsistent responses across these linked questions.\n\n4. **Question q4a_attention_check (Open-ended color/style description):**  \n   - While this is a valuable attention check, the open-ended format risks variable data quality with responses ranging from detailed to minimal or irrelevant answers. Without standardized coding or guiding prompts, this may increase analytic complexity or subjective interpretation bias.  \n   - The instruction to type \"Did not see\" if none may prompt just that phrase as an easy answer, possibly diluting the validity of this check.  \n   - Respondents who did not truly attend may guess or give misleading answers, not fully capturing attention or engagement.\n\n5. **Question q6_rev (Self-rated attention level):**  \n   - Self-reported attention is inherently susceptible to social desirability bias and inaccurate introspective assessment, potentially inflating attention scores.  \n   - The question conflates attention to \"animation (or blank screen),\" which are qualitatively different stimuli; attention to an active animation versus a blank screen may differ conceptually, risking ambiguous interpretation or response inconsistency.\n\n6. **Demographic questions (demographics1, demographics2, demographics3):**  \n   - While including these controls is positive, there is no indication of handling or addressing missing or inaccurate responses, common in self-reported demographics.  \n   - The familiarity and savviness scales may overlap conceptually, leading to redundancy or participant confusion about how to differentiate them.  \n   - These demographics may not capture other relevant confounds such as cognitive style, patience, or prior experience with waiting tasks, which could be important moderators.\n\n7. **General and procedural concerns:**  \n   - The survey depends largely on participants\u2019 retrospective judgments about separate trials and conditions, increasing the possibility of recall bias, memory contamination, and confusion.  \n   - The instruction tries to define \"waiting time,\" but participants\u2019 subjective perception of time intervals is vulnerable to many uncontrolled factors (e.g., mood, distractions, expectations) that are not addressed or controlled for.  \n   - There is no explicit mention of counterbalancing or trial randomization in the survey instrument itself beyond the note; without procedural rigor in administration, the collected data validity could be compromised.  \n   - The survey lacks items probing emotional or cognitive load during waiting periods, which can influence perceived waiting time but remain unmeasured.  \n   - The mixture of trial-level questions and session-level questions (e.g., order recall) may confuse participants or produce incompatible response frames.  \n   - The survey assumes all respondents are attentive and honest, but aside from a single attention check (q4a_attention_check), it lacks more robust embedded measures (e.g., response time tracking or consistency checks).\n\nIn summary, despite improvements, numerous validity threats remain related to recall biases, ambiguous or cognitively demanding question formats, incomplete coverage of possible experimental sequences, and reliance on self-report measures susceptible to social desirability and misinterpretation."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

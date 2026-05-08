@@ -1,0 +1,5 @@
+H1: When people feel they move with faster (vs. slower) speed, they prefer options more attractive on higher level, desirable (vs. lower level, feasible) attributes.(Experiment 1 & Experiment 2)
+
+H2: People naturally associate faster speed with higher level, abstract representation and slower speed with lower level, concrete representation. (Experiment 3a & Experiment 3b & Experiment 3c)
+
+H3: Introducing information that is inconsistent with the speed-abstraction schema will attenuate the speed-abstraction effect.(experiment4)

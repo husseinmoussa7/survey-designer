@@ -1,0 +1,492 @@
+{
+  "timestamp": "2026-04-24T14:37:46.247560",
+  "project": "shani_feinstein_2022",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Effect of perceived movement speed on consumer preference and construal level",
+      "purpose": "To test how perceived movement speed (fast vs. slow) influences consumer preferences related to desirability (high-level, abstract attributes) versus feasibility (low-level, concrete attributes), including manipulation and attention checks",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate your perceived speed while completing the previous task.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Very slow",
+              "7": "Very fast"
+            }
+          },
+          "comments": [
+            "The phrase 'perceived speed while completing the previous task' may confuse whether it refers to participant's own speed or the speed of stimuli.",
+            "Version 1 & 2 revised wording to 'How would you rate the speed of the movement you observed during the previous task?' or 'How would you rate the speed you perceived during the previous task?' for clarity.",
+            "Version 3 added a midpoint label 'Moderate' at 4, to improve balance and respondent anchoring."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "How much do you prefer options with higher level, desirable (abstract) attributes over options with lower level, feasible (concrete) attributes?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Strongly prefer lower level, feasible attributes",
+              "7": "Strongly prefer higher level, desirable attributes"
+            }
+          },
+          "comments": [
+            "Original wording is complicated with technical jargon such as 'higher level', 'desirable', 'feasible', which may challenge participant understanding.",
+            "Version 1 and 2 introduced more formal phrasing with 'To what extent do you prefer options characterized by abstract, desirable attributes over options characterized by concrete, feasible attributes?'",
+            "Version 3 further simplified to 'To what extent do you prefer options emphasizing desirable, abstract qualities over options emphasizing feasible, concrete qualities?' and added a midpoint label 'No preference' at 4.",
+            "Response labels were standardized with hyphenation ('higher-level', 'lower-level')."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate the extent to which you associate faster movement speed with higher level, abstract representations.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Not at all",
+              "7": "Very much"
+            }
+          },
+          "comments": [
+            "The term 'higher level, abstract representations' may be unclear or too technical.",
+            "Versions 1 & 2 replaced it with 'abstract, high-level concepts' or 'higher-level, abstract concepts' for clarity and simplicity.",
+            "Version 3 used 'abstract or high-level concepts'.",
+            "For response labels, 'Very much' was replaced by 'Very strongly' for precision in Versions 1-3."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate the extent to which you associate slower movement speed with lower level, concrete representations.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Not at all",
+              "7": "Very much"
+            }
+          },
+          "comments": [
+            "Parallel improvements to q3 applied here: simplified to 'concrete, low-level concepts' or 'lower-level, concrete concepts'.",
+            "Response labels adjusted to 'Very strongly' for increased clarity."
+          ]
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Did you notice any information that was inconsistent with the idea of a speed-abstraction association?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "comments": [
+            "Versions 1 and 2 replaced 'inconsistent with the idea of a speed-abstraction association' with clearer terms such as 'contradicted the association between movement speed and level of abstraction' or 'contradicted the association between speed and abstraction level'.",
+            "Version 3 expanded further to 'contradicted or did not support the association between movement speed and levels of abstraction' for more neutral phrasing and clarity."
+          ]
+        },
+        {
+          "question_id": "q6",
+          "question_text": "To ensure attention, please select 'Agree' for this question.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          "comments": [
+            "Standard attention check question.",
+            "Version 1 and 2 reworded for politeness and clarity: 'To confirm your attention, please select 'Agree' for this question.' or 'To verify your attention...'.",
+            "Version 3 suggested 'To confirm you are paying attention...' for participant engagement."
+          ]
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Effect of Perceived Movement Speed on Consumer Preference and Construal Level",
+      "purpose": "To examine how perceived movement speed (fast vs. slow) affects consumer preferences for desirability (high-level, abstract attributes) versus feasibility (low-level, concrete attributes), including manipulation checks and attention verification.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How would you rate the speed of movement you perceived while completing the previous task?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Very slow",
+              "4": "Moderate",
+              "7": "Very fast"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you prefer options emphasizing desirable, abstract qualities over options emphasizing feasible, concrete qualities?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Strongly prefer feasible, concrete qualities",
+              "4": "No preference",
+              "7": "Strongly prefer desirable, abstract qualities"
+            }
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "To what extent do you associate faster movement speed with abstract or high-level concepts?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Not at all",
+              "7": "Very strongly"
+            }
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "To what extent do you associate slower movement speed with concrete or low-level concepts?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Not at all",
+              "7": "Very strongly"
+            }
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Did you notice any information that contradicted or did not support the association between movement speed and levels of abstraction?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "To confirm your attention, please select 'Agree' for this question.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "original_with_comments": {
+      "theme": "Effect of perceived movement speed on consumer preference and construal level",
+      "purpose": "To test how perceived movement speed (fast vs. slow) influences consumer preferences related to desirability (high-level, abstract attributes) versus feasibility (low-level, concrete attributes), including manipulation and attention checks",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate your perceived speed while completing the previous task.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Very slow",
+              "7": "Very fast"
+            }
+          },
+          "comments": [
+            "The phrase 'perceived speed while completing the previous task' may confuse whether it refers to participant's own speed or the speed of stimuli.",
+            "Version 1 & 2 revised wording to 'How would you rate the speed of the movement you observed during the previous task?' or 'How would you rate the speed you perceived during the previous task?' for clarity.",
+            "Version 3 added a midpoint label 'Moderate' at 4, to improve balance and respondent anchoring."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "How much do you prefer options with higher level, desirable (abstract) attributes over options with lower level, feasible (concrete) attributes?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Strongly prefer lower level, feasible attributes",
+              "7": "Strongly prefer higher level, desirable attributes"
+            }
+          },
+          "comments": [
+            "Original wording is complicated with technical jargon such as 'higher level', 'desirable', 'feasible', which may challenge participant understanding.",
+            "Version 1 and 2 introduced more formal phrasing with 'To what extent do you prefer options characterized by abstract, desirable attributes over options characterized by concrete, feasible attributes?'",
+            "Version 3 further simplified to 'To what extent do you prefer options emphasizing desirable, abstract qualities over options emphasizing feasible, concrete qualities?' and added a midpoint label 'No preference' at 4.",
+            "Response labels were standardized with hyphenation ('higher-level', 'lower-level')."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate the extent to which you associate faster movement speed with higher level, abstract representations.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Not at all",
+              "7": "Very much"
+            }
+          },
+          "comments": [
+            "The term 'higher level, abstract representations' may be unclear or too technical.",
+            "Versions 1 & 2 replaced it with 'abstract, high-level concepts' or 'higher-level, abstract concepts' for clarity and simplicity.",
+            "Version 3 used 'abstract or high-level concepts'.",
+            "For response labels, 'Very much' was replaced by 'Very strongly' for precision in Versions 1-3."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate the extent to which you associate slower movement speed with lower level, concrete representations.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Not at all",
+              "7": "Very much"
+            }
+          },
+          "comments": [
+            "Parallel improvements to q3 applied here: simplified to 'concrete, low-level concepts' or 'lower-level, concrete concepts'.",
+            "Response labels adjusted to 'Very strongly' for increased clarity."
+          ]
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Did you notice any information that was inconsistent with the idea of a speed-abstraction association?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "comments": [
+            "Versions 1 and 2 replaced 'inconsistent with the idea of a speed-abstraction association' with clearer terms such as 'contradicted the association between movement speed and level of abstraction' or 'contradicted the association between speed and abstraction level'.",
+            "Version 3 expanded further to 'contradicted or did not support the association between movement speed and levels of abstraction' for more neutral phrasing and clarity."
+          ]
+        },
+        {
+          "question_id": "q6",
+          "question_text": "To ensure attention, please select 'Agree' for this question.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          "comments": [
+            "Standard attention check question.",
+            "Version 1 and 2 reworded for politeness and clarity: 'To confirm your attention, please select 'Agree' for this question.' or 'To verify your attention...'.",
+            "Version 3 suggested 'To confirm you are paying attention...' for participant engagement."
+          ]
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Effect of Perceived Movement Speed on Consumer Preference and Construal Level",
+      "purpose": "To examine how perceived movement speed (fast vs. slow) affects consumer preferences for desirability (high-level, abstract attributes) versus feasibility (low-level, concrete attributes), including manipulation checks and attention verification.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How would you rate the speed of movement you perceived while completing the previous task?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Very slow",
+              "4": "Moderate",
+              "7": "Very fast"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you prefer options emphasizing desirable, abstract qualities over options emphasizing feasible, concrete qualities?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Strongly prefer feasible, concrete qualities",
+              "4": "No preference",
+              "7": "Strongly prefer desirable, abstract qualities"
+            }
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "To what extent do you associate faster movement speed with abstract or high-level concepts?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Not at all",
+              "7": "Very strongly"
+            }
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "To what extent do you associate slower movement speed with concrete or low-level concepts?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Not at all",
+              "7": "Very strongly"
+            }
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Did you notice any information that contradicted or did not support the association between movement speed and levels of abstraction?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "To confirm your attention, please select 'Agree' for this question.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "The phrase 'while completing the previous task' presumes memory clarity and could bias responses. 'Speed of movement you perceived' is vague\u2014movement of what? The 7-point scale is appropriate but labeling only three points (1,4,7) may cause unclear midpoint interpretation."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 2,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "The phrase 'desirable, abstract qualities' vs. 'feasible, concrete qualities' bundles two constructs each (desirable+abstract and feasible+concrete), causing double-barreled and ambiguity problems. 'To what extent do you prefer options emphasizing...' is complex and could confuse respondents. Also, social desirability bias exists since 'desirable' qualities may be favored. The scale labels mix valence and abstraction terms, potentially confusing interpretation."
+      },
+      {
+        "question_id": "q3",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "This question assumes respondents understand 'abstract or high-level concepts' similarly, but mixing those terms may confuse (double-barreled). The scale from 'Not at all' to 'Very strongly' is inadequate because the question is about association, not strength of agreement. A Likert scale on agreement might be better. The wording is somewhat ambiguous about what 'associate' means here."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "Same issues as q3: double-barreled (concrete or low-level concepts), ambiguous 'associate' term, and an inadequate response scale that conflates association and agreement strength."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 1,
+        "double_barreled": 2,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The question is complex and somewhat leading, as it presumes the respondent understands the associations as intended. 'Information that contradicted or did not support' is double-barreled and ambiguous\u2014these may be different phenomena. The yes/no binary scale forces a forced choice and could cause guessing or error. Consider the respondent's actual ability to notice such contradictions."
+      },
+      {
+        "question_id": "q6",
+        "leading_language": 3,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "This attention check may cause social desirability bias or confusion. The instruction to select 'Agree' is leading and may frustrate respondents who disagree with the statement. Multiple choice with a Likert scale is traditional but here the item content is problematic. It also constitutes a demand characteristic and may influence responses on other questions."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "The survey confounds desirability with abstraction and feasibility with concreteness, leading to interpretational ambiguities and double-barreled questions, affecting the main theoretical constructs.",
+        "severity": 3
+      },
+      {
+        "issue": "No direct measurement of actual consumer preference behavior or choice was included; the survey relies solely on self-reports and abstract associations which may not capture real consumer preference accurately.",
+        "severity": 3
+      },
+      {
+        "issue": "The manipulation check questions (q3 and q4) are structured poorly with ambiguous wording and inappropriate scales, raising validity concerns for confirming the main manipulation.",
+        "severity": 3
+      },
+      {
+        "issue": "Attention check (q6) is potentially leading and may prime or bias respondents, threatening internal validity.",
+        "severity": 3
+      },
+      {
+        "issue": "No demographic or control variables are included, which limits ability to analyze covariates or sample representativeness.",
+        "severity": 2
+      },
+      {
+        "issue": "The survey does not assess potential moderators or mediators like participants' general cognitive style (e.g., abstract vs. concrete thinking) which theory suggests may influence effects.",
+        "severity": 2
+      },
+      {
+        "issue": "Some redundancy exists in q3 and q4, separately assessing associations with fast and slow movement speed, which could possibly be combined or better balanced.",
+        "severity": 1
+      }
+    ]
+  }
+}

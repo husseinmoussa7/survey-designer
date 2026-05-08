@@ -1,0 +1,632 @@
+{
+  "timestamp": "2026-04-28T16:38:59.191371",
+  "project": "15_daniels_2025_eudaimonicleisure_competence_study_2",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Eudaimonic leisure and consumer support behavior",
+      "purpose": "To test whether consumers are more likely to support a target disclosing eudaimonic leisure compared to less or no eudaimonic leisure, using real monetary donations.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How much do you agree with the following statement: I support the target who discloses eudaimonic leisure activities.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          },
+          "_comment": [
+            "The original wording is somewhat leading and informal. 'I support the target who discloses' could be made more neutral and precise.",
+            "Clarify 'target' by using 'individual' or 'person' for participant understanding.",
+            "Add explicit midpoint and detailed scale anchors for consistency and clarity.",
+            "The phrase 'eudaimonic leisure activities' remains consistent to align with study focus."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Which target would you prefer to financially support when shown multiple profiles side-by-side?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Target disclosing eudaimonic leisure",
+              "Target disclosing less eudaimonic leisure",
+              "Target disclosing no eudaimonic leisure"
+            ]
+          },
+          "_comment": [
+            "Replace 'target' with 'individual' for better clarity (Version 2 and 3).",
+            "Refine options to 'high,' 'moderate,' and 'no engagement in eudaimonic leisure' to avoid vague 'less'.",
+            "Include an option for 'No preference' to allow neutrality (from Version 2).",
+            "Simplify question wording by removing 'when shown multiple profiles side-by-side' or rephrasing to 'When presented with multiple profiles simultaneously' (Version 3)."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate your attention: Select 'Agree' for this item.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Agree",
+              "Disagree",
+              "Neutral"
+            ]
+          },
+          "_comment": [
+            "Refine attention check wording to 'Attention check: Please select 'Agree' to confirm you are reading the items carefully.' (Version 3 preferred wording for formal academic tone).",
+            "Remove 'Neutral' option to enforce forced choice between Agree/Disagree, improving inattentive responder detection (Versions 1, 2, and 3 consensus)."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "How do you perceive the competence of the target who discloses eudaimonic leisure?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Not competent at all",
+              "Extremely competent"
+            ]
+          },
+          "_comment": [
+            "Use a more formal phrasing: 'How would you rate the competence of an individual who discloses engaging in eudaimonic leisure activities?' (Version 3).",
+            "Expand scale labels to include intermediate anchors for clarity and precision (Version 1 and 2).",
+            "Make sure scale numeric anchors are consistent and clearly labeled."
+          ]
+        }
+      ],
+      "general_comments": [
+        "Standardize language to use 'individual' instead of 'target' for participant clarity.",
+        "Ensure consistency of Likert scale anchors with at least three explicit labels: low, midpoint (neutral), and high.",
+        "Include explicit mention of monetary donations as real, to emphasize ecological validity in the purpose statement.",
+        "Remove unnecessary detail in questions that may distract or confuse respondents.",
+        "Attention check should be a forced choice without neutral options to reliably identify inattentive responses."
+      ]
+    },
+    "revised_survey": {
+      "theme": "Eudaimonic leisure and consumer support behavior",
+      "purpose": "To examine whether consumers are more likely to financially support an individual who discloses engagement in high, moderate, or no eudaimonic leisure activities, using real monetary donations to assess actual support behavior.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree with the following statement: I am inclined to support an individual who discloses engaging in eudaimonic leisure activities.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Strongly disagree",
+              "2 - Disagree",
+              "3 - Somewhat disagree",
+              "4 - Neutral",
+              "5 - Somewhat agree",
+              "6 - Agree",
+              "7 - Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "When presented with multiple profiles simultaneously, which individual would you prefer to financially support?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Individual disclosing high engagement in eudaimonic leisure activities",
+              "Individual disclosing moderate engagement in eudaimonic leisure activities",
+              "Individual disclosing no engagement in eudaimonic leisure activities",
+              "No preference"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Attention check: Please select 'Agree' to confirm you are reading the items carefully.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Agree",
+              "Disagree"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "How would you rate the competence of an individual who discloses engaging in eudaimonic leisure activities?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Not competent at all",
+              "2 - Slightly competent",
+              "3 - Somewhat competent",
+              "4 - Moderately competent",
+              "5 - Very competent",
+              "6 - Highly competent",
+              "7 - Extremely competent"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Eudaimonic leisure and consumer support behavior",
+      "purpose": "To examine whether consumers financially support individuals disclosing varying levels of engagement in eudaimonic leisure activities, employing real monetary donations to capture actual support, while controlling for relevant attitudes and demographic variables.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Eudaimonic leisure activities are defined here as meaningful, purposeful activities such as volunteering, creative pursuits, or personal growth experiences. Considering this, please rate your willingness to financially support someone who discloses they engage in such activities.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Much less willing",
+              "2 - Somewhat less willing",
+              "3 - Slightly less willing",
+              "4 - Neither less nor more willing",
+              "5 - Slightly more willing",
+              "6 - Somewhat more willing",
+              "7 - Much more willing"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "You will soon be presented with real profiles describing individuals that vary only in their level of engagement in eudaimonic leisure activities. How confident are you that you will be able to distinguish differences and make genuine choices about whom to financially support?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Not at all confident",
+              "2 - Slightly confident",
+              "3 - Somewhat confident",
+              "4 - Moderately confident",
+              "5 - Quite confident",
+              "6 - Very confident",
+              "7 - Extremely confident"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please select the option that best describes how carefully you have been reading and considering the survey questions.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Not at all carefully",
+              "Slightly carefully",
+              "Somewhat carefully",
+              "Moderately carefully",
+              "Very carefully",
+              "Extremely carefully"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Based solely on their disclosed engagement in eudaimonic leisure activities (meaningful, purposeful activities as defined), how competent would you consider the individual to be in social situations?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Not competent at all",
+              "2 - Slightly competent",
+              "3 - Somewhat competent",
+              "4 - Neither competent nor incompetent",
+              "5 - Moderately competent",
+              "6 - Very competent",
+              "7 - Extremely competent"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "How familiar are you with the concept of eudaimonic leisure activities as defined above?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Not familiar at all",
+              "2 - Slightly familiar",
+              "3 - Somewhat familiar",
+              "4 - Moderately familiar",
+              "5 - Very familiar",
+              "6 - Extremely familiar",
+              "7 - Expert level familiarity"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Please indicate your general attitude toward leisure activities (of any kind).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Very negative",
+              "2 - Somewhat negative",
+              "3 - Slightly negative",
+              "4 - Neutral",
+              "5 - Slightly positive",
+              "6 - Somewhat positive",
+              "7 - Very positive"
+            ]
+          }
+        },
+        {
+          "question_id": "q7",
+          "question_text": "How would you describe your general tendency to be generous in financial support or charitable giving, regardless of context?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Not at all generous",
+              "2 - Slightly generous",
+              "3 - Somewhat generous",
+              "4 - Moderately generous",
+              "5 - Generous",
+              "6 - Very generous",
+              "7 - Extremely generous"
+            ]
+          }
+        },
+        {
+          "question_id": "q8",
+          "question_text": "Please provide the following demographic and background information:",
+          "input_type": "demographics",
+          "input_config": {
+            "fields": [
+              {
+                "field_type": "text",
+                "field_label": "Age"
+              },
+              {
+                "field_type": "multiple_choice",
+                "field_label": "Gender",
+                "options": [
+                  "Male",
+                  "Female",
+                  "Non-binary / Third gender",
+                  "Prefer not to say"
+                ]
+              },
+              {
+                "field_type": "multiple_choice",
+                "field_label": "Ethnicity / Race",
+                "options": [
+                  "American Indian or Alaska Native",
+                  "Asian",
+                  "Black or African American",
+                  "Hispanic or Latino",
+                  "Native Hawaiian or Other Pacific Islander",
+                  "White",
+                  "Other (please specify)",
+                  "Prefer not to say"
+                ]
+              },
+              {
+                "field_type": "multiple_choice",
+                "field_label": "Geographic region",
+                "options": [
+                  "North America",
+                  "South America",
+                  "Europe",
+                  "Asia",
+                  "Africa",
+                  "Oceania",
+                  "Prefer not to say"
+                ]
+              },
+              {
+                "field_type": "multiple_choice",
+                "field_label": "Education level",
+                "options": [
+                  "Less than high school",
+                  "High school diploma or equivalent",
+                  "Some college",
+                  "Bachelor's degree",
+                  "Graduate or professional degree"
+                ]
+              },
+              {
+                "field_type": "multiple_choice",
+                "field_label": "Household income (annual, before taxes)",
+                "options": [
+                  "Less than $25,000",
+                  "$25,000 to $49,999",
+                  "$50,000 to $74,999",
+                  "$75,000 to $99,999",
+                  "$100,000 to $149,999",
+                  "$150,000 to $199,999",
+                  "$200,000 or more",
+                  "Prefer not to say"
+                ]
+              },
+              {
+                "field_type": "multiple_choice",
+                "field_label": "Political orientation",
+                "options": [
+                  "Very liberal",
+                  "Liberal",
+                  "Moderate",
+                  "Conservative",
+                  "Very conservative",
+                  "Prefer not to say"
+                ]
+              },
+              {
+                "field_type": "multiple_choice",
+                "field_label": "Religious affiliation",
+                "options": [
+                  "None",
+                  "Christianity",
+                  "Islam",
+                  "Hinduism",
+                  "Buddhism",
+                  "Judaism",
+                  "Other (please specify)",
+                  "Prefer not to say"
+                ]
+              },
+              {
+                "field_type": "scale",
+                "field_label": "How important are personal values to your decision making? (e.g., ethics, beliefs, principles)",
+                "scale_type": "Likert",
+                "scale_range": 7,
+                "scale_labels": [
+                  "1 - Not at all important",
+                  "2 - Slightly important",
+                  "3 - Somewhat important",
+                  "4 - Moderately important",
+                  "5 - Very important",
+                  "6 - Extremely important",
+                  "7 - The most important factor"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "q9",
+          "question_text": "Following this survey, you will be presented with real profiles of individuals varying in their eudaimonic leisure engagement and will be able to financially support one or more. Please indicate your belief that these profiles and choices reflect real opportunities for support.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Do not believe at all",
+              "2 - Slightly believe",
+              "3 - Somewhat believe",
+              "4 - Moderately believe",
+              "5 - Mostly believe",
+              "6 - Strongly believe",
+              "7 - Completely believe"
+            ]
+          }
+        },
+        {
+          "question_id": "q10",
+          "question_text": "To what extent do you trust that individuals disclosing engagement in eudaimonic leisure activities are truthful about their involvement?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Do not trust at all",
+              "2 - Trust slightly",
+              "3 - Trust somewhat",
+              "4 - Trust moderately",
+              "5 - Trust mostly",
+              "6 - Trust very much",
+              "7 - Completely trust"
+            ]
+          }
+        },
+        {
+          "question_id": "q11",
+          "question_text": "How motivated do you believe individuals are when they disclose their engagement in eudaimonic leisure activities?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Not motivated at all",
+              "2 - Slightly motivated",
+              "3 - Somewhat motivated",
+              "4 - Moderately motivated",
+              "5 - Mostly motivated",
+              "6 - Very motivated",
+              "7 - Completely motivated"
+            ]
+          }
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Please indicate your tendency to answer questions in a way that will be viewed favorably by others, even if not completely truthful.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Not at all",
+              "2 - Very rarely",
+              "3 - Occasionally",
+              "4 - Sometimes",
+              "5 - Often",
+              "6 - Very often",
+              "7 - Always"
+            ]
+          }
+        },
+        {
+          "question_id": "q13",
+          "question_text": "During the course of the study, you will have the opportunity to financially support one or more individuals based on their profiles. After making your support decisions, please indicate how closely your choices matched your true intentions and feelings.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "1 - Not at all matched",
+              "2 - Slightly matched",
+              "3 - Somewhat matched",
+              "4 - Moderately matched",
+              "5 - Mostly matched",
+              "6 - Very closely matched",
+              "7 - Completely matched"
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "q1 rewording and scale adjustment": "Reworded question 1 to explicitly request a 7-point Likert rating regarding willingness to financially support individuals based on their eudaimonic leisure engagement, aligning its response format and scale structure with the other attitude and behavioral scales. This improves scale consistency and reduces possible respondent confusion from different scale types.",
+      "q7 clarification": "Reworded question 7 to clarify it measures general generosity tendency regardless of context in contrast to q1's context-specific support willingness, reducing construct overlap and multicollinearity risk while maintaining theoretical distinction.",
+      "Scale uniformity and respondent fatigue": "Maintained 7-point Likert scales for attitude and behavior-related questions throughout for consistency and to help reduce respondent fatigue by standardizing response formats and avoiding forcing respondents into dichotomous or less nuanced categories."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "leading_language": 2,
+        "double_barreled_structure": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "The definition before the question may prime respondents positively toward eudaimonic leisure. The phrase 'best describes your response regarding financial support' is somewhat ambiguous and could be interpreted as actual behavior or hypothetical willingness. The scale implies a causal influence of knowledge on willingness but does not distinguish between support for leisure activities specifically or the individual, conflating constructs slightly. The scale is appropriate but labels mixing 'willingness' with degrees of support could be confusing."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 1,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The phrase 'genuine choices' could nudge respondents towards expressing confidence; this may slightly bias. No double-barreling detected. The question asks about confidence in a hypothetical upcoming task, which may lead to speculative answers. The 7-point scale with nuanced gradations is appropriate, but confidence here is a subjective construct poorly anchored, risking measurement error."
+      },
+      {
+        "question_id": "q3",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "Self-assessment of careful reading is highly susceptible to social desirability bias, with respondents likely overestimating their attentiveness. The scale options are exhaustive but subjective. Absence of an objective attention check reduces quality control. Ambiguous how ratings map to actual attention."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 1,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 3,
+        "scale_appropriateness": 2,
+        "comments": "The question specifies competence 'in social situations' based solely on leisure disclosure, which is ambiguous and psychometrically challenging. Competence is a complex construct; relying solely on leisure information could create confusion or guesswork. The scale midpoint 'Neither competent nor incompetent' is adequate, but labels at extremes vary between 'Not competent at all' and 'Extremely competent' which may be interpreted inconsistently. Could induce socially desirable positive judgments of competence."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "Self-reported familiarity, especially with an unfamiliar academic term, is prone to overstatement (social desirability). The graduated 7-point scale including 'Expert level familiarity' may not be meaningful for general respondents. Wording is clear but respondents might guess meanings or exaggerate knowledge."
+      },
+      {
+        "question_id": "q6",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "General attitude toward leisure is straightforward, but because leisure is broadly framed, responses may amalgamate diverse opinions, reducing construct specificity. The 7-point scale with detailed gradations is appropriate but might overcomplicate response choices and introduce noise. Positive bias likely as leisure is a positive social norm."
+      },
+      {
+        "question_id": "q7",
+        "leading_language": 1,
+        "double_barreled_structure": 1,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The question combines financial support and charitable giving, which are related but conceptually distinct forms of generosity, constituting double-barreled wording. Self-rated generosity is highly prone to social desirability bias. The 7-point scale is fine, but 'Generous' at 5 amidst gradations is irregular and could confuse respondents. The phrase 'in general' is vague, inviting different interpretation scopes."
+      },
+      {
+        "question_id": "q8",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Demographic questions are mostly standard and appropriate, but some categories (e.g., ethnicity) might overlap or be confusing for multiracial respondents. Geographic regions are broad and may mask cultural nuances. The 'Importance of personal values' scale is well-constructed but might be interpreted variably depending on respondents' understanding of 'personal values' \u2014 some may conflate with religiosity or moral rigidity."
+      },
+      {
+        "question_id": "q9",
+        "leading_language": 2,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "The prompt may prime respondents to believe in the authenticity of upcoming opportunities, potentially encouraging over-reporting of belief due to demand characteristics. The long scale with graded belief levels is appropriate but might yield central tendency bias as respondents hedge. Wording 'real profiles of individuals' and 'real opportunities for support' may be ambiguous if respondents doubt experimental realism."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing behavioral validation items",
+        "severity": 3,
+        "comments": "While the survey plans to use real monetary donations, there are no explicit items or mechanisms in the survey to integrate or validate actual donation behavior, which creates a disconnect between self-reports and observed behavior."
+      },
+      {
+        "issue": "Potential redundancy between q1 and q7",
+        "severity": 2,
+        "comments": "Question 1 asks about willingness to financially support based on eudaimonic leisure engagement, while q7 asks about general generosity, which may tap overlapping constructs; this could cause multicollinearity or respondent confusion without clear theoretical distinction."
+      },
+      {
+        "issue": "Theoretical gap: Lack of measures for perceived motivation or trustworthiness of the leisure disclosure",
+        "severity": 3,
+        "comments": "Support behavior in this context may strongly depend on whether respondents believe the individual's motivations for disclosure or perceive the individual as trustworthy; no items assess these key intervening concepts."
+      },
+      {
+        "issue": "Missing control for social desirability responding",
+        "severity": 3,
+        "comments": "Several items are vulnerable to social desirability bias (e.g., generosity, reading attentiveness), but there is no scale included to detect or control for respondents' tendency to respond in socially desirable ways."
+      },
+      {
+        "issue": "Scale point inconsistency and potential respondent fatigue",
+        "severity": 2,
+        "comments": "All attitude scales use 7-point Likert scales, but response options for q1 are forced-choice options with no explicit numeric labeling; lack of numeric scale uniformity may impair response consistency. Additionally, the survey has many similarly structured, lengthy scales potentially increasing respondent fatigue and acquiescence."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: Leading and Ambiguous Wording  \n   - The phrase \"I am inclined to support an individual who discloses engaging in eudaimonic leisure activities\" presumes a positive attitude and may lead respondents to answer more favorably due to social desirability bias, since eudaimonic leisure is generally seen positively.  \n   - The term \"eudaimonic leisure activities\" is not defined or explained, which may cause varying interpretations among respondents, threatening construct validity.  \n   - The question conflates disclosure of engagement and the activity itself in one statement, potentially confusing respondents about whether their inclination is toward the disclosure or the activity.  \n\n2. Question q2: Lack of Context and Double-Barreled Options  \n   - The question asks for preference \"when presented with multiple profiles simultaneously\" but does not provide these profiles or specify any context (e.g., cause, personality traits), which may lead to hypothetical or inconsistent answers.  \n   - The options only vary on the level of eudaimonic leisure engagement; no other attributes or controls are mentioned, increasing the risk that other factors might influence preference but remain unaccounted for.  \n   - Including a \"No preference\" option is good, but the phrasing \"prefer to financially support\" may prompt social desirability bias as respondents may feel pressure to pick one of the first three.  \n\n3. Question q3: Attention Check is Too Obvious and Risk of Impact on Data  \n   - The instruction \"Please select 'Agree' to confirm you are reading the items carefully\" is very transparent and may lead to automatic responses or annoyance.  \n   - Respondents who genuinely disagree or are indifferent would be flagged as not attentive, leading to possible exclusion of valid data and biasing the sample.  \n   - The two options \"Agree\" and \"Disagree\" replicate response formats elsewhere, but the explicit instruction undermines natural responding.  \n\n4. Question q4: Competence Rating Potential Confounds and Scale Labeling Issues  \n   - The competence question assumes that engagement in eudaimonic leisure activities affects perceived competence but does not clarify any domain of competence\u2014social, professional, general\u2014leading to ambiguous interpretation by respondents.  \n   - The seven-point scale labels range from \"Not competent at all\" to \"Extremely competent,\" but the midpoint label \"Moderately competent\" may be interpreted as positive rather than neutral.  \n   - There is no indication of who the \"individual\" is beyond engagement in leisure, which may result in judgments based on stereotypes or unrelated factors.  \n\n5. General: Absence of Manipulation Checks or Control Variables  \n   - The survey relies on self-reported willingness and stated preferences but does not include checks to verify that respondents understand or believe the manipulation of \"eudaimonic leisure engagement.\"  \n   - No demographic or behavioral control questions are included to account for confounding factors like prior attitudes toward leisure activities, generosity, or socio-economic status.  \n\n6. General: Potential for Social Desirability and Demand Characteristics  \n   - The topic and question wording create an implicit expectation that eudaimonic leisure is positive and support-worthy, possibly encouraging respondents to answer in ways that please the researcher rather than reflect true behavior.  \n   - The stated purpose involves real monetary donations, but the survey questions do not clearly link responses to actual behavior, risking discrepancies between stated and actual support."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1: Potential Leading Language and Residual Ambiguity  \n   - Although the definition of eudaimonic leisure is provided, the phrasing \"Knowing an individual engages in these activities influences my willingness to support them\" may still lead respondents toward agreeing, as it frames eudaimonic activities positively. This could induce social desirability bias.  \n   - The double concept of \"knowing\" and \"influences my willingness to support\" may confuse respondents whether to base answers on actual behavior or hypothetical influence.  \n   - The question does not isolate support for the disclosure from support for the activities themselves, potentially conflating two constructs.  \n\n2. Question q2: Hypothetical Scenario Without Actual Stimuli and Potential Demand Characteristics  \n   - Asking respondents to imagine profiles \"similar in all respects except level of engagement\" without providing actual profiles or specific descriptions may lead to inconsistent or non-comparable interpretations across respondents.  \n   - The scenario is purely hypothetical, raising concerns about ecological validity, especially since real monetary donations are to be used in the study.  \n   - The prompt \"Which individual would you be most willing to financially support?\" may elicit socially desirable answers favoring higher engagement since it is a socially praised behavior.  \n\n3. Question q3: Overly Transparent Attention Check and Forced Correct Response  \n   - Direct instruction to select \"Somewhat agree\" is conspicuous and may irritate respondents or encourage mechanical answering.  \n   - The use of an actual scale with many options might confuse some respondents, leading to unintentional failure of the attention check.  \n   - Respondents with genuine disagreement or misunderstanding could be unfairly marked inattentive, biasing data.  \n\n4. Question q4: Ambiguous Construct and Complex Scale Labeling  \n   - Asking for perceived \"competence\" based solely on leisure engagement is problematic: competence is context-dependent, and no domain is specified (e.g., workplace, social skills), risking conceptual ambiguity.  \n   - The midpoint label \u201cNeither incompetent nor competent\u201d is less neutral than typical scale midpoints, potentially pushing respondents toward one side.  \n   - The inclusion of examples in the question text (\"e.g., volunteering...\") may bias respondents to associate competence with socially approved acts, skewing responses.  \n\n5. Questions q5\u2013q7: Self-Report Measures Vulnerable to Bias Without Behavioral Validation  \n   - Familiarity with eudaimonic leisure (q5), attitude toward leisure (q6), and self-rated generosity (q7) are all self-reported and subject to social desirability and self-perception biases.  \n   - These questions lack anchoring or behavioral corroboration, reducing their utility as control variables or moderators.  \n   - The differing scale lengths across these items (five-point vs. seven-point) may affect comparability and respondent consistency.  \n\n6. Question q8: Limited Demographic Depth and Potential Missing Controls  \n   - Demographic categories do not include ethnicity, cultural background, or geographic location, which could influence leisure attitudes and giving behavior.  \n   - The income categories are broad and top-coded at \"$100,000 or more,\" potentially obscuring effects at higher income levels.  \n   - No questions about political orientation, religiosity, or personal values, which might be relevant confounds in interpreting support behavior.  \n\n7. General Survey Design Issues:  \n   - The mix of 5- and 7-point Likert scales without clear justification may confuse respondents and complicate comparative analyses.  \n   - The survey does not include measures to assess actual behavior corresponding to stated willingness beyond the stated plan for real monetary donations, creating a potential gap between attitude and behavior measurement.  \n   - There is no explicit inquiry into respondents\u2019 understanding or belief in the hypothetical scenarios, which could threaten internal validity.  \n   - Potential demand characteristics remain a concern, as the survey topic and framing highlight normative desirability of eudaimonic leisure engagement, possibly influencing responses."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

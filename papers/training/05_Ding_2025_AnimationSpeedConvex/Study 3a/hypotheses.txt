@@ -1,0 +1,1 @@
+1. Adding dual-attention elements (a fast element plus a slower changing element) will attenuate the longer perceived waits typically caused by fast animations, reducing the convex effect.

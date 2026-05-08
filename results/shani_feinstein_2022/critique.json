@@ -1,0 +1,131 @@
+{
+  "question_critiques": [
+    {
+      "question_id": "q1",
+      "issues": [
+        {
+          "type": "scale appropriateness",
+          "severity": 2,
+          "explanation": "The 7-point scale ranging from 'Very slow' to 'Very fast' attempts to capture perceived movement speed, which is appropriate. However, the mid-point labels are somewhat unbalanced and vague: 'Slightly slow' to 'Moderately slow' then 'Neutral', skipping certain descriptive intensity for mid points (e.g., empty labels present). Additionally, the scale labels could cause confusion as 'Neutral' may not be an intuitive mid-point for perceived speed."
+        },
+        {
+          "type": "ambiguous wording",
+          "severity": 2,
+          "explanation": "The phrase 'How fast did the movement appear during the task?' is subject to individual interpretations of 'movement' (product, stimuli). The parenthetical attempt to clarify ('the speed at which the product or stimuli moved') is helpful but may be insufficient if participants do not recall or interpret what 'movement' refers to exactly."
+        }
+      ]
+    },
+    {
+      "question_id": "q2",
+      "issues": [
+        {
+          "type": "double-barreled structure",
+          "severity": 2,
+          "explanation": "The question asks participants to choose preferences 'based on desirability\u2014that is, high-level, abstract qualities such as overall appeal or value,' mixing the evaluation of desirability with a definition including multiple facets (abstractness, overall appeal, and value). This combines conceptual clarity with multiple attributes that might differ in meaning to respondents."
+        },
+        {
+          "type": "ambiguous wording",
+          "severity": 2,
+          "explanation": "The labeling 'Option A: Higher desirability attributes' versus 'Option B: Lower desirability attributes' is vague without concrete examples. It is unclear what distinguishes higher from lower desirability attributes concretely, risking different interpretations."
+        },
+        {
+          "type": "scale appropriateness",
+          "severity": 2,
+          "explanation": "Binary choice between 'higher' and 'lower' desirability attributes may oversimplify nuanced consumer preferences. It forces a forced choice without allowance for neutrality or mixed preferences."
+        }
+      ]
+    },
+    {
+      "question_id": "q3",
+      "issues": [
+        {
+          "type": "double-barreled structure",
+          "severity": 2,
+          "explanation": "Similar to q2, this question asks for preference based on 'feasibility\u2014that is, low-level, concrete qualities such as practicality or ease of use.' It merges different constructs: feasibility, concreteness, practicality, and ease of use, which might not be perceived equivalently by all participants."
+        },
+        {
+          "type": "ambiguous wording",
+          "severity": 2,
+          "explanation": "As with q2, using 'Option A: Higher feasibility attributes' versus 'Option B: Lower feasibility attributes' is ambiguous without concrete attribute examples, risking inconsistent interpretation."
+        },
+        {
+          "type": "scale appropriateness",
+          "severity": 2,
+          "explanation": "A binary choice here also may be inadequate to capture nuanced preferences, lacking options for neutrality or mixed feelings."
+        }
+      ]
+    },
+    {
+      "question_id": "q4",
+      "issues": [
+        {
+          "type": "scale appropriateness",
+          "severity": 2,
+          "explanation": "The 7-point scale from 'Very concrete' to 'Very abstract' is appropriate conceptually, but the presence of empty scale labels (positions 3 and 5) creates potential confusion and inconsistency in interpretation across respondents."
+        },
+        {
+          "type": "ambiguous wording",
+          "severity": 2,
+          "explanation": "The question phrase 'To what extent did you consider the task from a concrete (detailed, practical) to an abstract (broad, conceptual) perspective?' could be clearer. Some respondents may find it challenging to self-assess thinking style without examples or anchors."
+        }
+      ]
+    },
+    {
+      "question_id": "q5",
+      "issues": [
+        {
+          "type": "ambiguous wording",
+          "severity": 2,
+          "explanation": "The question asks about 'discrepancies or contradictions in the information related to movement speed and abstraction level,' which may not be conceptually clear to participants. 'Discrepancies or contradictions' are somewhat overlapping terms, and participants may not feel qualified to judge these without explicit definitions."
+        }
+      ]
+    },
+    {
+      "question_id": "q5a",
+      "issues": [
+        {
+          "type": "scale appropriateness",
+          "severity": 1,
+          "explanation": "This is an open-text follow-up, appropriately optional and limited in length. No scale issues."
+        }
+      ]
+    },
+    {
+      "question_id": "q6",
+      "issues": [
+        {
+          "type": "leading language",
+          "severity": 3,
+          "explanation": "This is an explicit attention check instructing participants to select a particular answer ('Neutral'). This is appropriate for data quality but must be clearly separated from substantive questions to avoid biasing responses."
+        },
+        {
+          "type": "social desirability bias",
+          "severity": 1,
+          "explanation": "Though designed as an attention check, inclusion might induce some social desirability effects if respondents feel tested or controlled."
+        }
+      ]
+    }
+  ],
+  "survey_level_issues": [
+    {
+      "type": "missing constructs",
+      "severity": 3,
+      "explanation": "The survey lacks explicit measurement of perceived construal level as a validated scale (e.g., standard construal level scales or manipulation checks). Only one crude item (q4) attempts this, which is ambiguous and may not capture the construct adequately. The survey also omits items assessing overall consumer affect or behavioral intentions related to product preferences, which are important for validating the theoretical model."
+    },
+    {
+      "type": "redundancy",
+      "severity": 1,
+      "explanation": "Questions q2 and q3 separately ask about desirability and feasibility preferences, but do so with similar binary forced choices which may lead to respondent fatigue or confusion given the conceptual overlap (high-level/low-level attributes). Combining or refining these could reduce redundancy."
+    },
+    {
+      "type": "theoretical gaps",
+      "severity": 3,
+      "explanation": "The survey doesn't sufficiently operationalize or clearly define key theoretical concepts such as 'perceived movement speed's influence' on either construal level or preferences, nor does it measure potential mediators or moderators (e.g., individual difference variables, context effects). There is also no inclusion of validity or reliability assessments for key constructs, threatening measurement reliability and construct validity."
+    },
+    {
+      "type": "survey structure",
+      "severity": 2,
+      "explanation": "The attention check (q6) is embedded at the end with no explicit warning or separation from substantive items, risking contamination of responses if participants perceive testing. Also, the layout of follow up (q5a) might not clearly depend on the response to q5 in some survey implementations."
+    }
+  ]
+}

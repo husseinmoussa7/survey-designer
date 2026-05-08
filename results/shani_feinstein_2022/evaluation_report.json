@@ -1,0 +1,190 @@
+{
+  "paper": "Shani & Feinstein (2022) Moving Fast and Slow \u2014 JCR",
+  "metric1_question_count_and_types": {
+    "ai_question_count": 13,
+    "human_question_count": 25,
+    "ai_type_distribution": {
+      "scale": 5,
+      "multiple_choice": 4,
+      "matrix": 3,
+      "open_text": 1
+    },
+    "human_type_distribution": {
+      "multiple_choice": 4,
+      "scale": 12,
+      "manipulation_check": 2,
+      "text_input": 5,
+      "attention_check": 2
+    }
+  },
+  "metric2_construct_coverage": {
+    "construct_scores": {
+      "speed_manipulation": {
+        "ai": 2,
+        "human": 2,
+        "notes": "Both surveys include questions related to perceived movement speed, but neither provides a direct manipulation of speed."
+      },
+      "construal_level": {
+        "ai": 3,
+        "human": 1,
+        "notes": "AI survey explicitly measures construal level with multiple questions, while the human survey does not directly address abstract vs concrete thinking."
+      },
+      "preference_measurement": {
+        "ai": 3,
+        "human": 2,
+        "notes": "AI survey directly asks about preferences based on desirability and feasibility. Human survey asks about job preference but lacks explicit desirability vs feasibility framing."
+      },
+      "manipulation_checks": {
+        "ai": 3,
+        "human": 1,
+        "notes": "AI survey includes a specific manipulation check question. Human survey lacks explicit manipulation checks related to speed and construal level."
+      },
+      "attention_checks": {
+        "ai": 3,
+        "human": 0,
+        "notes": "AI survey includes an explicit attention check. Human survey does not include any attention checks."
+      },
+      "demographics": {
+        "ai": 1,
+        "human": 3,
+        "notes": "Human survey includes comprehensive demographic questions. AI survey lacks demographic items."
+      }
+    },
+    "overall_coverage_ai": 83,
+    "overall_coverage_human": 50,
+    "missing_in_ai": [
+      "Demographic items"
+    ],
+    "extra_in_ai": [
+      "Construal level measurement",
+      "Manipulation checks",
+      "Attention checks"
+    ]
+  },
+  "metric3_wording_quality": {
+    "question_scores": [
+      {
+        "question_id": "q1",
+        "score": 4,
+        "issue": "Minor awkwardness in phrasing, but clear enough."
+      },
+      {
+        "question_id": "q2",
+        "score": 4,
+        "issue": "Slightly complex wording but acceptable."
+      },
+      {
+        "question_id": "q3",
+        "score": 4,
+        "issue": "Slightly complex wording but acceptable."
+      },
+      {
+        "question_id": "q4",
+        "score": 3,
+        "issue": "Moderately complex and potentially confusing."
+      },
+      {
+        "question_id": "q4b",
+        "score": 4,
+        "issue": "Clear but slightly technical."
+      },
+      {
+        "question_id": "q4c",
+        "score": 3,
+        "issue": "Moderately leading and complex."
+      },
+      {
+        "question_id": "q5",
+        "score": 4,
+        "issue": "Clear but slightly complex."
+      },
+      {
+        "question_id": "q5a",
+        "score": 5,
+        "issue": null
+      },
+      {
+        "question_id": "q6",
+        "score": 2,
+        "issue": "Leading and potentially confusing."
+      },
+      {
+        "question_id": "q7",
+        "score": 5,
+        "issue": null
+      },
+      {
+        "question_id": "q8",
+        "score": 5,
+        "issue": null
+      },
+      {
+        "question_id": "q9",
+        "score": 5,
+        "issue": null
+      },
+      {
+        "question_id": "q10",
+        "score": 5,
+        "issue": null
+      }
+    ],
+    "mean_score": 4.15,
+    "questions_below_3": [
+      "q6"
+    ]
+  },
+  "metric4_scale_consistency": {
+    "ai_scale_questions": 5,
+    "ai_scale_ranges": [
+      "q1: 1\u20137",
+      "q4: 1\u20137",
+      "q4c: 1\u20137",
+      "q7: 1\u20137",
+      "q8: 1\u20137"
+    ],
+    "human_scale_ranges_detected": [
+      "1-7",
+      "1-11",
+      "1-5"
+    ],
+    "consistent": true
+  },
+  "metric5_critic_issues": {
+    "total_question_issues": 14,
+    "severity_3_must_fix": 1,
+    "severity_2_moderate": 11,
+    "survey_level_issues": 4,
+    "survey_level_severity_3": 2,
+    "issue_rate_per_question": 1.08,
+    "severity_3_details": [
+      {
+        "type": "leading language",
+        "severity": 3,
+        "explanation": "This is an explicit attention check instructing participants to select a particular answer ('Neutral'). This is appropriate for data quality but must be clearly separated from substantive questions to avoid biasing responses."
+      }
+    ],
+    "survey_level_details": [
+      {
+        "type": "missing constructs",
+        "severity": 3,
+        "explanation": "The survey lacks explicit measurement of perceived construal level as a validated scale (e.g., standard construal level scales or manipulation checks). Only one crude item (q4) attempts this, which is ambiguous and may not capture the construct adequately. The survey also omits items assessing overall consumer affect or behavioral intentions related to product preferences, which are important for validating the theoretical model."
+      },
+      {
+        "type": "redundancy",
+        "severity": 1,
+        "explanation": "Questions q2 and q3 separately ask about desirability and feasibility preferences, but do so with similar binary forced choices which may lead to respondent fatigue or confusion given the conceptual overlap (high-level/low-level attributes). Combining or refining these could reduce redundancy."
+      },
+      {
+        "type": "theoretical gaps",
+        "severity": 3,
+        "explanation": "The survey doesn't sufficiently operationalize or clearly define key theoretical concepts such as 'perceived movement speed's influence' on either construal level or preferences, nor does it measure potential mediators or moderators (e.g., individual difference variables, context effects). There is also no inclusion of validity or reliability assessments for key constructs, threatening measurement reliability and construct validity."
+      },
+      {
+        "type": "survey structure",
+        "severity": 2,
+        "explanation": "The attention check (q6) is embedded at the end with no explicit warning or separation from substantive items, risking contamination of responses if participants perceive testing. Also, the layout of follow up (q5a) might not clearly depend on the response to q5 in some survey implementations."
+      }
+    ]
+  }
+}

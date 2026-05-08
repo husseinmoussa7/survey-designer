@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Survey Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .view {
+            display: none;
+        }
+        .view.active {
+            display: block;
+        }
+        .log-entry {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.875rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+        }
+        .log-info { background-color: #e0f2fe; color: #0c4a6e; }
+        .log-success { background-color: #dcfce7; color: #166534; }
+        .log-warn { background-color: #fef9c3; color: #854d0e; }
+        .log-error { background-color: #fee2e2; color: #991b1b; }
+        .log-api { background-color: #e5e7eb; color: #1f2937; }
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 40;
+            display: none;
+        }
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 50;
+            display: none;
+        }
+        .modal-backdrop.active, .modal.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-900">Interactive Survey Tool</h1>
+            <p class="text-lg text-gray-600 mt-2">A complete survey processing pipeline.</p>
+        </header>
+
+        <div id="apiKeyView" class="view active">
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6 text-center"><i class="fas fa-key mr-2"></i>API Configuration</h2>
+                <p class="text-center text-gray-500 mb-6">Your API keys will be sent to your backend for secure use. They are not stored in the browser.</p>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700 border-b pb-2 mb-4">Qualtrics</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="qualtricsApiToken" class="block text-sm font-medium text-gray-600">API Token</label>
+                                <input type="password" id="qualtricsApiToken" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="your_token_here">
+                            </div>
+                            <div>
+                                <label for="qualtricsDataCenter" class="block text-sm font-medium text-gray-600">Data Center ID</label>
+                                <input type="text" id="qualtricsDataCenter" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="your_datacenter_id">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700 border-b pb-2 mb-4">AWS (MTurk)</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="awsAccessKeyId" class="block text-sm font-medium text-gray-600">Access Key ID</label>
+                                <input type="password" id="awsAccessKeyId" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="your_access_key">
+                            </div>
+                            <div>
+                                <label for="awsSecretAccessKey" class="block text-sm font-medium text-gray-600">Secret Access Key</label>
+                                <input type="password" id="awsSecretAccessKey" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="your_secret_key">
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                             <label for="mturkSandbox" class="block text-sm font-medium text-gray-600 mb-2">MTurk Mode</label>
+                            <select id="mturkSandbox" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                <option value="True" selected>Sandbox (Simulation)</option>
+                                <option value="False">Production (Real Experiment)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700 border-b pb-2 mb-4">LLM Models</h3>
+                        <div class="space-y-4">
+                           <div>
+                                <label for="openaiApiKey" class="block text-sm font-medium text-gray-600">OpenAI API Key</label>
+                                <input type="password" id="openaiApiKey" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="your_openai_key">
+                            </div>
+                            <div>
+                                <label for="anthropicApiKey" class="block text-sm font-medium text-gray-600">Anthropic API Key</label>
+                                <input type="password" id="anthropicApiKey" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="your_claude_key">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <button id="saveApiKeys" class="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-transform transform hover:scale-105">
+                        <i class="fas fa-save mr-2"></i>Save and Continue
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainMenuView" class="view">
+             <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                <button data-target="createSurveyView" class="main-menu-btn bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-left">
+                    <i class="fas fa-plus-circle text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Create & Enhance Survey</h3>
+                    <p class="text-gray-500 mt-2">Start with raw text, enhance with AI feedback, and prepare for deployment.</p>
+                </button>
+                <button data-target="collectHumanDataView" class="main-menu-btn bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-left">
+                    <i class="fas fa-users text-3xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Collect Human Data</h3>
+                    <p class="text-gray-500 mt-2">Fetch results from a deployed Qualtrics survey and MTurk HIT.</p>
+                </button>
+                <button data-target="collectSimulatedDataView" class="main-menu-btn bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-left">
+                    <i class="fas fa-robot text-3xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Collect Simulated Data</h3>
+                    <p class="text-gray-500 mt-2">Generate simulated survey responses using LLMs and debias the results.</p>
+                </button>
+                 <button data-target="generatePaperView" class="main-menu-btn bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-left">
+                    <i class="fas fa-file-alt text-3xl text-red-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Generate Research Paper</h3>
+                    <p class="text-gray-500 mt-2">Use CSV data to automatically generate a draft research paper.</p>
+                </button>
+            </div>
+        </div>
+        
+        <div id="createSurveyView" class="view">
+            <button class="back-to-menu-btn mb-6 bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300"><i class="fas fa-arrow-left mr-2"></i>Back to Menu</button>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">1. Input Survey Text</h2>
+                <p class="text-gray-500 mb-4">Paste your survey text below. Must include 'Topic:' and 'Questions:' lines.</p>
+                <textarea id="surveyTextInput" class="w-full h-48 p-3 border border-gray-300 rounded-md" placeholder="Topic: Example Survey on Coffee Preferences&#10;Questions:&#10;1. How many cups of coffee do you drink per day?&#10;2. What is your favorite type of coffee? (Multiple Choice: Espresso, Latte, Cappuccino)"></textarea>
+                <button id="processSurveyBtn" class="mt-4 w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700">Process Survey</button>
+                
+                <div id="enhancement-section" class="mt-8 hidden">
+                    <h2 class="text-2xl font-semibold mb-4">2. Interactive Enhancement</h2>
+                     <div id="surveySummary" class="p-4 bg-gray-50 rounded-lg border"></div>
+                     <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <button id="reviewBtn" class="bg-gray-200 p-3 rounded-lg hover:bg-gray-300"><i class="fas fa-eye mr-2"></i>Review</button>
+                        <button id="aiEnhanceBtn" class="bg-purple-200 p-3 rounded-lg hover:bg-purple-300"><i class="fas fa-magic mr-2"></i>AI Enhance</button>
+                        <button id="manualEditBtn" class="bg-yellow-200 p-3 rounded-lg hover:bg-yellow-300"><i class="fas fa-edit mr-2"></i>Manual Edit</button>
+                        <button id="saveSurveyBtn" class="bg-green-200 p-3 rounded-lg hover:bg-green-300"><i class="fas fa-save mr-2"></i>Save</button>
+                        <button id="deployBtn" class="bg-red-200 p-3 rounded-lg hover:bg-red-300"><i class="fas fa-rocket mr-2"></i>Deploy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="collectHumanDataView" class="view">
+            <button class="back-to-menu-btn mb-6 bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300"><i class="fas fa-arrow-left mr-2"></i>Back to Menu</button>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">Collect Human Data</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <input type="text" id="collectSurveyId" class="p-3 border rounded-md" placeholder="Qualtrics Survey ID">
+                    <input type="text" id="collectHitId" class="p-3 border rounded-md" placeholder="MTurk HIT ID (optional)">
+                </div>
+                <button id="fetchResultsBtn" class="w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700">Fetch Results</button>
+                <div id="humanDataResults" class="mt-6 hidden">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">Fetched Results</h3>
+                        <button id="downloadCsvBtn" class="hidden bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700">
+                            <i class="fas fa-download mr-2"></i>Download CSV
+                        </button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border">
+                            <thead id="humanDataTableHead"></thead>
+                            <tbody id="humanDataTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="collectSimulatedDataView" class="view">
+            <button class="back-to-menu-btn …">← Back to Menu</button>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h2 class="text-2xl font-semibold mb-4">1. Configure Simulation</h2>
+              <p class="text-gray-500 mb-4">Provide the content for the simulation files below.</p>
+              <div class="space-y-6">
+                
+                <!-- 1. Survey Response Template -->
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Survey Response Template</h4>
+                  <textarea id="simTemplate"
+                            class="w-full h-24 p-2 border rounded-md text-gray-500"
+                            oninput="this.classList.remove('text-gray-500')">You are a $age-year-old $gender identifying as $race. Please answer the following survey. Please answer the questions by returning ONLY json style answers.</textarea>
+                </div>
+                
+                <!-- 2. Survey JSON Context -->
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Survey JSON Context</h4>
+                  <textarea id="simSurveyContext"
+                            class="w-full h-24 p-2 border rounded-md text-gray-500"
+                            oninput="this.classList.remove('text-gray-500')">{"theme":"The Theory of Planned Behavior Survey","purpose":"To assess consumer intentions and beliefs regarding the purchase of organic food.","questions":[{"question_id":"q1","question_text":"I intend to purchase organic food in the next month.","input_type":"multiple_choice","input_config":{"options":["1","2","3","4","5","6","7"]}},{"question_id":"q2","question_text":"Buying organic food is beneficial to my health.","input_type":"multiple_choice","input_config":{"options":["1","2","3","4","5","6","7"]}},{"question_id":"q3","question_text":"I feel confident in my ability to purchase organic food if I want to.","input_type":"multiple_choice","input_config":{"options":["1","2","3","4","5","6","7"]}},{"question_id":"q4","question_text":"How do I think of the organic food?","input_type":"multiple_choice","input_config":{"options":["1","2","3","4","5","6","7"]}},{"question_id":"q5","question_text":"The decision to buy organic food is entirely up to me.","input_type":"multiple_choice","input_config":{"options":["1","2","3","4","5","6","7"]}},{"question_id":"q6","question_text":"What barriers, if any, prevent you from buying organic food?","input_type":"multiple_choice","input_config":{"options":["1","2","3","4","5","6","7"]}},{"question_id":"q7","question_text":"How do elders think of organic food?","input_type":"multiple_choice","input_config":{"options":["1","2","3","4","5","6","7"]}}]}</textarea>
+                </div>
+                
+                <!-- 3. Participant Pool CSV -->
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Participant Pool CSV</h4>
+                  <textarea id="simParticipants"
+                            class="w-full h-24 p-2 border rounded-md text-gray-500"
+                            oninput="this.classList.remove('text-gray-500')">ParticipantID,Race,Gender,Age
+                    b7163744-b2b5-4a45-b333-88c6cd63146c,White,Male,24
+                    ee64c9a6-f560-41f8-b823-275cf3131668,Asian,Female,53
+                    c4c897b3-7658-4103-b88b-34425ccb8521,Asian,Female,28
+                    21b3f469-22a2-445e-bdb6-fc576f3e9232,Asian,Male,31
+                    02ab1090-e43e-4502-b6f0-4c47bab2a13e,Indigenous,Male,42</textarea>
+                </div>
+                
+              </div>
+              <button id="runSimulationBtn" class="mt-4 w-full bg-purple-600 text-white …">Run Simulation</button>
+    
+                <div id="simulatedDataResults" class="mt-6 hidden border-t pt-6">
+                     <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">Initial Simulated Responses</h3>
+                        <button id="downloadSimulatedBtn" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700">
+                            <i class="fas fa-download mr-2"></i>Download Raw CSV
+                        </button>
+                    </div>
+                     <pre class="bg-gray-900 text-white p-4 rounded-md overflow-x-auto"><code id="simulatedJsonOutput"></code></pre>
+                </div>
+
+                <div id="debiasPrompt" class="mt-6 hidden text-center border-t pt-6">
+                    <h3 class="text-xl font-semibold mb-4">Debias Responses?</h3>
+                    <p class="text-gray-600 mb-4">Would you like to run the debiasing pipeline on these simulated responses?</p>
+                    <div class="flex justify-center space-x-4">
+                        <button id="runDebiasBtn" class="bg-green-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-green-700">Yes, Debias</button>
+                        <button id="skipDebiasBtn" class="bg-gray-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-gray-600">No, Thanks</button>
+                    </div>
+                </div>
+
+                <div id="debiasedDataResults" class="mt-6 hidden border-t pt-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">Debiased Responses</h3>
+                        <button id="downloadDebiasedBtn" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700">
+                            <i class="fas fa-download mr-2"></i>Download Debiased CSV
+                        </button>
+                    </div>
+                     <pre class="bg-gray-900 text-white p-4 rounded-md overflow-x-auto"><code id="debiasedJsonOutput"></code></pre>
+                </div>
+            </div>
+        </div>
+        
+        <div id="generatePaperView" class="view">
+            <button class="back-to-menu-btn mb-6 bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300"><i class="fas fa-arrow-left mr-2"></i>Back to Menu</button>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">Generate Research Paper</h2>
+                <div class="space-y-4">
+                    <textarea id="paperCsvData" class="w-full h-48 p-2 border rounded-md" placeholder="Paste your CSV data here..."></textarea>
+                    <textarea id="paperHypothesis" class="w-full h-24 p-2 border rounded-md" placeholder="Enter your research hypothesis here (optional)..."></textarea>
+                </div>
+                <button id="generatePaperBtn" class="mt-4 w-full bg-red-600 text-white font-semibold py-3 rounded-lg hover:bg-red-700">Generate Paper</button>
+                <div id="paperOutput" class="mt-6 hidden">
+                     <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">Generated Research Paper</h3>
+                        <button id="downloadPdfBtn" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700">
+                            <i class="fas fa-download mr-2"></i>Download PDF
+                        </button>
+                    </div>
+                     <div class="prose max-w-none p-4 border rounded-md bg-gray-50" id="paperMarkdownOutput"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <h2 class="text-2xl font-semibold text-center mb-4">System Log</h2>
+            <div id="systemLog" class="bg-white p-4 rounded-lg shadow-md h-64 overflow-y-auto space-y-2">
+                <p class="log-entry log-info">System initialized. Please provide API keys to begin.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalBackdrop" class="modal-backdrop"></div>
+    
+    <div id="aiEnhanceModal" class="modal bg-white p-8 rounded-xl shadow-2xl w-11/12 md:w-1/2 lg:w-1/3">
+        <h3 class="text-xl font-semibold mb-4">AI Enhancement Feedback</h3>
+        <p class="text-gray-500 mb-4">Provide feedback for the AI to improve the survey.</p>
+        <textarea id="aiFeedbackText" class="w-full h-32 p-2 border rounded-md" placeholder="e.g., 'Make the questions more neutral.' or 'Add an option for "Other".'"></textarea>
+        <div class="mt-6 flex justify-end space-x-3">
+            <button id="cancelAiEnhance" class="bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300">Cancel</button>
+            <button id="submitAiEnhance" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Submit Feedback</button>
+        </div>
+    </div>
+
+    <div id="manualEditModal" class="modal bg-white p-8 rounded-xl shadow-2xl w-11/12 md:w-2/3">
+        <h3 class="text-xl font-semibold mb-4">Manual JSON Editor</h3>
+        <textarea id="manualJsonEditor" class="w-full h-96 p-2 border rounded-md font-mono text-sm"></textarea>
+        <div class="mt-6 flex justify-end space-x-3">
+            <button id="cancelManualEdit" class="bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300">Cancel</button>
+            <button id="saveManualEdit" class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600">Save Changes</button>
+        </div>
+    </div>
+
+    <div id="deployModal" class="modal bg-white p-8 rounded-xl shadow-2xl w-11/12 md:w-1/2">
+        <h3 class="text-xl font-semibold mb-4">Deploy Survey</h3>
+        <p class="text-gray-500 mb-4">Configure deployment options for Qualtrics and MTurk.</p>
+        <div class="space-y-4">
+            <div>
+                <input type="checkbox" id="useMturk" class="mr-2">
+                <label for="useMturk">Create an MTurk HIT?</label>
+            </div>
+            <div id="mturkConfig" class="hidden space-y-2 pl-6 border-l-2 border-gray-200">
+                <input type="text" id="mturkReward" class="w-full p-2 border rounded-md" placeholder="Reward (e.g., 0.75)">
+                <input type="number" id="mturkMaxAssignments" class="w-full p-2 border rounded-md" placeholder="Max Participants (e.g., 100)">
+            </div>
+        </div>
+        <div class="mt-6 flex justify-end space-x-3">
+            <button id="cancelDeploy" class="bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300">Cancel</button>
+            <button id="confirmDeploy" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">Deploy Now</button>
+        </div>
+    </div>
+
+    <script>
+        // --- App State and Configuration ---
+        const appState = {
+            apiKeys: {},
+            currentSurvey: null,
+            enhancedSurvey: null,
+            humanData: [],
+            simulatedData: null,
+            debiasedData: null,
+            generatedPaper: null, // Store the raw markdown for PDF generation
+        };
+
+        // --- Utility Functions ---
+        const logger = {
+            log: (message, type = 'info') => {
+                const logEl = document.getElementById('systemLog');
+                const entry = document.createElement('p');
+                entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+                entry.className = `log-entry log-${type}`;
+                logEl.appendChild(entry);
+                logEl.scrollTop = logEl.scrollHeight;
+            },
+            info: (message) => logger.log(message, 'info'),
+            success: (message) => logger.log(message, 'success'),
+            warn: (message) => logger.log(message, 'warn'),
+            error: (message) => logger.log(message, 'error'),
+            api: (message) => logger.log(message, 'api'),
+        };
+
+        function showView(viewId) {
+            document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+            document.getElementById(viewId).classList.add('active');
+        }
+
+        function showModal(modalId) {
+            document.getElementById('modalBackdrop').classList.add('active');
+            document.getElementById(modalId).classList.add('active');
+        }
+
+        function hideModals() {
+            document.querySelectorAll('.modal, .modal-backdrop').forEach(el => el.classList.remove('active'));
+        }
+
+        function renderSurveySummary(surveyDict) {
+            const summaryEl = document.getElementById('surveySummary');
+            if (!surveyDict || !surveyDict.revised_survey) {
+                summaryEl.innerHTML = `<p class="text-red-500">Error: Invalid survey structure.</p>`;
+                return;
+            }
+            const revised = surveyDict.revised_survey;
+            let html = `<h3 class="text-lg font-semibold">${revised.theme || 'N/A'}</h3>`;
+            html += `<p class="text-sm text-gray-600 mb-4">${revised.purpose || 'N/A'}</p>`;
+            html += '<div class="space-y-3">';
+            revised.questions.forEach(q => {
+                html += `<div class="p-2 border-l-4 border-blue-200">
+                            <p class="font-medium">${q.question_id}: ${q.question_text}</p>
+                            <p class="text-xs text-gray-500">Type: ${q.input_type}</p>
+                         </div>`;
+            });
+            html += '</div>';
+            
+            if (surveyDict.explanations) {
+                html += '<h4 class="font-semibold mt-4">Explanations:</h4>';
+                html += '<ul class="list-disc list-inside text-sm text-gray-600">';
+                for (const [key, value] of Object.entries(surveyDict.explanations)) {
+                    html += `<li><strong>${key}:</strong> ${value}</li>`;
+                }
+                html += '</ul>';
+            }
+
+            summaryEl.innerHTML = html;
+        }
+
+        function downloadDataAsCsv(data, filename) {
+            if (!data || data.length === 0) {
+                logger.warn(`No data available to download for ${filename}.`);
+                return;
+            }
+
+            const headers = Object.keys(data[0]);
+            const replacer = (key, value) => value === null ? '' : value;
+            const csv = [
+                headers.join(','),
+                ...data.map(row => headers.map(fieldName => JSON.stringify(row[fieldName], replacer)).join(','))
+            ].join('\r\n');
+
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            if (link.download !== undefined) {
+                const url = URL.createObjectURL(blob);
+                link.setAttribute('href', url);
+                link.setAttribute('download', filename);
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+                logger.success(`CSV download initiated for ${filename}.`);
+            } else {
+                logger.error("CSV download not supported by your browser.");
+                alert("CSV download is not supported by your browser.");
+            }
+        }
+
+        function downloadPaperAsPdf(markdownContent, filename = 'research_paper.pdf') {
+            if (!markdownContent) {
+                logger.warn('No paper content available to download.');
+                alert('No paper content available to download.');
+                return;
+            }
+
+            try {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+                
+                // Convert markdown to plain text (remove markdown formatting)
+                let plainText = markdownContent
+                    .replace(/#{1,6}\s/g, '') // Remove headers
+                    .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold
+                    .replace(/\*(.*?)\*/g, '$1') // Remove italic
+                    .replace(/`(.*?)`/g, '$1') // Remove code
+                    .replace(/\[(.*?)\]\(.*?\)/g, '$1') // Remove links
+                    .replace(/^\s*[-*+]\s/gm, '• ') // Convert lists to bullets
+                    .replace(/^\s*\d+\.\s/gm, '• ') // Convert numbered lists to bullets
+                    .trim();
+
+                // Set up the document
+                doc.setFontSize(12);
+                doc.setFont('helvetica');
+                
+                // Add title
+                const title = 'Generated Research Paper';
+                doc.setFontSize(16);
+                doc.setFont('helvetica', 'bold');
+                doc.text(title, 20, 20);
+                
+                // Add content
+                doc.setFontSize(11);
+                doc.setFont('helvetica', 'normal');
+                
+                // Split text into lines that fit the page width
+                const pageWidth = doc.internal.pageSize.getWidth();
+                const margins = 20;
+                const maxLineWidth = pageWidth - (margins * 2);
+                
+                const lines = doc.splitTextToSize(plainText, maxLineWidth);
+                
+                // Add text to PDF with page breaks
+                let yPosition = 35;
+                const lineHeight = 6;
+                const pageHeight = doc.internal.pageSize.getHeight();
+                
+                lines.forEach((line) => {
+                    if (yPosition > pageHeight - 20) {
+                        doc.addPage();
+                        yPosition = 20;
+                    }
+                    doc.text(line, margins, yPosition);
+                    yPosition += lineHeight;
+                });
+                
+                // Save the PDF
+                doc.save(filename);
+                logger.success(`PDF download initiated for ${filename}.`);
+                
+            } catch (error) {
+                logger.error(`Error generating PDF: ${error.message}`);
+                alert(`Error generating PDF: ${error.message}`);
+            }
+        }
+
+        // --- Backend API Functions ---
+        async function apiRequest(endpoint, body) {
+            logger.api(`[Frontend] Sending request to backend: POST ${endpoint}`);
+            
+            try {
+                const requestBody = {
+                    apiKeys: appState.apiKeys,
+                    ...body
+                };
+                
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestBody)
+                });
+
+                const result = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(result.error || `Request failed with status ${response.status}`);
+                }
+                
+                logger.success(`[Backend] Received successful response from ${endpoint}`);
+                return result;
+
+            } catch (error) {
+                logger.error(`[API Error] Failed to fetch from ${endpoint}: ${error.message}`);
+                alert(`An error occurred while communicating with the backend: ${error.message}`);
+                throw error;
+            }
+        }
+
+        // --- Event Listeners and Main Logic ---
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Navigation ---
+            document.querySelectorAll('.main-menu-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const targetView = btn.dataset.target;
+                    showView(targetView);
+                    logger.info(`Navigated to ${targetView.replace('View', '')} section.`);
+                });
+            });
+
+            document.querySelectorAll('.back-to-menu-btn').forEach(btn => {
+                btn.addEventListener('click', () => showView('mainMenuView'));
+            });
+
+            // --- API Key View ---
+            document.getElementById('saveApiKeys').addEventListener('click', () => {
+                appState.apiKeys.qualtricsApiToken = document.getElementById('qualtricsApiToken').value;
+                appState.apiKeys.qualtricsDataCenter = document.getElementById('qualtricsDataCenter').value;
+                appState.apiKeys.awsAccessKeyId = document.getElementById('awsAccessKeyId').value;
+                appState.apiKeys.awsSecretAccessKey = document.getElementById('awsSecretAccessKey').value;
+                appState.apiKeys.mturkSandbox = document.getElementById('mturkSandbox').value;
+                appState.apiKeys.openaiApiKey = document.getElementById('openaiApiKey').value;
+                appState.apiKeys.anthropicApiKey = document.getElementById('anthropicApiKey').value;
+
+                const allKeysEntered = Object.values(appState.apiKeys).every(key => key.trim() !== '');
+                
+                if (allKeysEntered) {
+                    logger.success('All API keys and settings have been saved.');
+                    showView('mainMenuView');
+                } else {
+                    logger.error('Please fill in all API key and setting fields.');
+                    alert('Please fill in all API key and setting fields.');
+                }
+            });
+            
+            // --- Create/Enhance Survey View ---
+            document.getElementById('processSurveyBtn').addEventListener('click', async () => {
+                const surveyText = document.getElementById('surveyTextInput').value;
+                if (!surveyText.includes('Topic:') || !surveyText.includes('Questions:')) {
+                    logger.error("Survey text must include 'Topic:' and 'Questions:' lines.");
+                    alert("Survey text must include 'Topic:' and 'Questions:' lines.");
+                    return;
+                }
+                logger.info("Processing survey text via backend...");
+                
+                try {
+                    const result = await apiRequest('/api/process-survey', { surveyText });
+                    appState.currentSurvey = result.survey;
+                    appState.enhancedSurvey = JSON.parse(JSON.stringify(appState.currentSurvey));
+                    
+                    logger.success("Initial survey processing complete.");
+                    renderSurveySummary(appState.enhancedSurvey);
+                    document.getElementById('enhancement-section').classList.remove('hidden');
+                } catch (e) {
+                    // Error is already logged by apiRequest
+                }
+            });
+            
+            document.getElementById('reviewBtn').addEventListener('click', () => {
+                renderSurveySummary(appState.enhancedSurvey);
+                logger.info("Displayed current survey summary.");
+            });
+
+            document.getElementById('aiEnhanceBtn').addEventListener('click', () => showModal('aiEnhanceModal'));
+            document.getElementById('manualEditBtn').addEventListener('click', () => {
+                document.getElementById('manualJsonEditor').value = JSON.stringify(appState.enhancedSurvey, null, 2);
+                showModal('manualEditModal');
+            });
+            document.getElementById('saveSurveyBtn').addEventListener('click', () => {
+                const surveyJson = JSON.stringify(appState.enhancedSurvey, null, 2);
+                const blob = new Blob([surveyJson], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'enhanced_survey.json';
+                a.click();
+                URL.revokeObjectURL(url);
+                logger.success("Survey saved to enhanced_survey.json");
+            });
+            document.getElementById('deployBtn').addEventListener('click', () => showModal('deployModal'));
+
+            // --- Modal Actions ---
+            document.getElementById('cancelAiEnhance').addEventListener('click', hideModals);
+            document.getElementById('submitAiEnhance').addEventListener('click', async () => {
+                const feedback = document.getElementById('aiFeedbackText').value;
+                logger.info(`Sending enhancement request with feedback to backend...`);
+                
+                try {
+                    const result = await apiRequest('/api/enhance-survey', {
+                        survey: appState.enhancedSurvey,
+                        feedback: feedback
+                    });
+                    appState.enhancedSurvey = result.enhancedSurvey;
+                    renderSurveySummary(appState.enhancedSurvey);
+                    logger.success("AI enhancement complete.");
+                    hideModals();
+                } catch (e) {
+                    // Error logged by apiRequest
+                }
+            });
+
+            document.getElementById('cancelManualEdit').addEventListener('click', hideModals);
+            document.getElementById('saveManualEdit').addEventListener('click', () => {
+                try {
+                    const newJson = JSON.parse(document.getElementById('manualJsonEditor').value);
+                    if (!newJson.revised_survey || !newJson.revised_survey.questions) {
+                        throw new Error("Invalid survey structure. Missing 'revised_survey' or 'questions'.");
+                    }
+                    appState.enhancedSurvey = newJson;
+                    renderSurveySummary(appState.enhancedSurvey);
+                    logger.success("Manual edits applied successfully.");
+                    hideModals();
+                } catch (e) {
+                    logger.error(`Invalid JSON: ${e.message}`);
+                    alert(`Invalid JSON format. Please correct it. Error: ${e.message}`);
+                }
+            });
+            
+            document.getElementById('useMturk').addEventListener('change', (e) => {
+                document.getElementById('mturkConfig').classList.toggle('hidden', !e.target.checked);
+            });
+
+            document.getElementById('cancelDeploy').addEventListener('click', hideModals);
+            document.getElementById('confirmDeploy').addEventListener('click', async () => {
+                logger.info("Starting deployment process via backend...");
+                
+                const deployConfig = {
+                    survey: appState.enhancedSurvey,
+                    useMturk: document.getElementById('useMturk').checked,
+                    mturkConfig: {
+                        Reward: document.getElementById('mturkReward').value || '0.75',
+                        MaxAssignments: parseInt(document.getElementById('mturkMaxAssignments').value) || 100,
+                    }
+                };
+
+                try {
+                    const result = await apiRequest('/api/deploy', deployConfig);
+                    logger.success(`Deployment complete! Survey Link: ${result.surveyLink}, Survey ID: ${result.surveyId}` + (result.hitId ? `, HIT ID: ${result.hitId}` : ''));
+                    alert(`Deployment Successful!\nSurvey Link: ${result.surveyLink}, Survey ID: ${result.surveyId}` + (result.hitId ? `\nHIT ID: ${result.hitId}` : ''));
+                    hideModals();
+                } catch (e) {
+                    // Error logged by apiRequest
+                }
+            });
+
+            // --- Collect Human Data ---
+            document.getElementById('fetchResultsBtn').addEventListener('click', async () => {
+                const surveyId = document.getElementById('collectSurveyId').value;
+                const hitId = document.getElementById('collectHitId').value;
+
+                if (!surveyId) {
+                    alert('Qualtrics Survey ID is required.');
+                    return;
+                }
+                
+                try {
+                    const result = await apiRequest('/api/collect-data', { surveyId, hitId });
+                    appState.humanData = result.data;
+                    const finalData = result.data;
+                    
+                    const head = document.getElementById('humanDataTableHead');
+                    const body = document.getElementById('humanDataTableBody');
+                    const downloadBtn = document.getElementById('downloadCsvBtn');
+                    head.innerHTML = '';
+                    body.innerHTML = '';
+
+                    if (finalData.length > 0) {
+                        const headers = Object.keys(finalData[0]);
+                        head.innerHTML = `<tr>${headers.map(h => `<th class="p-2 border">${h}</th>`).join('')}</tr>`;
+                        finalData.forEach(row => {
+                            body.innerHTML += `<tr>${headers.map(h => `<td class="p-2 border">${row[h] || ''}</td>`).join('')}</tr>`;
+                        });
+                        document.getElementById('humanDataResults').classList.remove('hidden');
+                        downloadBtn.classList.remove('hidden');
+                    } else {
+                        logger.warn("No response data found.");
+                        document.getElementById('humanDataResults').classList.add('hidden');
+                        downloadBtn.classList.add('hidden');
+                    }
+                } catch(e) {
+                    // Error logged
+                }
+            });
+            
+            document.getElementById('downloadCsvBtn').addEventListener('click', () => {
+                downloadDataAsCsv(appState.humanData, 'human_survey_responses.csv');
+            });
+
+            // --- Collect Simulated Data ---
+            document.getElementById('runSimulationBtn').addEventListener('click', async () => {
+                logger.info("Starting data simulation via backend...");
+                
+                const simPayload = {
+                    template: document.getElementById('simTemplate').value,
+                    surveyContext: document.getElementById('simSurveyContext').value,
+                    participants: document.getElementById('simParticipants').value
+                };
+
+                try {
+                    const result = await apiRequest('/api/simulate-data', simPayload);
+                    appState.simulatedData = JSON.parse(result.simulationOutput);
+
+                    document.getElementById('simulatedJsonOutput').textContent = JSON.stringify(appState.simulatedData, null, 2);
+                    document.getElementById('simulatedDataResults').classList.remove('hidden');
+                    document.getElementById('debiasPrompt').classList.remove('hidden');
+                    document.getElementById('debiasedDataResults').classList.add('hidden');
+                    logger.success("Simulation complete. Ready for debiasing decision.");
+                } catch(e) {
+                    // Error logged
+                }
+            });
+
+            document.getElementById('downloadSimulatedBtn').addEventListener('click', () => {
+                downloadDataAsCsv(appState.simulatedData, 'simulated_responses_raw.csv');
+            });
+
+            document.getElementById('runDebiasBtn').addEventListener('click', async () => {
+                const simulatedData = appState.simulatedData;
+                const surveyContextFromTextBox = document.getElementById('simSurveyContext').value;
+                
+                if (!simulatedData || !Array.isArray(simulatedData) || simulatedData.length === 0) {
+                    alert('No simulated data available. Please run the simulation first.');
+                    return;
+                }
+                
+                if (!surveyContextFromTextBox || surveyContextFromTextBox.trim() === '') {
+                    alert('Survey context is empty. Please fill the survey context textbox.');
+                    return;
+                }
+
+                logger.info("Starting debiasing process via backend...");
+                document.getElementById('debiasPrompt').classList.add('hidden');
+                
+                try {
+                    const result = await apiRequest('/api/debias-data', {
+                        simulatedData: JSON.stringify(simulatedData),
+                        surveyContext: surveyContextFromTextBox
+                    });
+                    
+                    appState.debiasedData = JSON.parse(result.debiasedOutput);
+                    
+                    document.getElementById('debiasedJsonOutput').textContent = JSON.stringify(appState.debiasedData, null, 2);
+                    document.getElementById('debiasedDataResults').classList.remove('hidden');
+                    logger.success("Debiasing complete.");
+                } catch(e) {
+                    logger.error(`Debiasing failed: ${e.message}`);
+                    document.getElementById('debiasPrompt').classList.remove('hidden');
+                }
+            });
+
+            document.getElementById('skipDebiasBtn').addEventListener('click', () => {
+                document.getElementById('debiasPrompt').classList.add('hidden');
+                logger.info("Debiasing step skipped by user.");
+            });
+
+            document.getElementById('downloadDebiasedBtn').addEventListener('click', () => {
+                downloadDataAsCsv(appState.debiasedData, 'simulated_responses_debiased.csv');
+            });
+            
+            // --- Generate Paper ---
+            document.getElementById('generatePaperBtn').addEventListener('click', async () => {
+                logger.info("Generating research paper via backend...");
+                
+                const paperPayload = {
+                    csvData: document.getElementById('paperCsvData').value,
+                    hypothesis: document.getElementById('paperHypothesis').value
+                };
+
+                try {
+                    const result = await apiRequest('/api/generate-paper', paperPayload);
+                    
+                    // Store the raw markdown for PDF generation
+                    appState.generatedPaper = result.paperMarkdown;
+                    
+                    // Display the paper with basic HTML formatting
+                    document.getElementById('paperMarkdownOutput').innerHTML = result.paperMarkdown.replace(/\n/g, '<br>');
+                    document.getElementById('paperOutput').classList.remove('hidden');
+                    logger.success("Research paper generated successfully.");
+                } catch(e) {
+                    // Error logged
+                }
+            });
+
+            // --- Download Paper as PDF ---
+            document.getElementById('downloadPdfBtn').addEventListener('click', () => {
+                if (appState.generatedPaper) {
+                    const timestamp = new Date().toISOString().slice(0, 10); // YYYY-MM-DD format
+                    downloadPaperAsPdf(appState.generatedPaper, `research_paper_${timestamp}.pdf`);
+                } else {
+                    alert('No paper has been generated yet. Please generate a paper first.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,655 @@
+{
+  "timestamp": "2026-04-28T17:37:38.879732",
+  "project": "36_grewal_2022_lovedasis_study_2",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "God salience and interest in self-improvement products",
+      "purpose": "To test the hypothesis that God salience decreases believers\u2019 interest in a self-improvement product, but not non-believers\u2019.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How interested are you in this self-improvement product?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Not at all interested",
+              "Extremely interested"
+            ]
+          },
+          "_comment": "Question is clear and relevant; 'this self-improvement product' should be clearly defined in survey context (Version 1). Adding a neutral midpoint label enhances clarity and helps respondent orientation (from all versions)."
+        },
+        {
+          "question_id": "q2",
+          "question_text": "How strong is your belief in God?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Do not believe at all",
+              "Strongly believe"
+            ]
+          },
+          "_comment": "Wording is generally clear; rephrased for neutrality as 'To what extent do you believe in God?' (Version 2) or 'Please indicate the strength of your belief in God (or a higher power)' (Version 1) helps inclusion. Adding detailed scale labels with midpoints to capture varying belief strength improves granularity and reduces central tendency bias (Version 2)."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Did you pay attention to the instructions and the product description?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "_comment": "Attention check is essential for data quality. Change to 'Did you carefully read the instructions and product description?' for precision (Version 2). Adding a brief note encouraging honesty (Version 3) can reduce bias. Changing response format from binary to a 5-point Likert scale capturing degree of attention improves measurement of partial compliance (Version 1)."
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate how much you agree with the following statement: Thinking about God influences my decisions.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          },
+          "_comment": "Question measures perceived God salience and influence well. For grammatical precision, rephrase to 'I think about God influences my decisions' (Version 3). Adding midpoint label such as 'Neither agree nor disagree' improves response clarity and reliability (all versions). Using a 7-point Likert scale with full gradient labels (Version 2) enhances nuance."
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "God salience and interest in self-improvement products",
+      "purpose": "To test the hypothesis that increased salience of God decreases believers\u2019 interest in a self-improvement product but does not affect non-believers\u2019 interest.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How interested are you in the self-improvement product described previously?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Not at all interested",
+              "",
+              "",
+              "Neutral",
+              "",
+              "",
+              "Extremely interested"
+            ]
+          },
+          "_source": "Version 1"
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you believe in God (or a higher power)?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Do not believe at all",
+              "Disbelieve",
+              "Slightly disbelieve",
+              "Neither believe nor disbelieve",
+              "Slightly believe",
+              "Believe",
+              "Strongly believe"
+            ]
+          },
+          "_source": [
+            "Version 1",
+            "Version 2"
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Did you carefully read the instructions and the product description? (Please answer honestly, as this helps improve data quality.)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 5,
+            "scale_type": "Likert",
+            "labels": [
+              "Did not read at all",
+              "Read a little",
+              "Read somewhat carefully",
+              "Read carefully",
+              "Read very carefully"
+            ]
+          },
+          "_source": [
+            "Version 1",
+            "Version 2",
+            "Version 3"
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate how much you agree with the following statement: I think about God influences my decisions.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Strongly disagree",
+              "Somewhat disagree",
+              "Disagree",
+              "Neither agree nor disagree",
+              "Agree",
+              "Somewhat agree",
+              "Strongly agree"
+            ]
+          },
+          "_source": [
+            "Version 2",
+            "Version 3"
+          ]
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "God salience and interest in self-improvement products",
+      "purpose": "To test the hypothesis that increased salience of God decreases believers\u2019 interest in a self-improvement product but does not affect non-believers\u2019 interest.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How interested are you in the self-improvement product described earlier in this survey?",
+          "instructions": "If needed, please scroll back to review the product description before answering.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Not at all interested",
+              "Slightly interested",
+              "Somewhat interested",
+              "Neutral",
+              "Quite interested",
+              "Very interested",
+              "Extremely interested"
+            ]
+          }
+        },
+        {
+          "question_id": "q1b",
+          "question_text": "How likely would you be to try this self-improvement product if given the opportunity?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Extremely unlikely",
+              "Very unlikely",
+              "Unlikely",
+              "Neutral",
+              "Likely",
+              "Very likely",
+              "Extremely likely"
+            ]
+          }
+        },
+        {
+          "question_id": "q1c",
+          "question_text": "How likely would you be to recommend this self-improvement product to a friend or family member?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Extremely unlikely",
+              "Very unlikely",
+              "Unlikely",
+              "Neutral",
+              "Likely",
+              "Very likely",
+              "Extremely likely"
+            ]
+          }
+        },
+        {
+          "question_id": "q1d",
+          "question_text": "Have you used any self-improvement products similar to the one described before?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, frequently",
+              "Yes, occasionally",
+              "No, but I am aware of them",
+              "No, not aware of such products"
+            ],
+            "allow_multiple": false
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you personally believe in God or a higher power? By 'God or higher power,' we mean any divine entity or transcendent force you consider significant.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 7,
+            "scale_type": "Likert",
+            "labels": [
+              "Do not believe at all",
+              "Slightly disbelieve",
+              "Moderately disbelieve",
+              "Neither believe nor disbelieve",
+              "Moderately believe",
+              "Believe",
+              "Strongly believe"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Which of the following best describes your current religious or spiritual identity? (Please select one). For clarity, 'Religious' here refers to formal affiliation with an organized religion, while 'Spiritual but not religious' refers to personal spirituality without formal affiliation.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Religious (formally affiliated with a religion)",
+              "Spiritual but not religious",
+              "Neither religious nor spiritual",
+              "Prefer not to answer"
+            ],
+            "allow_multiple": false
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Please select your religious affiliation or spiritual tradition from the list below, or choose 'Other' if not listed. This question is intended to capture your specific religious or spiritual group, whether formal or informal.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Christianity",
+              "Islam",
+              "Judaism",
+              "Hinduism",
+              "Buddhism",
+              "Sikhism",
+              "Native American Spirituality",
+              "Other (please specify below)"
+            ],
+            "allow_multiple": false
+          },
+          "conditional_on": {
+            "question_id": "q5",
+            "response_values": [
+              "Religious (formally affiliated with a religion)",
+              "Spiritual but not religious"
+            ]
+          }
+        },
+        {
+          "question_id": "q6b",
+          "question_text": "If you selected 'Other' above, please specify your religious or spiritual tradition:",
+          "input_type": "open_text",
+          "max_length": 100,
+          "conditional_on": {
+            "question_id": "q6",
+            "response_values": [
+              "Other (please specify below)"
+            ]
+          },
+          "instructions": "Please provide a short response (e.g., 'New Age spirituality', 'Unitarian Universalist')."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "To indirectly assess your engagement with the product description, please answer: How much do you recall about the key features of the product described earlier? (If unsure, you may review the product description again.)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 5,
+            "scale_type": "Likert",
+            "labels": [
+              "No recall",
+              "A little recall",
+              "Some recall",
+              "Good recall",
+              "Excellent recall"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Regarding your thoughts and feelings about God or a higher power, please indicate how much you agree with the following statements:",
+          "items": [
+            {
+              "item_id": "q4a",
+              "item_text": "God or a higher power frequently influences my decisions."
+            },
+            {
+              "item_id": "q4b",
+              "item_text": "I often think about God or a higher power in my daily life."
+            }
+          ],
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 5,
+            "scale_type": "Likert",
+            "labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neither agree nor disagree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q7",
+          "question_text": "Which age range includes you?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "13-17",
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older",
+              "Prefer not to say"
+            ],
+            "allow_multiple": false
+          }
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What is your gender?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Male",
+              "Female",
+              "Non-binary / third gender",
+              "Prefer to self-describe (please specify below)",
+              "Prefer not to say"
+            ],
+            "allow_multiple": false
+          }
+        },
+        {
+          "question_id": "q8b",
+          "question_text": "If you selected 'Prefer to self-describe' above, please specify your gender:",
+          "input_type": "open_text",
+          "max_length": 50,
+          "conditional_on": {
+            "question_id": "q8",
+            "response_values": [
+              "Prefer to self-describe (please specify below)"
+            ]
+          }
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What is your highest level of education completed?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than high school",
+              "High school diploma or equivalent",
+              "Some college or associate degree",
+              "Bachelor\u2019s degree",
+              "Graduate or professional degree",
+              "Prefer not to say"
+            ],
+            "allow_multiple": false
+          }
+        },
+        {
+          "question_id": "q10",
+          "question_text": "Which of the following best describes your current socioeconomic status?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Low income",
+              "Lower-middle income",
+              "Middle income",
+              "Upper-middle income",
+              "High income",
+              "Prefer not to say"
+            ],
+            "allow_multiple": false
+          }
+        },
+        {
+          "question_id": "q11",
+          "question_text": "To what extent did the survey content make God or a higher power salient (i.e., made you think about God or a higher power)?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_points": 5,
+            "scale_type": "Likert",
+            "labels": [
+              "Not at all",
+              "A little",
+              "Somewhat",
+              "Quite a bit",
+              "Very much"
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "q5": "Added clarifying explanatory text to distinguish 'Religious' as formal affiliation and 'Spiritual but not religious' as personal spirituality without formal affiliation to reduce possible overlap confusion between questions q5 and q6.",
+      "q6": "Included clarifying instruction that this question captures specific religious or spiritual group identity, whether formal or informal, to further differentiate it from the broader identity categories in q5.",
+      "general": "The changes are minimal polishing adjustments aimed solely at reducing potential participant confusion arising from overlap in conceptual coverage between spirituality and religion in adjacent questions, without altering the survey structure or question order."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The phrase 'How interested are you in the self-improvement product described earlier in this survey?' is mildly leading by implying prior exposure; it may pressure respondents to answer without forgetting the product description. The instruction invites rereading but does not guarantee comprehension, so some ambiguity exists about what product the respondent considers. The 7-point Likert scale is appropriate for interest but some labels like 'Somewhat interested' and 'Quite interested' may be interpreted similarly, potentially blurring distinctions."
+      },
+      {
+        "question_id": "q2",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 1,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The question groups 'God or a higher power' which risks conflating distinct spiritual constructs, leading to double-barreled measurements. Although a definition is provided, beliefs may vary widely, reducing clarity. Social desirability bias may be moderate here, as belief in God/higher power can be sensitive. The scale wording (mixing 'disbelieve' and 'believe') is asymmetrical and may confuse respondents about the differences between 'Slightly disbelieve' and 'Moderately disbelieve.'"
+      },
+      {
+        "question_id": "q3",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 3,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "explanation": "Referring explicitly to recall to assess engagement introduces strong social desirability bias, as respondents may inflate their recall to appear attentive. The wording is somewhat ambiguous regarding what counts as 'key features.' The 5-point recall Likert scale is reasonable but self-reported recall is a weak proxy for engagement."
+      },
+      {
+        "question_id": "q4a",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The statement 'God or a higher power frequently influences my decisions' is clear and unambiguous. The 5-point agreement scale is standard but may lack granularity given the study aims to differentiate levels of salience. Minimal social desirability bias is expected but present due to the religious nature."
+      },
+      {
+        "question_id": "q4b",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The item 'I often think about God or a higher power in my daily life' is straightforward. The 5-point scale's granularity is a moderate fit. The question may evoke social desirability bias, though moderate, given social norms around spirituality."
+      },
+      {
+        "question_id": "q5",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 1,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The question combines 'religious' and 'spiritual' identities in a single item, which may be interpreted differently by respondents, creating a double-barreled issue. 'Spiritual but not religious' versus 'Neither religious nor spiritual' categories may be ambiguous to some participants. There is minor social desirability as affiliation can be sensitive. The forced single choice works but could miss nuanced identities or mixed affiliations."
+      },
+      {
+        "question_id": "q6",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "explanation": "Listing major religious traditions is appropriate, but the absence of 'No religion' or 'Atheist' options here could be confusing, although the conditional logic mitigates this. The 'Other' option and follow-up open-text capture alternatives suitably. Minor ambiguity in exact classification may remain. Social desirability bias is minimal."
+      },
+      {
+        "question_id": "q6b",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 0
+        },
+        "explanation": "Open-text response is appropriate for capturing diverse affiliations but may introduce analysis challenges. The instructions mitigate ambiguity by providing examples."
+      },
+      {
+        "question_id": "q7",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0
+        },
+        "explanation": "Standard age range categories with 'Prefer not to say' option; no issues identified."
+      },
+      {
+        "question_id": "q8",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 1
+        },
+        "explanation": "Comprehensive gender options are included. Possible minor social desirability due to gender sensitivity. The 'Prefer to self-describe' option is good, but it depends on whether a text box is available. Scale appropriateness is fair."
+      },
+      {
+        "question_id": "q8b",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0
+        },
+        "explanation": "Open-text follow-up for self-described gender; appropriate and necessary."
+      },
+      {
+        "question_id": "q9",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0
+        },
+        "explanation": "Standard education categories; possible minor social desirability bias but acceptable."
+      },
+      {
+        "question_id": "q10",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 3,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 2
+        },
+        "explanation": "Socioeconomic status is self-assessed with ambiguous categories combining income and subjective social class (e.g., 'Lower-middle income'). Respondents may not understand cutoffs, leading to inconsistent responses and invalid data. High social desirability bias is likely with income questions, causing nonresponse or misreporting. Scale choice as nominal categories with no explicit income ranges reduces clarity."
+      },
+      {
+        "question_id": "q11",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 3
+        },
+        "explanation": "This key manipulation check question asks directly about God/higher power salience induced by the survey. While necessary, the directness may induce social desirability bias, with respondents potentially overstating salience to conform to perceived expectations. The wording 'made you think about' is somewhat ambiguous regarding intensity versus frequency or duration. The 5-point scale might lack sensitivity to detect nuanced salience effects given the study hypothesis."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing explicit experimental manipulation or randomization check for God salience",
+        "severity": 3,
+        "explanation": "The survey depends on testing the effect of increased God salience but does not include or describe any manipulation that primes or increases this salience, nor a robust manipulation check beyond q11, which is self-reported and subject to bias."
+      },
+      {
+        "issue": "Potential construct confounding between belief in 'God or a higher power' and religious/spiritual identity",
+        "severity": 3,
+        "explanation": "Belief in God/higher power and religious/spiritual identity are distinct constructs but questions (q2, q5, q6) combine or overlap them without clear differentiation, risking conflation and invalid measurement."
+      },
+      {
+        "issue": "Limited measurement of product interest and lack of behavioral intention or actual purchase interest",
+        "severity": 2,
+        "explanation": "The single interest question (q1) captures self-reported interest but lacks behavioral or intention measures that better predict actual product adoption, weakening the study's practical implications."
+      },
+      {
+        "issue": "No measures for potential confounding demographic or psychological variables relevant to consumer behavior (e.g., personality, prior experience with self-improvement products)",
+        "severity": 2,
+        "explanation": "Beyond basic demographics, the survey lacks constructs to control for key influences on product interest, threatening internal validity."
+      },
+      {
+        "issue": "Ambiguity in product description availability and recall standards",
+        "severity": 2,
+        "explanation": "Question q3 assumes respondents can recall key product features but no objective comprehension or attention checks are provided. Relying on self-report is weak and might reduce the quality of experimental control."
+      },
+      {
+        "issue": "Redundancy of including both religious affiliation and spiritual tradition categories that may overlap without clear distinction",
+        "severity": 1,
+        "explanation": "Questions q5 and q6 partly cover overlapping concepts without explicit differentiation, which may cause confusion but is minor."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1 (\"How interested are you in the self-improvement product described previously?\")  \n   - Ambiguity: Refers to \"the self-improvement product described previously\" without confirming that all participants have equal or clear recall of the product description. Without ensuring standardized exposure or comprehension, responses may reflect differing understandings.  \n   - Scale labels: Only the endpoints and midpoint have labels, which can lead to inconsistent interpretation of the unlabeled scale points and affect reliability of the measurement.\n\n2. Question q2 (\"To what extent do you believe in God (or a higher power)?\")  \n   - Double-barreled concept: The question conflates belief in \"God\" with belief in \"a higher power,\" which may represent different constructs for respondents. This ambiguity can distort measurement and reduce validity.  \n   - Scale inconsistency: The sequence from \"Do not believe at all\" to \"Disbelieve\" and \"Slightly disbelieve\" is confusing and redundant. The difference between \"Do not believe at all\" and \"Disbelieve\" is unclear; both suggest disbelief. This can induce respondent confusion or unintentional misclassification.  \n   - Asymmetry of positive/negative items and mixing belief and disbelief wording on the same scale may produce bias or inconsistent interpretations.\n\n3. Question q3 (\"Did you carefully read the instructions and the product description?\")  \n   - Social desirability bias: The prompt \"Please answer honestly, as this helps improve data quality\" explicitly tries to enforce honesty, which might prompt socially desirable answers rather than truthful. Participants may overstate their attention.  \n   - Self-reported attention measures are generally weak indicators of actual attention or comprehension, which may threaten data quality claims.\n\n4. Question q4 (\"Please indicate how much you agree with the following statement: I think about God influences my decisions.\")  \n   - Grammar/clarity issue: The phrase \"I think about God influences my decisions\" is grammatically incorrect and ambiguous. It is unclear if the intended statement is \"I think that God influences my decisions\" or \"I think about God when making decisions.\" This may confuse respondents and reduce validity.  \n   - The wording mixes cognitive activity (\"think about God\") and causal influence (\"influences my decisions\"), potentially conflating two different constructs.  \n   - The 7-point Likert scale labels include both \"Somewhat agree\" and \"Agree,\" which might be redundant and confusing. Also, the disagreement side has \"Somewhat disagree\" and \"Disagree\"\u2014the consistency and subtle distinctions are unclear.\n\nAdditional general concern:  \n- The survey lacks explicit demographic or religious affiliation questions that are critical for testing the stated hypothesis on believers versus non-believers and the effect of God salience on product interest. Without such baseline controls, interpretation of results might be severely compromised."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1 (\"After reading the following standardized product description, how interested are you in this self-improvement product?\")  \n   - Scale label redundancy: The scale includes both \"Somewhat interested\" at points 3 and 5, which is confusing and likely a labeling error. This duplication can cause respondents to misinterpret scale gradations, reducing measurement precision.  \n   - Potential bias in instructions: By instructing respondents to \"refer to the product description presented at the beginning,\" it assumes participants read and understood the description equally, but without actual checks or manipulation validation, this may introduce noise.\n\n2. Question q2 (\"To what extent do you personally believe in God?\")  \n   - Scale wording imbalance: The negative belief side includes \"Slightly disbelieve\" and \"Somewhat disbelieve,\" while the positive belief side has \"Somewhat believe,\" \"Believe,\" and \"Strongly believe.\" The difference between \"Slightly\" and \"Somewhat\" disbelieve is subtle and possibly confusing, affecting scale reliability.  \n   - Lack of clarity on whether \"believe in God\" includes belief in a \"higher power\" or only theistic belief, possibly excluding respondents with alternative spiritual beliefs and introducing construct validity issues.\n\n3. Question q3 (\"Please indicate your level of attention to the instructions and the product description.\")  \n   - Social desirability bias risk: Asking for self-reported attention without indirect assessment may lead respondents to overstate their attention, especially given the purposeful nature of the question.  \n   - The scale labels progress unevenly in intensity (\"Did not pay attention\" to \"Paid very close attention\") but may not capture actual comprehension, thus limiting the validity of any attention control.\n\n4. Question q4 (\"Please indicate how much you agree with the following statement: God influences my decisions.\")  \n   - The item is clear but might not fully capture \"God salience,\" as \"influences my decisions\" is somewhat broad and may not distinguish frequency or intensity of influence, which are potentially relevant to the hypothesis.  \n   - The 7-point Likert scale has both \"Disagree\" and \"Slightly disagree\" as distinct options without clear rationale; this could confuse respondents or introduce response category indistinctness.\n\n5. Question q5 (\"Do you consider yourself to be affiliated with any religion or spiritual tradition?\")  \n   - The question lumps \"religion\" and \"spiritual tradition\" together without defining either, which may confuse participants about what counts as affiliation.  \n   - Lack of an explicit \"Not religious but spiritual\" option or a differentiation could bias classification.\n\n6. Question q6 (\"Please specify your religious affiliation or spiritual tradition, if applicable.\")  \n   - Open-text response risk: This may lead to highly variable, unstandardized responses, complicating coding and analysis. No guidance about preferred format or examples is provided.\n\n7. Question q7 (\"What is your age?\")  \n   - While the min and max values (13 to 120) are reasonable, there is no handling of implausible or fake answers beyond that range, and asking for exact age rather than age ranges may raise privacy concerns and nonresponse.\n\n8. Question q8 (\"What is your gender?\")  \n   - Inclusion of multiple gender identities is appropriate; however, \"Prefer to self-describe\" without a text box or prompt to specify creates potential missing data or respondent frustration.  \n   - The mix of binary and non-binary options may influence how respondents perceive the survey, but this is a minor issue compared to others.\n\nAdditional general concerns:  \n- The survey assumes the product description is standardized and equally salient, but no manipulation check besides q3 attention level is present; attention is self-reported and may be unreliable.  \n- No direct measure or manipulation check of \"God salience\" is present. The study's main hypothesis involves increased salience of God affecting believers' interest, yet the survey does not assess or manipulate salience explicitly.  \n- The overall survey does not check for other confounding variables (e.g., socioeconomic status, education) that might influence interest in self-improvement products, affecting internal validity."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

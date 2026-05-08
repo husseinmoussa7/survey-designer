@@ -1,0 +1,1 @@
+H3: Categorization increases (decreases) motivation when the proportion of categories completed falls below (above) the absolute progress level.

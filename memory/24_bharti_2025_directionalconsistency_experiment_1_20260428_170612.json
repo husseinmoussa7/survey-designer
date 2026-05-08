@@ -1,0 +1,546 @@
+{
+  "timestamp": "2026-04-28T17:06:12.723882",
+  "project": "24_bharti_2025_directionalconsistency_experiment_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Directional Consistency in Consumer Product Perceptions",
+      "purpose": "To test whether consumers perceive products with directionally consistent causal chains as more effective than those with directionally inconsistent causal chains.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate how effective you believe the product is.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Not at all effective",
+              "",
+              "",
+              "Neutral",
+              "",
+              "",
+              "Extremely effective"
+            ]
+          },
+          "comments": "The question is broadly clear and relevant but could be expressed more formally. The 7-point Likert scale currently has labeled endpoints and midpoint but unlabeled intermediate points. Labeling all points or providing clearly defined anchors improves clarity. The current empty strings may confuse respondents."
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Do you think the causes and effects in the product description are consistent with each other?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, consistent",
+              "No, inconsistent",
+              "Not sure"
+            ]
+          },
+          "comments": "The phrase 'causes and effects' might be simplified for clarity, such as 'causal relationships described in the product information.' Response options would benefit from concise, neutral labels without 'Yes' or 'No' prefixes to reduce cognitive load\u2014e.g., 'Consistent', 'Inconsistent', 'Uncertain.' Version 3\u2019s suggestion for more formal wording is valuable."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please confirm you have read the instructions carefully.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I have read the instructions carefully",
+              "I have not read the instructions carefully"
+            ]
+          },
+          "comments": "This self-report reading confirmation can induce social desirability bias; however, as a basic check it is acceptable. Version 3's approach of rephrasing as a 5-point Likert agreement scale on the statement 'I carefully read the instructions before proceeding' is more neutral and may yield more reliable data. Also, the phrasing should be concise and avoid redundancy."
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Directional Consistency in Consumer Product Perceptions",
+      "purpose": "To examine whether consumers perceive products featuring directionally consistent causal relationships as more effective than those featuring directionally inconsistent causal relationships.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you consider the product to be effective?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Not at all effective",
+              "Slightly effective",
+              "Somewhat effective",
+              "Moderately effective",
+              "Very effective",
+              "Highly effective",
+              "Extremely effective"
+            ]
+          },
+          "notes": "Comes from Version 3 \u2014 fully labeled graduated scale improves clarity and respondent calibration."
+        },
+        {
+          "question_id": "q2",
+          "question_text": "In your opinion, are the causal relationships described in the product information consistent?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Consistent",
+              "Inconsistent",
+              "Uncertain"
+            ]
+          },
+          "notes": "Blends Version 1\u2019s and Version 3\u2019s refined neutral and formal phrasing and option labels without 'Yes/No' prefixes."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate your level of agreement with the following statement: I carefully read the instructions before proceeding.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "5-point Likert",
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neither agree nor disagree",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          "notes": "Adopted from Version 3 to reduce bias and introduce nuance, improving data quality versus simple binary response."
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Directional Consistency in Consumer Product Perceptions",
+      "purpose": "To examine whether consumers perceive products featuring directionally consistent causal relationships as more effective than those featuring directionally inconsistent causal relationships.",
+      "instructions": "Please carefully read all questions and answer based on the product description provided. If you have any doubts, please choose the option that best reflects your understanding or uncertainty.",
+      "question_order": [
+        "comp_quiz_1",
+        "attention_check_1",
+        "comp_quiz_2",
+        "q4_1",
+        "q4_2",
+        "q2_1",
+        "q2_2",
+        "q_dir_consistency_1",
+        "q_dir_consistency_2",
+        "q1_1",
+        "q1_2",
+        "q3",
+        "demo_age",
+        "demo_education"
+      ],
+      "questions": [
+        {
+          "question_id": "attention_check_1",
+          "question_text": "To ensure you are paying attention, please select the option \"I am paying attention\" below.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I agree",
+              "I am paying attention",
+              "I disagree"
+            ],
+            "forced_response": true
+          },
+          "notes": "Reworded attention check with clearer, more intuitive instruction and correct option; moved position to second to better screen sustained attention."
+        },
+        {
+          "question_id": "comp_quiz_1",
+          "question_text": "According to the product information, if Feature A increases, what happens to Feature B?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Feature B decreases",
+              "Feature B increases",
+              "Feature B stays the same",
+              "I don\u2019t remember"
+            ],
+            "forced_response": true
+          },
+          "notes": "Objective comprehension quiz item embedded to validate respondent understanding of directionally consistent causal relationships."
+        },
+        {
+          "question_id": "comp_quiz_2",
+          "question_text": "Which of the following best describes the causal relationship direction described in the product?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "All causal effects are in one consistent direction",
+              "Some causal effects contradict each other (inconsistent directions)",
+              "There are no causal relationships described",
+              "I don\u2019t remember"
+            ],
+            "forced_response": true
+          },
+          "notes": "Second embedded comprehension quiz assessing explicit recognition of directional consistency vs inconsistency."
+        },
+        {
+          "question_id": "q4_1",
+          "question_text": "After reviewing the product information, to what degree do you think the product's purpose was clearly explained?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "4-point Likert",
+            "scale_labels": [
+              "Not at all clear",
+              "Somewhat clear",
+              "Mostly clear",
+              "Very clear"
+            ],
+            "forced_response": true
+          },
+          "notes": "Revised for reduced redundancy and replaced neutral midpoint with a forced-choice 4-point scale to reduce midpoint bias and respondent fatigue."
+        },
+        {
+          "question_id": "q4_2",
+          "question_text": "After reviewing the product information, how confident are you that you understand the product\u2019s main function?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "4-point Likert",
+            "scale_labels": [
+              "Not confident at all",
+              "Somewhat confident",
+              "Mostly confident",
+              "Completely confident"
+            ],
+            "forced_response": true
+          },
+          "notes": "Revised for clarity and replaced neutral midpoint with forced-choice 4-point scale to improve discrimination and reduce satisficing."
+        },
+        {
+          "question_id": "q2_1",
+          "question_text": "Based on the product information, how consistent are the relationships where one feature leads to changes in another feature?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Consistent",
+              "Inconsistent",
+              "I don\u2019t know",
+              "I am unsure / Undecided"
+            ],
+            "forced_response": true
+          },
+          "notes": "Simplified technical language further by describing the relationship as 'where one feature leads to changes in another'. Separated 'I don\u2019t know' (lack of knowledge) from 'I am unsure / Undecided' (indecision). Added forced response."
+        },
+        {
+          "question_id": "q2_2",
+          "question_text": "Please indicate your agreement with the following statements about the product information:",
+          "input_type": "matrix",
+          "input_config": {
+            "rows": [
+              "The relationships between product features are logically consistent.",
+              "I found the cause-effect explanations in the product easy to understand."
+            ],
+            "columns": [
+              "Strongly disagree",
+              "Disagree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "forced_response": true
+          },
+          "notes": "Removed neutral midpoint from matrix to reduce midpoint bias. Forced response added."
+        },
+        {
+          "question_id": "q_dir_consistency_1",
+          "question_text": "To what extent do you agree that the causal relationships described in the product information are directionally consistent (i.e., all causes affect outcomes in the same directional way)?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "4-point Likert",
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "forced_response": true
+          },
+          "notes": "Converted to 4-point forced-choice Likert scale to eliminate neutral midpoint and reduce response ambiguity."
+        },
+        {
+          "question_id": "q_dir_consistency_2",
+          "question_text": "To what extent do you perceive any directional inconsistencies in the causal explanations provided?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "4-point Likert",
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "forced_response": true
+          },
+          "notes": "Converted to 4-point forced-choice Likert scale to reduce midpoint bias; reverse framed for construct validity."
+        },
+        {
+          "question_id": "q1_1",
+          "question_text": "Based on the product description and your understanding of its purpose, how effective do you consider the product to be?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "4-point Likert",
+            "scale_labels": [
+              "Not effective at all",
+              "Somewhat effective",
+              "Effective",
+              "Extremely effective"
+            ],
+            "forced_response": true
+          },
+          "notes": "Reduced to 4-point forced-choice scale to remove neutral midpoint and clarify gradation for perceived effectiveness."
+        },
+        {
+          "question_id": "q1_2",
+          "question_text": "Please indicate your agreement with the following statements regarding the product\u2019s effectiveness:",
+          "input_type": "matrix",
+          "input_config": {
+            "rows": [
+              "The product will meet my needs effectively.",
+              "I feel confident about the product\u2019s effectiveness based on the information provided."
+            ],
+            "columns": [
+              "Strongly disagree",
+              "Disagree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "forced_response": true
+          },
+          "notes": "Removed neutral midpoint from matrix scale to reduce satisficing and improve response discrimination."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Before starting this survey, a short instruction page was presented. Please select the statement that best describes your reading of the instructions:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I read the instructions thoroughly and carefully.",
+              "I read most of the instructions but skipped some parts.",
+              "I only glanced at the instructions.",
+              "I did not read the instructions at all."
+            ],
+            "forced_response": true
+          },
+          "notes": "Clarified and retained existing answer options for instruction reading, forced response maintained."
+        },
+        {
+          "question_id": "demo_age",
+          "question_text": "Please indicate your age (you may choose not to disclose):",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older",
+              "Prefer not to say"
+            ],
+            "forced_response": false
+          },
+          "notes": "Made forced response optional for this sensitive question to reduce attrition and satisficing, respecting respondent privacy."
+        },
+        {
+          "question_id": "demo_education",
+          "question_text": "What is the highest level of education you have completed? (Select all that apply if multiple)",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than high school",
+              "High school diploma or equivalent",
+              "Some college",
+              "Associate degree",
+              "Bachelor\u2019s degree",
+              "Graduate or professional degree",
+              "Prefer not to say"
+            ],
+            "forced_response": false
+          },
+          "notes": "Made forced response optional for this sensitive question to reduce attrition and satisficing, respecting respondent privacy."
+        }
+      ],
+      "randomization": {
+        "enabled": true,
+        "scope": [
+          "q4_1",
+          "q4_2",
+          "q2_1",
+          "q2_2",
+          "q_dir_consistency_1",
+          "q_dir_consistency_2",
+          "q1_1",
+          "q1_2"
+        ],
+        "notes": "Key construct question blocks will be randomized to reduce order effects while attention check and demographics remain fixed."
+      }
+    },
+    "explanations": {
+      "forced_response_changes": "Forced response was set to false for sensitive demographic questions 'demo_age' and 'demo_education' to reduce potential participant attrition or satisficing caused by mandatory responses on privacy-related items, improving respondent comfort and data quality while maintaining question inclusion."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "attention_check_1",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The instruction to select \"None of the above\" is clear but potentially confusing since \"None of the above\" could be interpreted as meaning none of the response options apply rather than an explicit correct answer. This ambiguity can induce false fails. The scale options mix agreement ('Yes', 'No') with a third option requiring careful reading, which is unintuitive and not balanced for a standard attention check."
+      },
+      {
+        "question_id": "q4_1",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The phrase 'clearly explains' presumes clarity and might prompt respondents to agree if they infer an expectation, potentially introducing mild leading language. The question only asks about clarity of explanation but does not verify respondent understanding directly. The 5-point Likert scale is standard but the neutral midpoint could foster satisficing if respondents are uncertain."
+      },
+      {
+        "question_id": "q4_2",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The statement 'I understood the main function' depends on respondents' self-assessment, which may be influenced by overconfidence or impression management. The wording 'main function the product is supposed to perform' is somewhat vague and may be interpreted differently based on respondents' level of engagement or prior knowledge. The 5-point Likert scale is appropriate but shares the same neutral midpoint limitation."
+      },
+      {
+        "question_id": "q2_1",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled_structure": 1,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The question is somewhat leading by emphasizing relationships 'where one feature leads to changes in another,' which presumes causal influence that respondents may not agree with or understand. The question is mildly double-barreled as 'how consistent are the relationships' mixes consistency of multiple relationships without specifying which or how many, yielding potential confusion. Despite simplification, technical terms like 'feature' and 'leads to changes' may remain ambiguous across respondents. The multiple-choice scale appropriately separates knowledge and indecision but options may overlap in practice."
+      },
+      {
+        "question_id": "q2_2",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The question asks agreement with 'logically consistent' and 'easy to understand' statements, which could induce mild leading language toward agreeing in line with social norms of coherence. No apparent double-barreled issues as items are distinct. Terms such as 'logically consistent' may be abstract for some respondents, increasing ambiguity. The 5-point Likert matrix is appropriate but still poses the usual neutral midpoint issues."
+      },
+      {
+        "question_id": "q1_1",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The phrase 'based on your understanding of its purpose' attempts to control interpretation but might prompt respondents to rationalize or justify responses consistent with perceived expectations, causing mild leading effects. 'How effective do you consider the product to be?' is somewhat vague in effectiveness criteria and context. The 5-point Likert scale labels ('slightly' to 'extremely' effective) risk unequal intervals and subtle differences that respondents may not reliably distinguish."
+      },
+      {
+        "question_id": "q1_2",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled_structure": 1,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "explanation": "Statements such as 'The product will meet my needs effectively' and 'I feel confident about the product\u2019s effectiveness' may elicit socially desirable or aspirational responses, creating social desirability bias. The first item contains subtle double-barreled elements since 'meet my needs' and 'effectively' could be interpreted separately or jointly, complicating interpretation. Both items may be ambiguous in terms of temporal perspective (current belief versus future performance). The 5-point Likert matrix is standard but the neutral midpoint remains."
+      },
+      {
+        "question_id": "q3",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 3,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 2
+        },
+        "explanation": "This question asks respondents to self-report attentiveness/reading behavior, which is highly prone to social desirability bias; respondents are likely to overreport careful reading. The expanded options reduce ambiguity somewhat but lack objective verification. The middle options ('read most', 'skimmed') remain open to interpretation and may not distinctly separate levels of attention. Forced response may pressure inattentive respondents to misreport. The multiple-choice format is acceptable but does not address bias."
+      },
+      {
+        "question_id": "demo_age",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 1
+        },
+        "explanation": "Providing age ranges plus a 'Prefer not to say' option is appropriate. Slight ambiguity could arise for respondents close to age boundaries depending on instruction clarity. Forced response for demographics may reduce dropout but could pressure reluctant respondents."
+      },
+      {
+        "question_id": "demo_education",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled_structure": 1,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 1
+        },
+        "explanation": "The instruction 'Select all that apply if multiple' introduces double-barreled complexity as it permits multiple education levels which can complicate data interpretation if respondents misapply it (e.g., listing earlier and later education). Some respondents may find it ambiguous how to respond if they have non-traditional education paths. The inclusion of 'Prefer not to say' is positive."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing key constructs and theoretical gaps",
+        "severity": 3,
+        "explanation": "The survey lacks direct, explicit questions that probe respondents\u2019 understanding or recognition of 'directionally consistent' versus 'directionally inconsistent' causal relationships, the core theoretical construct under investigation. Without operationalizing this concept clearly and measuring it reliably (beyond vague consistency and understanding items), construct validity is threatened."
+      },
+      {
+        "issue": "Potential redundancy and respondent burden",
+        "severity": 2,
+        "explanation": "Questions q4_1 and q4_2 are highly similar, both assessing clarity and understanding of product purpose, as are q1_1 and q1_2 assessing perceived effectiveness. While adding multiple items can enhance reliability, overly similar items might fatigue respondents or cause repeated response patterns, impacting data quality."
+      },
+      {
+        "issue": "Scale midpoint ambiguity",
+        "severity": 2,
+        "explanation": "Multiple 5-point Likert scales include a neutral midpoint ('Neither agree nor disagree') which may be exploited by satisficing respondents or reflect genuine ambivalence difficult to interpret. No balanced approach such as forced-choice or alternative scale formats were employed to reduce midpoint biases."
+      },
+      {
+        "issue": "Use of self-report for behavioral or comprehension validation",
+        "severity": 3,
+        "explanation": "Key questions intended to verify respondent comprehension and engagement (q3 reading instructions and q4_1/q4_2 understanding) rely entirely on subjective self-report, which is vulnerable to social desirability and acquiescence biases. Objective validation methods (e.g., embedded comprehension quizzes) are absent."
+      },
+      {
+        "issue": "Attention check design and placement",
+        "severity": 2,
+        "explanation": "The single attention check uses an unintuitive instruction that may confuse respondents, risking false fails. Its placement at the very beginning may not effectively screen later inattentive responses during the survey, potentially reducing its utility."
+      },
+      {
+        "issue": "Forced response on sensitive items",
+        "severity": 1,
+        "explanation": "While forcing responses on demographics and key items reduces missing data, it may increase attrition or prompt satisficing behaviors, especially on privacy-sensitive questions like age and education."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: The 7-point Likert scale for product effectiveness uses nuanced gradations such as \"Very effective,\" \"Highly effective,\" and \"Extremely effective\" that may be difficult for respondents to reliably distinguish, risking scale ambiguity and inconsistent interpretation. The scale also lacks a clearly defined midpoint descriptor, potentially confusing respondents about what \"Moderately effective\" represents relative to the other options.\n\n2. Question q1: The question \"To what extent do you consider the product to be effective?\" is overly general without specifying a reference frame, purpose, or criteria for effectiveness. Without context or product details presented in the survey text, respondents might interpret \"effective\" differently, reducing construct validity.\n\n3. Question q2: The term \"causal relationships described in the product information\" is abstract and may be unclear to lay respondents unfamiliar with causal inference concepts. This ambiguity could lead to random or misunderstood answers, diminishing the validity of this measure.\n\n4. Question q2: The response options \"Consistent,\" \"Inconsistent,\" and \"Uncertain\" lack a neutral or \"Don't know\" option that is explicitly labeled, potentially forcing respondents into uncertain categories that are interpreted variably. \"Uncertain\" can be ambiguous, as it may mean lack of knowledge or indecision.\n\n5. Question q3: The question \"I carefully read the instructions before proceeding\" uses self-report about cognitive behavior, which is prone to social desirability bias. Respondents are likely to overstate their attentiveness, inflating agreement scores and reducing data accuracy.\n\n6. Question q3: The 5-point Likert scale for agreement includes a neutral midpoint, which may lead to satisficing or acquiescence bias, especially since the question is about respondents\u2019 own diligence. This may reduce discriminative power for identifying actual reading behavior.\n\n7. General concern: The survey does not clarify the timing of questions or provide any attention check questions to identify inattentive or random responding. This omission threatens response validity, especially given the reliance on self-report measures.\n\n8. General concern: The survey includes only three questions, two of which assess perceptions directly related to the product information but one about reading instructions internally, which might dilute respondent focus or cause confusion about the survey\u2019s aim.\n\n9. General concern: No demographic or screening questions are included to control for respondent characteristics that may influence causal reasoning or perception of effectiveness, limiting the ability to explore or control for confounding variables."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1: Although the question references \"product description\" and \"intended purpose,\" it assumes respondents have a clear understanding of the product's intended purpose without verifying whether it was explicitly communicated. If the intended purpose is ambiguous or not clearly emphasized in the product description, responses may reflect varied interpretations, affecting measurement validity.\n\n2. Question q1: The 5-point Likert scale labels include \"Slightly effective,\" \"Moderately effective,\" \"Very effective,\" and \"Extremely effective,\" which may not be psychologically equidistant, causing unequal intervals between points. Respondents might struggle differentiating between \"Very\" and \"Extremely\" effective, introducing noise or systematic bias into responses.\n\n3. Question q2: Despite simplification, the phrase \"cause-and-effect relationships presented\" can still be abstract or technical for some respondents, potentially leading to misunderstanding or guesswork, particularly in lower-education or non-expert populations.\n\n4. Question q2: The \"I don\u2019t know / Not sure\" option combines two distinct mental states: lack of knowledge (\"I don\u2019t know\") and indecision (\"Not sure\"). Collapsing these reduces precision in interpreting respondent uncertainty and may confound data analysis.\n\n5. Question q3: The behavioral frequency-style options (\"Yes, I read all instructions carefully,\" \"I skimmed the instructions,\" \"No, I did not read the instructions\") remain self-reported and still risk social desirability bias. Respondents may overstate their attentiveness, especially on a question directly about compliance, limiting its effectiveness as a behavioral measure.\n\n6. Question q3: The option \"I skimmed the instructions\" is ambiguous as it does not quantify the extent or quality of reading. This middle category can be interpreted variably by respondents and might fail to discriminate attention levels effectively.\n\n7. Attention_check_1: The options (\"I agree,\" \"I understand,\" \"I disagree\") require respondents to select \"I understand,\" which is neither the most intuitive nor the most semantically direct choice. Some respondents might select \"I agree\" mistakenly, causing false fails of the attention check.\n\n8. Attention_check_1: The attention check relies on a multiple-choice format without a forced-response mechanism or visual emphasis. Respondents rushing through could still pass by guessing or misreading, potentially limiting its efficacy in screening inattentive respondents.\n\n9. Demo_age: Allowing a numeric entry for age with a range of 18 to 120 is appropriate, but no option for non-disclosure or refusal is provided, potentially forcing incorrect or fabricated responses from privacy-sensitive participants.\n\n10. Demo_education: The education categories lack an option for \"Prefer not to say\" or equivalent non-response, potentially forcing inaccurate data or survey abandonment for respondents uncomfortable disclosing education level.\n\n11. General concern: The survey does not specify the order of questions clearly or whether randomization is used. The fixed sequence might induce order effects where responses to earlier questions influence later answers, compromising response independence.\n\n12. General concern: The survey lacks any question or measure to verify whether respondents understood the \"directionally consistent vs. inconsistent causal relationships\" concept directly, which is critical for assessing the survey\u2019s primary hypothesis. Without testing comprehension explicitly, data validity regarding causal perception is questionable.\n\n13. General concern: Given the survey\u2019s focus on directional consistency in causal relationships, more nuanced or multiple items per construct to assess reliability and validity of the key constructs are missing. Single-item measures risk low reliability and limited construct validity."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

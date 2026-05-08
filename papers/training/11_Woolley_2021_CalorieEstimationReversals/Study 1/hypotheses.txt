@@ -1,0 +1,3 @@
+H1a: Magnitude estimates are lower for healthier, larger food portions (vs. less healthy, smaller portions) and easier, longer workouts (vs. harder, shorter workouts).
+
+H1b: Numeric estimates do not exhibit this pattern and may even reverse, such that they are greater for healthier, larger food portions (vs. less healthy, smaller portions) and easier, longer workouts (vs. harder, shorter workouts).

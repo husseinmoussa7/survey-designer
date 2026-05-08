@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-04-22T13:44:41.054020",
+  "project": "hotel_booking_study",
+  "survey_v0": {
+    "theme": "Hotel Booking \u2014 Wave 2 (Follow-up)",
+    "questions": []
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Wave 2",
+      "questions": [],
+      "note": "Inherited 7-point scale from Wave 1"
+    }
+  },
+  "critique": {
+    "question_critiques": [],
+    "survey_level_issues": []
+  }
+}

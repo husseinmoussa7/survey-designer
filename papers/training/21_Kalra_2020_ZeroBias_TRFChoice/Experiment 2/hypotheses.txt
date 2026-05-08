@@ -1,0 +1,1 @@
+1. The zero bias stems from imprecise arithmetic (rounding) in retirement-year estimation, and both natural rounding and the zero-vs-five menu constraint contribute to the effect.

@@ -1,0 +1,1 @@
+1. Moderate-speed animations will yield the shortest perceived waiting time relative to a blank page and a fast animation.

@@ -1,0 +1,662 @@
+{
+  "timestamp": "2026-04-28T16:57:57.112959",
+  "project": "22_scott_2020_preventvscure_naturalpreference_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Consumer preference for natural products based on treatment goal",
+      "purpose": "To test the hypothesis that consumers prefer natural products more when the treatment goal is primarily preventative versus primarily curative.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you prefer natural products when the treatment goal is primarily preventative?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly Disagree",
+              "Strongly Agree"
+            ]
+          },
+          "comments": [
+            "Clarified phrasing to specify context and comparison to synthetic or conventional alternatives (from Version 2).",
+            "Used more accessible phrasing 'mostly preventive' instead of 'primarily preventative' (from Version 1).",
+            "Expanded Likert scale labels to include intermediate points for clarity and consistency (from all versions).",
+            "Added brief explanation in parentheses for 'preventive' to aid comprehension (from Version 3)."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you prefer natural products when the treatment goal is primarily curative?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly Disagree",
+              "Strongly Agree"
+            ]
+          },
+          "comments": [
+            "Clarified phrasing to specify context and comparison to synthetic or conventional alternatives (from Version 2).",
+            "Used more accessible phrasing 'mostly curative' instead of 'primarily curative' (from Version 1).",
+            "Expanded Likert scale labels to include intermediate points for clarity and consistency (from all versions).",
+            "Added brief explanation in parentheses for 'curative' to aid comprehension (from Version 3)."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate which treatment goal was emphasized in the scenario you reviewed.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Primarily preventative (aimed at disease prevention)",
+              "Primarily curative (aimed at treating illness or symptoms)",
+              "Both preventative and curative",
+              "Neither / Not Specified"
+            ],
+            "allow_multiple_selections": false
+          },
+          "comments": [
+            "Reworded stem to singular and clarified that the question refers to a specific scenario (from Version 2).",
+            "Improved answer options to clarify meaning and provide parenthetical explanations (merged from Versions 2 and 3).",
+            "Clarified single-selection only to avoid ambiguity (from Version 1)."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Attention check: To confirm your attention, please select 'Strongly Agree' for this statement.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly Disagree",
+              "Disagree",
+              "Somewhat Disagree",
+              "Neutral",
+              "Somewhat Agree",
+              "Agree",
+              "Strongly Agree"
+            ]
+          },
+          "comments": [
+            "Made instructions less leading and clarified the item is a statement to be agreed with for attention check (blended Version 1 and Version 2 improvements).",
+            "Kept full 7-point Likert options consistent with preference questions (from Versions 1 and 3).",
+            "Retained clear, explicit instruction for quality control purposes."
+          ]
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Consumer Preference for Natural Products Based on Treatment Goal",
+      "purpose": "To evaluate whether consumers exhibit greater preference for natural products in contexts where the treatment goal is primarily preventative compared to contexts where it is primarily curative.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "In situations where the treatment goal is mostly preventive (aimed at disease prevention), to what extent do you prefer natural products over synthetic or conventional alternatives?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly Disagree",
+              "Disagree",
+              "Somewhat Disagree",
+              "Neutral",
+              "Somewhat Agree",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "In situations where the treatment goal is mostly curative (aimed at treating illness or symptoms), to what extent do you prefer natural products over synthetic or conventional alternatives?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly Disagree",
+              "Disagree",
+              "Somewhat Disagree",
+              "Neutral",
+              "Somewhat Agree",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate which treatment goal was emphasized in the scenario you reviewed.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Primarily preventative (aimed at disease prevention)",
+              "Primarily curative (aimed at treating illness or symptoms)",
+              "Both preventative and curative",
+              "Neither / Not Specified"
+            ],
+            "allow_multiple_selections": false
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Attention check: To confirm your attention, please select 'Strongly Agree' for this statement.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly Disagree",
+              "Disagree",
+              "Somewhat Disagree",
+              "Neutral",
+              "Somewhat Agree",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Consumer Preference for Natural Products Based on Treatment Goal",
+      "purpose": "To evaluate whether consumers exhibit greater preference for natural products in contexts emphasizing disease prevention compared to contexts emphasizing treatment of illness or symptoms.",
+      "introduction_text": "This survey investigates your preference for natural products compared to synthetic or conventional alternatives. For this survey, \"natural products\" are defined as products derived from natural sources that undergo only basic, minimal processing typical for food or herbal supplements, such as drying, grinding, or extraction (e.g., plant-based supplements, herbal remedies, organic products). \"Synthetic or conventional alternatives\" refer to products manufactured through chemical synthesis or standard pharmaceutical processes. When answering, please base your preferences considering both the perceived effectiveness and safety of each product type in the described context. Please read each scenario carefully before responding.",
+      "questions": [
+        {
+          "question_id": "q0_screening_age",
+          "question_text": "Are you at least 18 years old?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Yes, I am 18 years or older",
+              "No, I am under 18"
+            ],
+            "allow_multiple_selections": false
+          }
+        },
+        {
+          "question_id": "q0a_general_attitudes",
+          "question_text": "In general (regardless of context), how would you rate your overall attitude toward natural products compared to synthetic/conventional alternatives?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "magnitude_preference_with_anchors",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly prefer synthetic/conventional products",
+              "Moderately prefer synthetic/conventional products",
+              "Slightly prefer synthetic/conventional products",
+              "No preference",
+              "Slightly prefer natural products",
+              "Moderately prefer natural products",
+              "Strongly prefer natural products"
+            ],
+            "scale_anchor_explanations": {
+              "Slightly": "A small but discernible preference favoring that product type",
+              "Moderately": "A clear, meaningful preference favoring that product type",
+              "Strongly": "A very strong and consistent preference favoring that product type"
+            }
+          }
+        },
+        {
+          "question_id": "q1",
+          "question_text": "Scenario 1: Imagine you are managing your health with the primary goal of preventing disease (preventive context). Based on this, please indicate your preference between natural products and synthetic/conventional alternatives.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "magnitude_preference_with_anchors",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly prefer synthetic/conventional products",
+              "Moderately prefer synthetic/conventional products",
+              "Slightly prefer synthetic/conventional products",
+              "No preference",
+              "Slightly prefer natural products",
+              "Moderately prefer natural products",
+              "Strongly prefer natural products"
+            ],
+            "scale_anchor_explanations": {
+              "Slightly": "A small but discernible preference favoring that product type",
+              "Moderately": "A clear, meaningful preference favoring that product type",
+              "Strongly": "A very strong and consistent preference favoring that product type"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Scenario 2: Imagine you are managing your health with the primary goal of treating an illness or symptoms (curative context). Based on this, please indicate your preference between natural products and synthetic/conventional alternatives.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "magnitude_preference_with_anchors",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly prefer synthetic/conventional products",
+              "Moderately prefer synthetic/conventional products",
+              "Slightly prefer synthetic/conventional products",
+              "No preference",
+              "Slightly prefer natural products",
+              "Moderately prefer natural products",
+              "Strongly prefer natural products"
+            ],
+            "scale_anchor_explanations": {
+              "Slightly": "A small but discernible preference favoring that product type",
+              "Moderately": "A clear, meaningful preference favoring that product type",
+              "Strongly": "A very strong and consistent preference favoring that product type"
+            }
+          }
+        },
+        {
+          "question_id": "q_order",
+          "question_text": "The order of scenario questions (Q1 and Q2) has been randomized across respondents to reduce order effects in your responses. Please indicate if you noticed that this order influenced your answers in any way.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Yes, the order influenced my answers",
+              "No, the order did not influence my answers",
+              "Not sure"
+            ],
+            "allow_multiple_selections": false
+          }
+        },
+        {
+          "question_id": "q_perceived_effectiveness_preventive",
+          "question_text": "For the preventive context, how effective do you believe natural products are compared to synthetic/conventional alternatives in preventing disease?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "comparison_effectiveness",
+            "scale_range": 7,
+            "scale_labels": [
+              "Much less effective than synthetic/conventional alternatives",
+              "Less effective than synthetic/conventional alternatives",
+              "Slightly less effective than synthetic/conventional alternatives",
+              "About equally effective",
+              "Slightly more effective than synthetic/conventional alternatives",
+              "More effective than synthetic/conventional alternatives",
+              "Much more effective than synthetic/conventional alternatives"
+            ]
+          }
+        },
+        {
+          "question_id": "q_perceived_safety_preventive",
+          "question_text": "For the preventive context, how safe do you believe natural products are compared to synthetic/conventional alternatives?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "comparison_safety",
+            "scale_range": 7,
+            "scale_labels": [
+              "Much less safe than synthetic/conventional alternatives",
+              "Less safe than synthetic/conventional alternatives",
+              "Slightly less safe than synthetic/conventional alternatives",
+              "About equally safe",
+              "Slightly safer than synthetic/conventional alternatives",
+              "Safer than synthetic/conventional alternatives",
+              "Much safer than synthetic/conventional alternatives"
+            ]
+          }
+        },
+        {
+          "question_id": "q_perceived_effectiveness_curative",
+          "question_text": "For the curative context, how effective do you believe natural products are compared to synthetic/conventional alternatives in treating illness or symptoms?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "comparison_effectiveness",
+            "scale_range": 7,
+            "scale_labels": [
+              "Much less effective than synthetic/conventional alternatives",
+              "Less effective than synthetic/conventional alternatives",
+              "Slightly less effective than synthetic/conventional alternatives",
+              "About equally effective",
+              "Slightly more effective than synthetic/conventional alternatives",
+              "More effective than synthetic/conventional alternatives",
+              "Much more effective than synthetic/conventional alternatives"
+            ]
+          }
+        },
+        {
+          "question_id": "q_perceived_safety_curative",
+          "question_text": "For the curative context, how safe do you believe natural products are compared to synthetic/conventional alternatives?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "comparison_safety",
+            "scale_range": 7,
+            "scale_labels": [
+              "Much less safe than synthetic/conventional alternatives",
+              "Less safe than synthetic/conventional alternatives",
+              "Slightly less safe than synthetic/conventional alternatives",
+              "About equally safe",
+              "Slightly safer than synthetic/conventional alternatives",
+              "Safer than synthetic/conventional alternatives",
+              "Much safer than synthetic/conventional alternatives"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Reflecting on your preferences in the two scenarios, which treatment goal do you believe has the greatest influence on your product preference in real-world situations? Please consider your actual behaviors and beliefs rather than hypothetical feelings.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Disease prevention (preventive)",
+              "Treatment of illness or symptoms (curative)",
+              "Neither treatment goal strongly influences my preferences"
+            ],
+            "allow_multiple_selections": false
+          }
+        },
+        {
+          "question_id": "q4_attention",
+          "question_text": "Attention check: To confirm your attention, please select the response option labelled \"No preference\" for this statement.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Strongly prefer synthetic/conventional products",
+              "Moderately prefer synthetic/conventional products",
+              "Slightly prefer synthetic/conventional products",
+              "No preference",
+              "Slightly prefer natural products",
+              "Moderately prefer natural products",
+              "Strongly prefer natural products"
+            ],
+            "allow_multiple_selections": false
+          }
+        },
+        {
+          "question_id": "q_preference_reasons_intro",
+          "question_text": "The next questions explore the reasons behind your preference for natural or synthetic/conventional products.",
+          "input_type": "info"
+        },
+        {
+          "question_id": "q12_reasons",
+          "question_text": "Please indicate how important each of the following reasons are when you choose natural products over synthetic/conventional alternatives, or vice versa.",
+          "input_type": "matrix",
+          "input_config": {
+            "statements": [
+              "Trust in the source or production process",
+              "Past personal experience with the product type",
+              "Cultural or traditional beliefs about the product",
+              "Perceived naturalness or purity of the product",
+              "Cost or affordability",
+              "Availability or ease of access",
+              "Recommendations from healthcare professionals",
+              "Concerns about side effects or safety"
+            ],
+            "scale_type": "importance",
+            "scale_range": 5,
+            "scale_labels": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ]
+          }
+        },
+        {
+          "question_id": "q5_demographics_intro",
+          "question_text": "To help us better understand how preferences might vary, please answer a few demographic and background questions. Your responses will remain confidential.",
+          "input_type": "info"
+        },
+        {
+          "question_id": "q6_age",
+          "question_text": "Please enter your age in years:",
+          "input_type": "number",
+          "input_config": {
+            "min_value": 18,
+            "max_value": 120,
+            "unit": "years"
+          }
+        },
+        {
+          "question_id": "q7_gender",
+          "question_text": "What is your gender? If you select 'Other', please note that your response will be coded according to common categories or grouped as 'Other' in analysis to protect confidentiality and data quality.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Female",
+              "Male",
+              "Non-binary/Third gender",
+              "Prefer not to say",
+              "Other (please specify)"
+            ],
+            "allow_other_specify": true,
+            "allow_multiple_selections": false
+          }
+        },
+        {
+          "question_id": "q8_health_status",
+          "question_text": "Using the following standardized health status description, please select the category that best describes your overall health:",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Excellent: No health problems and no limitations in activities",
+              "Very good: Minor health problems but no significant limitations",
+              "Good: Some health problems causing occasional limitations",
+              "Fair: Chronic health problems causing moderate limitations",
+              "Poor: Serious health problems causing severe limitations",
+              "Prefer not to say"
+            ],
+            "allow_multiple_selections": false
+          }
+        },
+        {
+          "question_id": "q9_experience",
+          "question_text": "In the past 12 months, how often have you used natural products (such as herbal supplements or organic remedies)?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Never",
+              "Less than once a month",
+              "1-3 times per month",
+              "Once a week or more",
+              "Prefer not to say"
+            ],
+            "allow_multiple_selections": false
+          }
+        },
+        {
+          "question_id": "q10_response_style_check",
+          "question_text": "To help us identify unengaged or patterned responding, please select the option 'Disagree' for this statement: \"I often select the same response option on surveys without thinking carefully.\"",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "allow_multiple_selections": false
+          }
+        },
+        {
+          "question_id": "q11_social_desirability",
+          "question_text": "Please indicate how much you agree with the following statements (these help assess response honesty):",
+          "input_type": "matrix",
+          "input_config": {
+            "statements": [
+              "I sometimes give answers that make me look better than I really am.",
+              "I am willing to admit when I make mistakes.",
+              "I rarely tell lies.",
+              "I have used natural products even if I thought they might not really work."
+            ],
+            "scale_type": "agreement",
+            "scale_range": 5,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "1": "No structural changes made in order to follow instructions; however, a small wording polish was applied to question q10_response_style_check for slightly smoother phrasing (e.g., 'To help us identify unengaged or patterned responding' remained, but punctuation and case were verified).",
+      "2": "Retained attention check (q4_attention) and response style check (q10_response_style_check) despite some functional overlap to preserve data quality checks as requested but acknowledged the potential for participant fatigue.",
+      "3": "No question removed or merged given instructions; any further reduction in participant burden requires explicit user request."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q0_screening_age",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 1,
+        "critique": "This screening question is straightforward, minimal issues. The binary format is appropriate. Minor risk that underage participants may misreport to proceed."
+      },
+      {
+        "question_id": "q1",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "critique": "Generally well-worded with clear scenario. Minor ambiguity in 'managing your health'\u2014can be interpreted variably as general well-being or active treatment. The preference scale with detailed anchors is appropriate and helps reduce ambiguity. However, the introduction telling respondents to base preferences on effectiveness and safety may induce social desirability bias toward natural products (positive connotations). No direct double-barreled issue but combining 'effectiveness and safety' as a basis without separating these attributes may mix constructs."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "critique": "Same issues as q1. The 'treating an illness or symptoms' phrasing may cue clinical or serious contexts differently for respondents, potentially affecting interpretation. The preference scale is consistent and appropriate."
+      },
+      {
+        "question_id": "q_order",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 1,
+        "critique": "This is an informational statement, no direct concerns."
+      },
+      {
+        "question_id": "q3",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 1,
+        "critique": "No leading language detected. The question asks about 'greatest influence' on preferences in real-world situations, which might be hard to introspect accurately, producing measurement error. The prompt to consider 'actual behaviors and beliefs rather than hypothetical feelings' helps but self-reflection bias remains. Wording 'Neither strongly influences' leaves out 'both equally' as in prior versions, which could restrict responses or misrepresent nuanced influences."
+      },
+      {
+        "question_id": "q4_attention",
+        "leading_language": 3,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "critique": "The attention check explicitly instructs selecting a particular substantive response ('No preference'), which may frustrate respondents whose true answer is different, creating potential for false positives in attention exclusion. The use of the substantive preference scale for the check might be suboptimal compared to a neutral or unrelated attention check. Severity high because it might bias dropout or introduce noise."
+      },
+      {
+        "question_id": "q6_age",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "critique": "Numeric open field with limits is appropriate; however, allowing free entry could lead to invalid responses (e.g., 150). No verification of age beyond self-report. Min value 18 aligns with screening."
+      },
+      {
+        "question_id": "q7_gender",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 1,
+        "critique": "Comprehensive gender options with an 'Other' write-in is good. The note explaining coding is beneficial. No major issues here."
+      },
+      {
+        "question_id": "q8_health_status",
+        "leading_language": 1,
+        "double_barreled": 2,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "critique": "While standardized descriptions are provided, the options combine health conditions with activity limitations, which conflates two constructs (health status and functional ability) \u2014 a double-barreled problem. Terms like 'minor,' 'some,' 'chronic,' and 'serious' are subjective, potentially ambiguous across respondents. Including 'Prefer not to say' is good."
+      },
+      {
+        "question_id": "q9_experience",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "critique": "Frequency categories are generally clear but '1-3 times per month' and 'Once a week or more' may overlap or be interpreted differently (e.g., is 'once a week or more' >4 times?). The wording 'used natural products' without further specification might be ambiguous about product types or usage contexts. Some risk of social desirability bias if respondents want to appear health-conscious."
+      },
+      {
+        "question_id": "q10_response_style_check",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "critique": "This is a direct item to detect carelessness. Asking to select 'Disagree' is straightforward but may confuse inattentive respondents. The 5-point Likert scale is appropriate. Overall effective but risk of misclassification should be considered."
+      },
+      {
+        "question_id": "q11_social_desirability",
+        "leading_language": 2,
+        "double_barreled": 2,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "critique": "\"I sometimes give answers that make me look better than I really am\" is leading and socially loaded, which may cause underreporting. The item 'I rarely tell lies' is a double negative and ambiguous. Including 'I have used natural products even if I thought they might not really work' conflates usage behavior and skepticism, mixing constructs. Overall, social desirability bias is very high here, threatening validity of this scale. Considered a must-fix."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing constructs related to perceived effectiveness and safety as separate constructs rather than combined in instructions. Without distinguishing these underlying beliefs quantitatively, interpretations of preference may be incomplete.",
+        "severity": 3
+      },
+      {
+        "issue": "No explicit exploration of reasons underlying preference (e.g., trust, past experience, cultural beliefs), limiting theoretical depth and explanatory power.",
+        "severity": 3
+      },
+      {
+        "issue": "No measurement of general attitudes toward natural or synthetic products beyond contextual preferences; lacking baseline attitudes reduces ability to interpret observed preferences credibly.",
+        "severity": 2
+      },
+      {
+        "issue": "Potential redundancy in attention and response style checks (q4_attention and q10_response_style_check) with overlapping purposes but differing formats; risk of participant fatigue or confusion.",
+        "severity": 1
+      },
+      {
+        "issue": "No direct control for order effects beyond stating randomization. No check or measurement of whether order affected responses is reported.",
+        "severity": 2
+      },
+      {
+        "issue": "The introduction defines natural and synthetic products but may still allow variation in interpretation, especially regarding 'minimal processing' that may not be universally understood.",
+        "severity": 2
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1 and q2: The wording of the question asks, \"to what extent do you prefer natural products over synthetic or conventional alternatives?\" but the response scale uses a Likert agreement format (Strongly Disagree to Strongly Agree). This scale format is inappropriate because the question is about preference magnitude\u2014not agreement with a statement. Using an agreement scale to capture preference may lead to confusion and invalid responses.\n\n2. Question q1 and q2: The phrase \"mostly preventive\" and \"mostly curative\" in the question stem could be ambiguous. It is unclear whether respondents consider scenarios strictly preventive/curative or mixed cases. This might create uncertainty and inconsistent interpretation of context across respondents.\n\n3. Question q1 and q2: These two questions ask about preference in different contexts but are presented separately without explicitly ensuring that respondents understand they are to consider two distinct scenarios consecutively. This design risks carryover effects or lack of attention to contextual shifts.\n\n4. Question q3: This question asks respondents to indicate which treatment goal was emphasized in the \"scenario you reviewed.\" However, no scenario is presented in the survey text or described in the introduction. This creates confusion and may lead to unreliable self-reports or missing data.\n\n5. Question q3: The option \"Both preventative and curative\" might be problematic because it contradicts the earlier focus on \"mostly\" one or the other. The presence of this option may encourage respondents to choose it if the scenario is ambiguous, but this conflicts with the survey\u2019s fundamental distinction goal.\n\n6. Question q4 (Attention Check): The question explicitly instructs to select \"Strongly Agree\" but uses the same Likert-style options as the main questions. This is a leading and obvious attention check that might frustrate respondents and does not account for careless or random responses that select different options for other reasons.\n\n7. Overall Social Desirability Bias Risk: The survey topic centers on \"natural products,\" which carries positive connotations culturally. The wording does not control or measure potential social desirability bias influencing respondents to overstate preference for natural products.\n\n8. Lack of Demographic or Control Questions: Without demographic or additional control items, the survey limits the ability to assess variation in preferences due to age, gender, health status, or prior experience with natural or synthetic products, reducing generalizability and interpretability.\n\n9. Scale Labeling Inconsistency: The scale in q1 and q2 labels \"Somewhat Disagree\" and \"Somewhat Agree\" are non-standard and might be interpreted differently than common middle categories like \"Slightly Disagree.\" This can affect subtlety and consistency of preference measurement.\n\n10. No Explicit Definition of \"Natural Products\": The survey does not define what is meant by \"natural products\" vs. \"synthetic or conventional alternatives,\" creating room for varied interpretation across respondents and jeopardizing internal validity."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1 and q2: While the magnitude-preference scale is an improvement over an agreement scale, the labels still embed subjective terms like \"slightly,\" \"moderately,\" and \"strongly\" without clear anchors or definitions, which may result in inconsistent interpretation of what these intensities mean to different respondents.\n\n2. Question q1 and q2: The phrasing \"Consider a scenario where...\" prompts respondents to imagine hypothetical situations but does not provide any concrete scenarios or details. This lack of context may lead to high variability in how participants imagine the scenario, threatening internal validity due to different mental models.\n\n3. Question q3: The question asks which treatment goal \"you personally feel influences your preference the most,\" but does not clarify how respondents should weigh hypothetical preferences versus actual behavior or beliefs. The subjective framing \"feel influences\" may lead to introspective errors or socially desirable responses.\n\n4. Question q3: The option \"Both equally influence my preferences\" could conflict conceptually with the purpose of distinguishing preventive versus curative contexts, potentially diluting the experimental manipulation or creating ambiguous interpretations.\n\n5. Question q4 (Attention check): The attention check requires selecting \"Moderately prefer natural products,\" which is a substantive preference rather than a neutral or arbitrary selection. This may bias responses by encouraging respondents to repeatedly indicate preference for natural products or create suspicion about the survey\u2019s objectivity.\n\n6. Question q4: The attention check\u2019s use of a scale identical to substantive questions risks respondent frustration or confusion, as participants may find it difficult to comply if their true preference does not align with the instructed response.\n\n7. Question q6 (Gender): The inclusion of \"Other (please specify)\" with both \"allow_other_specify\" and multiple non-binary options is good, but no guidance about how responses in the free-text \"Other\" will be handled or coded is provided. This lack of clarity can impede data quality.\n\n8. Question q7 (Health status): The response options (\"Excellent\" to \"Poor\") are subjective self-assessments without standardized criteria, which can vary widely across respondents and cultures, thereby reducing cross-sample comparability.\n\n9. Question q9 (Social desirability): Although the question aims to detect social desirability bias, a single-item self-assessment asking, \"I answer survey questions honestly, even if my opinions might be considered unpopular,\" is vulnerable to social desirability bias itself and is unlikely to reliably capture respondents\u2019 true truthfulness or response distortion.\n\n10. General: Despite providing definitions of \"natural products\" and \"synthetic or conventional alternatives\" in the introduction, these definitions might not be sufficiently comprehensive or culturally neutral, as \"minimal processing\" and \"standard pharmaceutical manufacturing\" can be interpreted variably, especially across different respondent populations.\n\n11. General: No counterbalancing or randomization is indicated for the order of q1 and q2 (preventive vs. curative scenarios), which could introduce order effects or response consistency biases that confound the results.\n\n12. General: The survey does not include any explicit measures to detect satisficing or straight-lining behavior beyond a single attention check, increasing the risk of low-quality data in self-administered contexts.\n\n13. Question q5 (Age): The minimum age set at 18 assumes all respondents are adults, but without screening for age or verifying that respondents fall within the target population, responses may inadvertently include data from outside the intended sample.\n\n14. Question q8 (Experience): The response options conflate frequency (\"Yes, regularly,\" \"Yes, occasionally\") without defining these terms rigorously, which may result in inconsistent categorization and complicate analysis of usage patterns.\n\n15. The survey lacks explicit anchoring or instructions about how respondents should interpret the comparison of natural versus synthetic products (e.g., effectiveness, safety, taste, side effects), which could lead to heterogenous response processes and reduce construct validity."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

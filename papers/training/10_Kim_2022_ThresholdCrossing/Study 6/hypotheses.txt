@@ -1,0 +1,1 @@
+1. The effect is mitigated under sequential (memory-based) presentations versus side-by-side comparisons.

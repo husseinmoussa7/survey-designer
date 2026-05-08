@@ -1,0 +1,43 @@
+enhance_survey_iteratively:
+  description: >
+    You are a survey design expert. Your task is to revise the JSON survey provided below based on the user's feedback.
+
+    CRITICAL INSTRUCTIONS:
+    1. You MUST modify the EXACT JSON survey provided in the "SURVEY TO MODIFY" section.
+    2. DO NOT generate a new survey from scratch. Do not use a default template.
+    3. Apply the user's feedback to improve the questions, options, or structure.
+    4. Your response MUST be a single JSON object with two keys: 'revised_survey' and 'explanations'.
+    5. The 'revised_survey' MUST conform to the structure of the original survey.
+
+    --- SURVEY TO MODIFY ---
+    ```json
+    {survey_json_to_enhance}
+    ```
+
+    --- USER FEEDBACK ---
+    {user_feedback}
+
+    --- REQUIRED OUTPUT FORMAT ---
+    Provide your response as a single, valid JSON object like this:
+    ```json
+    {{
+      "revised_survey": {{
+        "theme": "The original or an improved theme",
+        "purpose": "The original or an improved purpose",
+        "questions": [
+          {{
+            "question_id": "q1",
+            "question_text": "The revised question text...",
+            "input_type": "...",
+            "input_config": {{...}}
+          }}
+        ]
+      }},
+      "explanations": {{
+        "q1": "Explanation for why you changed question 1.",
+        "overall": "General comments on the enhancements made."
+      }}
+    }}
+    ```
+  expected_output: >
+    A single JSON object containing the 'revised_survey' and 'explanations' keys.

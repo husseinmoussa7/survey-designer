@@ -1,0 +1,732 @@
+{
+  "timestamp": "2026-04-28T17:13:58.657059",
+  "project": "26_lenkovskaya_2025_numericalcognition_ambiguity_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Ambiguity aversion and numerical cognition",
+      "purpose": "To test the hypothesis that ambiguity aversion decreases as the magnitude of the certainty equivalent (CE) increases, using a survey with standard marketing research conventions.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree that ambiguity in choices affects your decision making?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly Disagree",
+              "Strongly Agree"
+            ]
+          },
+          "_comment": [
+            "The original wording is clear but 'ambiguity in choices' might be unclear to some; specifying 'ambiguity or uncertainty in available choices' improves clarity (from Versions 2 and 3).",
+            "Adding full Likert anchors beyond only endpoints improves participant understanding (Version 1 and 3)."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "How much ambiguity aversion do you experience when the potential reward is small?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "None",
+              "Very Much"
+            ]
+          },
+          "_comment": [
+            "The term 'ambiguity aversion' may not be accessible; replacing with 'discomfort or hesitation due to ambiguity' increases comprehensibility (Versions 1, 2, 3).",
+            "Scale labels 'None' to 'Very Much' are informal; using a labeled intensity scale with midpoints and endpoints is preferable (Version 1 and 3)."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "How much ambiguity aversion do you experience when the potential reward is large?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "None",
+              "Very Much"
+            ]
+          },
+          "_comment": [
+            "Same improvements as for q2: clarify language by emphasizing 'discomfort or avoidance when facing ambiguity' and expand scale labels to include intermediate anchors for precision and clarity (Versions 1, 2, 3)."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please choose the option that best represents your certainty equivalent (CE) for the ambiguous gamble.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Very Low CE",
+              "Low CE",
+              "Moderate CE",
+              "High CE",
+              "Very High CE"
+            ]
+          },
+          "_comment": [
+            "Response options should be numeric ranges rather than vague ordinal labels for clarity and precision (all versions).",
+            "Add an explicit brief definition and example of 'certainty equivalent (CE)' to aid respondents unfamiliar with concept (Version 1 and Version 3).",
+            "Suggested numeric ranges adjusted slightly across versions; final options should be uniform with clear dollar ranges."
+          ]
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Did you pay attention to all the instructions provided in this study?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "_comment": [
+            "Binary attention check is standard (Version 1).",
+            "Including a 'Prefer not to say' option reduces social desirability bias (Version 1).",
+            "Version 2 suggested a Likert scale for attentiveness; Version 1's addition of 'Prefer not to answer' is preferred for neutrality."
+          ]
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Please indicate how much you agree with the statement: I carefully considered all information before making decisions in this survey.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly Disagree",
+              "Strongly Agree"
+            ]
+          },
+          "_comment": [
+            "The wording is appropriate but improved by embedding the statement in quotes and including full Likert labels (Versions 1 and 3).",
+            "Consider neutral midpoint labels to improve respondent clarity (Version 1 and 3)."
+          ]
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Ambiguity Aversion and Numerical Cognition",
+      "purpose": "This survey aims to examine whether ambiguity aversion diminishes as the certainty equivalent (CE) increases, using rigorously designed survey measures consistent with standard research practices.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree with the following statement? \"Ambiguity or uncertainty in available choices influences my decision-making processes.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly Disagree",
+              "Disagree",
+              "Somewhat Disagree",
+              "Neither Agree nor Disagree",
+              "Somewhat Agree",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "When the potential reward is small, to what extent do you experience discomfort or hesitation due to ambiguity in the decision?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "intensity",
+            "scale_range": 7,
+            "scale_labels": [
+              "No Discomfort",
+              "",
+              "Slight Discomfort",
+              "Moderate Discomfort",
+              "Considerable Discomfort",
+              "",
+              "Extreme Discomfort"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "When the potential reward is large, to what extent do you experience discomfort or hesitation due to ambiguity in the decision?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "intensity",
+            "scale_range": 7,
+            "scale_labels": [
+              "No Discomfort",
+              "",
+              "Slight Discomfort",
+              "Moderate Discomfort",
+              "Considerable Discomfort",
+              "",
+              "Extreme Discomfort"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your certainty equivalent (CE) for the ambiguous gamble described below. The CE is the guaranteed amount you consider equally desirable as the gamble.\n\nExample: If offered a gamble with a 50% chance to win $100 and a 50% chance to win nothing (with unknown probabilities), your CE is the minimum guaranteed amount you would accept instead of taking the gamble.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than $20 (Very Low CE)",
+              "$20 to $39 (Low CE)",
+              "$40 to $59 (Moderate CE)",
+              "$60 to $79 (High CE)",
+              "$80 or more (Very High CE)"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Did you carefully read and pay attention to all instructions provided in this study?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Please indicate the extent to which you agree with the statement: \"I carefully considered all information provided before making each decision in this survey.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly Disagree",
+              "Disagree",
+              "Somewhat Disagree",
+              "Neither Agree nor Disagree",
+              "Somewhat Agree",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Ambiguity Aversion and Numerical Cognition",
+      "purpose": "This survey aims to examine whether ambiguity aversion diminishes as the certainty equivalent (CE) increases, using rigorously designed measures consistent with standard research practices. It incorporates behavioral measures, incentivized elements, indirect attention checks, and concrete scenario descriptions to enhance validity and reduce cognitive load. Demographic and cognitive control questions are included to better interpret individual differences.",
+      "questions": [
+        {
+          "question_id": "q1_revised",
+          "question_text": "When faced with decisions where outcome probabilities are unknown, how does this uncertainty influence your confidence in making choices?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "frequency",
+            "scale_range": 7,
+            "scale_labels": [
+              "Greatly decreases my confidence",
+              "Mostly decreases my confidence",
+              "Moderately decreases my confidence",
+              "No change in my confidence",
+              "Moderately increases my confidence",
+              "Mostly increases my confidence",
+              "Greatly increases my confidence"
+            ]
+          }
+        },
+        {
+          "question_id": "q_baseline_risk",
+          "question_text": "How would you describe your general willingness to take risks in everyday decisions?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Very Risk Averse",
+              "Risk Averse",
+              "Slightly Risk Averse",
+              "Neither Risk Averse nor Risk Seeking",
+              "Slightly Risk Seeking",
+              "Risk Seeking",
+              "Very Risk Seeking"
+            ]
+          }
+        },
+        {
+          "question_id": "q_familiarity_ambig",
+          "question_text": "How familiar are you with decisions involving unknown or ambiguous outcome probabilities (ambiguous gambles)?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Not at all familiar",
+              "Slightly familiar",
+              "Somewhat familiar",
+              "Moderately familiar",
+              "Quite familiar",
+              "Very familiar",
+              "Extremely familiar"
+            ]
+          }
+        },
+        {
+          "question_id": "q2_discomfort_small_reward",
+          "question_text": "Imagine you must choose between:\n- a guaranteed $5, or\n- a gamble with an unknown chance to win $5 or win nothing.\n\nHow uncomfortable do you feel when making this decision?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "intensity",
+            "scale_range": 7,
+            "scale_labels": [
+              "No discomfort",
+              "Slight discomfort",
+              "Mild discomfort",
+              "Moderate discomfort",
+              "Strong discomfort",
+              "Very strong discomfort",
+              "Extreme discomfort"
+            ]
+          }
+        },
+        {
+          "question_id": "q3_discomfort_large_reward",
+          "question_text": "Please consider a similar decision later in the survey where the reward is $100 instead of $5.\n\nHow uncomfortable do you expect to feel making that decision?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "intensity",
+            "scale_range": 7,
+            "scale_labels": [
+              "No discomfort",
+              "Slight discomfort",
+              "Mild discomfort",
+              "Moderate discomfort",
+              "Strong discomfort",
+              "Very strong discomfort",
+              "Extreme discomfort"
+            ]
+          }
+        },
+        {
+          "question_id": "q4_scenario",
+          "question_text": "Please carefully read the following scenario before answering the next question: \n\n- You face an ambiguous gamble where the exact probability of winning is unknown but is estimated to be between 30% and 70%.\n- Winning yields $100; losing yields nothing.\n\nYou must choose between this gamble and a guaranteed amount of money. The certainty equivalent (CE) is the sure amount you find equally attractive as the gamble.\n\nNOTE: To increase realism, your choices might influence your chance for an additional monetary bonus.",
+          "input_type": "info"
+        },
+        {
+          "question_id": "q4_ce",
+          "question_text": "Please indicate your certainty equivalent (CE) \u2014 the guaranteed amount you consider equivalent in value to the ambiguous gamble described above:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "$0 (I would not take any guaranteed amount instead of the gamble)",
+              "$1 to $9 (Very Low CE)",
+              "$10 to $19 (Low CE)",
+              "$20 to $29 (Moderate CE)",
+              "$30 to $39 (Moderately High CE)",
+              "$40 to $49 (High CE)",
+              "$50 to $59 (Very High CE)",
+              "$60 to $69 (Very High CE)",
+              "$70 to $79 (Extremely High CE)",
+              "$80 to $89 (Extremely High CE)",
+              "$90 to $99 (Near Maximal CE)",
+              "$100 (Maximum CE)"
+            ]
+          }
+        },
+        {
+          "question_id": "q4b_behavioral_choice",
+          "question_text": "Given the gamble described above and the guaranteed amount of $30, please indicate which you would choose if your decision affected an actual bonus payment:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Definitely prefer the ambiguous gamble",
+              "Probably prefer the ambiguous gamble",
+              "Not sure / No preference",
+              "Probably prefer the guaranteed $30",
+              "Definitely prefer the guaranteed $30"
+            ]
+          }
+        },
+        {
+          "question_id": "q_attention_check_verification",
+          "question_text": "To verify attention, please select the option 'Not sure / No preference' for this question.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Definitely prefer the ambiguous gamble",
+              "Probably prefer the ambiguous gamble",
+              "Not sure / No preference",
+              "Probably prefer the guaranteed $30",
+              "Definitely prefer the guaranteed $30"
+            ]
+          }
+        },
+        {
+          "question_id": "q_effort_indirect",
+          "question_text": "To what extent do you agree with the following statement? \"I found myself carefully considering my answers throughout the survey without feeling the need to rush or skim.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly Disagree",
+              "Disagree",
+              "Slightly Disagree",
+              "Neither Agree nor Disagree",
+              "Slightly Agree",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q_effort_magnitude",
+          "question_text": "Considering the entire survey, how much effort did you put into providing accurate and thoughtful responses?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Very low effort",
+              "Low effort",
+              "Slightly low effort",
+              "Moderate effort",
+              "Slightly high effort",
+              "High effort",
+              "Very high effort"
+            ]
+          }
+        },
+        {
+          "question_id": "q_rushed_behavior",
+          "question_text": "During this survey, how often did you feel rushed or pressured to go through questions quickly?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Never",
+              "Rarely",
+              "Occasionally",
+              "Sometimes",
+              "Often",
+              "Very often",
+              "Always"
+            ]
+          }
+        },
+        {
+          "question_id": "q_demographics",
+          "question_text": "Please provide the following information:",
+          "input_type": "demographic",
+          "input_config": {
+            "fields": [
+              {
+                "field_id": "age",
+                "field_label": "Age",
+                "field_type": "number",
+                "required": true
+              },
+              {
+                "field_id": "gender",
+                "field_label": "Gender",
+                "field_type": "multiple_choice",
+                "options": [
+                  "Female",
+                  "Male",
+                  "Non-binary/third gender",
+                  "Prefer not to say"
+                ],
+                "required": false
+              },
+              {
+                "field_id": "education",
+                "field_label": "Highest level of education completed",
+                "field_type": "multiple_choice",
+                "options": [
+                  "Some high school",
+                  "High school diploma or equivalent",
+                  "Some college",
+                  "Associate degree",
+                  "Bachelor's degree",
+                  "Master's degree",
+                  "Doctoral or professional degree",
+                  "Other"
+                ],
+                "required": false
+              },
+              {
+                "field_id": "income",
+                "field_label": "Household Annual Income",
+                "field_type": "multiple_choice",
+                "options": [
+                  "Less than $20,000",
+                  "$20,000 - $39,999",
+                  "$40,000 - $59,999",
+                  "$60,000 - $79,999",
+                  "$80,000 - $99,999",
+                  "$100,000 or more",
+                  "Prefer not to say"
+                ],
+                "required": false
+              },
+              {
+                "field_id": "occupation",
+                "field_label": "Current Employment Status",
+                "field_type": "multiple_choice",
+                "options": [
+                  "Employed full-time",
+                  "Employed part-time",
+                  "Self-employed",
+                  "Unemployed",
+                  "Student",
+                  "Retired",
+                  "Other",
+                  "Prefer not to say"
+                ],
+                "required": false
+              },
+              {
+                "field_id": "cognitive_reflection",
+                "field_label": "Cognitive Reflection Test (CRT) - How many problems out of 3 did you solve correctly?",
+                "field_type": "number",
+                "required": false,
+                "field_instructions": "Answer between 0 and 3. This helps assess reasoning style related to ambiguity tolerance."
+              },
+              {
+                "field_id": "uncertainty_tolerance",
+                "field_label": "How do you generally feel about uncertain situations? (Tolerance for uncertainty)",
+                "field_type": "scale",
+                "scale_range": 7,
+                "scale_labels": [
+                  "Strongly dislike uncertainty",
+                  "Dislike uncertainty",
+                  "Slightly dislike uncertainty",
+                  "Neutral",
+                  "Slightly tolerate uncertainty",
+                  "Tolerate uncertainty",
+                  "Strongly tolerate uncertainty"
+                ],
+                "required": false
+              },
+              {
+                "field_id": "numeracy",
+                "field_label": "How confident are you in your numeric ability (e.g., understanding probabilities and percentages)?",
+                "field_type": "Likert",
+                "scale_range": 7,
+                "scale_labels": [
+                  "Not confident at all",
+                  "Very unconfident",
+                  "Slightly unconfident",
+                  "Neutral",
+                  "Slightly confident",
+                  "Very confident",
+                  "Extremely confident"
+                ],
+                "required": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "q3_discomfort_reword": "Reworded q3_discomfort_large_reward to a future-oriented framing ('Please consider a similar decision later in the survey...') to reduce respondent habituation or fatigue caused by asking two very similar discomfort questions in immediate succession.",
+      "effort_rush_redundancy": "No structural changes were made to effort and rushing questions as per instructions; subtle differentiation in question phrasing and focus remain to minimize redundancy while maintaining necessary self-report constructs.",
+      "minor_polish_only": "All other questions and structure remain unchanged to respect the user instruction of minimal modifications focused on flagged issues."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1_revised",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "explanation": "Wording is mostly neutral, though 'influence your confidence' is slightly vague and could be interpreted as either positive or negative influence. The scale tries to capture direction and magnitude of influence but risks cognitive burden; respondents may struggle to assign degrees to an internal state (confidence change) especially with positive and negative sides in the same scale. Ambiguity in what 'confidence' specifically means in this context remains. The frequency scale label type is not the best match semantically for this question about degree of influence. Social desirability may appear as some respondents might prefer to report decreased confidence as a sign of caution."
+      },
+      {
+        "question_id": "q1_attention_check",
+        "leading_language": 3,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 2,
+        "explanation": "This is a direct attention check with explicit instruction to select a particular option, which introduces strong leading language by essentially telling the respondent what to answer. Including it as a multiple-choice question with identical response options to the substantive question adds complexity and room for accidental failure. The scale appropriateness is low here because it is not measuring a latent construct but rather compliance; treating it as a scaled item may confuse analysis."
+      },
+      {
+        "question_id": "q_baseline_risk",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "Wording is mostly clear, but 'general willingness to take risks' can be interpreted differently by respondents depending on context. Social desirability bias is moderate because risk tolerance might be viewed as socially valued or not in various settings, influencing answers. The Likert scale captures risk aversion/seeking with symmetric anchors, which is appropriate but some intermediate terms ('Slightly Risk Averse') may be interpreted variably."
+      },
+      {
+        "question_id": "q_familiarity_ambig",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "Question wording is clear, though 'ambiguous gambles' may be unfamiliar to some despite the phrase 'unknown or ambiguous outcome probabilities'. Social desirability might lead some to overstate familiarity. The 7-point Likert scale seems suitable, but the anchors cover a broad range and may induce central tendency bias."
+      },
+      {
+        "question_id": "q2_discomfort_small_reward",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "The vignette clearly specifies the choice and reward amount. The discomfort question is unidimensional and clear. Social desirability bias may cause respondents to underreport discomfort to appear more decisive. The seven-point intensity scale with descriptive anchors is appropriate, but distinctions between 'very mild' and 'mild' discomfort might not be cognitively distinct for all respondents."
+      },
+      {
+        "question_id": "q3_discomfort_large_reward",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "Same concerns as q2_discomfort_small_reward, but with a larger reward amount. Additional risk perception or emotional intensity from the larger amount might impact responses but is not captured explicitly."
+      },
+      {
+        "question_id": "q4_scenario",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 0,
+        "explanation": "Scenario text provides more concrete probability bounds, reducing prior ambiguity. However, 'somewhere between 10% and 90%' is quite broad and may be too vague to standardize respondent interpretations, permitting wide personal assumptions about actual probabilities. The lack of precise probability invites variability. It is an info statement, so no scale appropriateness issues."
+      },
+      {
+        "question_id": "q4_ce",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "explanation": "The multiple-choice options reflect intervals of CE amounts with appropriate descriptive labels. However, there is overlap and inconsistency in labels (two adjacent intervals labeled 'Very High CE' and two labeled 'Extremely High CE') which could confuse respondents. The intervals are not uniform in width, ranging from $0 up to $90+, which may bias responses. Inclusion of '$0' is good to capture refusal but risk ceiling effects still exist at the upper end ($90+ grouped together). The categorical nature limits precision and scale granularity insufficient for fine level analysis."
+      },
+      {
+        "question_id": "q4b_behavioral_reject",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "Question is straightforward behavioral choice elicitation. The question lacks an explicit mention of the gamble's ambiguous probability context here, relying on memory. Social desirability bias may influence responses if respondents perceive preferring the gamble as risky or irrational. The 5-option scale captures preference gradations well but the middle option 'Not sure' may encourage satisficing or non-commitment."
+      },
+      {
+        "question_id": "q_attention_check_behavioral",
+        "leading_language": 3,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 2,
+        "explanation": "The explicit instruction to select a specific response option introduces strong leading language and may frustrate or confuse respondents. Framing this as a behavioral preference question with a required answer is illogical and inappropriate in a multiple-choice format designed to measure real preferences."
+      },
+      {
+        "question_id": "q_effort",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "Self-reported effort is highly susceptible to social desirability bias; respondents may overstate effort to appear conscientious. The wording is straightforward with clear scale anchors. The scale is appropriate for measuring subjective effort."
+      },
+      {
+        "question_id": "q_rushed_behavior",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "Self-report of feeling rushed is clear but socially undesirable, increasing the risk of underreporting. The 7-point scale with frequency anchors is appropriate, although recall bias and interpretation differences in frequency terms like 'Sometimes' could occur."
+      },
+      {
+        "question_id": "q_demographics",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "Demographic questions are standard and straightforward. Numeracy confidence uses Likert scale; however, some respondents may interpret 'Not confident at all' and 'Very unconfident' as redundant or overlapping, potentially causing confusion. The optional gender and education items are appropriate but might limit control for some analyses if responses are missing."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Limited behavioral incentivization",
+        "severity": 3,
+        "explanation": "Although the survey uses scenario-based vignettes and some behavioral preference questions, no real incentives or behavioral tasks are included. Reliance on self-reports for ambiguity aversion and CE likely leaves hypothetical bias unaddressed, reducing ecological and external validity."
+      },
+      {
+        "issue": "Potential ceiling and floor effects in CE measurement",
+        "severity": 3,
+        "explanation": "The CE categories are uneven and have broad top end grouping. This reduces ability to discriminate among respondents with high CE, potentially biasing analysis of diminishing ambiguity aversion as CE increases."
+      },
+      {
+        "issue": "Compromised attention check design",
+        "severity": 3,
+        "explanation": "Both attention checks (q1_attention_check and q_attention_check_behavioral) rely on explicit instructions to select predetermined answers, which can induce frustration or careless responses and do not measure attention indirectly or via behavior. The currently used approach can cause false failures and/or distrust."
+      },
+      {
+        "issue": "Social desirability bias not well mitigated",
+        "severity": 3,
+        "explanation": "Multiple key questions ask for self-report on confidence, effort, willingness to take risks, and comfort, all susceptible to social desirability bias. No indirect or implicit measures are employed to reduce this bias or to detect inconsistent responding."
+      },
+      {
+        "issue": "Ambiguity in scenario probability descriptions",
+        "severity": 2,
+        "explanation": "Probabilities described as 'somewhere between 10% and 90%' are too broad, risking respondents projecting widely differing assumptions about chance events. This can increase error variance and threaten construct validity."
+      },
+      {
+        "issue": "Lack of more detailed cognitive and emotional process measures",
+        "severity": 2,
+        "explanation": "The survey does not explicitly measure cognitive strategies, anxiety, or numerical ability beyond a single numeracy confidence question, which limits interpretability of ambiguity aversion differences and potentially omits important mediators."
+      },
+      {
+        "issue": "Redundancy and conceptual overlap",
+        "severity": 1,
+        "explanation": "Questions q2_discomfort_small_reward and q3_discomfort_large_reward are similar and may cause habituation or fatigue effects if asked too closely. Also, multiple self-reports on effort and rushing overlap in concept, risking redundancy."
+      },
+      {
+        "issue": "Scale labeling inconsistencies",
+        "severity": 2,
+        "explanation": "Variation in the use of intensity adjectives across discomfort and effort scales (e.g., 'Very mild' vs. 'Somewhat low'), potential overlap in numeracy confidence anchors ('Not confident at all' vs. 'Very unconfident'), and somewhat inconsistent use of 'Slightly' and 'Somewhat' may reduce clarity and comparability."
+      },
+      {
+        "issue": "Missing demographic controls potentially relevant to ambiguity aversion",
+        "severity": 2,
+        "explanation": "Aside from basic demographics and numeracy, survey omits variables like income, occupation, cognitive reflection ability, or psychological traits (e.g., tolerance for uncertainty) which can moderate ambiguity aversion and numerical cognition."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. **Question q1 (Ambiguity in decision-making) \u2014 Ambiguity and complexity in terminology:** The phrase \"Ambiguity or uncertainty in available choices\" is somewhat redundant and may confuse respondents. Additionally, \"influences my decision-making processes\" is vague and may be interpreted differently (e.g., influencing speed, confidence, or outcome). This risks ambiguous responses and threatens construct validity.\n\n2. **Questions q2 and q3 (Discomfort due to ambiguity) \u2014 Incomplete and inconsistent scale labels:** Both use a 7-point intensity scale, but scale points 2 and 6 are left unlabeled (\"\"). This may confuse respondents, affect their interpretation of scale points, and reduce reliability. Also, the use of the word \"discomfort or hesitation\" conflates two distinct psychological experiences without distinguishing them, risking a double-barreled question.\n\n3. **Questions q2 and q3 \u2014 Context specificity and comparability:** The only difference is the reward magnitude (\"small\" vs. \"large\") but no objective numeric ranges or definitions are provided to clarify what \"small\" and \"large\" mean. This ambiguity may introduce variability in respondents\u2019 interpretation, limiting comparability of responses between the two questions.\n\n4. **Question q4 (Certainty Equivalent) \u2014 Ambiguity in gamble description and mixing probability information:** The question describes an \"ambiguous gamble\" but includes a 50% chance to win $100 and a 50% chance to win nothing, which sounds like a risky gamble with known probabilities, not an ambiguous gamble (where probabilities are unknown). This directly contradicts the claim of unknown probabilities and may confuse respondents about the meaning of ambiguity in the survey\u2019s context. This inconsistency threatens the construct validity of the CE measurement.\n\n5. **Question q4 \u2014 Multiple choice CE ranges lack granularity and may induce preference bias:** The brackets mix ranges of uneven widths (e.g., \"<$20\" vs. \"$20-$39\" vs. \"$40-$59\") and impose arbitrary breaks without justification. Some respondents may find their CE does not fit cleanly into categories, potentially distorting measurement accuracy.\n\n6. **Question q5 (Attention check) \u2014 Social desirability bias and leading nature:** Asking directly \"Did you carefully read and pay attention?\" strongly invites socially desirable answers (primarily \"Yes\"). The inclusion of \"Prefer not to answer\" may not adequately reduce this bias. Without behavioral or indirect measures of attention, this self-report may be unreliable as an attention check.\n\n7. **Question q6 (Self-reported effort) \u2014 Same concern of social desirability bias and redundancy:** Similar to q5, this question asks respondents to report their own conscientiousness. The 7-point scale may not counteract the tendency to overstate diligence. Furthermore, it overlaps in content with q5, potentially leading to respondent fatigue or recognition of redundancy.\n\n8. **General concern \u2014 Lack of reverse-coded or negatively framed items:** All agree-disagree questions are positively framed; this may encourage acquiescence bias. Including negatively worded counterparts could help detect response biases.\n\n9. **General concern \u2014 Missing baseline or control questions:** There are no questions assessing respondents\u2019 baseline risk preferences or familiarity with ambiguous gambles, which are critical covariates in ambiguity aversion research and may confound interpretation.\n\n10. **General concern \u2014 Unclear survey flow and absence of scenario-based contextualization:** The survey references \"the ambiguous gamble described below\" only in q4 but does not present a concrete, interactive scenario for respondents to engage. This may increase hypothetical bias and limit respondents\u2019 ability to provide accurate CEs.\n\n11. **General concern \u2014 Potential for inconsistency in scale types and labels:** The mixture of Likert scales for agreement and intensity scales for discomfort without consistent labeling strategies may confuse respondents about how to interpret response options across questions, reducing comparability.\n\n12. **General concern \u2014 Potential ceiling/floor effects in CE categories:** The highest category \"$80 or more (Very High CE)\" is open-ended upwards, which can lead to ceiling effects where differentiation at high CE levels is impossible. Similarly, the lowest category is very broad, possibly obscuring substantial differences at the low end.\n\nIn summary, these issues collectively risk construct validity, measurement reliability, and respondent comprehension, undermining the survey\u2019s ability to rigorously examine ambiguity aversion as intended."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. **Questions q1 and q1b_neg (Positive and negative framing of confidence under ambiguity)**  \n   - Potential for acquiescence bias remains despite inclusion of negative phrasing. Both questions use the same Likert scale, but respondents may still default to agreeing, especially given their direct negation of one another. Without counterbalancing or attention checks specific to these items, responses may be unreliable.  \n   - Also, the wording \u201caffects how confident I feel\u201d is somewhat vague and subjective; \u201caffects\u201d could mean increase or decrease in confidence, leaving respondents uncertain about how to interpret the statement.\n\n2. **Questions q2_context and q2b_neg, q3_context and q3b_neg (Discomfort and calmness measures for ambiguous gambles)**  \n   - Pairing \u201cdiscomfort\u201d and \u201ccalmness\u201d scales attempts to measure opposite affective states but uses reverse-coded labels that may confuse respondents (e.g., the calmness scale transitions from positive states to negative states, but the middle point \u201cNeither calm nor uneasy\u201d lacks symmetry with \u201cModerate discomfort\u201d on the discomfort scale). This asymmetry threatens scale equivalence and comparability across items.  \n   - The \u201cvery mild discomfort\u201d and \u201cvery strong discomfort\u201d labels on the discomfort scales might not be clearly distinct for respondents, risking scale interpretation difficulty.  \n   - The use of affect-based intensity terms without concrete behavioral anchors may yield variable individual interpretations.  \n   - Cognitive load is increased by asking respondents to switch between discomfort and calmness constructs for ostensibly the same decision scenario, risking confusion or inconsistent responses.\n\n3. **Question q4 (Certainty Equivalent multiple choice options)**  \n   - The CE brackets are uneven in width and label consistency. Specifically, the lower categories have narrower ranges ($10 increments) while the top includes a broad open-ended category \"$80 or more (Extremely High CE),\" which risks ceiling effects and loss of granularity for very high CE respondents.  \n   - The overlapping labels \u201cVery High CE\u201d for both $60-$69 and $70-$79 categories could confuse respondents or cause misclassification.  \n   - There is no option for choosing a CE of exactly $0, which may be relevant for highly ambiguity-averse individuals.  \n   - The presence of both \u201cModerate-Low,\u201d \u201cModerate,\u201d and \u201cModerate-High\u201d categories may be difficult for respondents to distinguish in terms of meaning, increasing response error.\n\n4. **Question q4b_neg (Rejection of the ambiguous gamble in favor of $30)**  \n   - The wording \u201creject the ambiguous gamble even if you were offered a guaranteed $30\u201d is complex and may confuse some respondents, especially since the gamble\u2019s reward is $100 (from q4_scenario). The mismatch between gamble reward ($100) and sure amount ($30) can cause logical inconsistencies or challenge participant understanding.  \n   - The Likert responses on agreement to rejection of gamble may not fully capture behavioral intentions or preferences and can be prone to social desirability bias if respondents infer an expected answer.\n\n5. **Question q_attention_check_behav (Instructional manipulation check)**  \n   - The item is a classic direct instruction manipulation check, which can be effective but also may frustrate or confuse respondents who miss instructions accidentally rather than intentionally. Without embedded behavioral or implicit checks, it risks both false positives and negatives.  \n   - Use of a 5-point Likert scale for selecting a single correct answer (\u201cAgree\u201d) is unnecessary complexity that could cause unintended errors if a respondent misclicks.\n\n6. **Questions q_effort_indirect and q_effort_neg (Self-reported effort and rushing)**  \n   - Both rely on self-report, susceptible to social desirability bias. Given self-awareness limitations, respondents may overestimate effort or underreport rushing.  \n   - These questions are somewhat redundant, risking respondent fatigue or response patterning.  \n   - The reverse-coded nature of q_effort_neg is appropriate, but without clear instructions on reverse-coded items, some respondents might respond inconsistently, reducing scale validity.\n\n7. **General Problem \u2014 Absence of concrete behavioral or incentivized measures alongside self-report**  \n   - Although the survey includes scenario descriptions, all key dependent variables (e.g., discomfort, calmness, CE) rely on self-report scales with no actual behavioral choices or incentivization. This increases hypothetical bias and threatens external validity.\n\n8. **General Problem \u2014 Ambiguous wording and cognitive load in scenario descriptions**  \n   - Some scenario phrases such as \u201cprobability of winning is unknown (cannot be precisely estimated)\u201d might be interpreted variably. Lack of numeric probability bounds or examples risks respondents projecting their own assumptions about probability distributions, undermining standardization.  \n   - Switching back and forth between calmness and discomfort measures within similar scenarios adds unnecessary cognitive burden and may reduce measurement precision.\n\n9. **General Problem \u2014 Potential for order effects due to adjacent related items with different valence**  \n   - Having positively and negatively framed pairs (q1/q1b_neg, q2_context/q2b_neg, q3_context/q3b_neg) in immediate sequence could induce order or contrast effects, with respondents\u2019 answers influenced by prior questions rather than independent judgments.\n\n10. **General Problem \u2014 Incomplete coverage of ambiguity aversion construct**  \n    - The survey measures discomfort, calmness, confidence, familiarity, risk-taking, and CE, but misses other critical dimensions like emotions (e.g., anxiety), cognitive strategies, or ambiguity comprehension checks. This incomplete construct operationalization may limit the explanatory power of findings.\n\n11. **General Problem \u2014 Lack of demographic or contextual control questions**  \n    - No demographic questions (age, education, numeracy) or contextual factors included to control for confounding variance in ambiguity perceptions or numerical cognition.\n\n12. **General Problem \u2014 Scale label inconsistencies across questions**  \n    - Some scales use \u201cSomewhat\u201d for intermediate positions while others use \u201cModerate\u201d or \u201cSlightly,\u201d which may not be equivalent in intensity, thereby potentially confusing respondents and impairing cross-question comparisons.\n\nOverall, while the survey shows improvement with added baseline and scenario context, challenges remain with scale labeling, question clarity, cognitive load from alternating valences, and reliance on self-report without behavioral validation. These issues threaten construct validity, reliability, and data quality."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

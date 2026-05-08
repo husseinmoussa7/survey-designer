@@ -1,0 +1,143 @@
+{
+  "timestamp": "2026-04-10T14:32:01.123456",
+  "project": "hotel_booking_study",
+  "survey_v0": {
+    "theme": "Hotel Booking Decision Making",
+    "purpose": "Understand how uncertainty affects consumer hotel booking choices",
+    "questions": [
+      {
+        "question_id": "q1",
+        "question_text": "Wouldn't you agree that mystery packages are exciting?",
+        "input_type": "scale",
+        "input_config": {
+          "min": 1,
+          "max": 5
+        }
+      },
+      {
+        "question_id": "q2",
+        "question_text": "How old are you and what is your gender?",
+        "input_type": "text_input",
+        "input_config": {}
+      },
+      {
+        "question_id": "q3",
+        "question_text": "Did you choose Package A or B?",
+        "input_type": "multiple_choice",
+        "input_config": {
+          "options": [
+            "Package A",
+            "Package B"
+          ]
+        }
+      },
+      {
+        "question_id": "q4",
+        "question_text": "To what extent did wanting to be surprised influence your choice?",
+        "input_type": "scale",
+        "input_config": {
+          "min": 1,
+          "max": 9
+        }
+      }
+    ]
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Hotel Booking Decision Making",
+      "purpose": "Understand how uncertainty affects consumer hotel booking choices",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you find mystery travel packages exciting?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "labels": {
+              "1": "Not at all exciting",
+              "7": "Extremely exciting"
+            }
+          }
+        },
+        {
+          "question_id": "q2a",
+          "question_text": "What is your age?",
+          "input_type": "text_input",
+          "input_config": {}
+        },
+        {
+          "question_id": "q2b",
+          "question_text": "What is your gender?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Male",
+              "Female",
+              "Non-binary",
+              "Prefer not to say"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Which package did you choose?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Package A (known hotel)",
+              "Package B (mystery hotel)"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "To what extent did the desire for surprise influence your choice?",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 9,
+            "labels": {
+              "1": "Not at all",
+              "9": "Very much"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "issue_type": "Leading language",
+        "description": "Original wording 'Wouldn't you agree...' is leading \u2014 implies the correct answer is 'yes'. Revised wording is neutral.",
+        "severity": 3
+      },
+      {
+        "question_id": "q2",
+        "issue_type": "Double-barreled question",
+        "description": "Asking age AND gender in a single question conflates two distinct demographic variables. Split into q2a and q2b.",
+        "severity": 3
+      },
+      {
+        "question_id": "q4",
+        "issue_type": "Scale appropriateness",
+        "description": "9-point scale without labeled anchors risks inconsistent interpretation. Labels added to endpoints.",
+        "severity": 2
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue_type": "Missing construct",
+        "description": "No measure of risk tolerance or uncertainty aversion, which are central theoretical constructs in this domain.",
+        "recommended_action": "Add a validated risk tolerance scale (e.g., 2-3 items from Dohmen et al. 2011)."
+      },
+      {
+        "issue_type": "Response order effect",
+        "description": "Package choice question (q3) precedes the surprise-influence question (q4), which may prime respondents to rationalize their choice.",
+        "recommended_action": "Consider counterbalancing or placing attitudinal measures before behavioral ones."
+      }
+    ]
+  }
+}

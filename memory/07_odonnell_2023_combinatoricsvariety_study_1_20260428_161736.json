@@ -1,0 +1,424 @@
+{
+  "timestamp": "2026-04-28T16:17:36.815165",
+  "project": "07_odonnell_2023_combinatoricsvariety_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Combinatorics and Variety in Consumer Choice",
+      "purpose": "To design a survey testing the hypothesis that increasing pathways to variety influences consumers to choose more variety in bundles.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree with the statement: Increasing the pathways to variety influences me to choose more variety in bundles.",
+          "comment": "The original wording is first-person and may lack neutrality. The term 'pathways to variety' can be technical for respondents without further context. The Likert scale with seven points is appropriate but could benefit from clearer scale labels and midpoint labeling."
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Did you notice whether the bundles were 'constructed' by yourself or 'prepackaged' before choosing?",
+          "comment": "Quotes around 'constructed' and 'prepackaged' may confuse participants. The phrase 'constructed by yourself' is informal; 'self-constructed' or 'self-selected' is more precise. Response options should be mutually exclusive and clearly worded."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please select the option that best describes your understanding of the different pathways to variety in this study.",
+          "comment": "Question aims to assess understanding but could improve clarity by simplifying or defining 'pathways to variety'. Response options are mostly appropriate but can be rephrased for consistency and neutrality."
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Check the box to confirm you have paid attention to the task and instructions.",
+          "comment": "The attention check question is standard but currently uses 'multiple_choice' which is not technically accurate for a single checkbox. Options limited to one choice restrict feedback; a binary choice may enhance validity. Wording could be more formally expressed."
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Combinatorics and Variety in Consumer Choice",
+      "purpose": "This survey aims to empirically test the hypothesis that increasing the number and modes of pathways to variety influences consumers to select greater variety in product bundles.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate your level of agreement with the following statement: \"Increasing the number or ways to access variety influences consumers to select bundles with greater variety.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "range": 7,
+            "anchors": [
+              "Strongly Disagree",
+              "Strongly Agree"
+            ],
+            "middle_label": "Neutral"
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Prior to making your selection, did you notice whether the bundles were created by yourself (self-constructed) or pre-assembled (prepackaged)?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Yes, I noticed the bundles were self-constructed",
+              "Yes, I noticed the bundles were prepackaged",
+              "No, I did not notice how the bundles were formed"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Which of the following best reflects your understanding of the term 'pathways to variety' as used in this study?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "The number of individual choices available to the consumer",
+              "The method by which bundles are assembled or created",
+              "The diversity of product types within the bundle",
+              "I am uncertain about the meaning"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please confirm that you have carefully read and understood the instructions and task requirements by checking the box below.",
+          "input_type": "checkbox",
+          "input_config": {
+            "options": [
+              "I confirm that I have read and understood the instructions"
+            ],
+            "required": true
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Combinatorics and Variety in Consumer Choice",
+      "purpose": "This survey aims to empirically test the hypothesis that increasing the number of pathways to obtain product variety influences individual consumers to select bundles with greater diversity of different products. Additionally, the survey collects demographic and behavioral data to understand heterogeneity and intentions behind consumer choices. Examples and definitions are provided to clarify key concepts such as 'pathways,' 'variety,' and 'bundles' to ensure consistent understanding.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "In this survey, \"variety\" refers specifically to the number of different product types included in a product bundle, and \"pathways\" means the distinct methods available to select those products (for example, building your own bundle versus choosing prepackaged bundles).\n\nPlease indicate your level of agreement with the following statement:\n\n\"Having more pathways (i.e., different methods) available to select products increases the number of different product types I include in my bundle.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "range": 7,
+            "anchors": [
+              "Strongly Disagree",
+              "Strongly Agree"
+            ],
+            "middle_label": "Neutral"
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Regarding the product bundles, which of the following did you consciously notice before making your selection? (Select all that apply)\n\nNote: Please select only the options that apply. If none apply, please select \"I did not notice how the bundles were formed.\"",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I noticed the bundles were self-constructed by myself",
+              "I noticed the bundles were prepackaged",
+              "I noticed the bundles were formed by a combination of methods",
+              "I did not notice how the bundles were formed"
+            ],
+            "allow_multiple_selections": true,
+            "max_selections": 3
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Based on the explanations provided earlier, which single option best matches your understanding of the term \"pathways to variety\" as used in this study?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "The number of different product choices available to me as a consumer",
+              "The ways or methods by which bundles are created or assembled",
+              "The variety (range) of product types within a bundle",
+              "I am uncertain about the meaning of this term"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "To ensure you understand the instructions and task requirements, please indicate your level of understanding:",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "range": 5,
+            "anchors": [
+              "I do not understand the instructions",
+              "I somewhat understand the instructions",
+              "Neutral",
+              "I mostly understand the instructions",
+              "I fully understand the instructions"
+            ],
+            "middle_label": "Neutral"
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Thinking practically, how likely are you to choose product bundles with greater variety (i.e., more different types of products) in your next purchase or selection task? Please respond based on your actual preference and typical behavior, not what you think is expected.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "range": 7,
+            "anchors": [
+              "Very unlikely",
+              "Very likely"
+            ],
+            "middle_label": "Neither likely nor unlikely"
+          }
+        },
+        {
+          "question_id": "q6_behavior",
+          "question_text": "Thinking about your most recent selection of a product bundle similar to those in this study, how many different types of products did you actually include in your final bundle?",
+          "input_type": "number",
+          "input_config": {
+            "min": 0,
+            "max": 100,
+            "validation_message_min": "Please enter zero or more.",
+            "validation_message_max": "Please enter a realistic number of different product types."
+          }
+        },
+        {
+          "question_id": "check_attention",
+          "question_text": "For quality control, please select \"Agree\" for this question.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Strongly Disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        },
+        {
+          "question_id": "check_consistency",
+          "question_text": "To ensure consistent responses, please select \"Sometimes (3-5 times)\" for this question.",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Never",
+              "Rarely (1-2 times)",
+              "Sometimes (3-5 times)",
+              "Often (6-10 times)",
+              "Very often (more than 10 times)"
+            ]
+          }
+        },
+        {
+          "question_id": "demographics",
+          "question_text": "To help us understand the diversity of participants, please provide the following information:",
+          "input_type": "section",
+          "input_config": {
+            "questions": [
+              {
+                "question_id": "age",
+                "question_text": "Age (in years):",
+                "input_type": "number",
+                "input_config": {
+                  "min": 16,
+                  "max": 100,
+                  "validation_message_min": "Please enter an age of 16 or older.",
+                  "validation_message_max": "Please enter a valid age (100 or younger)."
+                }
+              },
+              {
+                "question_id": "gender",
+                "question_text": "Gender:",
+                "input_type": "single_choice",
+                "input_config": {
+                  "options": [
+                    "Female",
+                    "Male",
+                    "Non-binary/Third gender",
+                    "Prefer not to say"
+                  ],
+                  "allow_other": true
+                }
+              },
+              {
+                "question_id": "gender_other_specify",
+                "question_text": "If you selected 'Other' for gender, please specify:",
+                "input_type": "text",
+                "input_config": {
+                  "required_if": {
+                    "gender": "Other"
+                  }
+                }
+              },
+              {
+                "question_id": "education",
+                "question_text": "Highest level of education completed:",
+                "input_type": "single_choice",
+                "input_config": {
+                  "options": [
+                    "Less than high school",
+                    "High school diploma or equivalent",
+                    "Some college",
+                    "Bachelor's degree",
+                    "Graduate or professional degree",
+                    "Prefer not to say"
+                  ]
+                }
+              },
+              {
+                "question_id": "purchase_frequency",
+                "question_text": "In the past 3 months, how often have you purchased product bundles similar to those in this study?",
+                "input_type": "single_choice",
+                "input_config": {
+                  "options": [
+                    "Never",
+                    "Rarely (1-2 times)",
+                    "Sometimes (3-5 times)",
+                    "Often (6-10 times)",
+                    "Very often (more than 10 times)"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "general": "No changes made to question content or structure, as no redundancies were identified. Minor polishing was reviewed but deemed unnecessary given that prior versions addressed duplication and overlap effectively."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 1,
+          "comments": "The question includes definitions upfront, which is good for clarity; however, the phrase \"Having more pathways... increases...\" implies a causal relationship, potentially leading respondents towards agreement (leading language). Social desirability bias is moderate as respondents may want to appear rational. The wording \"number of different product types\" might be interpreted differently by respondents (e.g., quantity vs. qualitative variety). The 7-point Likert scale is appropriate, but no contextual anchors beyond endpoints are given, possibly affecting granularity of responses."
+        }
+      },
+      {
+        "question_id": "q2",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 3,
+          "scale_appropriateness": 1,
+          "comments": "Allowing multiple selections here is appropriate given the question. However, the option \"I did not notice how the bundles were formed\" logically conflicts with selecting any noticing options if chosen together, causing ambiguity. Maximum selections are capped at 3, but total options are 4; this may confuse respondents if they want to select all 'noticing' options plus 'did not notice.' The wording about noticing could benefit from specifying time frame or clarity."
+        }
+      },
+      {
+        "question_id": "q3",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 0,
+          "comments": "The question instructs to answer based on Q1 explanation, which helps reduce ambiguity. However, the options are conceptually overlapping and may confuse respondents (e.g., 'number of product types', 'diversity of product types'). The meaning of 'pathways to variety' is abstract and might not be uniformly understood despite provided definitions. Single-choice format matches intent."
+        }
+      },
+      {
+        "question_id": "q4",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 3,
+          "comments": "The inclusion of 'Neutral' as both an anchor and middle label on a 5-point scale is confusing; a middle label should not duplicate an anchor. The scale wording lacks symmetry and gradation, with only 'I do not understand' and 'I understand well' as anchors\u2014middle options are unlabeled besides 'Neutral,' which is non-informative. This is a must-fix issue. Social desirability bias is relevant as participants may overstate understanding to proceed."
+        }
+      },
+      {
+        "question_id": "q5",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 1,
+          "comments": "The question wording is clear. However, asking about 'likelihood' to choose bundles with greater variety can induce social desirability bias, since respondents may want to appear more exploratory or diverse in selection. The 7-point Likert scale with clear anchors and middle label is appropriate, though a time frame or situational context might improve interpretability."
+        }
+      },
+      {
+        "question_id": "check_attention",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0,
+          "comments": "The instruction explicitly asks for a specific answer, which is leading by design; as an attention check, this is standard. No other issues."
+        }
+      },
+      {
+        "question_id": "demographics",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0,
+          "comments": "Demographic questions are standard and well structured. The lower age limit of 16 is acceptable depending on target population but should be justified. Allowing 'Prefer not to say' and 'Other' options reduces social desirability bias somewhat. The gender specification question could cause minor confusion if 'Other' is not linked clearly to this follow-up question via survey logic. Education and purchase frequency are well scaled. Social desirability may arise particularly with education and purchase frequency."
+        }
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Redundant or overlapping questions",
+        "severity": 1,
+        "comments": "No direct redundancy noted as previous versions with duplicate questions seem addressed."
+      },
+      {
+        "issue": "Missing constructs related to actual behavior",
+        "severity": 3,
+        "comments": "The survey relies heavily on self-reported agreement and intentions but does not capture actual observed behavior or choice outcomes explicitly, which is critical given the theoretical focus on consumers selecting variety in bundles."
+      },
+      {
+        "issue": "Potential theoretical gap in measuring cognitive understanding and perception",
+        "severity": 2,
+        "comments": "Though definitions are provided, the survey has limited measurement of respondents' conceptual grasp or comprehension consistency beyond Q3 and Q4, which have issues. This threatens validity in testing the hypothesized mechanism."
+      },
+      {
+        "issue": "Social desirability and hypothetical bias risk",
+        "severity": 2,
+        "comments": "Intentions and agreement with hypotheses are prone to respondents giving normatively desirable answers rather than reflecting true preferences."
+      },
+      {
+        "issue": "Ambiguity in core constructs despite provided definitions",
+        "severity": 2,
+        "comments": "Despite efforts to define 'variety,' 'pathways,' and 'bundles,' wording overlaps and subtle distinctions in response options (especially in Q3) threaten construct validity and reliability."
+      },
+      {
+        "issue": "Scale inconsistencies and anchor labeling in comprehension question (Q4)",
+        "severity": 3,
+        "comments": "Must fix before deployment to avoid misinterpretation and bias in assessing understanding."
+      },
+      {
+        "issue": "Lack of attention or quality checks beyond single explicit attention question",
+        "severity": 2,
+        "comments": "Including multiple attention or consistency checks would strengthen data quality assurance."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: The statement is double-barreled, combining \"increasing the number\" and \"increasing the ways\" to access variety into one item. Respondents may have different interpretations or attitudes toward each part, making it unclear what their agreement refers to. This threatens internal validity.\n\n2. Question q1: The phrase \"influences consumers to select bundles with greater variety\" is somewhat abstract and impersonal, asking participants to evaluate an effect on \"consumers\" in general rather than their own behavior or perception. This may reduce response accuracy and relevance.\n\n3. Question q2: The options assume that participants either noticed exactly one mode (\"self-constructed\" or \"prepackaged\") or did not notice at all, ignoring the potential that participants could have noticed both or other modes. This forced-choice may not accurately capture awareness.\n\n4. Question q2: The wording \"Prior to making your selection\" might cause recall bias if the participant is uncertain or has difficulty remembering, thus affecting the validity of the answer.\n\n5. Question q3: The item \"multiple_choice\" format allows selecting multiple options, but the question asks for \"best reflects,\" which implies a single best choice. This is a mismatch of question intent versus response format, leading to ambiguous data.\n\n6. Question q3: The option \"I am uncertain about the meaning\" is grouped with substantive options rather than made exclusive or placed at the end to allow for a clear uncertainty capture, which can reduce interpretability.\n\n7. Question q4: A forced confirmation checkbox that requires participants to claim understanding may encourage acquiescence bias, with participants checking merely to proceed, regardless of actual comprehension.\n\n8. Survey-wide: There is no demographic or background information to assess heterogeneity, potential confounds, or generalizability.\n\n9. Survey-wide: The survey does not assess actual behavior or intentions directly, relying instead on self-reports about abstract statements and recall, which may be influenced by social desirability or demand characteristics.\n\n10. Survey-wide: The scales and question wording lack clear adaptation or examples relevant to the participants\u2019 context, risking ambiguous interpretation of core concepts like \"variety,\" \"pathways,\" and \"bundles.\""
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1a and q1b: These two questions appear highly redundant, both asking about agreement with statements on how multiple pathways influence variety selection. The subtle difference in wording (\"number of pathways\" vs. \"multiple ways or methods\") may confuse respondents or induce satisficing due to repetition, potentially contaminating data through response fatigue.\n\n2. Question q1a and q1b: The wording \"influences how much variety you select\" remains vague\u2014\u201chow much variety\u201d is imprecise and may be interpreted differently (number of different products, diversity, or ratio). This ambiguity threatens construct validity.\n\n3. Question q2: The instruction \"Select all that apply\" combined with the inclusion of \"I did not notice how the bundles were formed\" as a selectable option alongside noticing options introduces conceptual contradiction. Selecting both \"I noticed the bundles were self-constructed\" and \"I did not notice how...\" is logically inconsistent, but allowed by multiple selection. This may confuse respondents and pollute data.\n\n4. Question q2: The options only cover \"self-constructed\" and \"prepackaged,\" yet bundles could potentially be formed by other methods or mixed modes, which are not accounted for, limiting content validity.\n\n5. Question q2a: The rationale for this question following q2 is unclear and may cause redundancy or cognitive burden. Also, it uses \"If you had difficulty recalling\u2026please indicate,\" but asks for a forced choice between \"I clearly remember\" and \"I am unsure or do not recall,\" which could produce socially desirable responses or forced guessing.\n\n6. Question q3: The instruction requests the \"single option\" that best reflects understanding, which matches the single_choice input, but it demands a subjective interpretation of the term \"pathways to variety\" without any definitional grounding given to respondents, potentially resulting in low reliability and varied interpretations.\n\n7. Question q4: This Likert scale assessing understanding ranges from \"I do not understand the instructions\" to \"I understand the instructions well\" without including an explicit midpoint anchor such as \"Neutral\" or \"Somewhat understand.\" Labeling the midpoint as \"Somewhat understand\" may bias respondents towards more positive self-assessment.\n\n8. Question q5: The middle label of the Likert scale is \"Unsure,\" which is not symmetric nor a mid-point attitude. Using \"Unsure\" in the middle of a likelihood scale is unusual and may mix uncertainty with ambivalence, thus confusing analysis and interpretation.\n\n9. Demographic Section, age: Providing a minimum age of 18 excludes younger adult participants if relevant, and the upper limit of 120 years, while generous, may invite invalid inputs; no attention check or validation is mentioned for extreme values.\n\n10. Demographic Section, gender: The option \"Other (please specify)\" is listed as both a fixed option and allowed as \"allow_other\" with a text field. This double provision can confuse coding or data categorization.\n\n11. Demographic Section, purchase_frequency: The scale ranges from \"Never\" to \"Always,\" but \"Always\" in self-reported purchase frequency can be ambiguous or unrealistic, potentially leading to exaggerated responses; no time frame (e.g., per month) is specified to anchor the frequency.\n\n12. Survey overall: There is no attention or quality check question to detect random or careless responses.\n\n13. Survey overall: Several questions (q1a, q1b, q5) rely on subjective self-reports of intentions or beliefs rather than observed behavior, increasing susceptibility to social desirability and hypothetical bias.\n\n14. Survey overall: The transition between questions lacks contextual explanations or examples to help participants understand key constructs (\"pathways,\" \"variety,\" \"bundle\"), risking varied interpretations and measurement error."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

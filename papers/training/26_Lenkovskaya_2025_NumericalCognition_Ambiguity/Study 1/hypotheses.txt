@@ -1,0 +1,1 @@
+H1: Ambiguity aversion decreases as the magnitude of the CE increases.

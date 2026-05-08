@@ -1,0 +1,14 @@
+critique_survey:
+  description: >-
+    Review the enhanced survey (Survey v1) and produce a structured adversarial critique.
+    For each question assess: (1) leading language, (2) double-barreled structure,
+    (3) social desirability bias, (4) ambiguous wording, (5) scale appropriateness.
+    At the survey level, flag missing constructs, redundant items, and theoretical gaps.
+    Be adversarial — your job is to find problems, not validate the design.
+    Severity: 1 = minor, 2 = moderate, 3 = must fix before deployment.
+  expected_output: >-
+    A JSON object with two keys:
+    "question_critiques": list of {question_id, issue_type, description, severity (1-3)}
+    "survey_level_issues": list of {issue_type, description, recommended_action}
+    If no issues found for a question, omit it from the list.
+  agent: survey_critic

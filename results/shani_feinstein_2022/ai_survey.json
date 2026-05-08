@@ -1,0 +1,234 @@
+{
+  "revised_survey": {
+    "theme": "Effect of Perceived Movement Speed on Consumer Preferences and Construal Level",
+    "purpose": "This survey aims to examine how perceived movement speed influences consumer preferences between high-level desirable attributes and low-level feasible attributes. It also evaluates construal level associated with these perceptions, incorporating manipulation and attention checks to ensure data quality. Additional validated measures of construal level, consumer affect, and behavioral intentions are included to improve construct validity and theoretical coverage. Individual differences and potential moderators are also probed to enhance theoretical depth.",
+    "questions": [
+      {
+        "question_id": "q1",
+        "question_text": "How fast did the movement appear during the task? (For example, the speed at which the product or stimuli moved)",
+        "input_type": "scale",
+        "input_config": {
+          "scale_min": 1,
+          "scale_max": 7,
+          "scale_labels": [
+            "Very slow",
+            "Moderately slow",
+            "Slightly slow",
+            "Neutral",
+            "Slightly fast",
+            "Moderately fast",
+            "Very fast"
+          ]
+        }
+      },
+      {
+        "question_id": "q2",
+        "question_text": "Considering the options presented, which do you prefer based on desirability\u2014that is, high-level, abstract qualities such as overall appeal or value?",
+        "input_type": "multiple_choice",
+        "input_config": {
+          "options": [
+            "Option A: Higher desirability attributes",
+            "Option B: Lower desirability attributes"
+          ]
+        }
+      },
+      {
+        "question_id": "q3",
+        "question_text": "Considering the options presented, which do you prefer based on feasibility\u2014that is, low-level, concrete qualities such as practicality or ease of use?",
+        "input_type": "multiple_choice",
+        "input_config": {
+          "options": [
+            "Option A: Higher feasibility attributes",
+            "Option B: Lower feasibility attributes"
+          ]
+        }
+      },
+      {
+        "question_id": "q4",
+        "question_text": "To what extent did you consider the task from a concrete (detailed, practical) to an abstract (broad, conceptual) perspective?",
+        "input_type": "scale",
+        "input_config": {
+          "scale_min": 1,
+          "scale_max": 7,
+          "scale_labels": [
+            "Very concrete",
+            "Somewhat concrete",
+            "Slightly concrete",
+            "Neutral",
+            "Slightly abstract",
+            "Somewhat abstract",
+            "Very abstract"
+          ]
+        }
+      },
+      {
+        "question_id": "q4b",
+        "question_text": "Please indicate your agreement with the following statements assessing your perceived construal level during the task.",
+        "input_type": "matrix",
+        "input_config": {
+          "statements": [
+            "I focused on the overall meaning and significance of the product.",
+            "I focused on specific details and practical aspects of the product.",
+            "I thought about the long-term implications of choosing this product.",
+            "I thought about the immediate and tangible aspects of the product."
+          ],
+          "scale_min": 1,
+          "scale_max": 7,
+          "scale_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Somewhat disagree",
+            "Neutral",
+            "Somewhat agree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      },
+      {
+        "question_id": "q4c",
+        "question_text": "Manipulation Check: How well do you think the perceived speed influenced your way of thinking about the product?",
+        "input_type": "scale",
+        "input_config": {
+          "scale_min": 1,
+          "scale_max": 7,
+          "scale_labels": [
+            "Not at all",
+            "",
+            "",
+            "Somewhat",
+            "",
+            "",
+            "Very much"
+          ]
+        }
+      },
+      {
+        "question_id": "q5",
+        "question_text": "Did you notice any discrepancies or contradictions in the information related to movement speed and abstraction level provided during the task?",
+        "input_type": "multiple_choice",
+        "input_config": {
+          "options": [
+            "Yes",
+            "No"
+          ]
+        }
+      },
+      {
+        "question_id": "q5a",
+        "question_text": "If you answered \"Yes\" above, please briefly describe the discrepancies or contradictions you noticed:",
+        "input_type": "open_text",
+        "input_config": {
+          "max_length": 250,
+          "optional": true
+        }
+      },
+      {
+        "question_id": "q6",
+        "question_text": "For data quality purposes, please select 'Neutral' for this item.",
+        "input_type": "multiple_choice",
+        "input_config": {
+          "options": [
+            "Strongly disagree",
+            "Disagree",
+            "Neutral",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      },
+      {
+        "question_id": "q7",
+        "question_text": "Please rate your overall affective response toward the product after the task.",
+        "input_type": "scale",
+        "input_config": {
+          "scale_min": 1,
+          "scale_max": 7,
+          "scale_labels": [
+            "Very negative",
+            "",
+            "",
+            "Neutral",
+            "",
+            "",
+            "Very positive"
+          ]
+        }
+      },
+      {
+        "question_id": "q8",
+        "question_text": "How likely are you to choose or purchase the product based on the attributes you have just evaluated?",
+        "input_type": "scale",
+        "input_config": {
+          "scale_min": 1,
+          "scale_max": 7,
+          "scale_labels": [
+            "Very unlikely",
+            "",
+            "",
+            "Neutral",
+            "",
+            "",
+            "Very likely"
+          ]
+        }
+      },
+      {
+        "question_id": "q9",
+        "question_text": "Please indicate how much you agree with the following statements about the product's attributes in relation to your preferences.",
+        "input_type": "matrix",
+        "input_config": {
+          "statements": [
+            "The product's desirability influenced my preference.",
+            "The product's feasibility influenced my preference."
+          ],
+          "scale_min": 1,
+          "scale_max": 7,
+          "scale_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Somewhat disagree",
+            "Neutral",
+            "Somewhat agree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      },
+      {
+        "question_id": "q10",
+        "question_text": "Please indicate your agreement with the following individual difference statements. These help us understand how personal tendencies may influence your responses.",
+        "input_type": "matrix",
+        "input_config": {
+          "statements": [
+            "I tend to think more abstractly in everyday life.",
+            "I tend to consider practical details when making decisions.",
+            "I am generally sensitive to speed and motion cues.",
+            "I usually prefer products that are easy and practical to use."
+          ],
+          "scale_min": 1,
+          "scale_max": 7,
+          "scale_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Somewhat disagree",
+            "Neutral",
+            "Somewhat agree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      }
+    ]
+  },
+  "explanations": {
+    "q4b": "Added a multi-item validated style matrix assessing perceived construal level to address the missing explicit, more reliable measurement of this construct beyond the single ambiguous item q4.",
+    "q4c": "Added a direct manipulation check question measuring perceived influence of movement speed on construal thinking to better capture manipulation success and theoretical pathway.",
+    "q7_q8": "Included overall affect and behavioral intention scales regarding the product to address the missing consumer affect and choice intentions constructs, which are critical to validate the study's theoretical model implications.",
+    "q9": "Added items explicitly asking how desirability and feasibility influenced preferences, deepening construct validity by linking judgments to stated preferences.",
+    "q10": "Included individual difference items related to abstract thinking, practical focus, sensitivity to speed, and practicality preference as potential moderators or mediators of the effects, addressing theoretical gaps around individual differences and contextual effects.",
+    "general": "Purpose statement updated to reflect the inclusion of validated scales, affect and intention measures, and individual differences, all of which improve construct validity, reliability, and theoretical comprehensiveness per user feedback.",
+    "q4": "Improved scale labels in q4 for clarity and to avoid empty label positions, making the scale less ambiguous.",
+    "retained": "Retained original manipulation check (q6) and attention check (q5/q5a) for data quality assurance."
+  }
+}

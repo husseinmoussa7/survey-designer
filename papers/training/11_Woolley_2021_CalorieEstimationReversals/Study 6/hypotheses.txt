@@ -1,0 +1,1 @@
+H3: The interaction between estimation mode and type/quantity attenuates when in an intuitive (vs. deliberative) mindset. When in an intuitive mindset, numeric estimates incorporate quantity information less, such that they resemble magnitude estimates.

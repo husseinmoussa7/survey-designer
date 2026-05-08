@@ -1,0 +1,7 @@
+H1a: For positive outcomes, consumers exhibit a preference for mysterious consumption items over non-mysterious consumption items of equal expected value (i.e., median or average desirability of all possible items). (Study 1A & Study 1B & Study 1C & Study 1D & Study 3)
+
+H1b: Consumers value mysterious consumption items at least in part because they want to be surprised by the nature of the outcome among horizontally differentiated outcomes. (Study 2A & Study 2B)
+
+H2: The preference for uncertainty is less likely to emerge when the possible outcomes are vertically differentiated than when they are horizontally differentiated, as is the case for mysterious consumption. (Study 3 & Study 4)
+
+H3: The preference for uncertainty is less likely to emerge when horizontal uncertainty is reduced to a degree that reduces the surprise element. (Study 6)

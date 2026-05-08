@@ -1,0 +1,1 @@
+H2: Ambiguity aversion is amplified (vs. attenuated) when a range is downwards-elongated relative to the CE (vs. upwards-elongated).

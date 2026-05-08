@@ -1,0 +1,5 @@
+H1: In response to marketplace trade-offs, consumers respond negatively to firms providing accessibility.
+
+H2a: Consumer responses to micro-level accessibility trade-offs are mediated by perceived personal costs.
+
+H3: Accessibility framing will moderate consumer responses to micro-level trade-offs such that, when accessibility is framed as benefitting the consumer personally, the negative evaluation response to accessibility will be mitigated.

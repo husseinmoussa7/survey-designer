@@ -1,0 +1,1 @@
+1. Tangential immersion boosts persistence only when the focal task is low-attention; when the focal task requires medium/high attention, the effect disappears (boundary condition 1: need excess capacity).

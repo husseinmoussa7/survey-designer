@@ -1,0 +1,43 @@
+convert_survey_to_json:
+  description: >
+    Convert the following survey (provided as raw text) into a structured JSON schema
+    suitable for creating a survey in Qualtrics or similar platforms:
+
+    {survey_text}
+
+    Make sure your output includes:
+    - A top-level "title" field for the survey title
+    - A "fields" array, where each element has:
+      • "title": the question text  
+      • "type": the question type (e.g. "multiple_choice", "text_input")  
+      • "options": a list of answer options (if applicable; omit or set to [] otherwise)
+  tool: convert_survey_tool
+  inputs:
+    survey_text:
+      description: "The raw text input containing the survey topic and questions."
+  outputs:
+    json_schema:
+      description: >
+        A JSON schema object representing the survey, for example:
+        {
+          "title": "Customer Satisfaction Survey",
+          "fields": [
+            {
+              "title": "How satisfied are you with our service?",
+              "type": "multiple_choice",
+              "options": ["Very Satisfied", "Satisfied", "Neutral", "Dissatisfied"]
+            },
+            {
+              "title": "Any additional comments?",
+              "type": "text_input",
+              "options": []
+            }
+          ]
+        }
+  expected_output: >
+    A JSON object with exactly those keys ("title" and "fields") and the structure shown above.
+
+
+
+
+    

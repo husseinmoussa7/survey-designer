@@ -1,0 +1,463 @@
+{
+  "timestamp": "2026-04-28T16:22:46.977310",
+  "project": "10_kim_2022_thresholdcrossing_study_2",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Threshold-crossing effect in incentive-compatible lab settings",
+      "purpose": "To test the replication of the threshold-crossing effect, focusing on increases in upgrades and total spending using standard marketing research survey methods.",
+      "comments": "The purpose is clear but could specify the experimental context and participant population more precisely for academic rigor.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree that the threshold-crossing effect increases your likelihood to upgrade?",
+          "comments": "The term 'threshold-crossing effect' may be unclear without prior definition; 'upgrade' is vague and should specify what is meant by 'upgrade' (e.g., product or service tier). The Likert scale is appropriate but endpoint labels only may confuse some respondents. Adding midpoint labels can improve clarity.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ],
+            "comment": "Endpoints labeled; consider adding intermediate labels or fully labeling all points for clarity."
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please indicate how much the threshold-crossing effect influences your total spending.",
+          "comments": "Unclear if 'total spending' refers to the spending during the task or in a broader context; specify timeframe. The phrase 'influences' could be replaced with 'affects' or 'impacts' for clarity. The scale labels are endpoints only; more gradation with descriptive anchors is recommended.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "No influence at all",
+              "Strong influence"
+            ],
+            "comment": "Consider adding mid-point labels and specifying timeframe."
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Did you notice any particular thresholds that influenced your decision-making during the task?",
+          "comments": "The phrase 'particular thresholds' may confuse respondents. Binary yes/no response limits nuance; adding 'unsure' option recommended. A follow-up open-ended question to specify thresholds would enhance data quality.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please confirm that you were paying attention to all instructions and tasks in this study.",
+          "comments": "Self-report attention checks are prone to social desirability bias; consider rephrasing or adding a neutral option. Changing to a multi-point scale provides more nuance. Alternatively, an objective attention check is advisable.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, I paid full attention",
+              "No, I did not pay full attention"
+            ]
+          }
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Threshold-crossing effect in incentive-compatible laboratory settings",
+      "purpose": "To replicate and examine the threshold-crossing effect by assessing its influence on participants' decisions to upgrade product or service tiers and their total spending within an incentive-compatible experimental laboratory context, using validated marketing research survey methods.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate the extent to which crossing predefined spending thresholds influenced your likelihood to upgrade to a higher product or service tier during the task.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neither agree nor disagree",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what degree did crossing spending thresholds affect your total spending decisions during the task?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "No influence",
+              "Very little influence",
+              "Little influence",
+              "Moderate influence",
+              "Considerable influence",
+              "High influence",
+              "Very high influence"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Did you notice any specific spending thresholds or benchmark points that affected your decision-making during the task?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Unsure"
+            ]
+          }
+        },
+        {
+          "question_id": "q3a",
+          "question_text": "If yes, please specify which thresholds influenced your decisions (optional).",
+          "input_type": "open_text",
+          "input_config": {}
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your level of attention to the instructions and tasks throughout this study.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 5,
+            "labels": [
+              "I was not paying attention",
+              "I was paying some attention",
+              "I was moderately attentive",
+              "I was mostly attentive",
+              "I was fully attentive"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Participant Awareness and Influence of Spending Levels in Laboratory Tasks",
+      "purpose": "This survey assesses participants' awareness of specific spending amounts presented during the laboratory task, their understanding of task-related spending rules, any influence these spending amounts may have had on their product or service choices and total spending, and collects additional information on their motivations and attitudes towards spending and upgrades. Questions are designed to clearly and separately evaluate awareness, influence, understanding, attention, motivation, attitudes, and behavioral outcomes without assuming prior knowledge or influence.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "During the task, did you notice any specific spending amounts or monetary levels presented to you?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Unsure"
+            ]
+          }
+        },
+        {
+          "question_id": "q1b",
+          "question_text": "Did any of the spending amounts you noticed influence your decision to choose a higher-level product or service option?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, they influenced my decision",
+              "No, they did not influence my decision",
+              "Unsure"
+            ]
+          },
+          "skip_logic": {
+            "display_if": {
+              "q1": [
+                "Yes"
+              ]
+            }
+          }
+        },
+        {
+          "question_id": "q1a",
+          "question_text": "Please describe the spending amounts or monetary levels you noticed during the task. If possible, include details about how these amounts influenced your decisions. Examples can help clarify your response.",
+          "input_type": "open_text",
+          "input_config": {
+            "placeholder": "E.g., 'I noticed spending levels at $50 and $75. Crossing $75 made me consider upgrading.' Provide any details you recall."
+          },
+          "skip_logic": {
+            "display_if": {
+              "q1": [
+                "Yes"
+              ]
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Overall, how much did noticing specific spending amounts influence your total spending decisions during the task?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly decreased my spending",
+              "Moderately decreased my spending",
+              "Slightly decreased my spending",
+              "No change in my spending",
+              "Slightly increased my spending",
+              "Moderately increased my spending",
+              "Strongly increased my spending"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "How well do you feel you understood the spending amounts and the rules for upgrades presented during the task?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Did not understand at all",
+              "Understood very poorly",
+              "Understood somewhat poorly",
+              "Neutral understanding",
+              "Understood somewhat well",
+              "Understood well",
+              "Understood completely"
+            ]
+          }
+        },
+        {
+          "question_id": "q3_confidence",
+          "question_text": "How confident are you in your answers regarding your understanding of the spending amounts and upgrade rules in the task?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 5,
+            "labels": [
+              "Not at all confident",
+              "Slightly confident",
+              "Moderately confident",
+              "Very confident",
+              "Extremely confident"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate how much attention you paid to the instructions and the task throughout the study. Answer as honestly as possible; your responses are anonymous, and there are no right or wrong answers.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 5,
+            "labels": [
+              "Not attentive at all",
+              "Slightly attentive",
+              "Moderately attentive",
+              "Very attentive",
+              "Extremely attentive"
+            ]
+          }
+        },
+        {
+          "question_id": "q4b",
+          "question_text": "During the task, how often did you find yourself distracted or thinking about things unrelated to the study?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 5,
+            "labels": [
+              "Never",
+              "Rarely",
+              "Sometimes",
+              "Often",
+              "Always"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "During the task, which product or service tier did you choose as your final option?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Basic / lowest tier",
+              "Intermediate tier",
+              "Higher tier",
+              "Highest tier",
+              "I did not make a choice"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Please indicate your total spending amount during the task (in dollars). If unsure, please estimate as best as you can.",
+          "input_type": "numeric",
+          "input_config": {
+            "min_value": 0,
+            "placeholder": "Enter total spending amount"
+          }
+        },
+        {
+          "question_id": "q7",
+          "question_text": "How motivated were you to upgrade to a higher product or service tier during the task?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Not at all motivated",
+              "Very slightly motivated",
+              "Slightly motivated",
+              "Neutral motivation",
+              "Moderately motivated",
+              "Very motivated",
+              "Extremely motivated"
+            ]
+          }
+        },
+        {
+          "question_id": "q8",
+          "question_text": "How would you describe your general attitude toward spending more money to upgrade products or services in tasks like this?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly negative",
+              "Moderately negative",
+              "Slightly negative",
+              "Neutral",
+              "Slightly positive",
+              "Moderately positive",
+              "Strongly positive"
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "q3_q3b_consolidation": "Consolidated the previously separate q3 and q3b, which assessed understanding of spending amounts and rules separately, into a single clearer question ('q3') addressing understanding of both spending amounts and upgrade rules to reduce conceptual overlap and avoid double-barreled wording.",
+      "confidence_measure_addition": "Added new question 'q3_confidence' immediately after understanding question to measure participants' confidence in their understanding responses. This addition helps interpret uncertain or unsure answers and addresses the missing construct issue without modifying existing questions.",
+      "attention_measure_extension": "Retained original self-reported attention question 'q4' but added a complementary item 'q4b' assessing frequency of distraction during the task. This multi-item approach provides a more balanced and potentially less biased assessment of attention and engagement, addressing social desirability concerns.",
+      "scale_consistency_and_clarity": "Maintained consistent Likert scale formats and clear labels across revised and new items to ensure respondent clarity and reduce cognitive load.",
+      "no_structural_changes": "No new questions were added beyond the confidence and attention follow-up items nor were existing questions removed or their order notably changed, respecting the user's instruction to avoid altering the overall structure."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "leading_language": 1,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The phrase 'specific spending amounts or monetary levels' is somewhat ambiguous; participants might interpret 'monetary levels' variably. The three-option multiple choice scale (Yes, No, Unsure) is suitable for awareness screening but might force participants into a limited choice if they partially noticed or were confused. The question is acceptable but could benefit from more clarity. Severity mostly moderate for ambiguity; scale format is suitable for this factual screening."
+      },
+      {
+        "question_id": "q1b",
+        "leading_language": 1,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "The question asks if spending amounts influenced decision, which might cause social desirability bias if participants feel they 'should' have been influenced or not. The inclusion of 'Unsure' mitigates some pressure, but the wording could still prime participants to over-report influence. The response options are appropriate for the question type."
+      },
+      {
+        "question_id": "q1a",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "Open-ended format is good for qualitative detail, but as optional it risks substantial missing data from participants unwilling or unable to articulate specifics. The prompt is clear but might induce recall bias, as participants may fabricate or overemphasize spending levels. Minimal leading language. Ambiguity is low but possible with 'details about how these amounts influenced' which could be interpreted variably."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 1,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "The Likert bipolar scale is appropriate in scope and labels, capturing direction and magnitude of influence. However, wording such as 'Strongly decreased my spending' might be difficult for some to interpret precisely, particularly if multiple factors affected spending. Also potential social desirability bias exists where participants might avoid admitting negative influence. The question asks 'Overall, how much' which might make respondents conflate different influences (not only spending amounts)."
+      },
+      {
+        "question_id": "q3",
+        "leading_language": 1,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The question attempts to measure comprehension but uses subjective self-assessment, which risks social desirability bias (participants inflating their understanding). The phrase 'specific spending amounts presented' may be ambiguous, as 'presented' could be interpreted as shown explicitly or simply inferred. The 7-point Likert scale is appropriate but the middle label 'Neutral understanding' is an unusual phrasing and might confuse participants (better as 'Neither understood nor misunderstood')."
+      },
+      {
+        "question_id": "q3b",
+        "leading_language": 1,
+        "double_barreled_structure": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "This question conflates comprehension of 'rules' and 'steps' related to spending and upgrades, which are distinct concepts, making it double-barreled. Social desirability and subjective bias affect responses on self-reported understanding. Ambiguity arises from vague terms 'rules or steps'; participants may interpret inconsistently. The 7-point scale is consistent with q3 but shares similar phrasing issues."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 2,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "The instruction to 'answer as honestly as possible' tries to counter social desirability bias but likely insufficient against high desirability to appear attentive. The scale has fine granularity (5 points) but labels 'Slightly attentive' and 'Moderately attentive' may be semantically close, possibly confusing respondents. Social desirability bias here is very high as attention is easily inflated."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue_type": "missing_construct",
+        "severity": 3,
+        "description": "No measure of actual behavioral outcomes or triangulation of reported influence with observed spending behavior in the task. Relying solely on self-report leaves the validity of influence claims uncertain."
+      },
+      {
+        "issue_type": "missing_construct",
+        "severity": 2,
+        "description": "No explicit item measuring participant confidence in their responses, which would help interpret uncertain or unsure answers."
+      },
+      {
+        "issue_type": "redundant_items",
+        "severity": 2,
+        "description": "Questions q3 and q3b both assess understanding but split across amounts and rules/steps, which overlap conceptually and might be consolidated or better differentiated. Double-barreled wording in q3b exacerbates this."
+      },
+      {
+        "issue_type": "theoretical_gap",
+        "severity": 3,
+        "description": "No explicit assessment of participants' motivation or general attitudes toward spending/upgrades, which are likely important moderators of influence effects in threshold-crossing research."
+      },
+      {
+        "issue_type": "theoretical_gap",
+        "severity": 2,
+        "description": "Attention measure (q4) relies solely on self-report with high social desirability risk; no objective or multiple-item check for attention or task engagement."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: The phrase \"crossing predefined spending thresholds influenced your likelihood to upgrade\" is potentially leading and assumes participants are aware of the thresholds and that these thresholds had any influence. This could bias participants toward overstating or rationalizing an influence that may not exist. Additionally, the complexity of the statement may cause comprehension issues, especially \"likelihood to upgrade\" which might be interpreted differently by different participants.\n\n2. Question q2: Similar to q1, this question assumes that spending thresholds affected participants' total spending decisions, which may not be true for all respondents, potentially introducing acquiescence bias. The scale labels are not balanced because \"No influence\" contrasts with other positive gradations of influence, but there is no negative influence or neutral category other than \"No influence\" itself, leading to lack of nuance for those who experienced opposite or no clear effects.\n\n3. Question q3: The \"Unsure\" option might conflate true uncertainty about noticing thresholds with lack of recall or understanding. Moreover, \"Did you notice any specific spending thresholds or benchmark points that affected your decision-making?\" is a double-barreled question combining noticing thresholds and those thresholds affecting decision-making, which are two distinct cognitive steps.\n\n4. Question q3a: As an optional open-text response following q3, it risks receiving incomplete data if participants who did notice thresholds do not respond. Also, without guidance or examples, entries might vary widely in detail and clarity, complicating qualitative analysis.\n\n5. Question q4: The use of self-reported attention levels with positive skewed labels (\"I was fully attentive\" to \"I was not paying attention\") invites social desirability bias because participants may over-report attention. The labels mix evaluative judgments (\"fully attentive\") with vague gradations (\"some attention\"), making the scale inconsistent and potentially confusing.\n\n6. Across all questions: None explicitly controls for or measures understanding of the thresholds or task mechanics, which could confound responses about influence and awareness. Without such checks, participants might respond based on assumptions or guessing rather than actual cognitive processes.\n\n7. Scale format consistency: q1 and q2 use 7-point Likert scales (with different label content/styles), while q4 uses a 5-point scale. This inconsistency may confuse respondents or affect comparative analysis, especially since q4's scale is conceptually different (attention vs. agreement/influence).\n\n8. Language complexity and jargon: Multiple questions use technical terms like \"predefined spending thresholds,\" \"benchmark points,\" and \"incentive-compatible,\" which might be unclear or intimidating to some participants, affecting comprehension and response validity."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1: The stem combines two constructs \u2014 noticing specific spending amounts and whether they influenced decisions \u2014 within the same options, effectively making this a double-barreled question. Respondents who noticed thresholds but are unsure about influence might struggle to select the best option. This complicates interpretation because the response mixes awareness and effect judgments.\n\n2. Question q1a: Being optional risks substantial non-response bias, particularly among those with partial or unclear recollections. Without mandatory follow-up, the survey may fail to capture rich qualitative data needed to interpret participants' actual perceptions and reasoning, limiting analysis of threshold effects.\n\n3. Question q2: The scale uses a bipolar format measuring both increases and decreases in spending influence, which is theoretically sound. However, the labels \"Decreased my spending a lot\" to \"Increased my spending a lot\" might confound respondents who did not notice or understand thresholds, as well as those whose spending was unaffected. The lack of a clear \"No change\" or separate \"not applicable\" option reduces clarity.\n\n4. Question q3: The phrasing \"How well do you feel you understood the spending amounts and related rules or steps used in the task?\" mixes two potentially distinct concepts: understanding of spending amounts and understanding of related rules or steps. This could confuse participants and make responses ambiguous, complicating interpretation of comprehension.\n\n5. Question q3 and q4 scales: Both use a 7-point Likert scale but with quite different label styles and conceptual foci (understanding vs. attention). This inconsistency may introduce cognitive burden or confusion, especially without clear anchoring or explanation of the scale meaning.\n\n6. Question q4: The labels (\"Not at all attentive\" to \"Extremely attentive\") might be subject to social desirability bias, as participants may over-report attention. Additionally, \"Very slightly attentive\" and \"Slightly attentive\" are semantically very close and could confuse respondents, leading to unreliable distinctions between low-attention categories.\n\n7. Overall survey: The purpose states an intention to \"clearly assess... recognition and impact without assuming prior knowledge or influence,\" but q1\u2019s response options still assume respondents can reliably link noticing thresholds and their influence. If genuine unawareness or indifference exists, it might not be cleanly captured.\n\n8. Ordering and branching: While q1a follows q1 as a conditional open-text, the survey does not specify automated skip logic or instructions to ensure only applicable respondents answer q1a, which risks irrelevant or inconsistent responding.\n\n9. Use of vague terms: The phrase \"spending amounts or points\" in q1 and elsewhere is not operationally defined, which may lead to varied participant interpretations about whether \"points\" means specific monetary figures, score thresholds, or other metrics.\n\n10. Social desirability and demand characteristics: The survey\u2019s frequent focus on noticing and being influenced by spending levels might lead participants to respond in a way they believe is expected or socially acceptable, especially with self-reported understanding and attention ratings."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+1. The convex (U-shaped) effect of animation speed on perceived waiting time will occur when wait duration is uncertain and attenuate when it is certain.

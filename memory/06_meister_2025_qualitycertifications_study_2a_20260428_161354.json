@@ -1,0 +1,526 @@
+{
+  "timestamp": "2026-04-28T16:13:54.786569",
+  "project": "06_meister_2025_qualitycertifications_study_2a",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Quality Certifications and User-Generated Ratings",
+      "purpose": "To test the hypothesis that platform certifications signaling high quality affect user-generated ratings, using standard marketing research survey conventions.",
+      "comments": [
+        "Overall, the survey addresses the intended theme clearly and follows marketing research conventions.",
+        "The purpose is sufficiently clear, but incorporating phrasing that highlights user perception and influence on ratings enhances academic rigor (from Versions 1 and 2)."
+      ],
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please rate the quality of the product or service you experienced.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very low quality",
+              "7": "Very high quality"
+            }
+          },
+          "comments": [
+            "The original wording is clear, but specifying 'overall' and referencing 'your experience' increases precision and minimizes ambiguity (from Versions 1 and 3).",
+            "The 7-point Likert-type scale with descriptive endpoints is appropriate for measuring subjective quality ratings."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Did you notice any platform certification or quality signal on the product or service?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "comments": [
+            "The phrase 'platform certification or quality signal' is somewhat abstract and could confuse respondents.",
+            "Adding examples such as 'badge' or 'label' clarifies the meaning (from Versions 2 and 3).",
+            "Including a 'Not sure' or 'Cannot recall' response option helps capture respondent uncertainty and improves data quality (from Versions 1 and 3).",
+            "Response options limited to 'Yes'/'No' restrict nuance and could induce false negatives."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "To what extent do you agree with the following statement: The platform certification indicates a high-quality product or service.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Strongly disagree",
+              "7": "Strongly agree"
+            }
+          },
+          "comments": [
+            "The statement is appropriate for assessing perceived trustworthiness of the certification.",
+            "Clarity and formality improve with revised phrasing such as: \"The platform certification reliably signals a high-quality product or service\" (from Version 3).",
+            "Alternatively, using direct quotation marks in the question helps distinguish the statement clearly for respondents (from Version 2).",
+            "The 7-point agreement scale with labeled endpoints is effective."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please confirm you have paid attention to the survey instructions.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I have paid attention",
+              "I have not paid attention"
+            ]
+          },
+          "comments": [
+            "Direct self-reporting questions are at risk of social desirability bias.",
+            "Rephrasing to more neutral and specific wording such as \"I have carefully read and followed the instructions\" reduces bias (from Versions 1 and 3).",
+            "Expanding response options to include 'I have only skimmed the instructions' provides additional nuance and data filtration opportunities (from Version 1).",
+            "Embedding a more subtle attention check within other items could be considered but is beyond scope here."
+          ]
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Quality Certifications and User-Generated Ratings",
+      "purpose": "To empirically examine how platform certifications indicating high quality influence users\u2019 perceptions and their ratings of product or service quality, following established marketing research standards.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Based on your experience, how would you rate the overall quality of the specific product or service you used?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very low quality",
+              "7": "Very high quality"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "During your experience, did you notice any certification or quality badge provided by the platform on the product or service? For example, marks indicating verified quality or approval.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Not sure / Cannot recall"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate your level of agreement with the following statement: \"The platform certification reliably signals a high-quality product or service.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Strongly disagree",
+              "7": "Strongly agree"
+            }
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "To ensure data quality, please select the option that best reflects your attention to the survey instructions.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I have carefully read and followed the instructions",
+              "I have only skimmed the instructions",
+              "I have not read the instructions"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Quality Certifications and User-Generated Ratings",
+      "purpose": "To empirically examine how platform certifications indicating high quality influence users\u2019 perceptions and their ratings of product or service quality, following established marketing research standards. Responses are confidential and used only for research purposes to minimize social desirability bias.",
+      "instructions": "Please answer the following questions based on your experience with products or services on the platform. For questions about certifications, answer based on your own perception without guessing. You may skip any question if you prefer not to answer.",
+      "questions": [
+        {
+          "question_id": "q0",
+          "question_text": "Did you purchase or use the specific product or service on the platform within the past three months?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, I purchased or used it within the past 3 months",
+              "I used/purchased it, but more than 3 months ago",
+              "No, I have not used or purchased it",
+              "Prefer not to say"
+            ]
+          },
+          "note": "Screening question expanded timeframe and allowing neutral responses"
+        },
+        {
+          "question_id": "q00",
+          "question_text": "Please select the product or service category you used from the list below:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Electronics",
+              "Household appliances",
+              "Clothing and accessories",
+              "Food and beverages",
+              "Personal care",
+              "Software or digital services",
+              "Home services (e.g., cleaning, repair)",
+              "Other (please specify)"
+            ],
+            "allow_other": true
+          },
+          "branching": {
+            "condition": {
+              "q0": [
+                "Yes, I purchased or used it within the past 3 months",
+                "I used/purchased it, but more than 3 months ago"
+              ]
+            },
+            "otherwise_skip": true
+          },
+          "note": "To control for product/service heterogeneity in analysis"
+        },
+        {
+          "question_id": "q1",
+          "question_text": "Based on your experience, please rate the quality of the product or service you used on the following separate aspects:",
+          "input_type": "matrix_scale",
+          "input_config": {
+            "rows": [
+              "Durability",
+              "Lifespan",
+              "Functionality",
+              "Performance",
+              "Appearance",
+              "Aesthetics",
+              "Ease of use",
+              "Convenience",
+              "Overall satisfaction"
+            ],
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very poor",
+              "7": "Very good"
+            }
+          },
+          "branching": {
+            "condition": {
+              "q0": [
+                "Yes, I purchased or used it within the past 3 months",
+                "I used/purchased it, but more than 3 months ago"
+              ]
+            },
+            "otherwise_skip": true
+          },
+          "note": "Split double-barreled items into distinct aspects for precision; used more balanced scale anchors"
+        },
+        {
+          "question_id": "q2",
+          "question_text": "During your experience, did you notice any certification or quality badge displayed by the platform on the product or service? These may include verified badges or seals that indicate meeting platform-set standards or approvals. Please answer based on what you actually noticed, not assumptions.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, I clearly noticed a certification or quality badge",
+              "No, I did not notice any certification or badge",
+              "I am uncertain or do not recall",
+              "Prefer not to answer"
+            ]
+          },
+          "branching": {
+            "condition": {
+              "q0": [
+                "Yes, I purchased or used it within the past 3 months",
+                "I used/purchased it, but more than 3 months ago"
+              ]
+            },
+            "otherwise_skip": true
+          },
+          "note": "Reworded to reduce leading language; added neutral and prefer not to answer options"
+        },
+        {
+          "question_id": "q3",
+          "question_text": "If you noticed a certification or quality badge, how confident are you that it reliably indicates a high-quality product or service on this platform? If you do not understand the certification, please select 'Prefer not to answer.'",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Not at all confident",
+              "7": "Extremely confident"
+            }
+          },
+          "branching": {
+            "condition": {
+              "q2": [
+                "Yes, I clearly noticed a certification or quality badge"
+              ]
+            },
+            "otherwise_skip": true
+          },
+          "additional_options": [
+            "Prefer not to answer"
+          ],
+          "note": "Added option to opt out if respondent lacks understanding; limits guessing and measurement error"
+        },
+        {
+          "question_id": "q4",
+          "question_text": "For quality control, please select the option labeled \u201cOption C\u201d from the list below.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          "note": "More options added and less obvious selection to reduce predictability of the attention check"
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Have you used or purchased any product or service in the same category you selected earlier that did NOT display any certification or quality badge on this platform?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "I don\u2019t recall",
+              "Prefer not to answer"
+            ]
+          },
+          "branching": {
+            "condition": {
+              "q00": [
+                "Electronics",
+                "Household appliances",
+                "Clothing and accessories",
+                "Food and beverages",
+                "Personal care",
+                "Software or digital services",
+                "Home services (e.g., cleaning, repair)",
+                "Other (please specify)"
+              ]
+            },
+            "otherwise_skip": true
+          },
+          "note": "Clarifies 'similar' by using previously selected category; added neutral and prefer not options"
+        },
+        {
+          "question_id": "q6",
+          "question_text": "If yes, please rate the quality of that uncertified product or service on the same aspects as before:",
+          "input_type": "matrix_scale",
+          "input_config": {
+            "rows": [
+              "Durability",
+              "Lifespan",
+              "Functionality",
+              "Performance",
+              "Appearance",
+              "Aesthetics",
+              "Ease of use",
+              "Convenience",
+              "Overall satisfaction"
+            ],
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very poor",
+              "7": "Very good"
+            }
+          },
+          "branching": {
+            "condition": {
+              "q5": [
+                "Yes"
+              ]
+            },
+            "otherwise_skip": true
+          }
+        },
+        {
+          "question_id": "q7",
+          "question_text": "To help us understand response honesty, please indicate your agreement with the statement: \u201cI answered the previous questions honestly and to the best of my ability.\u201d",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Strongly disagree",
+              "7": "Strongly agree"
+            }
+          }
+        },
+        {
+          "question_id": "q8",
+          "question_text": "Please indicate how much randomization you prefer for question and item order in future surveys (this does not affect the current survey):",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Randomize question order fully",
+              "Randomize item order within questions",
+              "No randomization, fixed order preferred",
+              "No preference"
+            ]
+          }
+        }
+      ],
+      "survey_features": {
+        "randomize_question_order": true,
+        "randomize_matrix_row_order": true,
+        "anonymity_statement": "Your answers are anonymous and confidential to minimize social desirability bias."
+      }
+    },
+    "explanations": {
+      "q0": "Expanded timeframe to 3 months to increase inclusiveness and representativeness. Added 'I used it but more than 3 months ago' and 'Prefer not to say' options to reduce forced inaccurate responses.",
+      "q00": "Added product/service category question to control for heterogeneity and enable subgroup analyses.",
+      "q1": "Split double-barreled items into separate rows for durability, lifespan, functionality, performance, ease of use, convenience, etc., to improve precision. Changed scale labels to balanced anchors ('Very poor' to 'Very good'). Branching added from q0 to avoid irrelevant respondents answering.",
+      "q2": "Reworded to avoid 'official' wording that may bias responses; clarified the nature of badges but emphasized answering based on actual notice to reduce over-reporting/social desirability bias. Included neutral and 'prefer not to answer' options.",
+      "q3": "Kept branching so only those who noticed certification answer. Added 'Prefer not to answer' to allow opt-out if respondent lacks understanding, reducing guessing and measurement error possibility.",
+      "q4": "Replaced simple 3-option attention check with 4 options and a less obvious instructed response ('Option C') to increase difficulty and reduce predictability.",
+      "q5": "Replaced 'similar product or service' with use of previously selected category for clarity. Added neutral and 'prefer not to answer' to handle recall bias or unwillingness. Branching depends on category selection.",
+      "q6": "Same split-item matrix scale using consistent balanced labels for uncertified products, asked only if respondent confirms experience with those, preserving data quality.",
+      "q7": "Added a self-reported honesty question to help detect social desirability or dishonest responding.",
+      "q8": "Added a question to gather respondent preference on survey randomization to guide future design improvements; implemented randomization of question and matrix row order to reduce order effects.",
+      "survey_features": "Stated implementation of randomization to minimize fatigue/order biases. Added an anonymity statement upfront to reduce social desirability bias.",
+      "general": "Across all questions, allowed 'Prefer not to answer' to reduce forced inaccurate responses and potential dropout. Instructions encourage honest reporting without guessing.",
+      "improvements_addressed": "These changes collectively address all critic points including timeframe ambiguity, double-barreled items, leading wording, guessing/confidence limits, improved attention check design, clearer skip logic, balanced scale anchors, control of heterogeneity, randomization, and social desirability bias mitigation."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q0",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "The three-month timeframe is reasonable but could still exclude relevant experiences slightly older than 3 months; the inclusion of multiple options including 'Prefer not to say' mitigates forced responses. The wording 'purchase or use' may be ambiguous without clarifying if occasional vs. frequent use counts. Overall, scale appropriateness is moderate given the categorical response."
+      },
+      {
+        "question_id": "q00",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The response options are reasonable, but the 'Other (please specify)' may create wide heterogeneity in responses, complicating analysis. Some product categories like 'Home services' could be too broad, potentially leading to ambiguity. This question relies on self-categorization which could vary, affecting comparability."
+      },
+      {
+        "question_id": "q1",
+        "leading_language": 1,
+        "double_barreled": 3,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "While the double-barreled issues have been reduced by splitting items, pairs like 'Durability' and 'Lifespan' or 'Appearance' and 'Aesthetics' remain very close conceptually and could cause redundancy and respondent confusion. The seven-point scale with 'Very poor' to 'Very good' is balanced but could be further refined to distinct labels. Inclusion of both 'durability' and 'lifespan' without clear differentiation threatens discriminant validity."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 2,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The wording attempts neutrality; however, referencing 'platform-set standards or approvals' may inflate perceived legitimacy and lead towards 'Yes'. The phrase 'Please answer based on what you actually noticed, not assumptions' risks prompting respondents to overthink or respond defensively. Inclusion of 'Prefer not to answer' is positive. Options fairly capture respondent states."
+      },
+      {
+        "question_id": "q3",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "Branching reduces invalid responses. Offering 'Prefer not to answer' minimizes guessing, improving measurement. However, asking respondents to evaluate 'reliability' of certification without measuring their understanding of certification specifics is an implied assumption. Social desirability may arise as respondents feel pressure to indicate confidence."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "Addition of four options improves attention check difficulty. The instruction is clear and direct, minimizing ambiguity or social desirability bias. This is a valid, standard attention check with appropriate response options."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "Clarifies 'similar' by referring to selected category, which reduces ambiguity. Still, the term 'used or purchased' might create recall bias. Adding 'I don't recall' and 'Prefer not to answer' options helps mitigate forced responses but could reduce usable data. Social desirability bias is moderate since respondents may perceive pressure to admit experience."
+      },
+      {
+        "question_id": "q6",
+        "leading_language": 1,
+        "double_barreled": 3,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "Shares same matrix as q1, with same double-barreled concerns (especially overlapping items). The conditional branching improves relevance. The assumption respondents can accurately recall quality of uncertified products could invite recall bias. The scale remains appropriate but repeated items might fatigue respondents."
+      },
+      {
+        "question_id": "q7",
+        "leading_language": 2,
+        "double_barreled": 1,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "Self-reported honesty questions are known to induce social desirability bias; this question likely pressures respondents to overreport honesty, potentially inflating agreement. This threatens validity of honesty assessments. The item is single-focused but open to response bias. The scale is standard."
+      },
+      {
+        "question_id": "q8",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "Question deviates from main construct, serving as meta-survey feedback. Wording is clear, but respondents may lack insight or motivation to respond meaningfully. 'No preference' option is appropriate. This question is not directly relevant to study purpose and could increase survey length unnecessarily."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "missing_constructs": "No direct measures of perceived trustworthiness or perceived expertise of the platform or certification issuer beyond simple confidence ratings. Absence of user attitude towards general platform trust or previous experience with certifications may limit explanatory power. No measures capturing actual behavioral outcomes (e.g., purchase intention, recommendation likelihood) to link perception to action. Also missing assessment of users' knowledge or understanding of the certification criteria beyond 'prefer not to answer' option."
+      },
+      {
+        "redundant_items": "Highly overlapping matrix rows in q1 and q6: 'Durability' and 'Lifespan', 'Appearance' and 'Aesthetics', 'Ease of use' and 'Convenience' may be redundant. Such redundancy can increase respondent fatigue and introduce multicollinearity in analyses."
+      },
+      {
+        "theoretical_gaps": "No control variables or measures assessing potential confounds such as price sensitivity, prior satisfaction with platform, or prior product knowledge. The survey assumes unidimensional influence of certification without differentiating certification types or displaying examples explicitly for respondent context. The focus on perceptions does not address downstream effects like actual rating behavior or review posting, which are important for marketing research."
+      },
+      {
+        "survey_design": "Randomization of question and matrix row order helps reduce order bias. Anonymity and confidentiality statements are appropriate to reduce social desirability bias. However, presence of a direct self-report honesty question (q7) likely increases demand characteristics. The survey length with many matrix items may induce respondent fatigue, potentially affecting data quality."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: Ambiguity in \"overall quality\" - The phrase \"overall quality of the specific product or service you used\" is broad and subjective. It does not clarify the particular dimensions of quality (e.g., durability, functionality, aesthetics) that respondents should consider, which can lead to varied interpretations and reduce comparability across respondents.\n\n2. Question q2: Potential recall bias and vague example - The question asks if the respondent \"noticed any certification or quality badge,\" but some users may not recall seeing these badges, or may not distinguish between official certifications and other marks. The example \"marks indicating verified quality or approval\" is vague and could prime respondents to say \"Yes\" or cause confusion. This may introduce social desirability bias or misclassification.\n\n3. Question q3: Assumes prior knowledge and belief - The statement assumes respondents understand what \"platform certification\" entails and already have formed a belief about its reliability. Respondents who did not notice a certification or do not understand the certification system might still be forced to rate agreement, which can produce noisy or biased data.\n\n4. Question q4: Self-reported attention check with social desirability bias - Asking respondents to self-report their attention to instructions is prone to social desirability bias, as most are likely to select \"I have carefully read and followed the instructions\" regardless of actual behavior. It also assesses a general abstract behavior (reading instructions) rather than a concrete task-based attention check.\n\n5. Scale consistency and labeling across questions - Although the 7-point Likert-type scale is consistent, question q1 uses quality descriptors but question q3 uses agreement terms, which may confuse respondents about whether to focus on product quality or their beliefs about certification reliability.\n\n6. Lack of control or screening questions - The survey does not include screening to ensure respondents indeed purchased or used the product or service in question, which threatens data validity.\n\n7. No baseline or control condition questions - There is no assessment of user perceptions or ratings of similar products/services without certifications, making it difficult to isolate the effect of certifications versus other factors influencing quality perception."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q0: Time frame ambiguity and exclusion consequences \u2013 The question limits \"recently\" to \"within the past month,\" which may be too restrictive. Respondents who used the product slightly outside this timeframe might feel excluded, reducing sample representativeness. Also, the binary choice omits a neutral or \"prefer not to say\" option, potentially forcing inaccurate responses.\n\n2. Question q1: Double-barreled items in rows \u2013 Several items combine two concepts, e.g., \"Durability or lifespan,\" \"Functionality or performance,\" and \"Ease of use or convenience,\" which could confuse respondents if these aspects differ in their experience. This conflation can reduce precision and validity of the ratings for each distinct attribute.\n\n3. Question q2: Leading wording and example-induced bias \u2013 The phrase \"official quality seals or verified approval marks that indicate meeting certain standards\" may prompt respondents to over-report noticing certifications, increasing social desirability and confirmation biases. The use of \"official\" is ambiguous without definition; what counts as official can vary between respondents.\n\n4. Question q3: Potential lack of respondent basis for confidence \u2013 Although branching is applied based on noticing a certification, the question assumes respondents have enough understanding of the certification's meaning to rate confidence reliably. Respondents might guess, leading to measurement error.\n\n5. Question q4: Simplicity and potential familiarity of attention check \u2013 Using \"Select 'Option B'\" as an attention check may be too obvious or become predictable if respondents have seen similar checks before, reducing its effectiveness in catching inattentive respondents. It also does not control for careless responding behaviors beyond following a simple instruction.\n\n6. Question q5 and q6: Recall bias and skip logic limitations \u2013 Question q5 asks respondents if they have used similar products without certification and then asks for quality ratings if Yes. However, the definition of \"similar product or service\" is ambiguous and subjective, potentially leading to inconsistent interpretations. Additionally, respondents selecting \"Not applicable / Do not recall\" do not proceed to rating, but no alternative path is provided, limiting data on non-certification product quality.\n\n7. Scale label wording inconsistency \u2013 For q1 and q6, the scale labels use \"Very poor\" to \"Excellent,\" which is somewhat uneven in linguistic intensity (poor to excellent). Using more symmetrical anchors (e.g., \"Very poor\" to \"Very good\" or \"Excellent\" to \"Terrible\") would be preferable for balanced psychological scaling.\n\n8. Lack of item randomization or counterbalancing \u2013 The survey does not mention randomizing question or scale item order to control for order effects or fatigue, which may bias results, especially because similar concepts are asked twice (certified versus non-certified products).\n\n9. No validation of product or service category \u2013 The survey does not control for product heterogeneity; different products or services might inherently differ in quality perception, creating confounds when comparing certified to non-certified items.\n\n10. Absence of social desirability bias controls \u2013 Several questions may invite socially desirable responses (e.g., noticing certifications or confidence in their reliability) without any indirect questioning or anonymity reassurance, which can bias results upward."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

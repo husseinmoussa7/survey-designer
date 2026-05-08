@@ -1,0 +1,7 @@
+H1: A forecaster will be viewed as less competent and followed less often when they communicate their prediction by referring to their confidence in an outcome rather than the probability of the outcome when the outcome’s likelihood is low. （Study 1 & Study 2A & Study 2B）
+
+H2: The effect of confidence (vs. probability) expressions on perceptions of competence will be reduced or even eliminated as an outcome’s likelihood increases. (Study 3A & Study 3B)
+
+H3: The effect of confidence (vs. probability) expressions on perceptions of competence will be mediated by attribution of the percentage to the forecaster (vs. the outcome). (Study 6 & Study 7 & Study 8)
+
+H4: The effect of confidence (vs. probability) expressions on perceptions of competence will be mitigated among consumers with a weaker correspondence bias. (Study 5)

@@ -1,0 +1,587 @@
+{
+  "timestamp": "2026-04-28T17:26:01.313859",
+  "project": "29_khankalra_2022_goodtobedifferent_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Perceptions of racially diverse vs. homogeneous teams and consumer responses after firm transgressions",
+      "purpose": "To test hypotheses that racially diverse teams are perceived higher in perspective-taking and morality, which improves consumer responses after a firm transgression",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please rate the racial diversity of the team you observed.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Not at all diverse",
+              "Extremely diverse"
+            ]
+          },
+          "_comment": "The original question is clear but could benefit from specifying racial and ethnic diversity (Versions 1 and 2). Version 3 suggests endpoints that are phrased more neutrally ('Very low diversity' to 'Very high diversity'). Combining all: phrasing the question to include 'racial and ethnic diversity' and scale labels as 'Very low diversity' to 'Very high diversity' increases clarity and academic rigor."
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you perceive this team as capable of perspective-taking?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          },
+          "_comment": "Version 1 and 2 recommend rephrasing the item as a statement rather than a question to align better with the agreement scale. Version 3 recommends scale labels that match the question wording better ('Not at all capable' to 'Extremely capable'). Synthesizing: rephrase as a statement 'This team is capable of perspective-taking.' and use scale endpoints 'Strongly disagree' to 'Strongly agree' (better for statements) or alternatively 'Not at all capable' to 'Extremely capable' for more direct clarity. To enhance academic rigor, using the statement format with standard agreement scale is preferable."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "How moral do you perceive this team to be?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Not at all moral",
+              "Extremely moral"
+            ]
+          },
+          "_comment": "Versions suggest adding clarification to 'moral' by including terms such as 'ethical behavior and integrity' or 'ethical/moral'. This clarifies the construct and helps respondents interpret the question accurately."
+        },
+        {
+          "question_id": "q4",
+          "question_text": "How would you evaluate your overall response to the firm after the transgression?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Very negative",
+              "Very positive"
+            ]
+          },
+          "_comment": "Versions 1 and 2 suggest clarifying 'overall response' to 'overall attitude' or 'overall evaluation' for precision. Version 1 further suggests adding a midpoint label 'Neutral' for respondent guidance. Including a midpoint with a label is best practice and thus recommended."
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Did you carefully read the description of the team and the situation?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "_comment": "Consistent across versions as a straightforward attention check. Minor wording refinement suggested in Version 3 to specify 'the team and the transgression scenario' for precision."
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Which type of team was depicted in the description you read?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Racially diverse team",
+              "Homogeneous team"
+            ]
+          },
+          "_comment": "Versions 1 and 2 suggest specifying 'racially and ethnically homogeneous team' for consistency and clarity. Version 1's fuller options are clearer and better for academic rigor."
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Perceptions of racially diverse versus homogeneous teams and consumer responses following firm transgressions",
+      "purpose": "To examine whether racially diverse teams are perceived as higher in perspective-taking ability and morality, and how these perceptions influence consumer responses after a firm transgression.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please rate the racial and ethnic diversity of the team you observed.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Very low diversity",
+              "Very high diversity"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "This team is capable of perspective-taking.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "How ethical and morally upright do you perceive this team to be?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Not at all ethical/moral",
+              "Extremely ethical/moral"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "How would you characterize your overall attitude toward the firm following the transgression?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Very negative",
+              "Neutral",
+              "Very positive"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Did you carefully read the description of the team and the transgression scenario?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Which type of team was described in the scenario you read?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "A racially diverse and ethnically varied team",
+              "A racially and ethnically homogeneous team"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Perceptions of Team Diversity, Perspective-Taking, Morality, and Consumer Responses Following Firm Transgressions",
+      "purpose": "To examine whether racially diverse teams are perceived differently in terms of multi-dimensional diversity, perspective-taking abilities, and morality, and how these perceptions influence consumer responses after a firm transgression scenario.",
+      "instructions": "Welcome to the survey. Before starting, please carefully review the scenario describing a firm transgression and the characteristics of the team involved. Your accurate and thoughtful responses are important for the validity of this study. There are no right or wrong answers. Your responses are confidential and will not be linked to you personally. Please note that attention and manipulation check questions are included to help ensure data quality. Additionally, some questions are designed to detect socially desirable responding to help us assess response bias. Responses inconsistent with these checks may be excluded from analysis.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate the extent to which the team you observed includes diversity in race, ethnicity, and nationality. By \"diversity,\" we mean representation of multiple racial, ethnic, and national backgrounds within the team.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Predominantly similar backgrounds",
+              "Mostly similar backgrounds",
+              "Somewhat similar backgrounds",
+              "Moderately mixed backgrounds",
+              "Somewhat diverse backgrounds",
+              "Mostly diverse backgrounds",
+              "Predominantly diverse backgrounds"
+            ]
+          }
+        },
+        {
+          "question_id": "q2_intro",
+          "question_text": "The next two questions ask about the team's perspective-taking. Please consider each separately and respond accordingly.",
+          "input_type": "instruction"
+        },
+        {
+          "question_id": "q2_1",
+          "question_text": "Please rate your agreement with this statement: This team actively seeks to understand the perspectives and feelings of consumers affected by the firm's actions, for example by listening carefully to consumer feedback or considering their concerns in decision-making.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neither agree nor disagree",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q2_2",
+          "question_text": "Please rate your agreement with this statement: This team actively seeks to understand the perspectives and feelings of its internal members who come from different backgrounds, for example by encouraging open communication and inclusive discussions within the team.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neither agree nor disagree",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q3_ethicality",
+          "question_text": "How ethical do you perceive this team to be in their behavior related to the firm\u2019s actions described? Please consider fairness, honesty, and responsibility in your rating.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Completely unethical",
+              "Mostly unethical",
+              "Somewhat unethical",
+              "Neither ethical nor unethical",
+              "Somewhat ethical",
+              "Mostly ethical",
+              "Completely ethical"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q3_morality",
+          "question_text": "How morally upright do you perceive this team to be in their actions and decisions related to the scenario? Please consider adherence to moral principles such as integrity and fairness.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Completely immoral",
+              "Mostly immoral",
+              "Somewhat immoral",
+              "Neither moral nor immoral",
+              "Somewhat moral",
+              "Mostly moral",
+              "Completely moral"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q3_social_desirability",
+          "question_text": "Please rate your agreement with the statement: \"I always try to be fair and honest even when no one else is watching.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neither agree nor disagree",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your overall attitude toward the firm following the transgression described in the scenario.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Very negative",
+              "Moderately negative",
+              "Slightly negative",
+              "Neutral",
+              "Slightly positive",
+              "Moderately positive",
+              "Very positive"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q4_trust",
+          "question_text": "How much do you trust the firm following the transgression described in the scenario?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Do not trust at all",
+              "Trust very little",
+              "Trust somewhat little",
+              "Neutral",
+              "Trust somewhat",
+              "Trust largely",
+              "Trust completely"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q4_forgiveness",
+          "question_text": "To what extent are you willing to forgive the firm for the transgression?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Not at all willing",
+              "Very unwilling",
+              "Somewhat unwilling",
+              "Neutral",
+              "Somewhat willing",
+              "Very willing",
+              "Completely willing"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q4_willingness_to_purchase",
+          "question_text": "How likely are you to purchase products or services from the firm after the transgression?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Extremely unlikely",
+              "Very unlikely",
+              "Somewhat unlikely",
+              "Neutral",
+              "Somewhat likely",
+              "Very likely",
+              "Extremely likely"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q4_word_of_mouth",
+          "question_text": "How willing are you to recommend the firm's products or services to others following the transgression?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Extremely unwilling",
+              "Very unwilling",
+              "Somewhat unwilling",
+              "Neutral",
+              "Somewhat willing",
+              "Very willing",
+              "Extremely willing"
+            ],
+            "scale_mid": 4
+          }
+        },
+        {
+          "question_id": "q5_attention_check",
+          "question_text": "To help us understand your engagement with the scenario, please select the option that best describes how you read the team description and transgression scenario:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I read the description thoroughly and carefully.",
+              "I read the description somewhat carefully but may have missed some details.",
+              "I read the description quickly or partially.",
+              "I did not read the description."
+            ],
+            "force_response": true
+          }
+        },
+        {
+          "question_id": "q6_team_type_check",
+          "question_text": "Which best describes the team you read about in the scenario? If you do not remember, please select 'I don't remember'.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "A team composed of members from multiple distinct racial, ethnic, and national backgrounds.",
+              "A team composed of members with similar racial, ethnic, and national backgrounds.",
+              "I don't remember"
+            ],
+            "force_response": true
+          }
+        },
+        {
+          "question_id": "q7_transgression_check",
+          "question_text": "Which of the following best describes the type or severity of the firm's transgression described in the scenario? If you do not remember, please select 'I don't remember'.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "A minor transgression or mistake",
+              "A moderate transgression with some negative impact",
+              "A severe transgression with significant negative consequences",
+              "I don't remember"
+            ],
+            "force_response": true
+          }
+        }
+      ],
+      "notes": "All attitude and perception items will be randomized in order, except attention and manipulation check questions (q5, q6, and q7) which will be placed unpredictably within the second half of the survey to minimize strategic responding and detection. The instruction and introductory text will always appear first."
+    },
+    "explanations": {
+      "ethicality_morality_reduction": "Maintained single forward-coded items for ethicality and morality to balance measurement reliability and reduce participant fatigue as requested, removing multiple reverse-coded items while keeping clear behavioral anchors.",
+      "behavioral_specificity": "Enhanced perspective-taking, ethicality, and morality items with concrete behavioral examples and situational cues to improve interpretability and response accuracy.",
+      "social_desirability_introduction": "Added a brief social desirability measure question assessing general fairness and honesty tendencies to detect response bias, and revised the instructions to explicitly mention detection of socially desirable responding to increase participant awareness and reduce bias.",
+      "overall_structure": "Preserved original survey structure and flow to conform with instructions, only improving wording and scale clarity as per feedback to maintain consistency and psychometric quality."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "details": "The question defines diversity but combines race, ethnicity, and nationality in one measure, which may be interpreted differently by respondents. Some may weigh nationality differently from ethnicity/race. The scale has highly granular labels that are similar in meaning (e.g., \"Somewhat similar\" vs \"Mostly similar\"), possibly confusing respondents and increasing noise. Social desirability may affect responses as rating 'low diversity' might be viewed negatively. Overall, scale is appropriate length but distinctions between points may be ambiguous."
+      },
+      {
+        "question_id": "q2_1",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "details": "The phrase \"actively seeks to understand\" is somewhat vague without behavioral anchors, potentially interpreted differently across respondents. The addition of examples helps but may still not prevent ambiguity. Social desirability bias is moderate given the positive framing about understanding consumers. The 7-point agreement scale is appropriate but could risk acquiescence bias as no reverse items here. The phrase \"perspectives and feelings\" bundles two constructs which may not always align."
+      },
+      {
+        "question_id": "q2_2",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "details": "Same concerns as q2_1, with additional ambiguity introduced by \"internal members who come from different backgrounds,\" which may be interpreted variably (racial, ethnic, cultural, or other). The two separate perspective-taking questions help with construct clarity but still lack behavioral precision."
+      },
+      {
+        "question_id": "q3_ethicality",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "details": "The scale labels are balanced and appropriate. However, the concepts of 'ethicality' may be socially desirable to rate positively. The subtle difference between 'ethical' and 'moral' is not explicitly addressed, potentially causing confusion with subsequent morality items."
+      },
+      {
+        "question_id": "q3_morality",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "details": "Similar issues as q3_ethicality. 'Morally upright' is somewhat subjective and may be interpreted differently than 'ethical.' Respondents may conflate or differentiate these inconsistently. The balanced scale helps but social desirability bias remains."
+      },
+      {
+        "question_id": "q3_ethicality_rev",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "details": "Reverse-coded item is important for controlling acquiescence bias. However, the phrase 'often acts without regard for ethical considerations' is somewhat complex and may require additional cognitive effort, potentially affecting response accuracy."
+      },
+      {
+        "question_id": "q3_morality_rev",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "details": "Same concerns as q3_ethicality_rev. The phrase 'frequently behaves in ways that lack moral integrity' could be difficult to interpret precisely, possibly confusing respondents."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "details": "The seven-point labeled scale ranging from very negative to very positive is appropriate and balanced, but subtle distinctions between 'slightly,' 'moderately,' and 'very' may be challenging for respondents to consistently differentiate, risking measurement noise. The severity is high because this is a key outcome variable and scale fuzziness threatens validity."
+      },
+      {
+        "question_id": "q5_attention_check",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "details": "Although more nuanced than a binary check, it still relies on self-report of reading behavior which is highly susceptible to social desirability bias. The categories overlap somewhat (e.g., 'somewhat carefully' vs 'quickly or partially') and may confuse respondents. Because attention checks often determine exclusion, this raises validity and data quality concerns."
+      },
+      {
+        "question_id": "q6_team_type_check",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "details": "Including 'I don't remember' is beneficial for data quality. However, the options are somewhat verbose and may be difficult to discriminate clearly under recall conditions. The labeling differs slightly from q1 terminology, risking inconsistent mapping."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Construct omission - absence of consumer reaction measures beyond overall attitude",
+        "severity": 3,
+        "details": "The survey measures overall attitude toward the firm following the transgression but lacks more granular consumer response constructs such as trust, forgiveness, willingness to purchase, or word-of-mouth intentions that are critical for understanding consumer behavioral responses."
+      },
+      {
+        "issue": "Potential construct redundancy and participant fatigue",
+        "severity": 2,
+        "details": "Ethicality and morality are measured with multiple forward and reverse-coded items, which is proper psychometrically but may induce fatigue given population and survey length. No explicit measurement model or justification is provided."
+      },
+      {
+        "issue": "No measure of social desirability or response bias",
+        "severity": 2,
+        "details": "Although the instructions warn about attention and manipulation checks, no specific scale or items are included to measure or control for social desirability bias, a critical concern given the sensitive nature of race, diversity, and morality evaluations."
+      },
+      {
+        "issue": "Limited behavioral or situational specificity in items",
+        "severity": 2,
+        "details": "Most items rely on global judgments (e.g., \"actively seeks to understand\") without context-specific or behavioral anchors, which may reduce accuracy and increase variability in interpretation."
+      },
+      {
+        "issue": "No manipulation check for firm transgression severity or type",
+        "severity": 3,
+        "details": "While there's a team type manipulation check, there is no check confirming respondent comprehension or recall of the firm transgression scenario itself, which is necessary for validity of downstream consumer response measures."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: The request to \"Please rate the racial and ethnic diversity of the team you observed\" assumes the respondent has an objective and clear basis for rating diversity on a 7-point scale. However, diversity perception can be subjective and multidimensional, involving race, ethnicity, nationality, etc. There is no definition provided for \"diversity,\" which may lead to inconsistent interpretations. Additionally, the label \"Very low diversity\" to \"Very high diversity\" frames diversity positively, potentially leading to social desirability bias; respondents may avoid rating \"low diversity\" if they perceive it as negative.\n\n2. Question q2: \"This team is capable of perspective-taking\" is presented as a single item to measure perspective-taking capacity. The statement is absolute (\"capable\"), which may cause respondents to overendorse due to social desirability or acquiescence bias. Moreover, the statement does not specify what kind of perspective-taking is meant (e.g., empathy toward consumers, internal team members). There is also no neutral wording or contextual framing.\n\n3. Question q3: \"How ethical and morally upright do you perceive this team to be?\" is a double-barreled question combining ethicality and moral uprightness, which although related, may be perceived differently by respondents. Asking them to combine both into one rating confounds the construct and reduces clarity and validity of this measure.\n\n4. Question q4: The scale for \"overall attitude toward the firm following the transgression\" includes three labeled points: \"Very negative\" at 1, \"Neutral\" at 4 (the midpoint), and \"Very positive\" at 7. Only these three points are labeled, which can confuse respondents about the meaning of intermediary values (2,3,5,6). Including \"Neutral\" as a labeled midpoint is appropriate, but the asymmetric labeling might induce central tendency bias or misinterpretation of the scale.\n\n5. Question q5: The item \"Did you carefully read the description of the team and the transgression scenario?\" is a yes/no question that relies on self-report of attention, vulnerable to social desirability bias. Respondents may overreport \"Yes\" regardless of actual attention.\n\n6. Question q6: The question \"Which type of team was described in the scenario you read?\" is a manipulation check but using the terms \"racially diverse and ethnically varied team\" and \"racially and ethnically homogeneous team\" may be difficult for some respondents to parse precisely or recall accurately, generating noise in responses. Also, no forced response enforcement or option for \"I don't remember\" reduces data quality by forcing guesses.\n\nAdditional overall concerns:\n\n7. Across the survey, there is no randomized or balanced ordering of questions or labels, potentially inducing order effects or response biases.\n\n8. The survey assumes respondents have been exposed to a scenario involving a firm transgression and team description prior to answering but does not verify or ensure their understanding before measuring perceptions, which can threaten validity.\n\n9. The survey does not address social desirability bias explicitly in the wording or instructions, particularly relevant given racial and moral evaluations.\n\n10. The use of only single-item measures for complex constructs such as perspective-taking and morality reduces reliability and increases measurement error.\n\nThese factors collectively raise concerns about construct validity, measurement reliability, and response biases."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1: Although the prompt defines diversity in terms of race, ethnicity, and nationality, the scale labels are asymmetrically distributed\u2014only points 1, 4, and 7 are labeled, while intermediate scale points have empty labels. This may cause inconsistency in how respondents interpret the unlabeled values and could result in central tendency bias or random choice among those points due to ambiguity.\n\n2. Questions q2_1 and q2_2: These two items attempt to capture different facets of perspective-taking (external consumers vs. internal team members), which is good; however, both use the phrase \"tries to understand,\" which is somewhat vague and may be interpreted differently in intensity or effectiveness. There are no behavioral anchors or examples, potentially leading to variance in interpretation and affecting reliability. Moreover, the instructions do not indicate these items should be considered separately, potentially confusing respondents about the specific focus.\n\n3. Questions q3_ethicality and q3_morality: These two closely related constructs are split into separate items, which aligns with multidimensional measurement; however, both have \"Neutral\" as the midpoint label, which is somewhat ambiguous for a moral judgment scale since \"neutral\" morality is uncommon as a conceptual state. This may cause confusion or dissatisfaction with response options. Also, the lack of more descriptive intermediate labels may lead to inconsistent interpretations.\n\n4. Question q4: The attitude scale toward the firm post-transgression is fully labeled, which is good. However, the labels range from \"Very negative\" to \"Very positive,\" crossing a neutral midpoint at 4. While this is standard, the verbal anchors such as \"Somewhat negative,\" \"Slightly negative,\" etc., may be challenging for respondents to differentiate precisely, increasing measurement error.\n\n5. Question q5_attention_check: This question moves beyond a typical binary attention check to a three-level forced-response self-report on engagement. While this is an improvement compared to a yes/no check, the wording relies on self-report, which is susceptible to social desirability or recall bias. Moreover, the option \"I skimmed the description quickly\" is vague and may overlap in meaning with both \"carefully read\" and \"did not read,\" potentially causing confusion. No behavioral verification is included.\n\n6. Question q6_team_type_check: Inclusion of \"I don't remember\" is an important addition for handling genuine uncertainty, improving data quality. However, the first two options differ from earlier usage in question q1: here, \"multiple racial, ethnic, and national backgrounds\" vs. \"similar racial, ethnic, and national backgrounds\" is more verbose but may cause inconsistency in how respondents map this back to the scale in q1, which could complicate analyses. The question also depends on respondent memory, which may be weak due to task fatigue.\n\n7. Introductory instructions: The instructions ask respondents to \"ensure that you carefully reviewed the scenario,\" which aims to reduce careless responses. However, the phrase \"there are no right or wrong answers\" may implicitly reduce the perceived importance of accuracy or attentiveness, possibly conflicting with the attention checks. No warnings or consequences for failing attention checks are mentioned, which may impact motivation to respond attentively.\n\n8. Overall scale label sparsity: Except for q4, scales generally provide only endpoint and midpoint labels, leaving intermediate points unlabeled. This scale sparsity can lead to varied interpretations among respondents, affecting measurement precision.\n\n9. Lack of reverse-worded or balanced items: All attitude and perception items are positively framed (e.g., \"tries to understand,\" \"how ethical/moral\"), which can induce acquiescence bias. The absence of reverse-coded items weakens efforts to detect and control this bias.\n\n10. Randomization notes: The note states that question order will be randomized except for instructions and attention checks. Because q5 and q6 serve as attention and manipulation checks, their fixed placement may still allow participants to anticipate them and respond strategically, threatening validity.\n\nIn sum, while this iteration improves construct clarity and adds nuance in some areas, there remain significant risks regarding scale label ambiguity, social desirability bias, self-report attention checks, acquiescence bias, and measurement precision that may undermine the survey\u2019s psychometric robustness and validity."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

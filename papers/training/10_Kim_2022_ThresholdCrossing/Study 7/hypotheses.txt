@@ -1,0 +1,1 @@
+1. The effect is attenuated/eliminated when the upgrade price also crosses an additional upper threshold.

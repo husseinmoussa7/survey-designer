@@ -1,0 +1,11 @@
+H1: Turn-taking between a consumer and a brand’s AI-based conversational interface enhances the perceived humanness of the interface.(Study 1 & Study 2)
+
+H2: Turn initiation by a brand’s AI-based conversational interface enhances the perceived humanness of the interface.(Study 1)
+
+H3: Grounding between a brand’s AI-based conversational interface and a consumer enhances the perceived humanness of the interface.(Study 3)
+
+H4: The perceived humanness of a brand’s AI-based conversational interface has a positive effect on consumers’ experienced brand intimacy.(Study 2 & Study 3)
+
+H5: Greater brand intimacy has a positive effect on consumers’ (1)inclination to accept brand recommendations, (2)willingness to pay a price premium for the brand’s products, (3)motivation to advocate the brand to others, and (4)brand loyalty.(Study 3)
+
+H6: The positive effects of the conversational properties of a brand’s AI-based conversational interface on brand intimacy are attenuated in settings that do not require a high degree of mutual understanding.(Study 4)

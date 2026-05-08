@@ -1,0 +1,779 @@
+{
+  "timestamp": "2026-04-28T16:52:07.915604",
+  "project": "21_kalra_2020_zerobias_trfchoice_experiment_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Effect of age-appropriate default Target Retirement Fund (TRF) choice on saving behavior",
+      "purpose": "To test if providing an age-appropriate default TRF reduces zero bias and affects contribution rate dispersion, thus influencing saving behavior.",
+      "comments": "The theme and purpose are generally clear. Consider defining or rephrasing 'zero bias' for clarity since it is a technical term that may not be clear to all respondents or readers.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree that the age-appropriate default TRF influenced your choice of contribution rate?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          },
+          "comments": [
+            "The question wording is generally appropriate but could be made more precise by specifying 'decision regarding your contribution rate' or 'selection of contribution rate' for added clarity (Version 2 and 1).",
+            "The Likert scale should include intermediate descriptive anchors for all 7 points to aid respondent understanding and consistency (Version 1, 2, and 3).",
+            "Neutral midpoint should be explicitly labeled (e.g., 'Neither agree nor disagree' or 'Neutral').",
+            "Avoid presupposition or framing effects by using neutral phrasing (Version 3 suggests a neutral tone)."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "How confident are you in your understanding of the Target Retirement Fund options presented?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Not confident at all",
+              "Extremely confident"
+            ]
+          },
+          "comments": [
+            "The question is clear and appropriate for assessing self-perceived confidence.",
+            "Intermediate scale points should be explicitly labeled for clarity and enhanced measurement precision (Version 1, 2, and 3).",
+            "A slight softening of the phrase to 'options presented to you' adds a more respondent-centered tone (Version 2, 3)."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Did you notice any default contribution rate applied in the survey?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "comments": [
+            "Question is clear and straightforward, suitable for measuring awareness of default.",
+            "Consider including a 'Not sure' or 'Cannot recall' option to capture uncertainty and reduce forced-choice bias (Version 2).",
+            "Rephrasing slightly to 'Did you observe a default contribution rate applied during the survey?' can improve clarity (Version 1 and 2)."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your age group:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Under 25",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ]
+          },
+          "comments": [
+            "Age groups are standard and well defined.",
+            "Consider consistency in phrasing with years spelled out (e.g., 'Under 25 years', '25 to 34 years') for clarity and professionalism (Version 2).",
+            "Alternative to 'Under 25' could be '18-24' if survey targets adults only (Version 3)."
+          ]
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Attention check: Please select 'Agree' for this question.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          "comments": [
+            "Standard attention check with plausible Likert scale response options, which is methodologically sound.",
+            "To reduce possible demand characteristics, wording can be softened to be less obvious, e.g., 'To ensure quality responses, please select 'Agree' for this item' (Version 2 and 3).",
+            "Version 3 suggests making the required response 'Somewhat agree' instead of 'Agree' to further reduce obviousness and align options more precisely.",
+            "Response options show some inconsistency since 'Agree' is not marked 'Somewhat' or 'Strongly' while other options are; however, this is standard Likert phrasing and acceptable."
+          ]
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Effect of age-appropriate default Target Retirement Fund (TRF) choice on saving behavior",
+      "purpose": "To evaluate whether providing an age-appropriate default Target Retirement Fund option influences participants\u2019 saving behavior by reducing avoidance of default options and affecting variation in contribution rates.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree with the following statement: The age-appropriate default Target Retirement Fund influenced my decision regarding my contribution rate.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neither agree nor disagree",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "How confident are you in your understanding of the Target Retirement Fund options presented to you?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Not confident at all",
+              "Slightly confident",
+              "Somewhat confident",
+              "Moderately confident",
+              "Confident",
+              "Very confident",
+              "Extremely confident"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Did you observe a default contribution rate applied during the survey?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Not sure"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your age group:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "18 to 24 years",
+              "25 to 34 years",
+              "35 to 44 years",
+              "45 to 54 years",
+              "55 to 64 years",
+              "65 years or older"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Attention check: To ensure attentiveness, please select 'Somewhat agree' for this item.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Effect of age-appropriate default Target Retirement Fund (TRF) choice on saving behavior",
+      "purpose": "To evaluate whether providing an age-appropriate default Target Retirement Fund option influences participants\u2019 saving behavior by reducing avoidance of default options and affecting variation in contribution rates, while capturing nuanced perceptions, demographic factors, prior experience, psychological constructs, and behavioral intentions.",
+      "questions": [
+        {
+          "question_id": "q5",
+          "question_text": "Attention check: Please select the option that best describes your agreement with the statement: 'I understand the instructions provided in this survey.'",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree",
+              "Prefer not to answer"
+            ]
+          },
+          "position": "early"
+        },
+        {
+          "question_id": "q0_screening",
+          "question_text": "Are you currently eligible to participate in retirement savings plans, such as 401(k) or similar, through your employer or otherwise?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q2c",
+          "question_text": "Before starting this survey, how confident were you in your understanding of Target Retirement Fund options?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Not confident at all",
+              "Slightly confident",
+              "Somewhat confident",
+              "Moderately confident",
+              "Confident",
+              "Very confident",
+              "Extremely confident",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q1a",
+          "question_text": "During the survey, was an age-appropriate default Target Retirement Fund option presented to you as one of the investment choices?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, I saw it and recognized it",
+              "I saw something but am not sure if it was a default option",
+              "No, I did not see any default option",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q1b",
+          "question_text": "Regarding your contribution rate decision, which of the following best describes how the age-appropriate default Target Retirement Fund option affected you?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "It encouraged me to contribute more",
+              "It encouraged me to contribute less",
+              "It led me to reflect on my contribution rate but did not change it",
+              "It did not influence my decision",
+              "Prefer not to answer"
+            ]
+          },
+          "display_condition": {
+            "question_id": "q1a",
+            "selected_options": [
+              "Yes, I saw it and recognized it"
+            ]
+          }
+        },
+        {
+          "question_id": "q1c",
+          "question_text": "Have you previously contributed to a Target Retirement Fund or similar age-based retirement investment product before this survey?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q2_intro",
+          "question_text": "Next, please answer some questions to assess your knowledge about Target Retirement Funds. Please try your best to answer each.",
+          "input_type": "info",
+          "input_config": {}
+        },
+        {
+          "question_id": "q2b_1",
+          "question_text": "What is the primary purpose of a Target Retirement Fund?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "To adjust asset allocation based on expected retirement date",
+              "To invest in a fixed portfolio regardless of age",
+              "To provide immediate income cash benefits",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q2b_2",
+          "question_text": "How are the asset allocations of Target Retirement Funds generally adjusted over time?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "They adjust gradually over time towards retirement",
+              "They remain the same permanently",
+              "They frequently change based on short-term market fluctuations",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q2b_3",
+          "question_text": "True or False: The age-appropriate default Target Retirement Fund is specifically chosen to match the investor\u2019s approximate retirement timeframe.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "True",
+              "False",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q_risk_tol",
+          "question_text": "How would you describe your general tolerance for financial risk?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Very low risk tolerance",
+              "Low risk tolerance",
+              "Somewhat low risk tolerance",
+              "Neutral",
+              "Somewhat high risk tolerance",
+              "High risk tolerance",
+              "Very high risk tolerance",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q_fin_literacy",
+          "question_text": "Please rate your overall financial literacy (beyond Target Retirement Funds).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Very low",
+              "Low",
+              "Somewhat low",
+              "Neutral",
+              "Somewhat high",
+              "High",
+              "Very high",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q_trust_provider",
+          "question_text": "How much do you trust the provider of the Target Retirement Fund options presented in this survey?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Do not trust at all",
+              "Trust a little",
+              "Somewhat distrust",
+              "Neutral",
+              "Somewhat trust",
+              "Trust a lot",
+              "Completely trust",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q_perceived_choice",
+          "question_text": "To what extent did you feel you had meaningful choice in selecting your contribution rate and retirement fund options during this survey?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "No meaningful choice at all",
+              "Very little choice",
+              "Somewhat little choice",
+              "Neutral",
+              "Somewhat meaningful choice",
+              "Meaningful choice",
+              "Completely meaningful choice",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q_decision_avoidance",
+          "question_text": "During the survey, how often did you feel like avoiding making a decision regarding your contribution rate or fund allocation?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Never",
+              "Rarely",
+              "Occasionally",
+              "Sometimes",
+              "Often",
+              "Very often",
+              "Always",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q_satisfaction_default",
+          "question_text": "Overall, how satisfied are you with the age-appropriate default Target Retirement Fund option presented during the survey?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Very dissatisfied",
+              "Dissatisfied",
+              "Somewhat dissatisfied",
+              "Neutral",
+              "Somewhat satisfied",
+              "Satisfied",
+              "Very satisfied",
+              "Prefer not to answer"
+            ]
+          },
+          "display_condition": {
+            "question_id": "q1a",
+            "selected_options": [
+              "Yes, I saw it and recognized it"
+            ]
+          }
+        },
+        {
+          "question_id": "q_intent_contribute",
+          "question_text": "How likely are you to follow the contribution rate you selected during this survey in your actual retirement savings behavior?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Very unlikely",
+              "Unlikely",
+              "Somewhat unlikely",
+              "Neutral",
+              "Somewhat likely",
+              "Likely",
+              "Very likely",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "During the survey, was a contribution rate pre-set for you (a default amount suggested before you made any selections or changes)?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Not sure",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your age group:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "18 to 24 years",
+              "25 to 34 years",
+              "35 to 44 years",
+              "45 to 54 years",
+              "55 to 64 years",
+              "65 years or older",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Please indicate your gender identity:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Female",
+              "Male",
+              "Non-binary",
+              "Transgender",
+              "Prefer to self-describe",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q7",
+          "question_text": "What is your highest level of education completed?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than high school",
+              "High school diploma or equivalent",
+              "Some college or associate degree",
+              "Bachelor\u2019s degree",
+              "Graduate or professional degree",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What is your annual household income (before taxes)?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than $25,000",
+              "$25,000 to $49,999",
+              "$50,000 to $74,999",
+              "$75,000 to $99,999",
+              "$100,000 to $149,999",
+              "$150,000 or more",
+              "Other (please specify)",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q8_other_text",
+          "question_text": "If you selected 'Other' for income, please specify:",
+          "input_type": "text",
+          "input_config": {
+            "optional": true
+          },
+          "display_condition": {
+            "question_id": "q8",
+            "selected_options": [
+              "Other (please specify)"
+            ]
+          }
+        },
+        {
+          "question_id": "q9_behavior",
+          "question_text": "Thinking about your actual contribution decisions during the survey, did you change your contribution rate from the default or initial amount presented?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, I increased my contribution rate",
+              "Yes, I decreased my contribution rate",
+              "No, I kept the contribution rate as it was presented",
+              "I do not recall",
+              "Prefer not to answer"
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "minor_polish": "Only minimal wording polish was made acknowledging the conceptual overlap between recognition of the default option (q1a) and behavior change regarding contribution rate (q9_behavior). No questions were removed or restructured to respect user instruction. This minor overlap is acceptable given these questions address related but distinct psychological and behavioral constructs, and maintaining them aids data triangulation."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q0_screening",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "The term 'eligible' can be interpreted differently; respondents might be unsure if they qualify. Including 'Prefer not to answer' is good. The scale options are appropriate but could benefit from clearer definitions of eligibility to avoid ambiguity."
+      },
+      {
+        "question_id": "q1a",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "'I saw something but am not sure if it was a default option' is ambiguous and might confuse respondents. The distinction between 'saw it and recognized it' and 'saw something but unsure' is subtle and may be subject to recall bias. The phrase 'during the survey' is appropriate."
+      },
+      {
+        "question_id": "q1b",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "Options are reasonably discrete but 'led me to reflect on my contribution rate but did not change it' may overlap with 'did not influence my decision' depending on interpretation. The option ordering may influence responses. Including 'Prefer not to answer' helps reduce forced response bias."
+      },
+      {
+        "question_id": "q1c",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Straightforward question. Potential social desirability bias as respondents may want to appear experienced. Having 'Prefer not to answer' helps."
+      },
+      {
+        "question_id": "q2_intro",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 0,
+        "comments": "Just an instructional prompt; no issues."
+      },
+      {
+        "question_id": "q2b_1",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Options are appropriate knowledge choices. 'Prefer not to answer' is appropriate. No ambiguous wording but order of options might influence selection."
+      },
+      {
+        "question_id": "q2b_2",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "'Frequently change based on short-term market fluctuations' may confuse respondents, as gradual adjustments are not typically considered short-term market fluctuations. This ambiguity could mislead responses."
+      },
+      {
+        "question_id": "q2b_3",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Simple true/false with appropriate 'Prefer not to answer'. No major ambiguity but true/false questions can sometimes encourage guessing."
+      },
+      {
+        "question_id": "q2c",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "The retrospective confidence rating may be subject to recall bias and social desirability bias; respondents might overstate their prior knowledge. The 7-point Likert scale is appropriate, but the time frame 'Before starting this survey' in a post-survey question could confuse respondents' reflections."
+      },
+      {
+        "question_id": "q3",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "The phrase 'pre-set for you (a default amount suggested before you made any selections or changes)' is verbose and may confuse respondents about what constitutes 'pre-set'. Including 'Not sure' is useful but may indicate wording ambiguity."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Age brackets are standard. Including 'Prefer not to answer' is good. No option for under 18 might be acceptable given survey focus. Minimal ambiguity."
+      },
+      {
+        "question_id": "q6",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Gender identity categories are generally inclusive. 'Prefer to self-describe' without a text input option could frustrate respondents. Inclusion of transgender as separate category may overlap with other categories if respondents identify as transgender and another gender; no instructions provided."
+      },
+      {
+        "question_id": "q7",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Educational categories standard; inclusion of 'Prefer not to answer' mitigates forced answering bias."
+      },
+      {
+        "question_id": "q8",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Income questions are sensitive; social desirability bias is high here. 'Other (please specify)' with free text is a positive feature. Potential for underreporting, despite 'Prefer not to answer'. Income brackets might benefit from consistent intervals."
+      },
+      {
+        "question_id": "q8_other_text",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 0,
+        "comments": "Optional open text for 'Other' income. No issues."
+      },
+      {
+        "question_id": "q9_behavior",
+        "leading_language": 0,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "Question merges direction of change and behavior (change or not) \u2014 this creates a double-barreled structure. Responses requiring recall of behavior may be influenced by social desirability bias (participants want to appear proactive). 'I do not recall' mitigates uncertainty but introduces missing data. The difference between 'kept as presented' and 'did not change' in prior questions might confuse respondents."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Placing an attention check based on self-reported understanding of instructions can lead to social desirability bias since participants may feel pressured to agree even if confused. The scale is appropriate nominal Likert but forced choice without a 'prefer not to answer' option may omit some valid cases."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing Constructs",
+        "severity": 3,
+        "comments": "Key psychological constructs potentially relevant to saving behavior, such as risk tolerance, financial literacy beyond Target Retirement Fund knowledge, trust in the default provider, and behavioral intention measures, are missing. These omissions limit the explanatory power of the survey."
+      },
+      {
+        "issue": "Redundant Items",
+        "severity": 1,
+        "comments": "Some questions on recognition of the default option (q1a) and behavior change (q9_behavior) may overlap conceptually, but overall redundancy is limited."
+      },
+      {
+        "issue": "Theoretical Gaps",
+        "severity": 3,
+        "comments": "The survey focuses on knowledge and self-reported influence but lacks objective behavioral metrics or validated measures of actual saving behavior changes. The exclusion of psychological mediators such as decision avoidance, perceived choice, and satisfaction with default options is a critical gap affecting validity and theoretical grounding."
+      },
+      {
+        "issue": "Scale Inconsistencies",
+        "severity": 2,
+        "comments": "Some questions use 'Prefer not to answer' while others do not (e.g., q5 attention check). The mix of 7-point Likert scale and multiple choice with unequal intervals could reduce cross-item comparability."
+      },
+      {
+        "issue": "Survey Flow and Positioning",
+        "severity": 2,
+        "comments": "The attention check (q5) is positioned late instead of early to efficiently remove inattentive respondents early on. Also, the confidence rating (q2c) is retrospective, which could bias responses and may benefit from positioning before knowledge questions."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: Potential social desirability and confirmation bias. The question assumes that the age-appropriate default Target Retirement Fund influenced the respondent\u2019s decision, which may lead respondents to agree even if they were not influenced, especially as the question is framed to imply influence. This could inflate agreement levels and does not allow for nuanced understanding of other influencing factors.\n\n2. Question q1: Ambiguous scope of \"influenced my decision regarding my contribution rate.\" It is unclear whether \u201cinfluenced\u201d means positively, negatively, or merely information impact. Respondents might interpret \u201cinfluence\u201d differently (e.g., encouraged to contribute more, less, or just caused reflection), which threatens validity.\n\n3. Question q1: Double-barreled in implicit assumptions. The phrase ties \u201cage-appropriate default\u201d with \u201cTarget Retirement Fund,\u201d conflating whether it\u2019s the appropriateness of the age default or the Target Retirement Fund itself that influences decision.\n\n4. Question q2: Use of confidence scale without assessing actual knowledge. Confidence alone may not reflect actual understanding, and people tend to overestimate knowledge (Dunning-Kruger effect). This creates a validity threat if conclusions are drawn solely based on confidence.\n\n5. Question q3: Ambiguity in \u201cDid you observe a default contribution rate applied during the survey?\u201d The term \u201cdefault contribution rate\u201d may be unclear to participants who are not familiar with what constitutes a default. Some participants may misunderstand the question or answer \u201cNot sure\u201d due to vague wording.\n\n6. Question q4: Age group categories are conventional but potentially insensitive to younger (<18) or non-respondents. While the lowest category is 18-24, no option exists for under 18, which may be relevant if younger participants took part. This could introduce exclusion bias or confusion.\n\n7. Question q5: The attention check uses an obviously directive instruction that may create demand characteristics or socially desirable responding in subsequent questions, as participants realize the survey is testing them, potentially altering their behavior.\n\n8. General scale labeling inconsistency: The \u201cNeutral\u201d label appears only in the attention check (q5), whereas q1 uses \u201cNeither agree nor disagree.\u201d Such inconsistency in scale labels could confuse respondents or impact scale interpretation.\n\n9. Scale length and granularity consistency: All Likert scales are 7-point, which is acceptable, but the labels for confidence (q2) are more nuanced and could cause scale interpretation differences compared to agreement scales (q1), reducing comparability.\n\n10. Lack of demographic controls beyond age (e.g., gender, income, education) that could affect saving behavior and default effects. Without these, the analysis may omit key confounding factors, threatening external validity.\n\n11. No clear verification if the respondents actually experienced the \u201cage-appropriate default\u201d condition before responding, which is critical to interpret q1 meaningfully. This may introduce noise if the sample includes participants who did not see the default option.\n\n12. Overall, the survey contains only 5 questions, which is minimal for capturing saving behavior nuances and the effect of defaults comprehensively, potentially limiting content validity."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1a: The phrase \u201cDid you notice an age-appropriate default Target Retirement Fund option presented to you during the survey?\u201d assumes that the participant had adequate attention or recall, which may result in underreporting due to forgetfulness rather than true non-exposure. The wording \u201cnotice\u201d is subjective and can conflate seeing, understanding, or recalling.\n\n2. Question q1b: The response option \u201cI did not notice or use the default option\u201d overlaps conceptually with the gating question (q1a) where those who answer \u201cNo\u201d or \u201cNot sure\u201d are excluded. This could confuse participants or lead to redundant data that might complicate analysis.\n\n3. Question q1b: The options \u201cHad no influence,\u201d \u201cMade me reflect but did not change,\u201d and \u201cDid not notice or use\u201d may not be mutually exclusive or sufficiently discrete, potentially leading to ambiguous categorization or misinterpretation by respondents.\n\n4. Questions q2b_1, q2b_2, q2b_3 (Knowledge questions): The inclusion of \u201cI am not sure\u201d options can encourage satisficing or non-effortful responses rather than attempting to guess, which might reduce the sensitivity of knowledge measurement. Additionally, question q2b_2\u2019s option \u201cThey change daily based on market conditions\u201d may confuse participants as some target date funds do have market-driven adjustments within their glide path, although generally gradual\u2014this could bias responses.\n\n5. Question q2c: Asking respondents to rate confidence in their knowledge immediately after the knowledge quiz may introduce overconfidence or anchoring bias unrelated to actual understanding. The proximity of knowledge questions to this confidence rating can bias responses.\n\n6. Question q3: The phrasing \u201cDuring the survey, was a contribution rate already pre-set for you (applied as a default amount) before you made changes, if any?\u201d is complex and contains embedded parentheses that may confuse respondents. The sentence structure is lengthy, and \u201cpre-set for you\u201d and \u201cdefault amount\u201d may not be perceived as synonymous by all respondents, causing ambiguity.\n\n7. Question q4 (Age group): Adding \u201cUnder 18 years\u201d is good for completeness but may result in data from participants who should be ineligible for retirement fund decisions or survey participation, introducing noise if these participants are minor and not the survey\u2019s target population. No screening/referral question is indicated to prevent this.\n\n8. General demographic questions (q6 Gender, q7 Education, q8 Income): While reasonably inclusive, the gender question misses explicitly non-binary options beyond \u201cNon-binary/Third gender\u201d and \u201cPrefer to self-describe\u201d which may be insufficiently specific; this could impact respondents\u2019 ability to select preferred identities. Also, there is no option for \u201cother\u201d in income brackets which might exclude some income sources or non-traditional income.\n\n9. Question q5 (Attention check): The instruction to \u201cplease select \u2018Neutral\u2019 for this item\u201d explicitly reveals the attention check to respondents. Such transparent attention checks may cause demand effects or alert respondents they are being tested, potentially influencing subsequent answers or increasing social desirability bias.\n\n10. Survey structure: The attention check (q5) is positioned last in the survey rather than interspersed earlier, which reduces its effectiveness at identifying inattentive respondents promptly and risks wasted data collection on inattentive participants.\n\n11. Survey length and flow: The insertion of an \u201cinfo\u201d type message (q2a) before the knowledge questions is acceptable, but the abrupt shift from simple awareness questions (q1a, q1b) to knowledge quizzes and then confidence measures may cause respondent fatigue or cognitive overload, potentially affecting response quality, especially among less knowledgeable participants.\n\n12. Lack of direct behavioral questions: The survey relies on self-reports about influence and perceptions of defaults but lacks behavioral measures or verification questions about actual contribution changes, which may limit validity due to reliance on subjective recall and social desirability.\n\n13. No assessment of prior experience with retirement funds: The survey omits questions about participants\u2019 prior use or familiarity with Target Retirement Funds or similar instruments, which could be important covariates influencing both knowledge and responses.\n\n14. Potential mismatch between the survey\u2019s purpose and question sequencing: The survey aims to evaluate actual saving behavior changes influenced by defaults but focuses heavily on knowledge and perception questions before confirming exposure to default options, risking misinterpretation or misclassification of respondents\u2019 behaviors.\n\n15. The \"Prefer not to answer\" option appears inconsistently (present in demographics but not in other sensitive questions like q1a or q1b), potentially forcing forced-choice responses that could bias responses or increase dropout rates."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

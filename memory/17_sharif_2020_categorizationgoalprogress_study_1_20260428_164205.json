@@ -1,0 +1,486 @@
+{
+  "timestamp": "2026-04-28T16:42:05.454046",
+  "project": "17_sharif_2020_categorizationgoalprogress_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Categorization Cues and Consumers' Goal Progress Estimation",
+      "purpose": "To test how categorization cues influence consumers' sensitivity to proportion of categories completed versus absolute goal progress.",
+      "comments": "The theme and original purpose wording are clear and consistent across versions. Several enhancements suggested clarifying 'sensitivity' to terms like 'influence', 'attention', or 'perception' for better participant understanding and academic precision.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "When pursuing a goal, to what extent do categorization cues affect how sensitive you are to the proportion of categories you have completed?",
+          "comments": "Original wording is somewhat abstract and may confuse respondents due to the term 'sensitive'. Versions suggest replacing 'sensitive' with 'influenced' or 'attention to'. Also, substituting 'categorization cues' with 'cues related to category grouping' helps clarify the concept. Some suggest adding examples or rephrasing for clarity.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 7,
+            "scale_labels": [
+              "Not at all sensitive",
+              "Extremely sensitive"
+            ],
+            "comments": "Labels recommended to be more parallel and academically precise: alternatives include 'Not at all influential' to 'Extremely influential', or 'Not at all aware' to 'Extremely aware'. Adding label position at endpoints is clarity enhancing."
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "When pursuing a goal, to what extent do categorization cues affect how sensitive you are to your absolute progress?",
+          "comments": "Same concerns as Q1 about sensitivity wording. Suggest clarifying 'absolute progress' (with examples like 'total steps completed'). Recommended rewording to 'influence your perception of absolute progress'.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 7,
+            "scale_labels": [
+              "Not at all sensitive",
+              "Extremely sensitive"
+            ],
+            "comments": "Same as Q1 for label refinement; suggestions include 'Not at all influential' to 'Extremely influential'. Label position at endpoints recommended."
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate your agreement with the following statement: Categorization cues help me better estimate my progress toward my goals.",
+          "comments": "Original is straightforward but 'help me better estimate' could be improved for academic precision to 'improve my ability to accurately estimate' or 'help me more accurately estimate'. The Likert scale is standard and appropriate.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ],
+            "comments": "No changes recommended to scale labels; they are standard and sufficient."
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Attention check: Please select 'Agree' for this question.",
+          "comments": "Labeling the question explicitly as 'Attention check' might alert respondents, so more neutral phrasing like 'For quality control purposes, please select 'Agree' for this question' or 'To ensure data quality, please select 'Agree' for this item' is recommended. The 7-point Likert-type scale options with gradations are appropriate to reduce patterned responding.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "comments": "Options are appropriate and consistent with other scaled items for coherent survey design."
+          }
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Categorization Cues and Consumers' Goal Progress Estimation",
+      "purpose": "To examine how categorization cues influence consumers' perception of the proportion of categories completed compared to absolute goal progress.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "When pursuing a goal, to what extent do cues related to category grouping influence your perception of the proportion of categories you have completed?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 7,
+            "scale_labels": [
+              "Not at all influential",
+              "Extremely influential"
+            ],
+            "label_position": "endpoints"
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "When pursuing a goal, to what extent do cues related to category grouping influence your perception of your absolute progress (i.e., total progress regardless of categories)?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 7,
+            "scale_labels": [
+              "Not at all influential",
+              "Extremely influential"
+            ],
+            "label_position": "endpoints"
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate your agreement with the following statement: Cues related to category grouping improve my ability to accurately estimate my progress toward my goals.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ],
+            "label_position": "endpoints"
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "For quality control purposes, please select 'Agree' for this question.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Categorization Cues and Consumers' Goal Progress Estimation",
+      "purpose": "To examine how grouping cues within goals affect consumers' perception of their progress.",
+      "questions": [
+        {
+          "question_id": "screening1",
+          "question_text": "How much experience do you have pursuing goals that include multiple parts grouped into distinct categories or stages, such as completing chapters in a course, sections of a project, or phases in a fitness plan?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "No experience",
+              "Little experience",
+              "Some experience",
+              "Moderate experience",
+              "Extensive experience"
+            ]
+          }
+        },
+        {
+          "question_id": "q1",
+          "question_text": "When working toward a goal with multiple categories or sections, how much do grouping cues (like labeled sections or grouped tasks) influence your perception of how many categories you have completed? (By \"categories completed,\" we mean the number of distinct sections or parts you have fully finished.)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Not at all",
+              "A little",
+              "Somewhat",
+              "Quite a bit",
+              "A great deal"
+            ],
+            "label_position": "all"
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "When working toward a goal with multiple categories or sections, how much do grouping cues influence your perception of your overall progress toward completing the entire goal? (By \"overall progress,\" we mean your estimate of total completion regardless of categories.)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Not at all",
+              "A little",
+              "Somewhat",
+              "Quite a bit",
+              "A great deal"
+            ],
+            "label_position": "all"
+          }
+        },
+        {
+          "question_id": "q3a",
+          "question_text": "How useful do you find grouping cues (such as labeled sections or grouped tasks) for recognizing which specific parts or categories of your goal you have completed?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Not useful",
+              "Slightly useful",
+              "Moderately useful",
+              "Very useful",
+              "Extremely useful"
+            ],
+            "label_position": "all"
+          }
+        },
+        {
+          "question_id": "q3b",
+          "question_text": "How useful do you find grouping cues for gauging your overall progress toward finishing your goal?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Not useful",
+              "Slightly useful",
+              "Moderately useful",
+              "Very useful",
+              "Extremely useful"
+            ],
+            "label_position": "all"
+          }
+        },
+        {
+          "question_id": "q_neg_rev",
+          "question_text": "I find grouping cues within goals confusing and they sometimes make it harder for me to track my progress.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "label_position": "all"
+          }
+        },
+        {
+          "question_id": "q_neg_rev2",
+          "question_text": "Sometimes I feel grouping cues distract me from focusing on my main goal progress.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "likert",
+            "scale_points": 5,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "label_position": "all"
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Attention check: Please select the option labeled exactly 'Neutral' to show you are paying attention.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Which of the following best describes the types of goals you most often pursue? (Select all that apply.)",
+          "input_type": "multiple_choice_multiple_answer",
+          "input_config": {
+            "options": [
+              "Personal (e.g., fitness, hobbies)",
+              "Academic (e.g., coursework, certifications)",
+              "Professional (e.g., work projects, career milestones)",
+              "Financial (e.g., budgeting, saving)",
+              "Other (please specify)"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "What is your age? You may also select 'Prefer not to answer.'",
+          "input_type": "single_select",
+          "input_config": {
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older",
+              "Prefer not to answer"
+            ]
+          }
+        },
+        {
+          "question_id": "q7_behavioral",
+          "question_text": "Imagine you have a goal divided into 4 equal categories, and you have completed 2 categories fully and half of the third. Out of 7 points, how would you rate your overall progress?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "About 2 points",
+              "About 3 points",
+              "About 4 points",
+              "About 5 points",
+              "About 6 points",
+              "About 7 points"
+            ]
+          }
+        },
+        {
+          "question_id": "q8_behavioral",
+          "question_text": "If your goal has 5 categories, and you complete all tasks in 3 categories, how many categories have you completed?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "screening1_revision": "Changed the initial screening from a binary yes/no to a 5-point experience scale to better capture gradations of experience and exclude minimally experienced respondents during analysis.",
+      "q1_q2_clarification": "Added explicit clarifications in parentheses to define and differentiate 'categories completed' (number of full sections finished) versus 'overall progress' (total goal completion regardless of categories) to reduce confusion and improve discriminant validity.",
+      "q1_q2_q3a_q3b_rewording": "Refined wording of q1/q2 and q3a/q3b to emphasize subtle differences between influence on perception (q1/q2) versus usefulness for understanding progress (q3a/q3b), to reduce redundancy and respondent fatigue while preserving conceptual distinctions.",
+      "additional_negatively_worded_item": "Added a second negatively framed item (q_neg_rev2) on distraction by grouping cues to better balance the scale and reduce acquiescence and social desirability biases beyond the existing negatively worded item.",
+      "q5_goal_type_addition": "Expanded q5 from a single-choice experience description to a multiple-answer question capturing various goal types respondents pursue, enhancing theoretical richness and external validity by allowing analyses by goal context.",
+      "overall_scale_and_structure": "Maintained existing scales and question order to respect prior design while improving wording and adding balance and contextual detail as requested."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "screening1",
+        "leading_language": 1,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "explanation": "The screening question uses clear examples, but the yes/no format may oversimplify experience breadth and excludes partial or limited experience. The binary choice risks excluding respondents who have ambiguous experience. The wording \"Have you pursued goals that involve completing multiple parts grouped into distinct categories or stages?\" may be ambiguous regarding what counts as a category or stage. Social desirability bias is possible since 'No' may feel like admitting lack of experience. Using a binary scale for experience is restrictive and could misclassify respondents who have limited or informal experience."
+      },
+      {
+        "question_id": "q1",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "explanation": "The phrase 'grouping cues (like labeled sections or grouped tasks)' helps clarify but could still be interpreted variably, leading to potentially ambiguous responses. The phrase 'how you view the number of categories you have finished' might confuse respondents about whether 'view' refers to perception, memory, or evaluation. Social desirability bias exists because respondents might want to appear attentive to cues. The 5-point Likert scale is acceptable, but an odd-point scale lacks granularity, and some label distinctions (such as 'Quite a bit' vs. 'A great deal') could be subjective."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "explanation": "Similar issues as q1 regarding ambiguity of 'grouping cues' and 'influence your view of your total progress.' Respondents may struggle distinguishing between 'number of categories completed' and 'total progress,' which could lead to measurement overlap or confusion. Social desirability bias remains possible. Scale concerns mirror q1."
+      },
+      {
+        "question_id": "q3a",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "The question is clear but uses positive phrasing ('helpful') which may prompt socially desirable positive responses. The examples mitigate ambiguity somewhat, but interpretive variation in 'helpful' remains possible. The 5-point scale with gradated labels is reasonable but could limit nuance."
+      },
+      {
+        "question_id": "q3b",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "explanation": "Similar to q3a but measuring 'understanding overall progress' which is more abstract and likely to be interpreted variably. Respondents may have difficulty discerning between 'helpful in showing which parts completed' and 'helpful in understanding overall progress', risking construct overlap or confusion. Positive framing also raises social desirability bias. Scale appropriateness same as q3a."
+      },
+      {
+        "question_id": "q_neg_rev",
+        "leading_language": 1,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "explanation": "The negative reverse-coded question attempts to counter acquiescence bias but its wording ('Grouping cues... are confusing and make it harder to track my progress') compounds two separate claims (confusing and make it harder), so it is double-barreled. Negative phrasing can lead to respondent misunderstanding or carelessness. Strong social desirability bias is likely since agreeing suggests confusion or difficulty, which respondents may be reluctant to acknowledge. The 5-point scale with 'Strongly disagree' to 'Strongly agree' is standard but the negative wording may reduce reliability without clearer construction."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "The attention check instruction is clear but the presence of options such as 'Somewhat agree' and 'Agree' causes potential confusion if respondents are not precise, risking false fails or unnecessary exclusions. The inclusion of multiple 'agree' gradations may compromise clarity."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "explanation": "Self-reported experience levels have inherently subjective categories (few, several, regularly, very experienced) without clear definitions, leading to large variability in interpretation. Social desirability bias is high, encouraging respondents to overstate experience. The scale is ordinal but lacks behavioral anchors, and the wording could confuse respondents about distinctions between categories, threatening reliability."
+      },
+      {
+        "question_id": "q6",
+        "leading_language": 0,
+        "double_barreled_structure": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 1,
+        "explanation": "Age categories are standard and include a 'Prefer not to answer' option, which is good for privacy. Minor social desirability bias possible as some may prefer not to share age, but mitigated by option to opt out."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Lack of behavioral or objective measures",
+        "severity": 3,
+        "explanation": "The survey relies exclusively on self-reports of perceived influence and helpfulness of grouping cues. There are no objective or behavioral indicators of actual progress estimation accuracy or attention beyond a basic attention check. This limits construct validity and may inflate social desirability bias."
+      },
+      {
+        "issue": "Potential construct overlap/redundancy between q1/q2 and q3a/q3b",
+        "severity": 2,
+        "explanation": "Questions q1 and q2 ask about influence on perception of progress, while q3a and q3b ask about helpfulness in understanding completed parts and overall progress. These constructs are related and may overlap, increasing respondent burden and risking multicollinearity in analysis."
+      },
+      {
+        "issue": "Insufficient differentiation between types of progress perception",
+        "severity": 2,
+        "explanation": "The survey separately addresses perception of number of categories completed versus total progress overall but lacks clear operational definitions to ensure respondents understand these distinctions, threatening discriminant validity."
+      },
+      {
+        "issue": "Inadequate screening for relevant experience breadth",
+        "severity": 2,
+        "explanation": "The initial screening question is overly binary and does not capture gradient of experience, which risks including respondents with minimal or no relevant experience and therefore inaccurate responses."
+      },
+      {
+        "issue": "Lack of items addressing potential negative reactions or confusion apart from one negatively framed item",
+        "severity": 2,
+        "explanation": "Only one negatively worded item assesses difficulty with grouping cues, which is double-barreled and likely unreliable. The survey could benefit from additional balanced items to reduce acquiescence and social desirability biases."
+      },
+      {
+        "issue": "Absence of measurement for respondents' goal types and contexts",
+        "severity": 2,
+        "explanation": "No questions gather information about the types of goals (e.g., personal, academic, professional) or contexts which might moderate the effects of grouping cues on progress perception; this limits external validity and theoretical richness."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1 and q2: Ambiguity in \"cues related to category grouping\" \u2014 The phrase is technical and may not be clearly understood by all respondents without examples or definitions. This could lead to varied interpretations and reduce measurement validity.\n\n2. Question q1 and q2: Overlapping constructs \u2014 Both questions ask about the influence of category grouping cues but differ subtly (\"proportion of categories completed\" vs. \"absolute progress\"). The distinction might be unclear to respondents, causing confusion or inconsistent responses.\n\n3. Question q1 and q2: Use of \"influence your perception\" is somewhat abstract and may require introspection that respondents might find difficult, which risks unreliable responses due to limited respondent insight.\n\n4. Question q3: Leading language \u2014 The statement \"Cues related to category grouping improve my ability...\" presumes a positive effect, potentially biasing responses toward agreement (social desirability bias).\n\n5. Question q3: Double-barreled concept \u2014 The question merges two constructs: (a) cues related to category grouping and (b) ability to estimate progress accurately. Respondents uncertain about one aspect may struggle to answer, reducing construct clarity.\n\n6. Question q4: Straightforward instructed response item but uses a 7-point scale from \"Strongly disagree\" to \"Strongly agree\" yet only asks respondents to select \"Agree.\" This is ambiguous since \"Agree\" is broad, and respondents may choose \"Somewhat agree\" or \"Strongly agree\" instead, causing measurement error in screening for attention.\n\n7. Question q4: The directive \"please select 'Agree'\" conflicts with the presence of multiple agreement levels, creating ambiguity in how strictly the instruction should be followed.\n\n8. General scale design: All Likert scales use only endpoint labels, which may not sufficiently guide respondents on the meaning of intermediate points, increasing the risk of inconsistent or arbitrary middle-scale use.\n\n9. Lack of screening or demographic questions to contextualize respondents\u2019 familiarity with goal pursuit or categorization cues, which may influence their ability to respond meaningfully.\n\n10. No reverse-coded or balanced items are present, increasing the risk of acquiescence bias, especially given the positively framed questions."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1 and q2: Potential for cognitive overload due to lengthy and complex question wording. Although examples are helpful, the multiple clauses and parenthetical explanations may confuse respondents or cause disengagement, threatening response accuracy.\n\n2. Question q1 and q2: Despite inclusion of examples, the phrase \"visual or structural hints\" remains somewhat vague and may be interpreted differently by respondents, risking construct validity.\n\n3. Question q1 and q2: The difference between \"percentage of categories completed\" (q1) and \"overall progress toward completing the entire goal, regardless of categories\" (q2) may be subtle and confusing, potentially causing respondent uncertainty and response inconsistency.\n\n4. Questions q3a and q3b: Both use nearly identical question phrasing (\"help you understand which parts you have completed\" vs. \"help you estimate your overall progress accurately\"), which may cause redundancy or respondent fatigue, increasing the chance of inattentive or patterned responses.\n\n5. Question q3b: The phrase \"estimate your overall progress accurately\" presumes that respondents have a measurable metric of accuracy, which may not be true; this could induce guesswork or socially desirable answers.\n\n6. Question q4: The instruction \"please select the option labeled exactly 'Agree' below\" is clearer than in prior iterations but might still be confusing given that options include \"Somewhat agree\" and \"Strongly agree.\" Respondents may second-guess whether to pick precisely \"Agree\" or a variant, leading to potential failed attention checks.\n\n7. Question q5: The gradation from \"No experience\" through \"Expert-level experience\" risks subjective interpretation of what qualifies as \"Limited,\" \"Moderate,\" or \"Extensive\" experience without objective criteria, which threatens the consistency and validity of this measure.\n\n8. Question q5: The example goals (academic programs, project milestones, fitness plans) might not cover respondents\u2019 relevant experiences, potentially alienating or confusing some participants and resulting in inaccurate self-classification.\n\n9. Question q6: Age numeric input range is appropriate, but the absence of a \"prefer not to answer\" option may reduce respondent comfort or lead to item nonresponse or satisficing.\n\n10. General scale design: While full labeling of each point on the 7-point scales is good practice, the similarity between options (e.g., \"Quite helpful,\" \"Very helpful,\" \"Extremely helpful\") may be hard for respondents to distinctly differentiate, causing arbitrary choices and reducing scale reliability.\n\n11. Survey theme and purpose: The survey assumes respondents have experience with goals involving categorization cues but lacks screening questions to confirm this baseline. Without screening, many respondents may lack relevant experience to answer meaningfully, threatening external validity.\n\n12. Overall, the survey relies heavily on self-report of subjective influence or helpfulness of cues, which may lead to social desirability or self-awareness biases, especially as no behavioral or objective measures accompany the self-reports."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

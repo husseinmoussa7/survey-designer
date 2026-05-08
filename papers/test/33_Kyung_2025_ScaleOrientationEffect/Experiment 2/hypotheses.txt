@@ -1,0 +1,1 @@
+1. For NPS, incongruent orientation (horizontal 10→0；vertical 0→10) yields lower likelihood-to-recommend than congruent.

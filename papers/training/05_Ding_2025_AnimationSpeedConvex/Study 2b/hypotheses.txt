@@ -1,0 +1,1 @@
+1. Moderate-speed animations capture more attention than static or fast animations, impairing performance on a concurrent task (attention, not stress or motivation, explains the effect).

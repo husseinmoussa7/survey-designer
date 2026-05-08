@@ -1,0 +1,1 @@
+1. Cross-period impatience is robust to date-vs-duration framing and is distinct from crossing calendar month boundaries.

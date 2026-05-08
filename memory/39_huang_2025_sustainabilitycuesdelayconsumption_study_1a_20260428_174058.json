@@ -1,0 +1,645 @@
+{
+  "timestamp": "2026-04-28T17:40:58.794287",
+  "project": "39_huang_2025_sustainabilitycuesdelayconsumption_study_1a",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Sustainability cues and delay of consumption",
+      "purpose": "To test whether the presence of a sustainability cue affects consumers' willingness to choose a larger-later option over a smaller-sooner option.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree with the statement: \"I am willing to choose a larger-later option over a smaller-sooner option when a sustainability cue is present.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          "_comment": "Original wording is clear; however, 'I am willing to choose' could be rephrased for neutrality and precision. Both versions improved the phrasing to express preference or likelihood and adjusted scale labels for better clarity and readability. The presence of sustainability cues was better specified in Version 2 ('in the choices presented') and Version 1 included a clarity-enhancing expanded purpose. The 7-point Likert scale labels were refined to 'Slightly agree/disagree' (Version 2) and also to 'Extremely likely/unlikely' phrasing (Version 1)."
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Did you notice any sustainability-related cues during the task?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "_comment": "Both versions agree that adding an 'Unsure' option improves data nuance and helps capture participant uncertainty. Version 1 also offered valuable expanded clarification ('visual or textual indicators emphasizing environmental or social responsibility'). Version 2 suggested slight rewording for clarity by including 'in the options presented'."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please select the option that best describes your attention level throughout the task.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Very low attention",
+              "Low attention",
+              "Moderate attention",
+              "High attention",
+              "Very high attention"
+            ]
+          },
+          "_comment": "Both versions improved the question by suggesting a Likert scale instead of multiple-choice labels to enhance measurement consistency and reliability. Version 1 recommended replacing adjectives with a 5-point Likert scale with consistent anchors; Version 2 rephrased the stem more formally as 'Please rate your level of attention during the task.' Both sets of labels were consistent."
+        }
+      ],
+      "general_comments": "Synthesized improvements favor explicit, neutral, and precise question phrasing, consistent Likert scales across questions, inclusion of uncertain response options where ambiguity may arise, and explicit definitions to improve participant understanding and reduce variability."
+    },
+    "revised_survey": {
+      "theme": "Sustainability cues and delay of consumption",
+      "purpose": "To examine whether the presence of sustainability cues influences consumers' preference for a larger, delayed option compared to a smaller, immediate option.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate your level of agreement with the following statement: \"I prefer choosing a larger, delayed option over a smaller, immediate option when sustainability-related cues are present in the choices.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Slightly disagree",
+              "Neutral",
+              "Slightly agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "During the task, did you notice any sustainability-related cues in the options presented? (By sustainability-related cues, we mean visual or textual indicators emphasizing environmental or social responsibility.)",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Unsure"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please rate your level of attention during the task.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 5,
+            "scale_labels": [
+              "Very low attention",
+              "Low attention",
+              "Moderate attention",
+              "High attention",
+              "Very high attention"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Sustainability cues and delay of consumption",
+      "purpose": "To assess consumers' actual choices and perceptions regarding options differing in size and immediacy, and the influence of sustainability-related cues on these choices, while accounting for familiarity with these cues and individual differences.",
+      "instructions": "This survey asks about a decision-making task you completed earlier today involving selecting between different product options varying in size and delivery timing, some accompanied by sustainability-related cues (such as environmental or social responsibility labels). Please respond based on your experience during that specific task. If you have any prior knowledge or preferences related to sustainability cues or product delivery timing, please indicate them as requested. To complement your responses, please also complete a brief impulsivity questionnaire. Your honest and thoughtful responses are appreciated. Some questions include \"Prefer not to answer\" or \"Not applicable\" options to give you flexibility. Please note that responses such as \"Not sure\" or \"Prefer not to answer\" will be considered as missing data and handled appropriately during analysis to maintain data integrity.",
+      "questions": [
+        {
+          "question_id": "attention_check_1",
+          "question_text": "To ensure quality responses, please select \"Somewhat agree\" for this statement.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Strongly agree"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "q0",
+          "question_text": "Before completing the task, how familiar were you with sustainability-related cues (such as environmental or social responsibility labels or indicators) generally and in the context of the products you considered?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Very familiar",
+              "Somewhat familiar",
+              "Not familiar at all",
+              "Prefer not to answer"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "q1a",
+          "question_text": "During the task, considering all trials where you were presented with a smaller immediate option and a larger delayed option without any sustainability-related cues, which option did you choose more often? (Please consider all such choices during the task.)",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Smaller immediate option",
+              "Larger delayed option",
+              "I do not recall encountering this choice type",
+              "Not sure",
+              "Prefer not to answer"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "q1b",
+          "question_text": "During the task, considering all trials where you were presented with a smaller immediate option and a larger delayed option accompanied by sustainability-related cues (such as environmental or social responsibility labels), which option did you choose more often? (Please consider all such choices during the task.)",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Smaller immediate option",
+              "Larger delayed option",
+              "I do not recall encountering this choice type",
+              "Not sure",
+              "Prefer not to answer"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "During the task, did you notice any sustainability-related cues (such as visual or textual indicators of environmental or social responsibility) in the options presented?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Unsure",
+              "Prefer not to answer"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "q2a",
+          "question_text": "If you answered \"No\" or \"Unsure\" in the previous question, please indicate why (optional):",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I did not remember seeing any cues",
+              "I did not understand what sustainability-related cues are",
+              "Other (please specify)",
+              "Prefer not to answer",
+              "Not applicable"
+            ],
+            "mandatory": false,
+            "conditional_on": {
+              "question_id": "q2",
+              "answers": [
+                "No",
+                "Unsure"
+              ]
+            }
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please rate how attentive you were during the decision-making task.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 7,
+            "scale_labels": [
+              "Not attentive at all",
+              "Slightly attentive",
+              "Somewhat attentive",
+              "Moderately attentive",
+              "Quite attentive",
+              "Very attentive",
+              "Extremely attentive"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Before completing the task today, how would you generally describe your preference regarding immediate versus delayed consumption in everyday decisions? (If you are unsure or prefer not to answer, please use those options.)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 5,
+            "scale_labels": [
+              "Strong preference for immediate consumption",
+              "Some preference for immediate consumption",
+              "Neutral or no preference",
+              "Some preference for delayed consumption",
+              "Strong preference for delayed consumption"
+            ],
+            "mandatory": false
+          }
+        },
+        {
+          "question_id": "impulsivity_scale_intro",
+          "question_text": "Next, please answer the following short questionnaire to assess decision-making tendencies related to impulsivity and delay discounting.",
+          "input_type": "information"
+        },
+        {
+          "question_id": "imp1",
+          "question_text": "I often act on the spur of the moment without thinking.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 5,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "imp2",
+          "question_text": "I prefer smaller rewards now rather than larger rewards later.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 5,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "imp3",
+          "question_text": "I find it difficult to wait for things I want.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 5,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "q_motivation_sustainability",
+          "question_text": "How important is sustainability to you when making product choices? (This helps us understand your motivation in the task.)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "scale_range": 5,
+            "scale_labels": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ],
+            "mandatory": false
+          }
+        },
+        {
+          "question_id": "q_product_type_context",
+          "question_text": "In the task, which product category best describes most of the options you chose between? (This helps contextualize your responses.)",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Food or beverages",
+              "Household or personal care products",
+              "Clothing or accessories",
+              "Electronics",
+              "Other (please specify)",
+              "Prefer not to answer"
+            ],
+            "mandatory": false
+          }
+        },
+        {
+          "question_id": "q5_age",
+          "question_text": "What is your age? (You may enter your age in years; 13 or older eligible to participate.)",
+          "input_type": "number",
+          "input_config": {
+            "min_value": 13,
+            "max_value": 99,
+            "mandatory": false
+          }
+        },
+        {
+          "question_id": "q5_gender",
+          "question_text": "What is your gender? (Your response will be categorized for analysis; please choose the option that best describes you.)",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Male",
+              "Female",
+              "Non-binary/third gender",
+              "Prefer not to say",
+              "Other (please specify)"
+            ],
+            "mandatory": false
+          }
+        },
+        {
+          "question_id": "q5_education",
+          "question_text": "What is the highest level of education you have completed? (Responses of 'Other' will be reviewed and recoded where possible.)",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than high school",
+              "High school diploma or equivalent",
+              "Some college, no degree",
+              "Associate degree",
+              "Bachelor's degree",
+              "Graduate or professional degree",
+              "Other (please specify)",
+              "Prefer not to answer"
+            ],
+            "mandatory": false
+          }
+        },
+        {
+          "question_id": "q5_income",
+          "question_text": "Which category best describes your total annual household income before taxes? (Optional)",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than $25,000",
+              "$25,000 to $49,999",
+              "$50,000 to $74,999",
+              "$75,000 to $99,999",
+              "$100,000 to $149,999",
+              "$150,000 or more",
+              "Prefer not to answer"
+            ],
+            "mandatory": false
+          }
+        },
+        {
+          "question_id": "q5_occupation",
+          "question_text": "What is your current employment status? (Optional)",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Employed full-time",
+              "Employed part-time",
+              "Self-employed",
+              "Unemployed",
+              "Student",
+              "Retired",
+              "Homemaker",
+              "Prefer not to answer",
+              "Other (please specify)"
+            ],
+            "mandatory": false
+          }
+        },
+        {
+          "question_id": "attention_check_2",
+          "question_text": "To help us ensure data quality, please select \"Disagree\" for this statement: \"I am completing this survey without paying attention.\"",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "mandatory": true
+          }
+        },
+        {
+          "question_id": "social_desirability_softener",
+          "question_text": "We understand that questions about sustainability can be sensitive. Please answer as honestly as possible; your responses are confidential and there are no right or wrong answers.",
+          "input_type": "information"
+        }
+      ]
+    },
+    "explanations": {
+      "added_income_question": "Added an optional multiple-choice question (q5_income) about total annual household income to capture socioeconomic status, which may affect consumption delay preferences and sustainability attitudes.",
+      "added_occupation_question": "Added an optional multiple-choice question (q5_occupation) on employment status to capture socioeconomic and lifestyle variables relevant to consumer decision-making.",
+      "format_and_placement": "Placed the new socioeconomic questions within the demographic section after existing demographics for logical flow and consistency.",
+      "minimal_rewording": "Did not alter existing question texts or options aside from adding the two socioeconomic variables as per user request for minimal polish only.",
+      "optional_and_flexible": "Made both new socioeconomic questions optional with 'Prefer not to answer' and 'Other (please specify)' options to maintain respondent comfort and data usability."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "attention_check_1",
+        "issues": {
+          "leading_language": 2,
+          "double_barreled": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 1
+        },
+        "comments": "Leading language is inherent because the question instructs respondents to select a specific answer, which may be necessary for attention checks but can induce response bias. The scale is standard for agreement, but forced selection of 'Somewhat agree' breaks normal choice autonomy."
+      },
+      {
+        "question_id": "q0",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "comments": "Including 'Prefer not to answer' may reduce social desirability, but familiarity is somewhat ambiguous and may be interpreted differently across respondents. The categorical choices do not capture nuanced familiarity; the scale might benefit from clearer anchors or behavioral indicators."
+      },
+      {
+        "question_id": "q1a",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 1,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 1
+        },
+        "comments": "The question conflates multiple criteria: option size, immediacy, sustainability cue absence, and frequency without defining 'more often' concretely. The recall period is vague, which may cause ambiguous interpretation. The options include both recall and preference uncertainty, blending constructs slightly."
+      },
+      {
+        "question_id": "q1b",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 1,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 1
+        },
+        "comments": "Similar to q1a, but the explicit sustainability cues introduced may prompt social desirability bias toward choosing the larger delayed option. The question is double-barreled with size, delay, and cue presence combined. Recall demands remain high and ambiguous."
+      },
+      {
+        "question_id": "q2",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 1
+        },
+        "comments": "Social desirability may encourage affirmative responses to noticing sustainability cues. The term 'notice' potentially varies in meaning (conscious awareness vs. memory). 'Unsure' and 'Prefer not to answer' reduce forced choice but also introduce ambiguity in interpretation."
+      },
+      {
+        "question_id": "q2a",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0
+        },
+        "comments": "Appropriate follow-up to q2 for non-affirmative responses. Open-ended 'Other (please specify)' may cause coding difficulties, but the conditional format reduces burden. Minimal leading or ambiguity detected."
+      },
+      {
+        "question_id": "q3",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 2
+        },
+        "comments": "Self-rating attention is prone to social desirability bias because respondents want to appear attentive. While the 7-point Likert scale is generally appropriate, the labels are all positively valenced or neutral ('Slightly attentive'), lacking negative options, which may skew responses upward and violate scale symmetry."
+      },
+      {
+        "question_id": "q4",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 2
+        },
+        "comments": "Reference to 'Before completing the task today' is ambiguous and may cause recall bias. The 5-point scale with preference gradations is reasonable but 'Neutral or no preference' is broad; respondents may find it hard to choose when unsure. Social desirability bias may be low but present depending on respondent values."
+      },
+      {
+        "question_id": "q5_age",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0
+        },
+        "comments": "Numeric input is appropriate. The eligibility starting at age 13 is logical given survey design considerations."
+      },
+      {
+        "question_id": "q5_gender",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0
+        },
+        "comments": "Options are inclusive and balanced. Social desirability possible in respondent willingness to disclose. 'Other (please specify)' introduces potential coding complexity."
+      },
+      {
+        "question_id": "q5_education",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 1,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0
+        },
+        "comments": "Education levels are standard. Social desirability bias possible in reporting. The option 'Other (please specify)' requires careful data cleaning."
+      },
+      {
+        "question_id": "attention_check_2",
+        "issues": {
+          "leading_language": 2,
+          "double_barreled": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 1
+        },
+        "comments": "Similar to 'attention_check_1', it is inherently leading due to explicit answer instructions. The balance of disagree-agree options is appropriate; however, forced answer may introduce anxiety or frustration."
+      },
+      {
+        "question_id": "social_desirability_softener",
+        "issues": {
+          "leading_language": 0,
+          "double_barreled": 0,
+          "social_desirability_bias": 0,
+          "ambiguous_wording": 0,
+          "scale_appropriateness": 0
+        },
+        "comments": "Information-type item designed to minimize social desirability bias and encourage honesty; appropriately placed and effective."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "No explicit measurement or control for individual differences in delay discounting tendency beyond q4; a validated behavioral or psychometric scale on delay discounting or impulsivity would strengthen conclusions.",
+        "severity": 3
+      },
+      {
+        "issue": "Survey relies heavily on respondents' memory and self-report for choices during the 'task' without objective behavioral data or cross-validation; recall bias is a major threat to validity.",
+        "severity": 3
+      },
+      {
+        "issue": "No items addressing possible confounding variables such as product type, context, or prior sustainability attitudes, which can moderate the impact of sustainability cues on decision-making.",
+        "severity": 2
+      },
+      {
+        "issue": "Repeated use of 'Prefer not to answer' and 'Not sure' options is good for respondent comfort but raises concerns of missing data and inconsistent treatment across analyses; no stated plan for missingness handling.",
+        "severity": 2
+      },
+      {
+        "issue": "Two attention check questions are included but placed far apart with no additional data quality checks (e.g., response time, straightlining) to triangulate respondent engagement.",
+        "severity": 2
+      },
+      {
+        "issue": "The questionnaire lacks measures of motivation or perceived importance of sustainability, which could moderate effects and clarify mechanisms behind choice patterns.",
+        "severity": 2
+      },
+      {
+        "issue": "Demographic questions are standard but omit socioeconomic variables beyond education that might impact consumption delay preferences or sustainability attitudes (e.g., income, occupation).",
+        "severity": 1
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1 is potentially leading and socially desirable, as it frames the preference in the context of sustainability cues. Respondents might feel pressured to agree with the socially valued stance of favoring sustainability, which can bias responses. Also, the question forces respondents to self-assess a hypothetical preference rather than observe actual behavior, which threatens validity.\n\n2. Question q1 contains compound and ambiguous elements: it combines preference for larger vs. smaller options with delay vs. immediacy and the presence of sustainability cues in one statement. This conflates multiple constructs (size, delay, sustainability cue influence) into a single agreement scale, making it difficult to attribute what exactly respondents agree or disagree with.\n\n3. In question q1, the middle of the Likert scale uses \"Slightly disagree\" and \"Slightly agree,\" which are uncommon and may confuse respondents. A standard verbal labeling usually uses \"Disagree somewhat\" or \"Somewhat disagree.\" This can affect response interpretation and comparability.\n\n4. Question q2 asks whether respondents noticed sustainability-related cues during the task but provides no objective verification for cue presence, nor does it clarify what the task was. The subjective self-report is vulnerable to recall bias and may not capture actual cue exposure, undermining internal validity.\n\n5. In question q2, the option \"Unsure\" might reflect either lack of memory or confusion about the definition of sustainability cues, but this is not further probed. Without follow-up, the meaning and treatment of \"Unsure\" responses is unclear.\n\n6. Question q3 asks respondents to rate their own attention level during the task. Self-reports of attention are subject to social desirability bias and retrospective inaccuracies. There is no triangulation with objective measures, so this limits construct validity.\n\n7. Across all questions, the survey does not clarify what the \"task\" referred to in q2 and q3 was, leaving respondents potentially confused or providing responses disconnected from the survey's framing.\n\n8. The scales used in q1 and q3 differ in length (7-point vs. 5-point) without justification. This inconsistency could affect respondent cognitive load and interpretation, introducing measurement noise.\n\n9. The instructions and questions do not address or screen for prior familiarity with sustainability cues or pre-existing preferences for delay vs. immediacy, which are critical confounding variables for interpreting responses.\n\n10. The survey lacks demographic or behavioral questions that might moderate the relationship between sustainability cues and consumption delay preferences, limiting the ability to control for confounds or segment analyses."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1a and q1b ask about the \"most frequently chosen\" option for different conditions but do not define the time frame or number of trials, which may lead to inconsistent interpretations of frequency and reduce measurement reliability.\n\n2. Both q1a and q1b include the option \"I did not face this choice type,\" which may cause confusion if respondents believe they are being tested on memory rather than honest reporting; this could increase nonresponse or inaccurate answers if participants are unsure.\n\n3. Question q2a is contingent on answers \"Unsure\" or \"No\" from q2 but is mandatory for all respondents, which may force irrelevant answers for those who answered \"Yes,\" potentially frustrating respondents and harming data quality.\n\n4. In question q3, the Likert scale labels for attention include unusual wording such as \"Very little attentive\" and \"Somewhat inattentive.\" These mixed valence and uncommon phrases can confuse respondents and disrupt the ordinal nature of the scale, threatening response validity.\n\n5. Question q3\u2019s scale includes both negative (\"Somewhat inattentive\") and positive (\"Somewhat attentive\") labels but lacks consistent symmetry in phrasing, which may bias responses or obscure true attention levels.\n\n6. The instructions before the survey refer to a \"decision-making task you completed earlier\" without specifying or linking to details about timing, content, or context of that task, potentially causing recall errors and increasing respondent confusion across multiple questions.\n\n7. Question q4 asks about \"general preference regarding immediate versus delayed consumption\" prior to the task. This retrospective self-assessment is susceptible to hindsight bias and may be influenced by the task experience, threatening construct validity.\n\n8. Question q4 uses a 7-point scale with nuanced preference gradations (slight, moderate, strong), which may be difficult for respondents to discriminate accurately, especially without examples or anchors, leading to noisy data.\n\n9. In question q5_age, the minimum age is set to 18, which excludes potentially relevant younger populations without justification, and the maximum age of 120 while accommodating all is also suspect for plausibility checks on data quality.\n\n10. Demographic questions q5_gender and q5_education include the category \"Other (please specify)\" but do not indicate if responses are subsequently coded or handled, risking heterogeneous open-ended data that complicates analysis.\n\n11. Across the survey, no attention or consistency checks are embedded to verify if respondents are reading and answering seriously, which can allow low-quality data from inattentive or distracted participants.\n\n12. The survey does not address potential social desirability bias, particularly given the focus on sustainability cues, which are socially valued attributes; this may inflate affirmative responses regarding noticing cues or choosing sustainable options.\n\n13. The mandatory nature of every question, including contingencies like q2a, risks forced or random answers if respondents feel unable to truthfully respond, reducing data validity and increasing potential survey dropout or satisficing."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

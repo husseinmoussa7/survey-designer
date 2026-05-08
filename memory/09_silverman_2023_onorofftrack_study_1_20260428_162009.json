@@ -1,0 +1,352 @@
+{
+  "timestamp": "2026-04-28T16:20:09.785711",
+  "project": "09_silverman_2023_onorofftrack_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Impact of streaks on consumer engagement in target behaviors",
+      "purpose": "To test whether consumers are more likely to engage in a behavior when it contributes to an intact streak versus after a broken streak",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree with the statement: I would be more likely to perform a behavior if it helps maintain a streak I have been building?",
+          "comments": "Original wording is clear but somewhat informal and ambiguous ('I have been building'). Suggestions across versions include replacing 'building' with 'maintaining' or 'established' for precision. The scale is 7-point Likert; adding incremental verbal labels and a neutral midpoint can increase clarity and scale granularity."
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you agree with the statement: Once a streak is broken, I am less motivated to perform the behavior again soon after.",
+          "comments": "The phrase 'soon after' is considered vague; different versions suggest clarifying the time frame to 'in the near future', 'within the next few days', or 'in the short term' to improve interpretability. The notion of motivation is kept consistent but some suggest better neutral wording. The response scale is consistent across versions."
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Did you pay attention to the instructions and scenarios described in this study?",
+          "comments": "Attention check item wording varies slightly. Some versions use a yes/no dichotomy; others recommend a Likert scale with agreement to a statement about careful reading, which may reduce social desirability bias and improve measurement precision. This item is important to verify engagement with the study materials."
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please select the option that best describes your current engagement in the target behavior.",
+          "comments": "Response options are generally consistent, but variations suggest clarifying the timeframe for 'recently' (e.g., 'within the last 7 days' or 'within the last week'), softening absolute terms ('do not currently engage' to 'do not currently engage regularly'), and balancing the phrasing of options for consistency (e.g., 'I currently maintain an unbroken streak')."
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Impact of streaks on consumer engagement in target behaviors",
+      "purpose": "To examine whether consumers are more likely to engage in a target behavior to maintain an ongoing streak compared to after experiencing a broken streak.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree with the following statement: I am more likely to perform the target behavior if it helps maintain a streak I have established.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you agree with the following statement: Once a streak is broken, I feel less motivated to perform the target behavior again within the next few days.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please indicate the extent to which you agree with the following statement: I carefully read and understood the instructions and scenarios presented in this study.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 5,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Which statement best describes your current engagement with the target behavior?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I currently maintain an unbroken streak in performing the behavior",
+              "I recently broke my streak (within the last 7 days) but plan to continue",
+              "I do not currently engage regularly in this behavior"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Impact of Streaks on Consumer Engagement in Daily Health-Tracking Behaviors",
+      "purpose": "To examine whether consumers are more likely to engage in a specific daily health-tracking behavior to maintain an ongoing streak compared to after experiencing a broken streak, and to explore broader motivational factors influencing this behavior.",
+      "intro": "For the following questions, \"streak\" is defined as the number of consecutive days you have performed ONE particular daily health-tracking behavior (e.g., logging your water intake, counting steps, or tracking meals) without missing a day. Please focus your responses on ONE behavior you perform most regularly and keep this definition in mind while answering.",
+      "questions": [
+        {
+          "question_id": "q4",
+          "question_text": "Which statement best describes your history and current engagement with performing the ONE daily health-tracking behavior you selected?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I currently maintain an unbroken streak of consecutive days performing the behavior (have not missed any days)",
+              "I had an unbroken streak in the past which ended more than 7 days ago, and I have continued performing the behavior since then",
+              "I had an unbroken streak, but I broke it within the last 7 days and have resumed performing the behavior since",
+              "I perform the behavior inconsistently without maintaining a streak (e.g., often missing multiple days in a row)",
+              "I have tried the behavior once or twice but have never maintained a streak",
+              "I have never performed this behavior"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "What is the current length of your longest streak (number of consecutive days) performing this behavior?",
+          "input_type": "numeric_entry",
+          "input_config": {
+            "min_value": 0,
+            "max_value": 365,
+            "placeholder": "Enter a number of days"
+          },
+          "note": "If you have never performed the behavior, please enter 0."
+        },
+        {
+          "question_id": "q7",
+          "question_text": "During the past month, approximately how many days did you perform the selected daily health-tracking behavior?",
+          "input_type": "numeric_entry",
+          "input_config": {
+            "min_value": 0,
+            "max_value": 31,
+            "placeholder": "Enter a number of days"
+          },
+          "note": "Please enter the number of days you performed the behavior in the last 30 days."
+        },
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree with the following statement? \"When I perform the selected daily health-tracking behavior, I am motivated by the desire to maintain my current streak of consecutive days, if I have one.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you agree with the following statement? \"After breaking a streak of performing the selected behavior, my motivation to perform it again changes (either decreases or increases) within the first week.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          "follow_up": {
+            "question_text": "Please specify how your motivation changes after breaking a streak:",
+            "input_type": "multiple_choice",
+            "input_config": {
+              "options": [
+                "I feel less motivated",
+                "I feel more motivated (e.g., motivated for a fresh start)",
+                "My motivation does not change",
+                "Not applicable - I have not broken a streak"
+              ]
+            }
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "On average, how many days per week do you perform the selected daily health-tracking behavior during weeks when you are actively engaged in it?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "7 days per week (every day)",
+              "6 days per week",
+              "5 days per week",
+              "3 to 4 days per week",
+              "1 to 2 days per week",
+              "I rarely perform this behavior (less than one day per week)",
+              "I do not perform this behavior"
+            ]
+          }
+        },
+        {
+          "question_id": "q8",
+          "question_text": "Apart from maintaining streaks, please indicate to what extent you agree that the following factors motivate you to perform the selected daily health-tracking behavior:",
+          "input_type": "matrix_scale",
+          "input_config": {
+            "statements": [
+              "Improving my health outcomes (e.g., weight, energy, chronic conditions)",
+              "Building a lasting habit",
+              "Social support or encouragement from others",
+              "Tracking progress to meet personal goals",
+              "Enjoyment or fun derived from the behavior"
+            ],
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Somewhat disagree",
+              "Neutral",
+              "Somewhat agree",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "To help us assess your attentiveness, please indicate your agreement with the statement: \"I carefully read and understood the instructions and scenarios in this study.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 5,
+            "scale_labels": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          "note": "This question serves as a data quality check."
+        }
+      ],
+      "closing_note": "Please answer all questions based on your actual behavior and experiences, not how you think you should behave. Keep in mind that there are no right or wrong answers; your honest responses help us better understand streaks and motivation."
+    },
+    "explanations": {
+      "q4 and q5 alignment": "Revised q5 wording to clarify that it asks about typical weekly frequency during periods of active engagement, distinguishing it from overall engagement history in q4. Changed 'Less than once per week' to 'I rarely perform this behavior (less than one day per week)' to clarify frequency and separate it more clearly from 'I do not perform this behavior' option. This reduces confusion and inconsistency between q4 and q5 responses.",
+      "Minor wording refinement in q4 option": "Added 'since then' in the second option of q4 to improve clarity on ongoing behavior after previous streak break."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q4",
+        "leading_language": 1,
+        "double_barreled_structure": 2,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 3,
+        "scale_appropriateness": 2,
+        "explanation": "The question mixes 'history' and 'current engagement' in one question, making it double-barreled and potentially confusing. The option wording such as 'perform the behavior inconsistently' and 'miss multiple days in a row regularly' is vague and subject to interpretation, which threatens clarity and response reliability. The distinctions between options (e.g., recent break versus break more than 7 days ago) may be unclear to respondents. The scale is categorical but lacks an explicit 'never engaged before' and 'stopped performing' distinction, possibly conflating behaviors."
+      },
+      {
+        "question_id": "q1",
+        "leading_language": 1,
+        "double_barreled_structure": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "explanation": "The phrase 'motivated by the desire to maintain my current streak, if I have one' contains conditional language that assumes respondents can and do accurately track their own motivation states, which is ambiguous. The question does not clarify if motivation differs on days without a streak or after a break. Social desirability bias may occur because maintaining streaks could be seen positively. The 7-point Likert scale is appropriate for measuring agreement but demands careful interpretation given the hypothetical nuance."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 1,
+        "double_barreled_structure": 3,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 3,
+        "scale_appropriateness": 2,
+        "explanation": "This question is double-barreled, asking if motivation 'changes (either decreases or increases)' and then measuring agreement with that statement, which could confuse respondents who only experience one direction of change. The time frame 'within the first week' is somewhat ambiguous and may not be salient to all participants. Social desirability bias may arise since admitting decreased motivation might be viewed negatively. The follow-up multiple-choice question is a helpful probe, but some responses (e.g., 'Not applicable') could cause confusion if skip logic is unclear. The 7-point scale is marginally appropriate but may not capture nuanced motivation changes effectively."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 1,
+        "double_barreled_structure": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "explanation": "The frequency categories are unevenly distributed with overlapping ranges which may cause respondent confusion (e.g., '3 to 4 days' is much broader than single day intervals above). The option 'Less than once per week' is vague and could include zero frequency, which is captured separately by 'I do not perform this behavior.' This redundancy could confuse respondents. Overall, the scale aligns with the question type but could be refined for clarity and mutual exclusivity."
+      },
+      {
+        "question_id": "q3",
+        "leading_language": 1,
+        "double_barreled_structure": 1,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "explanation": "This question likely induces social desirability bias because respondents may feel pressured to indicate attentiveness even if they did not carefully read instructions. Its function as an attention check is clear but the 5-point agreement scale may be too fine-grained for this purpose; a binary or forced-choice could be preferable. Additionally, 'carefully read and understood' combines comprehension and attention into one item, which could be double-barreled."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing constructs related to actual behavioral frequency validation and streak length.",
+        "severity": 3,
+        "explanation": "The survey does not collect objective or continuous measures of streak length or detailed frequency patterns over time, limiting the ability to validate self-reported streak engagement and tie motivation to objectively operationalized streaks."
+      },
+      {
+        "issue": "Potential redundancy/confusion between frequency (q5) and engagement status (q4).",
+        "severity": 2,
+        "explanation": "Questions q4 and q5 both probe aspects of behavior frequency and streak history but do so with overlapping and somewhat inconsistent options, which could confuse respondents or yield contradictory self-reports."
+      },
+      {
+        "issue": "Theoretical gap regarding motivational drivers beyond streak maintenance.",
+        "severity": 3,
+        "explanation": "The survey narrowly focuses on motivation related to maintaining streaks and impact of breaking them but neglects other common motivators for health-tracking behaviors such as health outcomes, social influence, or habit formation, limiting the theoretical comprehensiveness of the study."
+      },
+      {
+        "issue": "Assumption that respondents can accurately self-assess motivation and streak perception.",
+        "severity": 3,
+        "explanation": "Self-reported motivation and perceptions of streak maintenance depend heavily on introspective accuracy, which is often limited. The survey lacks behavioral or indirect measures that could help triangulate or validate these subjective reports."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: The phrase \u201ctarget behavior\u201d is vague and undefined for the participant, which may lead to varied interpretations affecting comparability and validity of responses. Without specifying what the behavior is, respondents may guess or respond inconsistently.\n\n2. Question q1: The statement \u201cif it helps maintain a streak I have established\u201d assumes the respondent currently has a streak, but q4 shows that not all respondents may have an ongoing streak. This creates a mismatch; those without streaks may find this question irrelevant or confusing.\n\n3. Question q2: The time frame \u201cwithin the next few days\u201d is vague and may be interpreted differently by respondents, introducing ambiguity that impacts response consistency.\n\n4. Question q2: The statement \u201cOnce a streak is broken, I feel less motivated\u201d presumes the respondent has experienced a broken streak, which may not apply to all participants, particularly those indicated in q4 as not having a streak or never having broken one. Responses might not be valid from those respondents.\n\n5. Question q3: The question about reading and understanding instructions may trigger social desirability bias, causing participants to overstate their comprehension to appear conscientious. It is also unclear whether this is a manipulation check or data quality indicator, leading to ambiguity in interpretation.\n\n6. Question q3: The 5-point scale here differs from the 7-point scale used in q1 and q2, potentially causing issues in comparing agreement levels across questions and inconsistent scaling effects.\n\n7. Question q4: The response options are not mutually exclusive nor exhaustive. For example, \u201cI recently broke my streak (within the last 7 days) but plan to continue\u201d implies a broken streak but does not capture those who broke a streak longer ago than 7 days, nor those who sporadically engage without streaks. Also, \u201cI do not currently engage regularly\u201d is vague \u2014 what counts as regular engagement is undefined.\n\n8. General: The survey assumes respondents are familiar with the concept of \u201cstreaks\u201d without defining it, which may cause varying interpretations or confusion and affect answer validity.\n\n9. General: The survey relies entirely on self-report, which is susceptible to recall bias and social desirability bias, especially given the potentially evaluative nature of the questions about motivation and behavior.\n\n10. General: The survey does not include any behavioral or frequency metrics (e.g., how often respondent performs the behavior), limiting ability to cross-check self-reported streak-related motivation against actual engagement patterns."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q4: The response options blend behavior status and intention (e.g., \u201cplan to continue\u201d), which mixes past behavior with future intentions. This could confound interpretation since intentions may not translate into actual behavior, thereby undermining the accuracy of categorization.\n\n2. Question q4: The option \u201cI engage somewhat irregularly in the behavior without forming regular streaks\u201d is vague and subjective. Without a clearer definition of \u201csomewhat irregularly\u201d or \u201cregular streaks,\u201d respondents may inconsistently classify their behavior, reducing reliability.\n\n3. Question q4: The options do not capture those who never engaged in the behavior at all before or those who only tried it once. The option \u201cI do not currently engage in this behavior\u201d conflates never engaging and having stopped, which could obscure meaningful differences.\n\n4. Question q1 and q2: Both use the phrase \u201cspecified daily health-tracking behavior,\u201d which may be confusing if respondents mentally substitute different behaviors\u2014for instance, water tracking vs. step counting\u2014leading to inconsistent interpretations and responses.\n\n5. Question q1: The phrase \u201cif doing so helps me maintain my current streak\u201d assumes the presence of a streak and that it is actively salient at the moment of response. For respondents with broken streaks, or irregular behavior, motivation may vary widely and be difficult to capture accurately in a single item.\n\n6. Question q1 and q2 display conditions: These rely on q4 responses to determine applicability, but respondents might misclassify themselves in q4, causing mis-routed or skipped questions and potential measurement error.\n\n7. Question q2: The phrase \u201cif I have broken my streak\u201d and the following week as the time frame are hypothetical and may lead to retrospective or speculative responses, which are prone to bias and less reliable than reports based on actual recorded behavior.\n\n8. Question q2: The question operationalizes motivation only as a decrease (\u201cless motivated\u201d), thereby implicitly assuming a negative affective state after breaking a streak. This may lead to acquiescence bias or fail to capture those motivated by a \u201cfresh start\u201d effect.\n\n9. Question q3: The item intended as a data quality indicator (\u201cI carefully read and understood the instructions...\u201d) may induce social desirability bias, as respondents feel pressured to report positively. It also uses a 7-point scale that may be overly granular for such a question and might not reliably distinguish attentiveness levels.\n\n10. Question q5: The frequency categories show an uneven granularity (\u201cEvery day,\u201d then \u201c5 to 6 days,\u201d then big jumps downward). This could lead to misclassification for respondents performing the behavior 6 days vs. 5 days, and the category \u201cLess than once per week\u201d is very broad, including anything from once weekly to never, unlike the separate \u201cI do not perform this behavior\u201d option.\n\n11. General: The survey relies heavily on self-report of streaks and behavior frequency without objective corroboration and does not address potential recall biases or social desirability influences, which may bias responses toward normative or aspirational streak engagement rather than actual behavior.\n\n12. General: Although the survey defines \u201cstreak\u201d in the intro, it does not ensure that all respondents interpret or visualize their streaks consistently; those unfamiliar with tracking concepts may misunderstand or oversimplify, leading to variability in data quality."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+H1: In response to marketplace trade-offs, consumers respond negatively to firms providing accessibility.
+
+H2b: Consumer responses to macro-level accessibility trade-offs are mediated by perceived firm morality.
+
+H4: Accessibility salience and knowledge will moderate consumer responses to macro-level trade-offs such that, when both are high (vs. low), the negative evaluation response to accessibility will be mitigated.

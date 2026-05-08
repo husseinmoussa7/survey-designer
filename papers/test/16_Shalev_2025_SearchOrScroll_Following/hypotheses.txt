@@ -1,0 +1,1 @@
+1. Inducing CCO (search vs. scroll) causally shifts following preferences toward credibility (mixed sentiment) vs. likability (positive sentiment), independent of platform.

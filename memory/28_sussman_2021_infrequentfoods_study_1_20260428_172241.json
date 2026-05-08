@@ -1,0 +1,523 @@
+{
+  "timestamp": "2026-04-28T17:22:41.565987",
+  "project": "28_sussman_2021_infrequentfoods_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Consumer food portion choices based on perceived food frequency",
+      "purpose": "To test whether consumers choose larger portions and compensate less for foods perceived as infrequent compared to frequent foods.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate how frequently you perceive the following food to be consumed (1 = Very Infrequent, 7 = Very Frequent).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very Infrequent",
+              "4": "Moderate Frequency",
+              "7": "Very Frequent"
+            }
+          },
+          "_comments": [
+            "From Version 1: Adds a mid-scale label ('Moderate Frequency') to improve participant interpretation.",
+            "From Version 3: Recommend wording that instructs participants to consider their own dietary habits rather than a general perception, for enhanced accuracy: e.g., 'Considering your own dietary habits, how frequently do you consume\u2026'.",
+            "General note: 'the following food' implies a preceding mention, ensure contextual embedding in survey."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please indicate the portion size of this food you would choose to eat right now. Enter the amount as a number and specify the unit (e.g., grams, ounces, slices).",
+          "input_type": "text_input",
+          "input_config": {
+            "placeholder": "e.g., 150 grams, 2 slices"
+          },
+          "_comments": [
+            "From Versions 1, 2, and 3: Emphasize including units to improve data consistency and interpretability.",
+            "From Version 2 and 3: Provide examples of common units to guide participants.",
+            "From Version 1: Note that free text input can introduce variability; consider numeric+unit input if possible."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "After consuming this food, how likely are you to reduce your caloric intake in later meals or snacks to compensate? Please indicate your likelihood on a scale from 1 (Very Unlikely) to 7 (Very Likely).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very Unlikely",
+              "7": "Very Likely"
+            }
+          },
+          "_comments": [
+            "From Version 3: Added specificity to 'later meals or snacks' to clarify time frame.",
+            "From Versions 1 and 2: Retain clear 7-point Likert scale with endpoints labelled for clarity.",
+            "From Version 2: Slightly refined wording to focus on compensating intake of other foods."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Manipulation Check: To what extent do you perceive this food as frequently consumed in your personal diet? Please select from 1 (Very Infrequent) to 7 (Very Frequent).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very Infrequent",
+              "7": "Very Frequent"
+            }
+          },
+          "_comments": [
+            "From Version 1 and 3: Wording simplified to remove 'versus' to better reflect the continuum scale.",
+            "From Version 3: Emphasizes 'personal diet' for clarity and precision.",
+            "From Version 2: Notes manipulation check consistency with initial frequency perception question."
+          ]
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Attention Check: To confirm your attention, please select 'Agree' below.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly Disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly Agree"
+            ]
+          },
+          "_comments": [
+            "From Version 1 and 2: Neutralized wording to reduce acquiescence bias, changing from 'Please select \"Agree\"' to 'To confirm your attention, please select \"Agree\"'.",
+            "Retains standard 5-point Likert response scale to reduce pattern recognition, helping identify inattentive responders."
+          ]
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Consumer food portion choices based on perceived food frequency",
+      "purpose": "To investigate whether consumers select larger portion sizes and exhibit less compensation in subsequent caloric intake for foods perceived as less frequently consumed compared to those more frequently consumed.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Considering your own dietary habits, how frequently do you consume this food? Please select a value from 1 (Very Infrequent) to 7 (Very Frequent), where 4 represents a moderate frequency.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very Infrequent",
+              "4": "Moderate Frequency",
+              "7": "Very Frequent"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please indicate the portion size of this food you would choose to eat right now. Enter the amount as a number and specify the unit (e.g., grams, ounces, slices).",
+          "input_type": "text_input",
+          "input_config": {
+            "placeholder": "e.g., 150 grams, 2 slices"
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "After consuming this food, how likely are you to reduce your caloric intake in later meals or snacks to compensate? Please indicate your likelihood on a scale from 1 (Very Unlikely) to 7 (Very Likely).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very Unlikely",
+              "7": "Very Likely"
+            }
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Manipulation Check: To what extent do you perceive this food as frequently consumed in your personal diet? Please select from 1 (Very Infrequent) to 7 (Very Frequent).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Very Infrequent",
+              "7": "Very Frequent"
+            }
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Attention Check: To confirm your attention, please select 'Agree' below.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly Disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Consumer food portion choices based on perceived food frequency",
+      "purpose": "To investigate whether consumers select larger portion sizes and exhibit less compensation in subsequent caloric intake for foods perceived as less frequently consumed compared to those more frequently consumed.",
+      "instructions": "In the following questions, [SPECIFIC FOOD NAME] refers to the particular food you will be asked about. For clarity, consider a specific food item familiar to you during the survey. When needed, think of a serving size you typically consume.",
+      "questions": [
+        {
+          "question_id": "q0",
+          "question_text": "Screening Question: How often do you consume [SPECIFIC FOOD NAME]? Please select the option that best describes your consumption frequency.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Never (I do not consume this food)",
+              "Very Rarely (less than once every 3 months)",
+              "Occasionally (at least once every 1-3 months)",
+              "Sometimes (at least once per month)",
+              "Regularly (at least once per week)"
+            ]
+          }
+        },
+        {
+          "question_id": "q1",
+          "question_text": "Considering your typical dietary habits, how often do you consume [SPECIFIC FOOD NAME]? Please select the frequency that best represents your consumption over the past 3 months.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Never or Less than Once Every 3 Months",
+              "2": "Once Every 2 Months",
+              "3": "Once per Month",
+              "4": "2 Times per Month",
+              "5": "Once per Week",
+              "6": "Several Times per Week",
+              "7": "Daily or More"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please indicate the portion size of [SPECIFIC FOOD NAME] you would typically choose to eat in a single usual serving during the past 3 months. Enter the amount and select the appropriate unit.",
+          "input_type": "custom_quantity_unit",
+          "input_config": {
+            "amount_type": "number",
+            "amount_min": 1,
+            "amount_max": 2000,
+            "unit_options": [
+              "grams (g)",
+              "ounces (oz)",
+              "pieces (please specify typical size in comments if applicable)",
+              "slices (please specify typical size in comments if applicable)",
+              "cups (standard US cup = 240 ml)"
+            ],
+            "instructions": "Enter a numeric amount (e.g., 150) and select the unit. If selecting pieces or slices, consider their typical size for better accuracy. Portion sizes above 2000 will prompt a warning to double-check your entry."
+          }
+        },
+        {
+          "question_id": "q2a",
+          "question_text": "Optional: Please describe what a typical piece/slice looks like for [SPECIFIC FOOD NAME] (e.g., weight, size) to help us interpret your portion size response.",
+          "input_type": "text_input",
+          "input_config": {
+            "placeholder": "E.g., one slice is about 30g, or one piece is about 50g"
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "After consuming [SPECIFIC FOOD NAME], please respond to the following questions about your compensation behaviors during the same day.",
+          "input_type": "group",
+          "subquestions": [
+            {
+              "question_id": "q3a",
+              "question_text": "How likely are you to reduce your caloric intake in the next meal following consumption of [SPECIFIC FOOD NAME]?",
+              "input_type": "scale",
+              "input_config": {
+                "scale_min": 1,
+                "scale_max": 7,
+                "scale_labels": {
+                  "1": "Very Unlikely",
+                  "7": "Very Likely"
+                }
+              }
+            },
+            {
+              "question_id": "q3b",
+              "question_text": "How likely are you to reduce your caloric intake in any snacks later the same day after consuming [SPECIFIC FOOD NAME]?",
+              "input_type": "scale",
+              "input_config": {
+                "scale_min": 1,
+                "scale_max": 7,
+                "scale_labels": {
+                  "1": "Very Unlikely",
+                  "7": "Very Likely"
+                }
+              }
+            },
+            {
+              "question_id": "q3c",
+              "question_text": "To what extent do you consciously (deliberately) reduce your caloric intake to compensate for the calories from [SPECIFIC FOOD NAME]?",
+              "input_type": "scale",
+              "input_config": {
+                "scale_min": 1,
+                "scale_max": 7,
+                "scale_labels": {
+                  "1": "Not at all conscious",
+                  "7": "Completely conscious"
+                }
+              }
+            },
+            {
+              "question_id": "q3d",
+              "question_text": "To what extent do you unconsciously (without deliberate effort) reduce your caloric intake after consuming [SPECIFIC FOOD NAME]?",
+              "input_type": "scale",
+              "input_config": {
+                "scale_min": 1,
+                "scale_max": 7,
+                "scale_labels": {
+                  "1": "Not at all unconscious",
+                  "7": "Completely unconscious"
+                }
+              }
+            }
+          ],
+          "note": "By 'compensate', we mean consciously or unconsciously reducing calorie intake later to balance out the calories from this food."
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Before answering about portion size and compensation, please indicate the following contextual factors for your typical consumption of [SPECIFIC FOOD NAME].",
+          "input_type": "group",
+          "subquestions": [
+            {
+              "question_id": "q6a",
+              "question_text": "How hungry are you usually when you eat [SPECIFIC FOOD NAME]?",
+              "input_type": "scale",
+              "input_config": {
+                "scale_min": 1,
+                "scale_max": 5,
+                "scale_labels": {
+                  "1": "Not hungry at all",
+                  "3": "Moderately hungry",
+                  "5": "Very hungry"
+                }
+              }
+            },
+            {
+              "question_id": "q6b",
+              "question_text": "When do you usually consume [SPECIFIC FOOD NAME]?",
+              "input_type": "multiple_choice",
+              "input_config": {
+                "options": [
+                  "Breakfast",
+                  "Lunch",
+                  "Dinner",
+                  "Snacks between meals",
+                  "Other (please specify)"
+                ],
+                "allow_multiple": true
+              }
+            },
+            {
+              "question_id": "q6c",
+              "question_text": "In what social setting do you typically consume [SPECIFIC FOOD NAME]?",
+              "input_type": "multiple_choice",
+              "input_config": {
+                "options": [
+                  "Alone",
+                  "With family",
+                  "With friends",
+                  "At work or school",
+                  "In public/restaurant",
+                  "Other (please specify)"
+                ],
+                "allow_multiple": true
+              }
+            },
+            {
+              "question_id": "q6d",
+              "question_text": "What is your usual emotional state when consuming [SPECIFIC FOOD NAME]?",
+              "input_type": "multiple_choice",
+              "input_config": {
+                "options": [
+                  "Neutral",
+                  "Happy",
+                  "Stressed",
+                  "Sad",
+                  "Bored",
+                  "Other (please specify)"
+                ],
+                "allow_multiple": true
+              }
+            }
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Manipulation Check: To support data quality, please indicate how you currently perceive your usual frequency of consuming [SPECIFIC FOOD NAME] over the past 3 months, using the same scale as before.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "scale_labels": {
+              "1": "Never or Less than Once Every 3 Months",
+              "2": "Once Every 2 Months",
+              "3": "Once per Month",
+              "4": "2 Times per Month",
+              "5": "Once per Week",
+              "6": "Several Times per Week",
+              "7": "Daily or More"
+            }
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Attention Check: Please select the option 'Neutral' below to confirm your attention and ensure data quality.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly Disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        }
+      ],
+      "survey_logic": {
+        "question_order": "Questions q1 through q6, including all q3 subquestions, q4, and q5 will be presented in randomized order after the screening question q0. The screening question q0 is always presented first."
+      }
+    },
+    "explanations": {
+      "redundancy reduction": "Reworded q1 and q4 frequency questions to clarify their distinct roles and slightly differentiate phrasing to reduce perceived redundancy and respondent fatigue identified in the feedback. Both use the same fully labeled scale but q4 specifies it is a data quality manipulation check.",
+      "food specification clarity": "Improved the instructions to provide a concise explanation that the placeholder '[SPECIFIC FOOD NAME]' refers to a concrete familiar food item to better guide respondent understanding as requested.",
+      "scale labels consistency": "Standardized scale labels for all frequency questions (q1 and q4) to fully label each point with more even increments (e.g., 'Once every 2 months' instead of ranges) to improve clarity and help respondents consistently interpret each scale point.",
+      "attention & manipulation check adjustment": "Clarified instructions in q4 (manipulation check) and q5 (attention check) to emphasize their role in ensuring data quality. Wording refined to better signal their purpose and reduce ambiguity, though their structure and response formats remain unchanged to adhere to instructions."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q0",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "Options imply a fixed frequency category without intermediate options; 'Occasionally (at least once every 1-3 months)' overlaps with 'Very Rarely (less than once every 3 months)' in ambiguous ways. 'Never' is conflated with 'I do not consume this food' which may be clearer. The lack of granularity around rare consumption may misclassify respondents. The scale categories are unevenly spaced and use vague terms which may confuse some respondents."
+      },
+      {
+        "question_id": "q1",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "The scale's numeric labels mix multiple units of time frequency with verbal anchors but do not explicitly clarify scale intervals; intermediate points could be interpreted inconsistently. Asking about frequency over the 'past 3 months' may induce recall bias. The phrase 'typical dietary habits' may prime socially desirable answers. The question is similar in construct to q0, potentially redundant for some analyses."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "Allowing multiple unit options (grams, ounces, pieces, slices, cups) introduces variability; 'pieces' and 'slices' require subjective interpretation, mitigated partly by optional q2a. Instructions to consider size in comments may be ignored, making interpretation difficult. The warning for amounts above 2000 may not prevent extreme entries but is a positive inclusion. The phrasing 'single usual serving' may be interpreted differently by respondents (some may consider buffets or variable contexts)."
+      },
+      {
+        "question_id": "q2a",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 1,
+        "comments": "Being optional reduces coverage; reliance on free-text explanations is prone to inconsistency and missing data. Instructions are clear but this question does not constrain or standardize the main portion size data."
+      },
+      {
+        "question_id": "q3",
+        "leading_language": 1,
+        "double_barreled": 2,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "Combining all later eating occasions (main meals and snacks) within a single likelihood question merges potentially distinct compensatory behaviors, constituting a double-barreled item. The note attempts clarification but may not fully resolve ambiguity. The question risks strong social desirability bias as participants may feel pressured to report compensation behavior that is seen as responsible. The verbal anchors on the 7-point scale are appropriate but intermediate points lack explanation."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "This manipulation check repeats the frequency scale from q1 with similar wording, which may cause redundancy and participant confusion about differences in purpose. The phrase 'currently perceive your usual frequency' is somewhat ambiguous and could be interpreted as different from past behavior. The scale issues from q1 apply here as well."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 1,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "The instruction to 'select Neutral' within a Likert-type agreement scale that is otherwise unrelated to any statement is ambiguous and may confuse respondents. The check relies on compliance rather than cognitive attention, risking false negatives especially if respondents interpret the scale intentionally. The scale choice is acceptable but the check design could be clearer."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Redundancy",
+        "severity": 2,
+        "comments": "Questions q0, q1, and q4 all measure consumption frequency with overlapping constructs and similar scale points, likely creating respondent fatigue and redundancy that may dilute attention and analytical clarity."
+      },
+      {
+        "issue": "Theoretical Gap - Compensation Behavior Nuance",
+        "severity": 3,
+        "comments": "Compensation is assessed only in terms of likelihood to reduce later caloric intake overall. The survey does not capture timing (immediate vs. delayed), occasions (separate meals vs. snacks, partially addressed in q3 note which still merges), or conscious versus unconscious processes in compensation, limiting construct validity and theoretical depth."
+      },
+      {
+        "issue": "Missing Constructs - Contextual Factors",
+        "severity": 3,
+        "comments": "No questions assess contextual factors likely to influence portion size selection or compensation, such as hunger level, meal timing, social setting, or emotional state, which threatens ecological validity and interpretation of findings."
+      },
+      {
+        "issue": "Ambiguity in Food Specification",
+        "severity": 2,
+        "comments": "Instructions use a placeholder '[SPECIFIC FOOD NAME]' with explanation that it will vary or be clarified at start, but lack of concrete examples or reference portions may impair respondent understanding and consistency across participants."
+      },
+      {
+        "issue": "Scale Label Consistency and Interpretation",
+        "severity": 2,
+        "comments": "Multiple frequency questions use a 7-point scale with labeled anchors only on key points. Intermediate points are unlabeled which can cause noise in responses. Also, scale categories may not reflect equal intervals psychologically, risking response bias."
+      },
+      {
+        "issue": "Attention and Manipulation Check Design Limitations",
+        "severity": 2,
+        "comments": "The attention check and manipulation check rely on repeated frequency questions and a forced 'Neutral' selection in a Likert scale, which may not adequately confirm respondent engagement or data quality; more robust checks may be needed."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1 and q4 Redundancy and Confusion: Both questions ask about frequency of food consumption on a 1\u20137 scale with very similar wording. q4 is labeled as a \"Manipulation Check\" but appears almost identical to q1, creating redundancy and potential confusion for respondents about differences in purpose or interpretation.\n\n2. Question q2 Lack of Standardization and Ambiguity in Portion Size Reporting: Asking respondents to enter any unit (grams, ounces, slices, etc.) as free text introduces large variability and difficulty in comparing portion sizes across respondents. Lack of controlled response options or standardized units threatens measurement validity and creates analytical challenges.\n\n3. Question q2 Potential for Input Errors and Missing Data: Open numeric plus unit text input without further guidance increases the risk of respondents entering ambiguous, incomplete, or inconsistent data (e.g., \"a lot,\" \"medium,\" or simply a number without unit). This threatens data quality and reliability.\n\n4. Question q3 Possible Social Desirability Bias: Asking participants how likely they would be to reduce caloric intake after eating the food may lead to socially desirable responses rather than truthful reporting, especially if participants assume that compensating is healthier or expected.\n\n5. Question q5 Ambiguity and Subjectivity in Attention Check Design: The instruction \"please select 'Agree' below\" is vague because the options are a Likert scale mainly intended for attitudes/beliefs, not a binary attention check. Participants might question what \"Agree\" is supposed to mean here, leading to confusion or failure of the check for attentive respondents.\n\n6. Lack of Context for \"This Food\": Throughout the survey, \"this food\" is referenced without specifying or reminding the respondent which food is under consideration. Without contextual cues or a definition, answers may vary in interpretation or refer to different foods, threatening content validity.\n\n7. Potential Scale Label Inconsistency: q1 labels the midpoint (4) as \"Moderate Frequency,\" but q4 omits that midpoint label. This inconsistency may reduce comparability or confuse respondents regarding scale interpretation.\n\n8. Double-Barreled Aspect in q3: The question references \"later meals or snacks,\" potentially conflating different eating occasions in one response. Respondents might consider compensation differently for meals versus snacks, leading to ambiguous or unreliable answers.\n\n9. No Screening for Non-Consumers or Extreme Outliers: The survey does not include any screening question to identify respondents who never consume \"this food\" or who always consume it daily, which may drastically influence subsequent questions and data interpretation.\n\n10. Missing Temporal Framing: Questions about frequency and compensation lack specific time frames (e.g., per day, week, month), making responses prone to individual interpretation and inconsistent recall periods, which reduces data comparability and accuracy."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q0 Screening Question Wording and Response Options: The screening question uses \u201cYes, regularly (at least once per month)\u201d and \u201cNo, I do not consume this food.\u201d The threshold for \u201cregularly\u201d is quite low (once per month) and may confuse respondents who consume the food less often but not zero. There is no option for occasional or very rare consumption, potentially excluding a relevant group or forcing misclassification.\n\n2. Question q1 Scale Labels and Anchoring: The scale points in q1 combine frequency and approximate time frames inconsistently\u2014for example, \u201cVery Infrequently (less than once per month)\u201d at 1 and \u201cModerate Frequency (about once per week)\u201d at 4, but the numeric scale 1\u20137 might not correspond linearly to these verbal anchors. Respondents may be uncertain how to interpret intermediate points, risking measurement error.\n\n3. Question q1 Ambiguity in \"Average in the past month\": Asking for average consumption frequency \u201cin the past month\u201d may be difficult for respondents to accurately recall and quantify, especially for infrequently consumed foods. This could introduce recall bias or inconsistent interpretations of frequency.\n\n4. Question q2 Portion Size Input Limitations: While offering a dropdown of units improves standardization over prior versions, combining diverse units such as grams, ounces, pieces, slices, and cups without clarifying equivalencies or standard serving sizes may still induce variability. Some units (pieces, slices) are inherently ambiguous without specifying size, and cup measurements differ by food type, risking comparability issues.\n\n5. Question q2 Amount Range (1 to 10,000): Allowing portion sizes up to 10,000 (units unspecified) without contextual constraints is unrealistic and may invite erroneous or outlier responses. No built-in mechanism (such as warnings) to flag implausible entries is described.\n\n6. Question q3 Focus on Next Main Meal Only: Limiting compensation likelihood to \u201cyour next main meal\u201d excludes potential compensation in snacks or other eating occasions, potentially misrepresenting actual compensatory behavior. This restriction may not align with consumer habits or the behavior under investigation.\n\n7. Question q3 Potential Social Desirability Bias: Even with clarified context, asking about compensatory eating can prompt respondents to answer in a socially desirable way (overstating likelihood to reduce intake), threatening the validity of self-reported behavior.\n\n8. Question q4 Manipulation Check Near Duplication of q1: q4 repeats essentially the same frequency question from q1 but asks respondents to \u201crecall\u201d their perception, despite it being the same reference period and scale. The subtle difference in phrasing may not be sufficient to serve as a robust manipulation check and could confuse respondents.\n\n9. Question q5 Attention Check Wording Ambiguity: The instruction \u201cplease select \u2018Neutral\u2019 from the options below\u201d might be unclear if respondents wonder whether \u201cNeutral\u201d relates to a statement, attitude, or is just a forced choice. The options are an attitude scale unrelated to any explicit statement, which may dilute the effectiveness of the check.\n\n10. Inconsistent Use of [SPECIFIC FOOD NAME] Placeholder: While the placeholder is used consistently, the survey does not specify how or when the actual food name will be inserted or if it varies by respondent. Lack of clarity may confuse participants or limit generalizability if the food is not clearly identified in context.\n\n11. No Measure of Portion Size Intuitiveness Across Food Types: The survey assumes respondents can objectively quantify portion size of \"[SPECIFIC FOOD NAME]\" without visual aids or reference portions, risking large variability in interpretation, especially across different food types (solid vs. liquid, standardized shapes vs. amorphous).\n\n12. Missing Temporal Alignment Between Consumption Frequency and Portion Size: The survey asks about frequency over the past month but does not specify that the portion size chosen should reflect typical portions during that period or a single eating occasion, possibly producing data inconsistency.\n\n13. Lack of Definition of \u201cCompensate\u201d: Question q3 relies on understanding of \u201creduce your caloric intake...to compensate,\u201d but respondents may have varied interpretations of what constitutes compensation, potentially affecting reliability.\n\n14. Potential Order Effects Not Addressed: No mention of randomizing question order or controlling for potential bias from question sequencing, which may influence responses, especially since q4 closely repeats q1."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

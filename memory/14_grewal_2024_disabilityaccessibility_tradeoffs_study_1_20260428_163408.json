@@ -1,0 +1,625 @@
+{
+  "timestamp": "2026-04-28T16:34:08.628206",
+  "project": "14_grewal_2024_disabilityaccessibility_tradeoffs_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Disability Accessibility Trade-Offs in Consumer Responses",
+      "purpose": "To test consumer responses to marketplace trade-offs involving accessibility, examining negative reactions, mediation by perceived personal costs, and moderation by accessibility framing using standard marketing research methods.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent do you agree that you feel negatively about firms providing accessibility when it involves marketplace trade-offs?",
+          "comments": [
+            "The question is somewhat convoluted and potentially confusing because it mixes affect ('feel negatively') with agreement on a statement.",
+            "It uses a double negative framing (agree that you feel negatively), which can confuse respondents.",
+            "Rewording to a direct statement about feelings or attitudes will improve clarity.",
+            "The phrase 'firms providing accessibility' is vague; it could be clearer that trade-offs might involve costs or inconveniences to the consumer.",
+            "The scale labels only at the ends are appropriate, but the question could improve in clarity and neutrality."
+          ],
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "How much do you perceive that providing accessibility imposes personal costs on you?",
+          "comments": [
+            "The term 'personal costs' might not be clear or concrete for respondents; specifying types of costs (e.g., time, money, convenience) can help.",
+            "Phrase 'imposes personal costs' could be softened to 'causes you personal inconvenience or costs' to aid understanding and reduce potential negativity.",
+            "The question is straightforward and relatively clear.",
+            "The scale and labels are suitable."
+          ],
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Not at all",
+              "A great deal"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "When accessibility is framed as benefiting you personally, to what extent does this change your evaluation of accessibility trade-offs?",
+          "comments": [
+            "This question assumes respondents have a baseline evaluation, so 'change your evaluation' presumes prior judgment and may be somewhat abstract.",
+            "The phrase 'framed as benefiting you personally' might be clarified or simplified ('presented as providing personal benefits').",
+            "The bipolar scale from 'much more negative' to 'much more positive' is appropriate.",
+            "Clarify whether it refers to attitude or perception.",
+            "Question could be more straightforward."
+          ],
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Much more negative",
+              "Much more positive"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Did you pay attention to the information provided about accessibility trade-offs in this survey?",
+          "comments": [
+            "This is a standard attention check, but 'pay attention' feels informal.",
+            "Self-report bias is possible.",
+            "Adding a 'Somewhat' or using a scaled response can reduce forced dichotomy and improve measurement.",
+            "Alternative phrasing could improve neutrality."
+          ],
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Somewhat"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Please indicate your agreement with the statement: 'I carefully considered the trade-offs involved in accessibility when answering the questions.'",
+          "comments": [
+            "This is a good self-report measure of engagement and cognitive effort.",
+            "The statement is somewhat long and double-barreled (carefully considered trade-offs).",
+            "Simplification or consistency in phrasing across items may help.",
+            "The scale and labels are standard and appropriate."
+          ],
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Disability Accessibility Trade-Offs in Consumer Responses",
+      "purpose": "To examine consumer attitudes toward marketplace trade-offs related to accessibility, focusing on negative reactions, perceived personal impacts, and the influence of accessibility framing, using established marketing research methodologies.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please indicate your level of agreement with the following statement: \"I have negative feelings toward companies providing accessibility when it results in trade-offs that affect me as a consumer.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "To what extent do you perceive that providing accessibility causes you personal inconvenience or costs (e.g., increased prices, reduced convenience)?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Not at all",
+              "A great deal"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "When accessibility is presented as providing personal benefits to you, how does this affect your evaluation of the accessibility-related trade-offs?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Much more negative",
+              "Much more positive"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "To what extent did you pay attention to the information about accessibility trade-offs provided in this survey?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 5,
+            "labels": [
+              "Not at all",
+              "A great deal"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Please indicate your agreement with the following statement: \"I carefully considered the accessibility trade-offs when answering these questions.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Disability Accessibility Trade-Offs in Consumer Responses",
+      "purpose": "To examine consumer attitudes toward marketplace trade-offs related to accessibility, focusing on positive and negative reactions, perceived personal impacts, baseline experience with accessibility and disability status, the influence of accessibility framing, and related moderating and mediating factors using established marketing research methodologies.",
+      "questions": [
+        {
+          "question_id": "q0_disability_status",
+          "question_text": "Do you identify as a person with a disability or as a member of a disabled community?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No",
+              "Prefer not to say"
+            ]
+          }
+        },
+        {
+          "question_id": "q6_frequency",
+          "question_text": "How often have you personally used or benefited from accessibility features in products or services?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Never",
+              "Rarely",
+              "Sometimes",
+              "Often",
+              "Always"
+            ]
+          }
+        },
+        {
+          "question_id": "q7_detail",
+          "question_text": "How knowledgeable would you say you are about disability and accessibility issues?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q8_political_ideology",
+          "question_text": "How would you describe your political ideology?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Very liberal",
+              "Liberal",
+              "Moderate",
+              "Conservative",
+              "Very conservative",
+              "Prefer not to say"
+            ]
+          }
+        },
+        {
+          "question_id": "q9_prior_contact",
+          "question_text": "How frequently do you have personal contact with people who have disabilities?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Never",
+              "Rarely",
+              "Sometimes",
+              "Often",
+              "Very often"
+            ]
+          }
+        },
+        {
+          "question_id": "q10_personal_values",
+          "question_text": "Please indicate your level of agreement with the statement: \"It is important to me that companies treat all customers fairly, including those with disabilities.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q1a_revised",
+          "question_text": "Please indicate your level of agreement with the statement: \"I believe it is important for companies to provide accessibility accommodations for customers with disabilities, even if implementing them involves challenges.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q1b_price",
+          "question_text": "Please indicate your level of agreement with the statement: \"I feel negatively toward accessibility-related price increases that affect me as a consumer.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q1b_wait",
+          "question_text": "Please indicate your level of agreement with the statement: \"I feel negatively toward longer wait times caused by accessibility accommodations.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q1b_variety",
+          "question_text": "Please indicate your level of agreement with the statement: \"I feel negatively when accessibility accommodations limit the variety or options of products or services available to me as a consumer.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q1b_quality",
+          "question_text": "Please indicate your level of agreement with the statement: \"I feel negatively when accessibility accommodations reduce the quality of products or services.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q1b_service",
+          "question_text": "Please indicate your level of agreement with the statement: \"I feel negatively when accessibility accommodations affect the speed or quality of customer service I receive.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q11_fairness",
+          "question_text": "Please rate how fair you perceive these accessibility trade-offs (such as price increases, wait times, or changes to product variety and quality) to be.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2_variety",
+          "question_text": "To what extent do you perceive a reduction in product or service variety as a personal inconvenience caused by providing accessibility?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2_quality",
+          "question_text": "To what extent do you perceive a reduction in product or service quality as a personal cost caused by providing accessibility?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q2_service",
+          "question_text": "To what extent do you perceive decreased speed or quality of customer service as a personal inconvenience caused by providing accessibility?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q12_affective_reaction",
+          "question_text": "Please indicate your level of agreement with the statement: \"I have felt frustrated or annoyed due to accessibility-related trade-offs I have experienced as a consumer.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q3_self",
+          "question_text": "How do you view the personal benefits to yourself of accessibility features (e.g., improved access or convenience)?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q3_others",
+          "question_text": "How do you view the benefits of accessibility features for other people with disabilities?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q13_behavioral_intent",
+          "question_text": "How likely are you to choose companies that provide strong accessibility accommodations in your future purchases?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "Likert",
+            "points": 7,
+            "labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q14_past_behavior",
+          "question_text": "How often in the past have you chosen to support companies because of their accessibility accommodations?",
+          "input_type": "single_choice",
+          "input_config": {
+            "options": [
+              "Never",
+              "Rarely",
+              "Sometimes",
+              "Often",
+              "Always"
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "redundancy_removal": "Removed the redundant questions q2_price and q2_wait related to price and wait time perceptions since similar items q1b_price and q1b_wait already address these issues with consistent wording. This reduces respondent burden and avoids duplication."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q0_disability_status",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 2,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 3
+        },
+        "explanation": "The question asks if the respondent identifies as a person with a disability or as a member of a disabled community, conflating individual identity and community membership (double-barreled). The phrasing might cause discomfort or social desirability issues, especially given the sensitive nature of disability status. Also, the option structure lacks a clear neutral or 'prefer not to disclose' option beyond 'Prefer not to say', which may not fully capture nuanced identities. Severity for scale appropriateness is high because this is a key demographic variable used for segmentation; binary 'Yes/No' options with 'Prefer not to say' may lead to misclassification."
+      },
+      {
+        "question_id": "q6_frequency",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 1,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 2
+        },
+        "explanation": "The question may lead respondents to over-report usage due to social desirability bias, especially if they perceive usage as socially expected. The wording 'used or benefited from' blends active usage with passive benefit, potentially confusing respondents. The response options are ordinal but lack precise definitions (e.g., what does 'Sometimes' mean?), leading to interpretative variance. The scale is generally appropriate but the verbal anchors could be clearer."
+      },
+      {
+        "question_id": "q7_detail",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 3
+        },
+        "explanation": "Self-assessed knowledge is vulnerable to social desirability bias and overconfidence. 'Knowledgeable' is a broad and subjective term without specifying domains or depth, leading to ambiguity. The 7-point Likert scale is standard, but without behavioral or factual anchors, responses may not validly measure actual expertise. This is a critical variable; thus the scale appropriateness severity is must-fix."
+      },
+      {
+        "question_id": "q1a_revised",
+        "issues": {
+          "leading_language": 2,
+          "double_barreled": 1,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 3
+        },
+        "explanation": "The phrase 'I believe it is important...' is somewhat leading, fostering socially desirable responses. The item combines support for accessibility accommodations with willingness to accept challenges, blending two constructs (double-barreled). The 7-point Likert scale fits the construct, but the conflation creates construct validity threats, suggesting this item needs to be separated for clarity."
+      },
+      {
+        "question_id": "q1b_price",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 3
+        },
+        "explanation": "The question directly asks about 'negative feelings' regarding price increases related to accessibility, which could prompt socially desirable under-reporting or over-reporting depending on respondent views. The scale is appropriate. Minor ambiguity in phrasing but overall clear."
+      },
+      {
+        "question_id": "q1b_wait",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 3
+        },
+        "explanation": "Same critique as q1b_price but focused on wait times. However, 'longer wait times caused by accessibility accommodations' may not be universally perceived as accessibility-related, risking some ambiguity."
+      },
+      {
+        "question_id": "q2_price",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 1,
+          "scale_appropriateness": 3
+        },
+        "explanation": "This question assesses perceived cost impact with good specificity. Social desirability bias possible if respondents try to downplay perceived costs related to socially valued accessibility. The 7-point scale is appropriate."
+      },
+      {
+        "question_id": "q2_wait",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 3
+        },
+        "explanation": "Similar to q2_price, but phrasing 'personal inconvenience caused by providing accessibility' may be ambiguous for respondents who do not associate wait times with accessibility, or who are uncertain about the causal link. Social desirability bias also possible."
+      },
+      {
+        "question_id": "q3_self",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 1,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 3
+        },
+        "explanation": "'Personal benefits to yourself' combined with examples 'improved access or convenience' mixes accessibility concepts, some of which might not apply equally. The examples mix types of benefits, potentially confusing respondents and making the item somewhat double-barreled. Social desirability bias is likely given positive framing."
+      },
+      {
+        "question_id": "q3_others",
+        "issues": {
+          "leading_language": 1,
+          "double_barreled": 0,
+          "social_desirability_bias": 2,
+          "ambiguous_wording": 2,
+          "scale_appropriateness": 3
+        },
+        "explanation": "Asks about benefits for 'other people with disabilities'; however, no definition of 'benefits' is given, creating ambiguity. Respondents might interpret benefits in many ways (economic, social, convenience). Social desirability bias expected given positive phrasing."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing Constructs",
+        "severity": 3,
+        "explanation": "No assessment of attitudes toward trade-offs involving other accessibility-related dimensions beyond price and wait times, such as product variety, quality, or service interactions. Also missing is assessment of respondents\u2019 affective/emotional reactions beyond 'negative feelings' and perception of fairness or justice related to accessibility trade-offs."
+      },
+      {
+        "issue": "Redundant Items",
+        "severity": 1,
+        "explanation": "Questions q1b_price and q2_price (similarly q1b_wait and q2_wait) both address prices and wait times related to accessibility with slight wording differences, potentially redundant and a burden for respondents."
+      },
+      {
+        "issue": "Theoretical Gaps",
+        "severity": 3,
+        "explanation": "The survey does not assess key moderators or mediators such as personal values, political ideology, prior contact with people with disabilities, or perceived fairness of trade-offs. Also no measurement of behavioral intentions or past behavior related to accessibility, limiting explanatory power."
+      },
+      {
+        "issue": "Scale Consistency and Anchoring",
+        "severity": 2,
+        "explanation": "While most scales are 7-point Likert, there is variability in how verbal anchors are phrased (e.g., 'Very negatively' vs 'Strongly disagree'). This inconsistency can confuse respondents and affect comparability across items."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: The phrase \"negative feelings toward companies providing accessibility when it results in trade-offs that affect me as a consumer\" is complex and potentially ambiguous. It conflates two distinct ideas \u2014 disapproval of accessibility efforts and dislike of personal inconvenience \u2014 making it double-barreled. Respondents might agree or disagree for different reasons, undermining validity.\n\n2. Question q1: The term \"trade-offs that affect me as a consumer\" is vague and undefined. What kinds of trade-offs? This leaves too much interpretation to respondents, potentially introducing noise and inconsistent responses.\n\n3. Question q3: The question assumes that accessibility has been \"presented as providing personal benefits to you,\" which may not apply to all respondents. This conditional framing is unclear and may cause confusion or disengagement, threatening response accuracy.\n\n4. Question q4: Asking respondents to self-report how much attention they paid \"to the information about accessibility trade-offs provided in this survey\" risks social desirability bias. Respondents may overstate their attention to appear conscientious, compromising data quality.\n\n5. Question q5: Similar to q4, q5 asks about respondents\u2019 cognitive effort (\"I carefully considered...\"), which is subject to social desirability bias and self-report inaccuracies, limiting its usefulness as a measure of engagement or thoughtfulness.\n\n6. Scale inconsistency in q4: The attention question uses a 5-point Likert scale while all other questions use 7-point scales. This inconsistency complicates comparisons and may confuse respondents.\n\n7. General concern: None of the questions assess respondents\u2019 actual experience with accessibility or their baseline attitudes toward disability/accessibility. Without context, the survey risks missing key moderating variables that influence the interpretation of trade-offs.\n\n8. Potential negativity bias: The survey frame and wording (e.g., \"negative feelings,\" \"inconvenience or costs\") emphasize negative aspects of accessibility trade-offs without balancing positive perspectives, possibly leading to skewed, biased data."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1a: The statement \"I support companies providing accessibility to customers with disabilities\" is broad and socially desirable. It likely induces acquiescence and social desirability bias, causing over-reporting of positive sentiments without capturing nuanced opinions.\n\n2. Question q1b: Although \"trade-offs that affect me as a consumer\" is clarified with examples, the question still combines affective reaction (\"I feel negatively\") with specific consequences (price increases, wait times) in one item, which is double-barreled. Some respondents might dislike one trade-off but not the other, confusing interpretation.\n\n3. Question q2: The phrase \"personal inconvenience or costs\" remains somewhat vague despite examples. Some costs (time, price) may be more salient than others, and grouping them could mask important distinctions in respondent perceptions.\n\n4. Question q3: Asking how respondents \"generally view the personal benefits\" along with examples referencing both themselves and \"others\" conflates self-interest and altruistic perspectives in one question, risking double-barreled measurement and confusion about whose benefits are meant.\n\n5. Question q6: The option \"Not sure\" for personal experience with accessibility features mixes lack of memory with doubt about applicability, which can produce ambiguous data. Additionally, the binary \"Yes\"/\"No\" without gradation limits capturing frequency or intensity of use.\n\n6. Question q7: The term \"familiar\" with disability and accessibility issues is broad and subjective. Respondents\u2019 standards for familiarity could vary widely, threatening the validity of this measure.\n\n7. Question q4_revised and q5_revised: Both questions ask respondents to self-assess reading carefulness and thoughtfulness, which are susceptible to social desirability bias and inaccurate introspection, potentially inflating engagement estimates.\n\n8. Scale labels in q4_revised: \"Did not read carefully\" to \"Read very carefully\" may anchor respondents to extremes; mid-scale options lack explicit anchors, risking varied interpretations across respondents.\n\n9. Ordering of questions: Questions about attention and thoughtfulness (q4_revised, q5_revised) appear after attitude and experience items, which may prime respondents\u2019 answers and heighten social desirability bias since they now know their effort is being evaluated.\n\n10. General concern: The survey does not explicitly capture respondents\u2019 disability status or whether they belong to disabled communities. Without this, it is difficult to disentangle how personal identity influences views on accessibility trade-offs, potentially limiting the data\u2019s interpretability and relevance."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

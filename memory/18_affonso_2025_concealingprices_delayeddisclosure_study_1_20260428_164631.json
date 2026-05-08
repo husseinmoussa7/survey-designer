@@ -1,0 +1,486 @@
+{
+  "timestamp": "2026-04-28T16:46:31.079953",
+  "project": "18_affonso_2025_concealingprices_delayeddisclosure_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Effect of delayed price disclosure on consumer purchase intentions",
+      "purpose": "To test how delayed price disclosure influences purchase intention, price expectation disconfirmation, and sales when consumers anticipate an expensive price",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How likely are you to purchase the product given the price information you have received?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Very unlikely",
+              "Very likely"
+            ]
+          },
+          "comments": "The question is clear and relevant. The 7-point Likert scale is appropriate. For improved academic rigor and clarity, consider explicitly assigning numeric labels to all scale points (e.g., 1 = Very unlikely to 7 = Very likely) and explicitly referring to 'this product.' (Version 1 and 3)"
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please rate your expectation of the price before you saw the actual price.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Very low price",
+              "Very high price"
+            ]
+          },
+          "comments": "The wording is slightly ambiguous. Rephasing to 'Before seeing the actual price, how would you rate your expected price level for this product?' with scale labels defined as '1 - Very low price' to '7 - Very high price' improves clarity and objectivity. Alternatively, adding anchor points or using 'Much lower than average' to 'Much higher than average' can be helpful. (Versions 1 and 3)"
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Did the actual price meet your expectations, was it higher, or was it lower?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Much lower than expected",
+              "Somewhat lower than expected",
+              "About what I expected",
+              "Somewhat higher than expected",
+              "Much higher than expected"
+            ]
+          },
+          "comments": "Response options well cover degree of disconfirmation with a balanced scale. For increased academic precision and clarity, rephrase question stem to 'Compared to your expected price, how did the actual price compare?' (Versions 2 and 3)"
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate how strongly you agree or disagree with the following statement: 'Receiving the price information later made me feel more favorable about the price.'",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "Strongly disagree",
+              "Strongly agree"
+            ]
+          },
+          "comments": "The original wording uses subjective emotion ('feel more favorable') which can be imprecise. For academic rigor, use a more neutral, objective statement like 'Receiving the price information later influenced my evaluation of the price positively.' Make sure to label the scale numerically (1 = Strongly disagree to 7 = Strongly agree). (Version 3, supported by Versions 1 and 2)"
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Please confirm your attention: What kind of price information timing did you receive?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Immediate price disclosure",
+              "Delayed price disclosure"
+            ]
+          },
+          "comments": "The imperative 'Please confirm your attention' can be softened for better respondent engagement. Preferred phrasing: 'To confirm, when was the price information disclosed to you?' or 'To ensure accuracy, please select the type of price information timing you received:' (Versions 1 and 3)"
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Did you pay attention during the survey?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "comments": "An attention check is necessary. To reduce social desirability bias, rephrase to 'Did you carefully read and consider each question during this survey?' or 'Please indicate whether you paid attention throughout the survey.' (Versions 1 and 3)"
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Effect of delayed price disclosure on consumer purchase intentions",
+      "purpose": "To examine how delayed disclosure of price information influences consumers' purchase intention, price expectation disconfirmation, and sales behavior when consumers anticipate a high price.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Considering the price information you have received, how likely are you to purchase this product?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "1 - Very unlikely",
+              "2",
+              "3",
+              "4 - Neither likely nor unlikely",
+              "5",
+              "6",
+              "7 - Very likely"
+            ]
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Before seeing the actual price, how would you rate your expected price level for this product?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "1 - Very low price",
+              "2",
+              "3",
+              "4 - About average price",
+              "5",
+              "6",
+              "7 - Very high price"
+            ]
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Compared to your expected price, how did the actual price compare?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Much lower than expected",
+              "Somewhat lower than expected",
+              "About what I expected",
+              "Somewhat higher than expected",
+              "Much higher than expected"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your level of agreement with the statement: \"Receiving the price information later influenced my evaluation of the price positively.\"",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "1 - Strongly disagree",
+              "2",
+              "3",
+              "4 - Neither agree nor disagree",
+              "5",
+              "6",
+              "7 - Strongly agree"
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "To ensure accuracy, please select the type of price information timing you received:",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Immediate price disclosure",
+              "Delayed price disclosure"
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Did you carefully read and consider each question during this survey?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Effect of delayed price disclosure on consumer purchase intentions",
+      "purpose": "To examine how delayed disclosure of price information influences consumers' purchase intention, price expectation disconfirmation, affective responses, trust, perceived fairness, and sales behavior when consumers anticipate a high price.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How likely are you to purchase this product, considering any price information you recall having received?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "1 - Very unlikely",
+              "2",
+              "3",
+              "4 - Neither likely nor unlikely",
+              "5",
+              "6",
+              "7 - Very likely"
+            ],
+            "note": "If you do not recall receiving price information, please select \u201c4 - Neither likely nor unlikely.\u201d"
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Before seeing the actual price, how did you expect this product's price to compare to products from well-known brands with similar features?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "1 - Much lower",
+              "2",
+              "3",
+              "4 - About the same",
+              "5",
+              "6",
+              "7 - Much higher"
+            ],
+            "note": "If you are unfamiliar with prices of such products, please select the option that best matches your impression."
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Compared to your expected price before seeing the actual price, how did the actual price compare?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Much lower than expected",
+              "Lower than expected",
+              "Slightly lower than expected",
+              "About what I expected",
+              "Slightly higher than expected",
+              "Higher than expected",
+              "Much higher than expected",
+              "I don\u2019t remember my expected price"
+            ]
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your agreement with the following statement about receiving the price information later:",
+          "input_type": "scale_bipolar",
+          "input_config": {
+            "statement": "Receiving the price information later influenced my perception of the product price.",
+            "scale_type": "7-point bipolar Likert",
+            "scale_labels": [
+              "1 - Very negatively",
+              "2 - Moderately negatively",
+              "3 - Slightly negatively",
+              "4 - Neither negatively nor positively",
+              "5 - Slightly positively",
+              "6 - Moderately positively",
+              "7 - Very positively"
+            ],
+            "note": "Please respond based on your honest perception."
+          }
+        },
+        {
+          "question_id": "q8_affective_response",
+          "question_text": "How did you feel emotionally about receiving the price information later than usual?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "1 - Very negative",
+              "2",
+              "3",
+              "4 - Neutral",
+              "5",
+              "6",
+              "7 - Very positive"
+            ],
+            "note": "Please select the option that best describes your feelings."
+          }
+        },
+        {
+          "question_id": "q9_trust_fairness",
+          "question_text": "Please indicate your agreement with the following statements regarding the price disclosure:",
+          "input_type": "multiple_statements_scale",
+          "input_config": {
+            "statements": [
+              "I trust the company\u2019s pricing process.",
+              "The timing of the price disclosure felt fair to me."
+            ],
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "1 - Strongly disagree",
+              "2",
+              "3",
+              "4 - Neither agree nor disagree",
+              "5",
+              "6",
+              "7 - Strongly agree"
+            ],
+            "note": "Please answer honestly for each statement."
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Which of the following best describes how you received the price information during this study?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "I saw the price information immediately when first introduced to the product.",
+              "I saw the price information later, after some initial product information.",
+              "I did not receive any price information during the study."
+            ]
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Please indicate how attentively you read and considered the questions throughout this survey:",
+          "input_type": "scale",
+          "input_config": {
+            "scale_type": "7-point Likert",
+            "scale_labels": [
+              "1 - Not at all attentive",
+              "2",
+              "3",
+              "4 - Moderately attentive",
+              "5",
+              "6",
+              "7 - Extremely attentive"
+            ],
+            "note": "Please answer as accurately as possible."
+          }
+        },
+        {
+          "question_id": "q7_attention_check",
+          "question_text": "To help us understand attentiveness, please select the option that indicates low attentiveness for this question.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Not at all attentive",
+              "Slightly inattentive",
+              "Moderately attentive",
+              "Mostly attentive",
+              "Completely attentive"
+            ]
+          }
+        },
+        {
+          "question_id": "q10_actual_behavior",
+          "question_text": "Did you purchase or intend to purchase this product at the end of the study?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Yes, I purchased the product.",
+              "No, but I intend to purchase it soon.",
+              "No, and I have no intention to purchase.",
+              "Not applicable / undecided"
+            ]
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "general": [
+        "No redundant items were identified; each question targets distinct constructs or fulfills necessary manipulation and attention checks.",
+        "Only minor wording polish was applied according to the user feedback with no restructuring or addition/removal of questions."
+      ]
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "concerns": {
+          "leading_language": "Moderate. The phrase 'based on the price information you have received' may assume that respondents recall and understand the price information, which may not be true.",
+          "double_barreled": "No.",
+          "social_desirability_bias": "Moderate. Asking purchase likelihood may prompt respondents to overstate intention to conform to perceived expectations.",
+          "ambiguous_wording": "Moderate. The instruction to select '4 - Neither likely nor unlikely' if no price info received may force a neutral response rather than a proper 'not applicable' or missing response option.",
+          "scale_appropriateness": "Good. 7-point Likert scale with appropriate anchors for likelihood."
+        },
+        "severity": 2
+      },
+      {
+        "question_id": "q2",
+        "concerns": {
+          "leading_language": "Low. The question is fairly neutral but repeats 'similar branded products with comparable features' multiple times, potentially causing respondent fatigue or confusion.",
+          "double_barreled": "No.",
+          "social_desirability_bias": "Low to moderate. Respondents may feel pressure to appear knowledgeable about product prices.",
+          "ambiguous_wording": "Moderate. Term 'well-known brands with comparable features' is subjective and not clearly defined; also 'expected price' pre-price exposure relies on retrospective hypothetical judgment, likely affected by recall bias.",
+          "scale_appropriateness": "Appropriate 7-point Likert with clear comparative anchors."
+        },
+        "severity": 2
+      },
+      {
+        "question_id": "q3",
+        "concerns": {
+          "leading_language": "No significant leading language.",
+          "double_barreled": "No.",
+          "social_desirability_bias": "Low.",
+          "ambiguous_wording": "Moderate. The gradations (much, lower, slightly lower) may be interpreted inconsistently; the 'I don\u2019t remember my expected price' option could bias analysis if frequently chosen.",
+          "scale_appropriateness": "Good, multiple choice with ordered options capturing direction and magnitude."
+        },
+        "severity": 2
+      },
+      {
+        "question_id": "q4",
+        "concerns": {
+          "leading_language": "Moderate. Using the phrase 'influenced my evaluation' is neutral, but the bipolar scale with both negative and positive endpoints may confuse some respondents who are unaccustomed to such scaling.",
+          "double_barreled": "No.",
+          "social_desirability_bias": "Low.",
+          "ambiguous_wording": "Moderate. The phrase 'evaluation of the product price' may be interpreted variably as perception of fairness, acceptability, or value.",
+          "scale_appropriateness": "Appropriate use of a 7-point bipolar Likert scale with clear labels for negative and positive valence."
+        },
+        "severity": 2
+      },
+      {
+        "question_id": "q5",
+        "concerns": {
+          "leading_language": "No.",
+          "double_barreled": "No.",
+          "social_desirability_bias": "Low.",
+          "ambiguous_wording": "Moderate. The options might not cover subtle cases of partial or unclear price disclosure; also, 'did not receive price information' could overlap with other options depending on study conditions.",
+          "scale_appropriateness": "Good for manipulation check, although a forced-choice without uncertainty option may reduce accuracy."
+        },
+        "severity": 2
+      },
+      {
+        "question_id": "q6",
+        "concerns": {
+          "leading_language": "Somewhat leading. Note urging honesty may increase social desirability bias.",
+          "double_barreled": "No.",
+          "social_desirability_bias": "High. Self-reported attentiveness is often inflated by respondents wishing to appear conscientious.",
+          "ambiguous_wording": "Moderate. Terms like 'somewhat attentive' and 'extremely attentive' can be interpreted variably by respondents.",
+          "scale_appropriateness": "Use of 7-point Likert is appropriate but may not overcome the biases inherent to self-report attentiveness."
+        },
+        "severity": 2
+      },
+      {
+        "question_id": "q7_attention_check",
+        "concerns": {
+          "leading_language": "Explicitly instructs respondents which option to select, potentially inducing compliance without real attention.",
+          "double_barreled": "No.",
+          "social_desirability_bias": "Moderate. Participants might feel compelled to follow instruction to avoid negative evaluation.",
+          "ambiguous_wording": "No ambiguity in wording; instructions are explicit.",
+          "scale_appropriateness": "Appropriate for attention check purposes but transparent nature may limit ability to detect inattentive respondents who deliberately comply."
+        },
+        "severity": 3
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing constructs",
+        "description": "The survey lacks direct measurement of actual sales behavior or actual purchase action despite mentioning 'sales behavior' in the purpose. Purchase intention alone may not adequately capture behavior.",
+        "severity": 3
+      },
+      {
+        "issue": "Redundant items",
+        "description": "No clear redundancy detected. Each question measures a distinct construct or manipulation check.",
+        "severity": 1
+      },
+      {
+        "issue": "Theoretical gaps",
+        "description": "The survey does not assess affective or emotional responses to delayed price disclosure, which can mediate purchase intentions. Also, it omits assessing trust or perceived fairness, which are relevant in pricing context especially when price is delayed.",
+        "severity": 3
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1 (\"Considering the price information you have received, how likely are you to purchase this product?\"):\n   - Ambiguity regarding the timing and completeness of \"price information you have received\": respondents might have different understandings of what counts as \"price information,\" especially given the experimental manipulation of delayed price disclosure. This could affect response consistency.\n   - Possible social desirability bias: respondents might overstate purchase intentions to please the researcher or appear rational.\n\n2. Question q2 (\"Before seeing the actual price, how would you rate your expected price level for this product?\"):\n   - Retrospective bias risk: respondents may not accurately recall or may be influenced by the actual price already seen, impacting the validity of \"expected\" price rating.\n   - Ambiguity in \"price level\": could be interpreted variably as absolute price, relative to competitors, or value for money.\n   - The scale label \"About average price\" at the midpoint assumes a defined average price, which might be unclear or unknown to respondents without reference points.\n\n3. Question q3 (\"Compared to your expected price, how did the actual price compare?\"):\n   - Assumes that respondents have a clear, stable expected price in mind and can accurately compare it post hoc, which may not be true.\n   - Response options might miss intermediate or nuanced perceptions (e.g., \"slightly higher\" vs. \"somewhat higher\") leading to potential forced choices that do not capture subtlety.\n\n4. Question q4 (\"Please indicate your level of agreement with the statement: 'Receiving the price information later influenced my evaluation of the price positively.'\"):\n   - Leading wording: the phrase \"influenced my evaluation ... positively\" presumes beneficial impact and may prime respondents to agree, introducing acquiescence bias.\n   - The statement is double-barreled because it combines two elements\u2014timing of price information and evaluation of price\u2014into one, making it unclear what exactly respondents are agreeing or disagreeing with.\n   - No corresponding negatively framed or neutral items to balance the scale and detect response bias.\n\n5. Question q5 (\"To ensure accuracy, please select the type of price information timing you received:\"):\n   - This question relies on participant self-report for experimental manipulation verification; however, some may be confused or guess incorrectly if manipulation was subtle, risking misclassification.\n   - It is unclear if the instruction \"To ensure accuracy\" is neutral or could induce demand characteristics, prompting respondents to answer as they think is expected.\n\n6. Question q6 (\"Did you carefully read and consider each question during this survey?\"):\n   - Potential social desirability bias: respondents may feel compelled to answer \"Yes\" to appear attentive.\n   - Lack of behavioral attention checks may limit the effectiveness of this question in identifying inattentive responses.\n   - A binary choice lacks nuance and does not allow identifying partial attention or specific points of inattentiveness."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1 (\"Based on the price information you have currently received (if any), ...\"):\n   - The instruction to respond \"based on your overall impression of the product\" if no price information has been received introduces heterogeneity in the basis for responses, which may confound interpretation and reduce construct validity.\n   - The wording \"currently received (if any)\" could induce confusion or double-checking behavior, potentially causing cognitive burden.\n   - Although there is a note asking for honest responses, social desirability bias remains a risk when respondents report purchase likelihood.\n\n2. Question q2 (\"Before seeing the actual price, how would you describe your expected price for this product compared to similar products in the market?\"):\n   - This question requires a hypothetical retrospective judgment under experimental conditions where price disclosure timing varies, potentially inflating recall bias or confounding due to exposure to actual price.\n   - The instruction note asking respondents to consider \"typical prices of similar products\" assumes respondents have sufficient market knowledge, which may not be true, leading to inconsistent or unreliable responses.\n   - The scale reference to \"similar products\" is ambiguous without specifying what similarity criteria apply (e.g., brand, quality, features).\n\n3. Question q3 (\"Compared to your expected price before seeing the actual price, how did the actual price compare?\"):\n   - The granularity of response options (much, moderately, slightly) may be difficult for some respondents to discriminate consistently, leading to measurement error.\n   - The question assumes a stable and clear expected price benchmark, which may not exist for all respondents after the delay in price disclosure.\n   - There is no explicit \"I don\u2019t remember\" or \"not applicable\" option to accommodate respondents uncertain about price expectations, risking forced inaccurate answers.\n\n4. Questions q4_1, q4_2, q4_3 (Statements on timing and impact of price information):\n   - q4_2 and q4_3 are direct opposites, but both are separately rated rather than using a balanced bipolar scale or reversing coding, which could cause response fatigue or inconsistent cognitive processing.\n   - q4_2 uses the phrase \"positive impact,\" which may prime respondents toward socially desirable agreement; q4_3 uses \"negative impact,\" which could induce confusion or contradicting answers if respondents do not fully understand or carefully differentiate.\n   - q4_1 is more neutral but may be conceptually too broad, mixing timing and evaluation without specifying directionality or valence.\n   - The cluster of three similarly worded items may induce acquiescence bias or respondent fatigue given the subtle differences.\n\n5. Question q5 (\"Please select the condition that best reflects how you received the price information during this study:\"):\n   - The instruction \"If unsure, please select the option you believe matches your experience\" may encourage guesswork, weakening the manipulation check.\n   - The two options are not mutually exclusive if timing was not distinct or if presentation varied, leading to potential misclassification.\n   - There is no option for \"I did not receive any price information,\" which could exist depending on experimental manipulation or dropouts.\n\n6. Question q6 (\"Please indicate how attentively you read and considered the questions in this survey:\"):\n   - Self-reported attentiveness scales are susceptible to social desirability bias and inaccurate self-assessment.\n   - The phrasing (\"Moderately attentive,\" \"Mostly attentive,\" etc.) may be interpreted differently across respondents, leading to low reliability.\n   - The 5-point scale may not capture sufficient granularity to distinguish nuanced levels of attention.\n\n7. Question q6_attention_check (\"To help us check survey attentiveness, please select 'Moderately attentive' for this question.\"):\n   - Because this attention check is transparent and instructs the respondent exactly which option to select, it may prompt non-screened respondents to comply without actually attentively processing the rest of the survey\u2014potentially inflating perceived data quality.\n   - Participants who do not follow the instruction might be careless or might misunderstand the directive; this could erroneously lead to exclusion of valid responses.\n   - Including this check immediately after question q6 could prime respondents on their attentiveness, influencing responses on q6."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

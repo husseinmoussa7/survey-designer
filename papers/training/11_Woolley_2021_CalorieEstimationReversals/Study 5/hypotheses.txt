@@ -1,0 +1,1 @@
+H2: The interaction between estimation mode and type/quantity attenuates when quantity information is made primary. In this case, magnitude estimates incorporate quantity information more, such that they resemble numeric estimates.

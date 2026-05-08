@@ -1,0 +1,531 @@
+{
+  "timestamp": "2026-04-28T16:26:26.213803",
+  "project": "11_woolley_2021_calorieestimationreversals_study_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Calorie Estimation Reversals in Food Portions and Workouts",
+      "purpose": "To test hypotheses about differences in magnitude and numeric estimates for healthier vs. less healthy food portions and workout difficulty/length.",
+      "comments_on_overall": "The original survey aims to assess differences in estimates of calories and difficulty/length based on healthiness of food portions and workouts. The terminology 'magnitude' is ambiguous and should be replaced with clearer terms like 'estimated caloric content' or 'perceived difficulty'. The Likert scale type is used, but strictly speaking it may be more accurate to refer to it as a rating scale when not about agreement. Anchors on scales should be descriptive. The numeric input questions should specify units, input format, and possibly validation. The attention check is appropriate but could include a rationale to enhance compliance.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "Please estimate the magnitude of calories in the given food portion on a scale from 1 (lowest) to 7 (highest).",
+          "comments": "Ambiguous phrase 'magnitude of calories'; recommend specifying perceived or estimated calorie content. Replace vague anchors 'lowest'/'highest' with descriptive labels. Likert scale terminology is not fully accurate here.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point Likert"
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please provide a numeric estimate of the calories in the given food portion.",
+          "comments": "Clear numeric estimate request. Addition of units (kcal) and instruction to enter whole numbers recommended. Input validation could enhance data quality.",
+          "input_type": "text_input",
+          "input_config": {
+            "format": "numeric"
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Please estimate the magnitude of difficulty of the workout on a scale from 1 (lowest) to 7 (highest).",
+          "comments": "Similar to q1, 'magnitude of difficulty' should be replaced by 'perceived difficulty' or 'difficulty level'. Anchors should be meaningful (e.g., 'Very easy' to 'Very difficult').",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point Likert"
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please provide a numeric estimate of the calories burned during the workout.",
+          "comments": "Clear numeric request. Specify calories burned in kilocalories and instruct whole number input for clarity.",
+          "input_type": "text_input",
+          "input_config": {
+            "format": "numeric"
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "How healthy do you consider the food portion shown? (1=Not healthy at all, 7=Very healthy)",
+          "comments": "Adequate question. Could add 'in your opinion' for subjective clarity. Standardize scale phrasing.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point Likert"
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "How would you rate the length of the workout? (1=Very short, 7=Very long)",
+          "comments": "Generally clear. Consider clarifying that 'length' refers to duration. Consistency of scale labels with prior scales recommended.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point Likert"
+          }
+        },
+        {
+          "question_id": "q7",
+          "question_text": "Attention check: Please select 'Strongly Agree' for this question.",
+          "comments": "Standard attention check. Adding a brief rationale might improve participant compliance and data quality.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly Disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        }
+      ]
+    },
+    "revised_survey": {
+      "theme": "Calorie Estimation Reversals in Food Portions and Workouts",
+      "purpose": "To examine differences in participants' subjective ratings and numeric estimates of caloric content for healthier versus less healthy food portions, as well as perceived difficulty and duration of workouts.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "On a scale from 1 to 7, how would you rate the perceived calorie content of the presented food portion? (1 = Very low calorie content, 7 = Very high calorie content)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Very low calorie content",
+              "7": "Very high calorie content"
+            }
+          },
+          "_sourced_from": [
+            "Version 1 label enhancements",
+            "Version 2 clearer terminology",
+            "Version 3 clarifications"
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please provide your numeric estimate of the calories (kcal) in the presented food portion. Enter a whole number.",
+          "input_type": "text_input",
+          "input_config": {
+            "format": "numeric",
+            "input_validation": "positive_integer"
+          },
+          "_sourced_from": [
+            "Version 1 input validation",
+            "Version 2 unit clarity",
+            "Version 3 whole number instruction"
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "On a scale from 1 to 7, how would you rate the perceived difficulty of the workout? (1 = Very easy, 7 = Very difficult)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Very easy",
+              "7": "Very difficult"
+            }
+          },
+          "_sourced_from": [
+            "Version 1 & 2 perceptual wording",
+            "Version 3 descriptive anchors inclusion"
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please provide your numeric estimate of the calories burned (kcal) during the workout. Enter a whole number.",
+          "input_type": "text_input",
+          "input_config": {
+            "format": "numeric",
+            "input_validation": "positive_integer"
+          },
+          "_sourced_from": [
+            "Version 1 input validation",
+            "Version 2 and 3 unit and instruction clarity"
+          ]
+        },
+        {
+          "question_id": "q5",
+          "question_text": "In your opinion, how healthy is the presented food portion? Please rate on a scale from 1 to 7, where 1 = Not healthy at all and 7 = Very healthy.",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Not healthy at all",
+              "7": "Very healthy"
+            }
+          },
+          "_sourced_from": [
+            "Version 1 subjective phrasing",
+            "Version 2 & 3 consistent scale labels"
+          ]
+        },
+        {
+          "question_id": "q6",
+          "question_text": "On a scale from 1 to 7, how would you rate the duration of the workout? (1 = Very short, 7 = Very long)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Very short",
+              "7": "Very long"
+            }
+          },
+          "_sourced_from": [
+            "Version 1 & 2 clear contextual labeling",
+            "Version 3 consistent phrasing"
+          ]
+        },
+        {
+          "question_id": "q7",
+          "question_text": "Attention check: To ensure data quality, please select 'Strongly Agree' for this item.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly Disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly Agree"
+            ]
+          },
+          "_sourced_from": [
+            "Version 1 phrasing clarity",
+            "Version 3 rationale for data quality"
+          ]
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Calorie Estimation Reversals in Food Portions and Workouts",
+      "purpose": "To examine differences in participants' subjective ratings and numeric estimates of caloric content for healthier versus less healthy food portions, as well as perceived difficulty and duration of workouts. Participants are presented with realistic images and detailed descriptions of food portions and workouts to improve interpretation and response accuracy. Question order is randomized to minimize order effects.",
+      "instructions": "You will be shown images and detailed descriptions of food portions and workouts. Please answer the following questions based on these materials. When providing numeric estimates of calories, please enter whole numbers only to reflect typical estimation precision; use the provided reference ranges to help guide your responses. Please respond thoughtfully and as accurately as possible, considering the information given.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "On a scale from 1 to 7, how would you rate the calorie content of the presented food portion? (1 = Very low calories, 7 = Very high calories)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Very low calories",
+              "7": "Very high calories"
+            }
+          },
+          "note": "This rating reflects your perceived calorie level compared to typical foods."
+        },
+        {
+          "question_id": "q1_confidence",
+          "question_text": "How confident are you in your calorie estimate for the presented food portion? (1 = Not at all confident, 7 = Very confident)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Not at all confident",
+              "7": "Very confident"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please estimate the number of calories (kcal) contained in the presented food portion. Enter a whole number between 0 and 2000. For reference: typical snacks range from 100 to 300 kcal; typical meals range from 400 to 1500 kcal.",
+          "input_type": "text_input",
+          "input_config": {
+            "format": "numeric",
+            "input_validation": "positive_integer",
+            "min_value": 0,
+            "max_value": 2000
+          }
+        },
+        {
+          "question_id": "q2_reason",
+          "question_text": "Which of the following best describes the reason for your calorie estimate of the food portion? (Select all that apply)",
+          "input_type": "multiple_choice_multiple",
+          "input_config": {
+            "options": [
+              "Visual appearance / portion size",
+              "Knowledge of ingredients",
+              "Past experience with similar foods",
+              "Assumptions about preparation or recipe",
+              "Nutritional information provided",
+              "Guessing / no strong basis",
+              "Other (please specify)"
+            ],
+            "allow_other_specify": true
+          }
+        },
+        {
+          "question_id": "q3a",
+          "question_text": "Please rate the physical effort required to perform the presented workout. (1 = Very easy physically, 7 = Very difficult physically)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Very easy physically",
+              "7": "Very difficult physically"
+            }
+          },
+          "note": "Consider factors such as strength, intensity, and exertion needed. This question relates specifically to muscle and movement effort."
+        },
+        {
+          "question_id": "q3b",
+          "question_text": "Please rate the endurance (sustained energy and stamina) required to perform the presented workout. (1 = Very easy endurance-wise, 7 = Very difficult endurance-wise)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Very easy endurance-wise",
+              "7": "Very difficult endurance-wise"
+            }
+          },
+          "note": "Consider how long you must sustain effort or how tiring the workout is over time. This question relates specifically to cardiovascular and stamina demands."
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please estimate the number of calories (kcal) you believe are burned during the presented workout. Enter a whole number between 0 and 1500. For reference: light activities burn approximately 100-200 kcal per 30 minutes; moderate activities burn about 300-600 kcal per 30 minutes. The workout duration is shown with each item.",
+          "input_type": "text_input",
+          "input_config": {
+            "format": "numeric",
+            "input_validation": "positive_integer",
+            "min_value": 0,
+            "max_value": 1500
+          }
+        },
+        {
+          "question_id": "q4_confidence",
+          "question_text": "How confident are you in your calorie burn estimate for the presented workout? (1 = Not at all confident, 7 = Very confident)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Not at all confident",
+              "7": "Very confident"
+            }
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Based on the provided information about the presented food portion (including ingredients, preparation, and nutritional content), how healthy do you consider it to be? (1 = Not healthy at all, 7 = Very healthy)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Not healthy at all",
+              "7": "Very healthy"
+            }
+          },
+          "note": "Please answer as honestly as possible, thinking about the information provided rather than social norms."
+        },
+        {
+          "question_id": "q5_indirect",
+          "question_text": "People have different opinions about healthy food. How likely is it that someone would choose this food portion as a healthy option? (1 = Very unlikely, 7 = Very likely)",
+          "input_type": "scale",
+          "input_config": {
+            "min": 1,
+            "max": 7,
+            "scale_type": "7-point rating",
+            "labels": {
+              "1": "Very unlikely",
+              "7": "Very likely"
+            }
+          },
+          "note": "This question is intended to gather your perception of social opinions to reduce social desirability bias."
+        },
+        {
+          "question_id": "q6",
+          "question_text": "How long is the presented workout? Please select the option that best matches the actual workout duration shown in minutes.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than 5 minutes",
+              "5 to 15 minutes",
+              "16 to 30 minutes",
+              "31 to 45 minutes",
+              "46 to 60 minutes",
+              "More than 60 minutes"
+            ]
+          }
+        },
+        {
+          "question_id": "q7",
+          "question_text": "Attention check: To demonstrate attention, please select the option that neither agrees nor disagrees with this statement.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly Disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly Agree"
+            ]
+          }
+        }
+      ],
+      "presentation": {
+        "randomize_question_order": true,
+        "randomize_within_blocks": true
+      }
+    },
+    "explanations": {
+      "redundant_items": "Minor polish applied by adding clarifying notes to q3a and q3b to emphasize the distinction between physical effort (muscle/movement exertion) and endurance (cardiovascular/stamina), helping participants better differentiate the constructs and potentially reduce overlapping responses. No removal or combination of items was done per instructions to preserve survey structure and content."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q1",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "comments": "The phrase 'how many calories do you think' combined with a 1-7 scale labeled 'Very few' to 'Very many' is ambiguous because calories are typically measured in actual numbers, not relative terms on a Likert-type scale. 'Very few' and 'Very many' are subjective and lack clear benchmarks, risking inconsistent interpretation. Using a rating scale for caloric quantity may not be conceptually clear or intuitive, threatening validity."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "This numeric input question is appropriate but the reference ranges are problematic: snacks (100-300 kcal) and meals (400-1500 kcal) overlap partially and do not cover all possible portions thoroughly. Participants might be confused regarding portions between 300 and 400 kcal or above 1500. Instructions to enter whole numbers only limit precision but guidance that typical estimation precision is whole numbers is reasonable. Missing explicit instructions on rounding or estimation method may lead to variability."
+      },
+      {
+        "question_id": "q3a",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "The question isolates physical effort appropriately, but 'very easy physically' to 'very difficult physically' may still be vague if participants differ on what constitutes physical difficulty\u2014for example, strength vs. intensity. However, splitting physical effort (q3a) from endurance (q3b) is an improvement over prior double-barreled formats."
+      },
+      {
+        "question_id": "q3b",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "comments": "The endurance wording ('sustained energy and stamina') is relatively specific but may not be consistently interpreted across participants lacking exercise knowledge. The separated scale is appropriate but could benefit from clearer examples. Both q3a and q3b might induce cognitive load, impacting data quality."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "The calorie burn estimate references light and moderate activities per 30 minutes but does not clarify workout durations beyond stating they are 'shown with each item.' Participants may have trouble integrating this info, causing inconsistent estimates. Allowing only whole numbers is restrictive given estimation uncertainty. The question lacks clarity on whether to adjust estimates proportionally by duration. This potentially impacts consistency and validity."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 3,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "Phrasing implies informed judgment based on ingredients, preparation, and nutritional content, but participants likely vary widely in nutrition knowledge, reducing comparability. The note attempts to counter social desirability bias but is unlikely to fully succeed given the socially loaded nature of 'healthiness.' The question is prone to social desirability bias and subjective interpretation, threatening validity."
+      },
+      {
+        "question_id": "q6",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "comments": "Multiple-choice categories for workout duration are well defined, but the lowest bucket '<5 minutes' and highest bucket '>60 minutes' are open-ended and potentially imprecise. No neutral or middle point. The ordinal categories are appropriate, but the scale might not capture exact durations participants perceive, especially if durations are borderline or unclear."
+      },
+      {
+        "question_id": "q7",
+        "leading_language": 2,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 3,
+        "comments": "This attention check explicitly instructs to select 'Disagree,' which is leading and may irritate participants, risking negative response bias. Also, the response options are standard Likert choices but the instruction directs a single specific option. This risks failure for inattentive respondents but could induce frustration or strategic responding, potentially biasing subsequent answers."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Missing Constructs",
+        "severity": 2,
+        "details": "The survey omits assessment of participants' baseline nutrition knowledge or fitness familiarity, which would be critical to interpret subjective ratings and numeric estimates effectively, especially for healthiness ratings and workout difficulty."
+      },
+      {
+        "issue": "Redundant Items",
+        "severity": 1,
+        "details": "Questions q3a and q3b split physical effort and endurance, which is appropriate theoretically, but might produce highly correlated or overlapping data, potentially inflating respondent burden without sufficient discrimination."
+      },
+      {
+        "issue": "Theoretical Gaps",
+        "severity": 3,
+        "details": "The survey's purpose mentions examining 'calorie estimation reversals' and differences in subjective versus numeric estimations, but no items directly capture participants' confidence in their estimates or reasons for discrepancies. Lack of these constructs limits ability to understand cognitive biases or estimation strategies involved."
+      },
+      {
+        "issue": "Scale Consistency and Clarity",
+        "severity": 2,
+        "details": "The calorie quantity in q1 uses a Likert scale that is conceptually inconsistent with numeric calorie estimates in q2, risking confusion or incoherent cross-measure comparisons. The rating scales for workout difficulty isolate effort and endurance, which is good, but these scales rely heavily on participant interpretation without anchored examples."
+      },
+      {
+        "issue": "Social Desirability Bias",
+        "severity": 3,
+        "details": "Despite attempting to mitigate social desirability (noted in q5), several questions (especially healthiness ratings) remain vulnerable due to inherently normative topics. The survey lacks indirect questioning or other techniques to counteract this bias robustly."
+      },
+      {
+        "issue": "Attention Check Design",
+        "severity": 2,
+        "details": "The attention check's direct instruction to select a particular option may alert participants to its purpose, potentially influencing how seriously they respond downstream and may induce annoyance, which could bias data quality."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question q1: The phrase \"perceived calorie content\" may be ambiguous to participants. It is unclear whether this refers to their subjective impression of how many calories the portion contains or how calorie-dense they believe it to be relative to other foods. This ambiguity could lead to inconsistent interpretations and responses.\n\n2. Question q2: Asking participants for a numeric estimate of calories with the instruction \"Enter a whole number\" may be problematic because typical calorie knowledge among general participants is limited and imprecise. Without a reference or context, numeric estimates might be guesses, increasing noise in the data. Also, there is no upper or lower bound specified, which might generate outliers or data entry errors despite validation rules.\n\n3. Question q3: The question conflates perceived difficulty of the workout without specifying dimensions (e.g., physical intensity, endurance, skill), which could lead to varied interpretations. Additionally, the scale anchors \"Very easy\" to \"Very difficult\" lack specificity\u2014difficulty in what sense? This threatens validity and comparability.\n\n4. Question q4: Similar to q2, requesting numeric estimates of calories burned may be unreliable without guidance or reference points. Participants might not know this information accurately, leading to guesswork. Also, stating \"Enter a whole number\" may be unnecessarily restrictive given that metabolic estimates often involve decimals.\n\n5. Question q5: The rating of how healthy the food portion is may be highly subjective and influenced by participants\u2019 preexisting biases, cultural backgrounds, or social desirability bias. The question lacks definition or criteria for \"healthy,\" which reduces construct validity.\n\n6. Question q6: Rating workout duration on a 1-to-7 scale (1 = Very short to 7 = Very long) is subjective and lacks a concrete frame of reference (e.g., actual time ranges). Different participants may have different ideas of what constitutes \"very short\" or \"very long,\" reducing comparability.\n\n7. Question q7: The attention check instructs participants explicitly to select \"Strongly Agree,\" which may be too obvious and risk participants feeling manipulated or annoyed. This could induce negative response bias or protest responses later in the survey.\n\n8. General Concern: The survey does not clarify whether the presented food portions and workouts are real, hypothetical, images, or textual descriptions, which affects how participants interpret and respond to calorie-related and subjective rating questions.\n\n9. General Concern: The 7-point scales are assumed to be equidistant and interpretable consistently by participants, but there's no evidence that these scales have been pretested for clarity or internal consistency in this particular subject matter.\n\n10. General Concern: Social desirability bias could affect responses about food healthiness (q5) and workout difficulty or duration (q3, q6) as participants might answer in a way that portrays them or their choices positively rather than truthfully."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question q1: The phrase \"overall amount of calories you believe the presented food portion contains\" remains somewhat complex and potentially ambiguous. The use of \"overall amount\" is redundant and may confuse participants. The note attempts to clarify, but cognitive burden could remain, affecting response consistency.\n\n2. Question q2: Although reference ranges for typical snacks and meals are provided, these ranges overlap (100\u2013500 kcal for snacks, 400\u20131500 kcal for meals), which may confuse participants when classifying the portion they see. Allowing decimals in calorie estimates may induce false precision, as most participants likely do not have that level of estimation accuracy.\n\n3. Question q3: Combining physical effort and endurance into a single perceived difficulty rating is effectively a double-barreled question. Participants might perceive these dimensions differently, leading to ambiguous or confounded ratings that undermine interpretability.\n\n4. Question q4: The calorie burn reference ranges are provided per 30 minutes but duration of the workout is separately rated (q6) without a clear link to duration here. Without knowing actual workout duration, participants might find it challenging to integrate the data logically, decreasing accuracy.\n\n5. Question q5: The phrase \"based on general nutrition guidelines\" assumes uniform participant knowledge of nutrition guidelines, which is unlikely and could bias responses or increase measurement error. Although the note attempts to reduce social desirability bias, it cannot fully mitigate it given the subjective nature and social norms around \"healthy\" diets.\n\n6. Question q6: The scale explicitly labels points 1, 4, and 7 with time ranges but leaves intermediate points unlabeled. This partial labeling may lead to inconsistent interpretations of the midpoints, reducing scale reliability and validity. Also, asking participants to \"rate\" duration on an ordinal scale rather than directly reporting actual duration introduces unnecessary abstraction.\n\n7. Question q7: Although less blatant than the previous version, this attention check risks over-reliance on acquiescence bias, since all options imply some degree of agreement or disagreement toward an unspecified statement. Without a clear instruction on which option indicates attention, participants may guess or fail to comply meaningfully.\n\n8. General Concern: Despite inclusion of images and descriptions, the survey instructions advise participants to use \"gut impression\" for rating scales, which may promote intuitive rather than informed judgments, conflicting with the goal of accurate estimation and possibly reducing data quality.\n\n9. General Concern: Numeric input questions (q2 and q4) allow decimals but do not instruct participants on how precise their estimation should be, possibly resulting in arbitrary decimal inputs that inflate data variability without reflecting true precision.\n\n10. General Concern: The survey does not specify the presentation order or randomization of items, which could induce order effects or carryover biases especially given the repeated calorie estimation questions.\n\n11. General Concern: The instructions urge participants that \"there are no right or wrong answers,\" which may reduce motivation for accuracy on numeric estimates, potentially increasing random responding or socially desirable patterns, particularly given the challenging cognitive nature of estimating calories."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}

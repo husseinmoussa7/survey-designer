@@ -1,0 +1,52 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# macOS
+.DS_Store
+Icon*
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Secrets and API cache
+*.pkl
+*.log
+*.tmp
+
+# Word and Office temp files
+~$*
+*.docx
+*.doc
+
+# Knowledge PDFs (user-supplied reference papers — gitignored)
+knowledge/
+!knowledge/README.md
+!knowledge/.gitkeep
+
+# Paper PDFs and supplementary data (copyrighted)
+papers/**/*.pdf
+papers/**/*.docx
+papers/**/*.qsf
+results/**/*.pdf
+
+# Specific copyrighted supplementary file
+results/shani_feinstein_2022/ucac004_supplementary_data.pdf
+
+# Simulation outputs
+simulate_response/participant_pool.csv
+simulate_response/simulated_survey_responses.csv
+temp_*.csv
+temp_*.json
+temp_*.txt

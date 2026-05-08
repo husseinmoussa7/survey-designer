@@ -1,0 +1,685 @@
+{
+  "timestamp": "2026-04-28T17:30:21.151863",
+  "project": "30_lieberman_2022_tangentialimmersion_experiment_1",
+  "survey_v0": {
+    "original_with_comments": {
+      "theme": "Tangential Immersion and Persistence in Low-Attention Behavior",
+      "purpose": "To design a survey testing the hypothesis that more immersive tangential tasks during low-attention behaviors like toothbrushing increase persistence, using standard marketing research conventions.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How immersive did you find the tangential task you performed during toothbrushing?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Not immersive at all",
+              "7": "Extremely immersive"
+            }
+          },
+          "comments": [
+            "The 7-point Likert scale is appropriate for capturing nuanced responses.",
+            "Wording is generally clear; however, 'immersive' can be somewhat abstract but is acceptable given context.",
+            "Question phrasing refined in revisions to increase neutrality and precision."
+          ]
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Compared to other pleasant tasks, how pleasant did you find the tangential task performed during toothbrushing?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Much less pleasant",
+              "7": "Much more pleasant"
+            }
+          },
+          "comments": [
+            "Original phrasing introduces ambiguity by referencing 'other pleasant tasks' without specification.",
+            "Suggested clarifications in revisions include specifying 'other pleasant tasks you have recently performed' to reduce variability in reference.",
+            "Response labels remain on a 7-point scale but with added midpoint labeling for clarity as seen in Version 1.",
+            "Overall, wording was improved for neutrality and precision."
+          ]
+        },
+        {
+          "question_id": "q3",
+          "question_text": "How long did you persist with toothbrushing during this task?",
+          "input_type": "text_input",
+          "input_config": {
+            "placeholder": "Enter duration in minutes"
+          },
+          "comments": [
+            "Open text input can yield inconsistent response formats and unit confusion.",
+            "Multiple versions recommended numeric input with validations (min=0, step=0.1) and clearer instructions (e.g., 'Enter approximate duration in minutes').",
+            "Improvement adopted to a numeric input type to improve data quality.",
+            "Adding error messaging to guide valid entries was advised."
+          ]
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your level of agreement with the following statement: I was paying close attention to the tangential task during toothbrushing.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Strongly disagree",
+              "7": "Strongly agree"
+            }
+          },
+          "comments": [
+            "Well formatted Likert agreement scale question.",
+            "Suggested rephrasing to 'I paid focused attention' was included to enhance academic tone.",
+            "No fundamental issues in measurement were found; standard Likert scaling is appropriate."
+          ]
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Please answer the attention check question: Select 'Strongly agree' to confirm you are paying attention.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          "comments": [
+            "Attention check is necessary for data validity.",
+            "Original phrasing was direct but risks demand characteristics or priming respondents.",
+            "Revisions suggested more neutral or subtle phrasing (e.g., 'Please select \"Agree\" to confirm you are responding carefully' or 'To ensure quality responses, please select \"Strongly agree.\"')",
+            "Consistency in response options maintained.",
+            "Consideration to embed attention checks inconspicuously recommended but not implemented due to survey brevity."
+          ]
+        }
+      ],
+      "general_comments": [
+        "All versions agreed on improving the toothbrushing duration question from free text to numeric input to enhance response validity.",
+        "Question 2's reference frame was clarified from vague 'other pleasant tasks' to more contextually anchored phrasing for better respondent reliability.",
+        "Question 4 was refined from 'paying close attention' to 'paid focused attention' to increase academic rigor and precision.",
+        "Attention check wording was softened to reduce demand effects, favoring phrasing that encourages careful responding without overt instruction bias.",
+        "The purpose statement was refined for academic tone, clarifying the goal and methodology style."
+      ]
+    },
+    "revised_survey": {
+      "theme": "Tangential Immersion and Persistence in Low-Attention Behavior",
+      "purpose": "This survey aims to test the hypothesis that higher immersion in tangential tasks during low-attention behaviors, such as toothbrushing, is associated with increased persistence. The survey follows standard academic research methodologies.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "To what extent did you find the tangential task you performed during toothbrushing immersive?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Not immersive at all",
+              "7": "Extremely immersive"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "In comparison to other pleasant tasks you have recently performed, how pleasant did you find the tangential task during toothbrushing?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Much less pleasant",
+              "4": "Moderately pleasant",
+              "7": "Much more pleasant"
+            }
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "For how many minutes did you brush your teeth during this task?",
+          "input_type": "numeric_input",
+          "input_config": {
+            "placeholder": "Enter duration in minutes",
+            "min": 0,
+            "step": 0.1,
+            "error_message": "Please enter a positive number"
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your agreement with the following statement: I paid focused attention to the tangential task during toothbrushing.",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Strongly disagree",
+              "7": "Strongly agree"
+            }
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Attention check: To ensure quality responses, please select 'Agree' from the options below.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "survey_v1": {
+    "revised_survey": {
+      "theme": "Tangential Immersion and Persistence in Low-Attention Behavior",
+      "purpose": "This survey aims to test the hypothesis that higher immersion in tangential tasks during low-attention behaviors, such as toothbrushing, is associated with increased persistence. The survey follows standard academic research methodologies.",
+      "introduction": "In this survey, a 'tangential task' refers to a secondary activity performed simultaneously while brushing your teeth, such as listening to music, counting, or another simple activity not directly related to toothbrushing. To better understand how different types of tangential tasks influence your experience, please first select the category that best describes the tangential task you performed during your most recent toothbrushing session:",
+      "questions": [
+        {
+          "question_id": "q0",
+          "question_text": "Which type of tangential task did you perform during toothbrushing?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Passive auditory (e.g., listening to music, podcast, or radio)",
+              "Cognitive counting or mental calculation",
+              "Physical activity (e.g., tapping fingers, foot tapping)",
+              "Visual focus on an object (e.g., looking at mirror, a picture)",
+              "Other (please specify)",
+              "None (I did not perform any tangential task)"
+            ]
+          }
+        },
+        {
+          "question_id": "q1a",
+          "question_text": "Please indicate how true each of the following statements was about your experience during the tangential task performed while brushing your teeth. Try to answer as honestly as possible; there are no right or wrong answers.",
+          "input_type": "matrix",
+          "input_config": {
+            "rows": [
+              "I was fully focused on the tangential task, without noticing distractions.",
+              "I felt absorbed in the tangential task, losing track of time.",
+              "I found the tangential task interesting and engaging.",
+              "I was aware of performing the tangential task but did not feel very engaged."
+            ],
+            "columns": [
+              {
+                "value": 1,
+                "label": "Not at all true"
+              },
+              {
+                "value": 2,
+                "label": "Slightly true"
+              },
+              {
+                "value": 3,
+                "label": "Moderately true"
+              },
+              {
+                "value": 4,
+                "label": "Very true"
+              },
+              {
+                "value": 5,
+                "label": "Completely true"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "q13",
+          "question_text": "How difficult or cognitively demanding did you find the tangential task you performed during toothbrushing?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Not difficult at all / very low cognitive load",
+              "4": "Moderately difficult / moderate cognitive load",
+              "7": "Extremely difficult / very high cognitive load"
+            }
+          }
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Please indicate how pleasant you generally find the tangential task you performed during toothbrushing (independent of how mentally engaging it was).",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Very unpleasant",
+              "4": "Neither pleasant nor unpleasant",
+              "7": "Very pleasant"
+            }
+          }
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Approximately how many minutes did you brush your teeth during this specific session? Please select the range that best applies rather than providing an exact estimate.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than 1 minute",
+              "1 to less than 2 minutes",
+              "2 to less than 3 minutes",
+              "3 to less than 4 minutes",
+              "4 to less than 5 minutes",
+              "5 minutes or more"
+            ]
+          }
+        },
+        {
+          "question_id": "q14",
+          "question_text": "Thinking about your most recent toothbrushing session with the tangential task, did you brush for longer than you normally would because of that task?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Not at all \u2013 I brushed less or the same amount",
+              "4": "Somewhat",
+              "7": "Very much \u2013 I brushed longer than usual"
+            }
+          }
+        },
+        {
+          "question_id": "q15",
+          "question_text": "Did you intend to continue brushing your teeth longer than usual because of the tangential task? (i.e., deliberate persistence due to engagement with the task)",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Definitely no",
+              "4": "Unsure / neither yes nor no",
+              "7": "Definitely yes"
+            }
+          }
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Please indicate your agreement with the following statements about your attention to the tangential task during toothbrushing. Respond to all statements; they are designed to assess different aspects of your experience.",
+          "input_type": "matrix",
+          "input_config": {
+            "rows": [
+              "I was able to concentrate on the tangential task with minimal distractions.",
+              "My mind wandered away from the tangential task frequently.",
+              "I found it easy to maintain my focus on the tangential task.",
+              "I struggled to pay attention to the tangential task."
+            ],
+            "columns": [
+              {
+                "value": 1,
+                "label": "Strongly disagree"
+              },
+              {
+                "value": 2,
+                "label": "Disagree"
+              },
+              {
+                "value": 3,
+                "label": "Neither agree nor disagree"
+              },
+              {
+                "value": 4,
+                "label": "Agree"
+              },
+              {
+                "value": 5,
+                "label": "Strongly agree"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "q5",
+          "question_text": "On average, how many times per day do you brush your teeth?",
+          "input_type": "numeric_input",
+          "input_config": {
+            "placeholder": "Enter a number between 0 and 5",
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "error_message": "Please enter an integer between 0 and 5"
+          }
+        },
+        {
+          "question_id": "q6",
+          "question_text": "On average, how many minutes do you usually spend brushing your teeth per session? Please select the range that best applies to your typical toothbrushing sessions.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Less than 1 minute",
+              "1 to less than 2 minutes",
+              "2 to less than 3 minutes",
+              "3 to less than 4 minutes",
+              "4 to less than 5 minutes",
+              "5 minutes or more"
+            ]
+          }
+        },
+        {
+          "question_id": "q16",
+          "question_text": "What motivated you to perform the tangential task during toothbrushing? Please select all that apply.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "To make toothbrushing more enjoyable",
+              "To help pass time",
+              "To improve focus or relaxation",
+              "Because it is a habit or routine",
+              "To distract myself from discomfort",
+              "I was not consciously motivated",
+              "Other (please specify)"
+            ],
+            "allow_multiple": true
+          }
+        },
+        {
+          "question_id": "q7",
+          "question_text": "How frequently do you perform the tangential task during toothbrushing?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Never",
+              "4": "Sometimes",
+              "7": "Always"
+            }
+          }
+        },
+        {
+          "question_id": "q8",
+          "question_text": "To what extent do you feel comfortable and skilled at performing the tangential task during toothbrushing?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Not at all comfortable/skilled",
+              "4": "Somewhat comfortable/skilled",
+              "7": "Extremely comfortable/skilled"
+            }
+          }
+        },
+        {
+          "question_id": "q9",
+          "question_text": "Attention check: Please select the option 'Disagree' below to confirm you are reading carefully.",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neither agree nor disagree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "correct_answer": "Disagree"
+          }
+        },
+        {
+          "question_id": "q10",
+          "question_text": "Please indicate your age:",
+          "input_type": "numeric_input",
+          "input_config": {
+            "placeholder": "Enter your age in years",
+            "min": 18,
+            "max": 120,
+            "step": 1,
+            "error_message": "Please enter a valid age between 18 and 120"
+          }
+        },
+        {
+          "question_id": "q11",
+          "question_text": "What is your gender?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Male",
+              "Female",
+              "Non-binary/Third gender",
+              "Prefer not to say",
+              "Other (please specify)"
+            ]
+          }
+        },
+        {
+          "question_id": "q17",
+          "question_text": "What is the highest level of education you have completed?",
+          "input_type": "multiple_choice",
+          "input_config": {
+            "options": [
+              "Some high school or less",
+              "High school diploma or equivalent",
+              "Some college or vocational training",
+              "Bachelor's degree",
+              "Graduate or professional degree",
+              "Other (please specify)"
+            ]
+          }
+        },
+        {
+          "question_id": "q18",
+          "question_text": "What is your current occupation?",
+          "input_type": "open_ended",
+          "input_config": {
+            "placeholder": "Please specify your current occupation"
+          }
+        },
+        {
+          "question_id": "q12",
+          "question_text": "How often do you engage in multitasking behaviors in your daily routine (e.g., doing two or more activities at once)?",
+          "input_type": "scale",
+          "input_config": {
+            "scale_min": 1,
+            "scale_max": 7,
+            "labels": {
+              "1": "Never",
+              "4": "Sometimes",
+              "7": "Always"
+            }
+          }
+        }
+      ]
+    },
+    "explanations": {
+      "Added education and occupation": "Included two new demographic questions (q17 and q18) after gender to capture education level and current occupation. These variables help examine sample heterogeneity and possible moderators of cognitive engagement and multitasking abilities.",
+      "Maintained original structure": "No other questions, order, or formats were changed to honor the instruction of minimal polish.",
+      "Question types": "Used multiple choice for education and open-ended for occupation to obtain detailed and relevant demographic data appropriately."
+    }
+  },
+  "critique": {
+    "question_critiques": [
+      {
+        "question_id": "q0",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "critique": "The provided examples of tangential tasks (e.g., listening to music, podcast, or radio) differ substantially in cognitive load and sensory modality, which may introduce uncontrolled variance. The 'Other' and 'None' options may lead to heterogeneous responses that complicate analysis. The categories are somewhat ambiguous, e.g., tapping fingers could be cognitive or physical. The answer options may not cover all relevant tangential tasks fully. Overall, the categorical scale is appropriate but could be more systematically defined."
+      },
+      {
+        "question_id": "q1a",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "critique": "The instruction urging respondents to 'Try to answer as honestly as possible' may unintentionally prime social desirability bias. Items asymmetrically capture both engagement and awareness (e.g., 'aware of performing... but not very engaged'), potentially confusing respondents. The term 'fully focused' and 'absorbed' may be interpreted differently, and 'interesting and engaging' mixes affective and cognitive constructs. The 5-point scale is appropriate but lacks a neutral middle label explicitly presented, which may affect midpoint interpretation."
+      },
+      {
+        "question_id": "q2",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "critique": "Instruction to rate pleasantness 'independent of how mentally engaging it was' attempts to isolate affect but may be difficult for respondents to separate affective valence from engagement in practice. The 7-point bipolar scale with a clear neutral midpoint is appropriate."
+      },
+      {
+        "question_id": "q3",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "critique": "Self-reported duration is prone to recall bias and social desirability effects, especially in a socially normative behavior like toothbrushing. Using broad multiple-choice ranges reduces precision but might improve reliability. The upper category '5 minutes or more' is open-ended, possibly capturing extremely long brushing times without limit. The use of ranges is appropriate for reducing response error but the lack of finer granularity may reduce sensitivity for detecting nuances in persistence."
+      },
+      {
+        "question_id": "q4",
+        "leading_language": 0,
+        "double_barreled": 1,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "critique": "Items combine positive and negative wording which may induce response bias due to negative phrasing (e.g., mind wandering, struggling to pay attention) alongside positive statements, risking confusion and acquiescence bias. The request to 'Respond to all statements' may pressure respondents and induce satisficing. The 5-point Likert scale is standard but could benefit from clearer midpoint labeling ('Neutral' rather than just 'Neither agree nor disagree') to reduce ambiguity."
+      },
+      {
+        "question_id": "q5",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "critique": "Asking for average daily frequency of toothbrushing may encourage socially desirable over-reporting due to health norms. The restricted range (0-5) and step (1) is appropriate but may not capture atypical brushing habits (e.g., multiple short sessions daily). The numeric entry is clear but there is no indication how to handle multiple short sessions aggregated."
+      },
+      {
+        "question_id": "q6",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "critique": "Asking for typical brushing duration per session via range categories suffers same limitations as q3: upper category open-ended beyond 5 minutes can blur distinctions. The use of ranges is appropriate but lacks justification for bracket selection and may lose nuance. Social desirability may inflate responses to longer durations."
+      },
+      {
+        "question_id": "q7",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "critique": "Frequency of performing the tangential task may invite social desirability, as multitasking is culturally valued. Seven-point scale with labeled anchors is appropriate, but 'Sometimes' as midpoint is somewhat vague and might be interpreted inconsistently by respondents."
+      },
+      {
+        "question_id": "q8",
+        "leading_language": 0,
+        "double_barreled": 1,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 2,
+        "scale_appropriateness": 2,
+        "critique": "Combining 'comfortable' and 'skilled' into one item conflates two slightly distinct constructs \u2014 ease/comfort and competence/skill \u2014 which may yield unclear responses. The 7-point scale is appropriate but the somewhat complex phrasing might reduce clarity."
+      },
+      {
+        "question_id": "q9",
+        "leading_language": 1,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 3,
+        "critique": "The attention check directs respondents explicitly to select 'Disagree', which is leading; some respondents could select this option out of genuine disagreement, leading to false fails. The choice of 'Disagree' as the correct answer is unusual and may confuse participants. Including such an overt attention check in the middle of substantive items may induce response bias or irritation."
+      },
+      {
+        "question_id": "q10",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 0,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 3,
+        "critique": "Asking age restricted between 18 and 120 with numeric entry is straightforward and appropriate."
+      },
+      {
+        "question_id": "q11",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 1,
+        "ambiguous_wording": 0,
+        "scale_appropriateness": 3,
+        "critique": "Gender options are inclusive; however, social desirability or privacy concerns may influence disclosures. Inclusion of 'Prefer not to say' and 'Other (please specify)' is positive."
+      },
+      {
+        "question_id": "q12",
+        "leading_language": 0,
+        "double_barreled": 0,
+        "social_desirability_bias": 2,
+        "ambiguous_wording": 1,
+        "scale_appropriateness": 2,
+        "critique": "Self-reported frequency of multitasking behavior is subject to social desirability and self-perception biases. The midpoint 'Sometimes' might be interpreted variably across respondents, causing inconsistency. Scale length and labeling are standard."
+      }
+    ],
+    "survey_level_issues": [
+      {
+        "issue": "Lack of direct measurement of persistence or behavioral outcomes",
+        "severity": 3,
+        "critique": "Despite the stated purpose about persistence, no question asks directly about persistence in toothbrushing sessions or continuation duration beyond self-reported minutes. Without objective or explicit persistence measures, the survey may fail to capture the key dependent variable."
+      },
+      {
+        "issue": "Conflation and overlap in constructs measuring immersion and attention",
+        "severity": 3,
+        "critique": "Questions q1a and q4 include overlapping items regarding focus, absorption, and distraction without clear theoretical separation, potentially confounding cognitive engagement with attentional control. This redundancy may increase respondent fatigue and measurement error."
+      },
+      {
+        "issue": "No inclusion of measures for potential confounding factors such as mood, stress, or environmental distractions",
+        "severity": 2,
+        "critique": "Emotional or contextual factors can influence immersion and persistence in secondary tasks but are omitted here, limiting construct validity and control for external influences."
+      },
+      {
+        "issue": "No assessment of the cognitive load or difficulty of the tangential task",
+        "severity": 3,
+        "critique": "Different tangential task types vary widely in cognitive demand, which is critical to hypothesis testing about immersion and persistence. Without measuring task difficulty or cognitive load, the survey risks conflating fundamentally different experiences."
+      },
+      {
+        "issue": "Potential social desirability bias across questions about attention, multitasking, and brushing behavior is not mitigated",
+        "severity": 3,
+        "critique": "Multiple questions are at risk of respondents inflating positive behaviors due to social norms without inclusion of validity scales (beyond a problematic attention check) or indirect questioning, threatening data accuracy."
+      },
+      {
+        "issue": "Redundancy between q3 and q6 about brushing duration introduces unnecessary length and possible contradictory data",
+        "severity": 2,
+        "critique": "Both ask about toothbrushing duration, one for a specific session and one usual duration, but both use overlapping categorical brackets. This could confuse respondents or produce inconsistent answers due to lack of clear differentiation."
+      },
+      {
+        "issue": "No inclusion of items capturing motivation or reasons for performing tangential tasks",
+        "severity": 2,
+        "critique": "Understanding why respondents engage in tangential tasks could clarify immersion and persistence dynamics but is absent, limiting theoretical depth."
+      },
+      {
+        "issue": "Limited demographic variables possibly omitting education, occupation, or cognitive ability",
+        "severity": 1,
+        "critique": "While age and gender are collected, other demographics relevant to cognitive engagement and multitasking habits are missing, limiting ability to examine sample heterogeneity."
+      }
+    ]
+  },
+  "discussion_log": [
+    {
+      "round": 1,
+      "role": "critic",
+      "content": "1. Question 1 (\"To what extent did you find the tangential task you performed during toothbrushing immersive?\")  \n   - The term \"immersive\" is abstract and may be interpreted differently by respondents, especially in the context of a typically mundane activity like toothbrushing. There is no operational definition provided, which can lead to inconsistent responses and threaten validity.\n\n2. Question 2 (\"In comparison to other pleasant tasks you have recently performed, how pleasant did you find the tangential task during toothbrushing?\")  \n   - This is a relative judgment that requires recall of \"other pleasant tasks.\" It introduces potential recall bias and cognitive burden. The comparison timeframe (\"recently\") is vague and unspecified, reducing comparability across respondents. Also, \"pleasant\" may conflate emotional valence with immersion or engagement, which is a conceptual mismatch with the study\u2019s immersion focus.\n\n3. Question 3 (\"For how many minutes did you brush your teeth during this task?\")  \n   - Self-reported duration for a routine behavior like toothbrushing is prone to social desirability bias and inaccurate recall. Without any objective verification or anchoring, responses may be inflated or deflated, compromising data accuracy. Additionally, no upper limit is set, which could lead to implausible answers despite the error message requiring positive entry.\n\n4. Question 4 (\"Please indicate your agreement with the following statement: I paid focused attention to the tangential task during toothbrushing.\")  \n   - This question assumes respondents can accurately self-assess focused attention during a presumably low-attention behavior, potentially invoking social desirability bias. The phrasing combines \"focused attention\" with \"tangential task,\" which itself is not clearly defined and could confuse participants on what exactly they are evaluating.\n\n5. Question 5 (Attention check instruction)  \n   - While attention checks are good practice, this question could introduce bias if respondents feel forced to select \"Agree\" even if it does not reflect their actual sentiment. Also, the attention check wording might prime respondents to react in a particular way, possibly carrying over into answers on other questions. The use of Likert-type labels in an attention check without specifying the correct label's positioning in the scale (e.g., midpoint or endpoint) may confuse some respondents.\n\n6. General concern \u2013 Lack of definition and contextual clarity on \"tangential task\"  \n   - None of the questions define or provide examples of what constitutes a \"tangential task\" during toothbrushing. Without this, respondents may vary widely in their interpretation, leading to heterogeneity in what is being measured and threatening content validity.\n\n7. General scale labeling inconsistency  \n   - Question 2 uses a mid-scale label \"4\" as \"Moderately pleasant,\" whereas typical Likert anchors for midpoint labels are neutral or ambivalent (e.g., \"Neither pleasant nor unpleasant\"). This may bias respondents toward a positive interpretation at the midpoint, skewing responses.\n\n8. Possible social desirability bias throughout  \n   - Given that toothbrushing is a normative health behavior, questions about immersion and attention in tangential tasks during this behavior might encourage respondents to answer in a socially desirable manner, over-reporting immersion or pleasantness to appear attentive or engaged. No measures or phrasing mitigate this bias.\n\n9. Lack of contextual or demographic controls  \n   - The survey does not ask any demographic or baseline behavioral controls (e.g., usual toothbrushing duration, frequency, or familiarity with the tangential task), making it hard to interpret responses within participant heterogeneity.\n\n10. Absence of probing for consistency or follow-up  \n    - The survey relies solely on single-item measures for complex constructs like immersion and attention, which increases measurement error and limits reliability. There are no follow-up or consistency check items to triangulate self-reports."
+    },
+    {
+      "round": 1,
+      "role": "editor",
+      "content": "Survey revised."
+    },
+    {
+      "round": 2,
+      "role": "critic",
+      "content": "1. Question 1 (\"To what extent did you become mentally engaged or absorbed in the tangential task you performed during toothbrushing?\")  \n   - Despite providing a detailed explanation of \"mentally engaged or absorbed,\" this question relies on respondents\u2019 introspective ability to assess their mental state during a routine, automatic behavior. This can lead to inaccurate self-assessment due to difficulties in introspection or social desirability bias, especially given the emphasis on being \"completely mentally engaged.\"\n\n2. Question 2 (\"How pleasant did you find the tangential task during toothbrushing?\")  \n   - By focusing on pleasantness independently of immersion, this question risks confusing affective valence with cognitive engagement, potentially conflating distinct constructs. Furthermore, \"pleasant\" may be subjective and influenced by momentary mood, threatening construct validity for immersion-related hypotheses.\n\n3. Question 3 (\"Approximately how many minutes did you brush your teeth during this experience?\")  \n   - Self-reported duration of toothbrushing is susceptible to recall bias and social desirability effects, even with a specified range (0.5 to 10 minutes). The allowance for estimation may increase noise in the data. The lower bound of 0.5 minutes may not be sufficient to capture those who brushed very briefly or incidentally, potentially excluding valid responses.\n\n4. Questions 4a and 4b (Focused attention and difficulty concentrating on the tangential task)  \n   - These two items are likely intended as complementary but have overlapping content, increasing respondent cognitive load and possibly confusion. Question 4b\u2019s negative phrasing (\"It was difficult for me to concentrate...\") may lead to acquiescence bias or inconsistent responses when compared to 4a, risking measurement error and careless responding.\n\n5. Question 6 (\"How many days per week do you usually brush your teeth?\")  \n   - Asking for usual frequency of toothbrushing in days per week may not capture variation if respondents do so inconsistently or multiple times per day. Also, it is unclear how this frequency is used in analysis relative to immersion and persistence, increasing potential for irrelevant or redundant data collection.\n\n6. Question 7 (\"On average, how many minutes do you usually spend brushing your teeth per session?\")  \n   - Similar to Question 3, this relies on respondent recall and estimation of typical behavior, which is prone to bias and inaccurate reporting. Without anchoring events or verification, responses may be unreliable, threatening the validity of persistence indices.\n\n7. Question 8 (\"How familiar are you with performing the tangential task during toothbrushing?\")  \n   - The term \"familiar\" is ambiguous\u2014it could refer to frequency, comfort, or skill in performing the tangential task. The single-item measure may conflate these and lacks specificity, reducing construct clarity and interpretability.\n\n8. Question 9 (Attention check requesting selection of \"Neutral\")  \n   - Requiring respondents to select \"Neutral\" as the attention check answer may cause confusion because \"Neutral\" commonly signals ambivalence rather than correctness. Respondents may be uncertain if this choice reflects actual content or a trick question, potentially compromising the effectiveness of the attention check.\n\n9. Introduction and definition of \"tangential task\"  \n   - The introduction attempts to clarify \"tangential task\" with examples like listening to music or counting, but these vary widely in cognitive demand and type (auditory vs mental). This heterogeneity could introduce uncontrolled variance in immersion and persistence measures, and no mechanism is in place to categorize or control for different tangential task types.\n\n10. Scale inconsistencies and potential midpoint effects  \n    - Some scales use a 7-point format with \"neutral\" or midpoint labeled as \"Neither agree nor disagree\" or \"Neutral,\" which risks central tendency bias. Question 8 uses a 5-point scale with \"somewhat familiar\" at midpoint; mixing scale lengths (5-point vs 7-point) may confuse respondents or hinder comparability across constructs.\n\n11. Potential social desirability bias across attention and immersion questions  \n    - Questions emphasizing focus, engagement, and attention during toothbrushing may lead respondents to provide inflated positive responses to conform to perceived researcher expectations, especially given academic framing and the introduction's explanatory tone.\n\n12. Lack of contextual or demographic questions  \n    - The survey does not collect any demographic or contextual information (e.g., age, gender, habitual multitasking tendencies) that could moderate immersion or persistence, limiting the ability to control for confounds and interpret subgroup differences.\n\n13. No reliability checks or multi-item scales for immersion or attention  \n    - Reliance on single items for complex psychological constructs such as immersion and attention limits reliability and construct validity. The inclusion of only two related items on attention (4a, 4b) is insufficient for robust measurement; no scale reliability or factor structure can be assessed.\n\n14. Use of estimation instructions in Question 3 (\"If unsure, please estimate\") may increase noise  \n    - Encouraging estimation without anchoring or validation increases measurement error and reduces precision of the key dependent variable (duration), potentially weakening statistical power to detect effects."
+    },
+    {
+      "round": 2,
+      "role": "editor",
+      "content": "Survey revised."
+    }
+  ]
+}
