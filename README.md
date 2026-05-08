@@ -13,7 +13,7 @@ Four agents collaborate in sequence:
 | **Converter** | gpt-4o-mini | Parses hypotheses and drafts the initial survey (v0) |
 | **Editor** | gpt-4o | Improves question wording, scales, and construct coverage across 3 parallel runs |
 | **Critic** | gpt-4o | Identifies validity threats and wording problems; issues severity-rated critique |
-| **Econometrician** | gpt-4o | Validates statistical design, scale balance, and order effects |
+
 
 ---
 
@@ -38,10 +38,7 @@ hypotheses.txt
      │
      ├─► [4a] Editor fixes severity-3 issues
      ├─► [4b] Editor fixes severity-2 issues
-     └─► [4c] Editor fixes severity-1 issues
-     │
-     ▼
-[Step 5] Econometrician review ─────────────────► ai_survey.json
+     └─► [4c] Editor fixes severity-1 issues ──► ai_survey.json
 ```
 
 ---

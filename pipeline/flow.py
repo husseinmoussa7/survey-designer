@@ -105,7 +105,7 @@ class SurveyEnhancementFlow:
     CHECKPOINT_SUFFIX = "_checkpoint.json"
 
     def __init__(self):
-        self.convert_agent, self.editor_agent, self.enhancement_agent, self.critic_agent, self.econometrician_agent = self._load_agents()
+        self.convert_agent, self.editor_agent, self.enhancement_agent, self.critic_agent = self._load_agents()
         self.survey_dict = None
         self.enhanced_dict = None
         self.parallel_runs = []
@@ -153,27 +153,7 @@ class SurveyEnhancementFlow:
             allow_delegation=False
         )
 
-        econometrician_agent = Agent(
-            role="Experimental Econometrician",
-            goal=(
-                "Review survey instruments for experimental design validity: identification strategy, "
-                "measurement of treatment and control conditions, statistical power considerations, "
-                "potential confounds, and causal inference threats. Do not rewrite — critique only."
-            ),
-            backstory=(
-                "You are an experimental economist and econometrician who has designed and reviewed "
-                "hundreds of lab and field experiments published in top journals (AER, JCR, QJE). "
-                "You scrutinize surveys for threats to internal validity (demand effects, "
-                "experimenter demand, attrition), external validity, and whether the measured "
-                "constructs cleanly identify the causal mechanisms claimed in the hypotheses. "
-                "You care about power, effect size estimation, and whether manipulation checks "
-                "are properly placed and worded. You do not validate — you challenge."
-            ),
-            verbose=True,
-            allow_delegation=False
-        )
-
-        return convert_agent, editor_agent, enhancement_agent, critic_agent, econometrician_agent
+        return convert_agent, editor_agent, enhancement_agent, critic_agent
 
     # ── Persistent memory methods ─────────────────────────────────────────────
 

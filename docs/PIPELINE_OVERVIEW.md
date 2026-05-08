@@ -70,13 +70,10 @@ hypotheses.txt
 └───────────────────────────┬─────────────────────────────────────┘
                             │ final_survey
                             ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  STEP 5 — Econometrician Review                                  │
-│  Agent: econometrician_agent (gpt-4o, code execution enabled)   │
-│                                                                  │
-│  Reviews for statistical validity, scale balance, order effects  │
-│  Output: final_survey_v1 saved as ai_survey.json                 │
 └─────────────────────────────────────────────────────────────────┘
+                            │ final_survey
+                            ▼
+                      ai_survey.json
 ```
 
 ---
@@ -100,7 +97,6 @@ See [MEMORY_SCHEMA.md](MEMORY_SCHEMA.md) for the full JSON schema.
 | `survey_convert_agent` | gpt-4o-mini | Parses hypotheses and produces the first structured draft |
 | `survey_editor` | gpt-4o | Iteratively improves question wording, scales, and coverage |
 | `survey_critic_agent` | gpt-4o | Identifies gaps, validity threats, and wording problems |
-| `econometrician_agent` | gpt-4o | Validates statistical and experimental design properties |
 
 ---
 
