@@ -1,6 +1,22 @@
 # Survey Designer Agent
 
-A multi-agent system that automatically designs consumer research surveys from academic hypotheses. Given a set of research hypotheses, the pipeline produces a polished, deployment-ready survey through iterative critique, discussion, and revision by four specialized AI agents.
+Designing a valid survey from a research hypothesis is slow expert work: picking the constructs, wording items that don't lead the respondent, matching scales across questions, and adding the manipulation and attention checks a reviewer will ask for. This repository tests whether a multi-agent pipeline can approximate that work when given only the hypotheses. The benchmark is a corpus of 42 published marketing papers whose instruments are known, with 10 papers held out; pipeline output is scored against the published survey. The goal is to measure the size of the gap, not to claim it is closed.
+
+---
+
+## Results
+
+**Status: 1 of the 10 held-out test papers has been evaluated so far.** The headline number is therefore n = 1, not n = 10, and should be read as such.
+
+On paper 02 (Shani & Feinstein 2022, *JCR*), the generated survey scored **4.15 / 5 mean wording quality** and **83% construct coverage**, against **50%** for the published human survey on the same judge-scored rubric. Both scores come from a GPT-4o judge, so they measure agreement with a model's view of survey methodology, not with the papers' actual results.
+
+What it does well: wording is consistently clean (10 of 13 questions scored 4 or 5), and the pipeline reliably adds manipulation checks, attention checks, and consistent 1–7 scales — the published survey in this case had none of the first two. Where it fails: coverage is thin. It produced 13 questions against the human survey's 25, omitted demographics entirely (1/3), and its own critic still flagged two severity-3 survey-level gaps in the final output — no validated construal-level scale and no mediator or moderator measures.
+
+The nine remaining test papers have not been run. See [results/HELDOUT_EVALUATION.md](results/HELDOUT_EVALUATION.md) for per-paper status, the full metric breakdown, and the commands to complete the evaluation.
+
+### Train/test discipline
+
+The ten test papers are held out of the cross-paper memory system, not just out of the training loop. `load_cross_paper_training_context()` in `pipeline/flow.py` drops any saved session whose paper ID is in `TEST_PAPERS` whenever `SURVEY_CROSS_MEMORY_TRAINING_ONLY=1` (the default), and `scripts/run_batch.py` skips those papers when populating memory. A held-out paper is therefore designed using lessons from training papers only — no test paper's output is ever injected as few-shot context into another run, so the held-out scores are not contaminated by the memory system.
 
 ---
 
@@ -13,6 +29,9 @@ Four agents collaborate in sequence:
 | **Converter** | gpt-4o-mini | Parses hypotheses and drafts the initial survey (v0) |
 | **Editor** | gpt-4o | Improves question wording, scales, and construct coverage across 3 parallel runs |
 | **Critic** | gpt-4o | Identifies validity threats and wording problems; issues severity-rated critique |
+| **Reviser** | gpt-4o | Applies critic feedback — during the discussion rounds and the severity-driven fix passes |
+
+The Converter, Editor, and Critic have declarations in `config/agents/`; the Reviser is defined inline in `pipeline/flow.py` (as `enhancement_agent`) with its task in `config/tasks/enhance_survey_iteratively.yaml`. All four are instantiated by `SurveyEnhancementFlow._load_agents()`.
 
 
 ---
@@ -30,15 +49,15 @@ hypotheses.txt
          scored merge (n_q + types×2) ────────► best_survey
      │
      ▼
-[Step 3] Critic + Editor discussion
+[Step 3] Critic + Reviser discussion
          2 rounds of feedback ─────────────────► post_meeting_survey
      │
      ▼
 [Step 4] Critic formal review ──────────────────► critique (severity 1–3)
      │
-     ├─► [4a] Editor fixes severity-3 issues
-     ├─► [4b] Editor fixes severity-2 issues
-     └─► [4c] Editor fixes severity-1 issues ──► ai_survey.json
+     ├─► [4a] Reviser fixes severity-3 issues
+     ├─► [4b] Reviser fixes severity-2 issues
+     └─► [4c] Reviser fixes severity-1 issues ─► ai_survey.json
 ```
 
 ---
@@ -48,8 +67,8 @@ hypotheses.txt
 ### 1. Install
 
 ```bash
-git clone https://github.com/husseinmoussa7/survey-designer-agent.git
-cd survey-designer-agent
+git clone https://github.com/husseinmoussa7/survey-designer.git
+cd survey-designer
 pip install -r requirements.txt
 ```
 
@@ -64,11 +83,13 @@ cp .env.example .env
 
 ```bash
 # Run the full pipeline on a test paper
-python scripts/run_paper.py --paper papers/test/02_ShaniFeinstein_2022_MovingFastSlow/Study_1
+python scripts/run_paper.py --paper papers/test/02_ShaniFeinstein_2022_MovingFastSlow
 
 # With cross-paper training memory injected (recommended for test papers)
-python scripts/run_paper.py --paper papers/test/02_ShaniFeinstein_2022_MovingFastSlow/Study_1 --cross-memory
+python scripts/run_paper.py --paper papers/test/02_ShaniFeinstein_2022_MovingFastSlow --cross-memory
 ```
+
+Pass the study subdirectory (e.g. `papers/test/33_Kyung_2025_ScaleOrientationEffect/Experiment 1a`) for papers that split hypotheses across studies; pass the paper directory itself for those that don't.
 
 Output is written to `results/<project_name>/` and a session memory file to `memory/`.
 
@@ -135,10 +156,10 @@ Three export scripts produce Word documents from session memory:
 
 ```bash
 # Before/after comparison (v0 vs. final)
-python export/before_after.py --project shani_feinstein_2022_study_1
+python export/before_after.py --project shani_feinstein_2022
 
 # Critique with revisions annotated
-python export/critique_report.py --project shani_feinstein_2022_study_1
+python export/critique_report.py --project shani_feinstein_2022
 
 # Memory summary report across all sessions
 python export/memory_reports.py
@@ -149,7 +170,7 @@ python export/memory_reports.py
 ## Repository Structure
 
 ```
-survey-designer-agent/
+survey-designer/
 ├── pipeline/
 │   ├── __init__.py
 │   └── flow.py              # SurveyEnhancementFlow — full 5-step pipeline
@@ -214,7 +235,7 @@ If you use this system in your research, please cite:
   author  = {Hussein Moussa},
   title   = {Survey Designer Agent: Multi-Agent Survey Design for Consumer Research},
   year    = {2024},
-  url     = {https://github.com/husseinmoussa7/survey-designer-agent}
+  url     = {https://github.com/husseinmoussa7/survey-designer}
 }
 ```
 
