@@ -44,6 +44,10 @@ results/**/*.pdf
 # Specific copyrighted supplementary file
 results/shani_feinstein_2022/ucac004_supplementary_data.pdf
 
+# Ground-truth survey text extracted from copyrighted supplementary appendices.
+# Derived metrics may be committed; the extracted source text may not.
+results/**/ground_truth_text.txt
+
 # Simulation outputs
 simulate_response/participant_pool.csv
 simulate_response/simulated_survey_responses.csv

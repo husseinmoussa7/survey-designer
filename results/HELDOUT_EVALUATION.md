@@ -40,6 +40,14 @@ counted directly from the survey JSON and the critic's output.
 | 4. Scale consistency | counted from `input_config` | scale ranges, whether endpoints agree |
 | 5. Critic issue summary | counted from the run's `critique` object | issue counts by severity, issues per question |
 
+**Ground truth is not distributed with this repo.** The published instruments live in the papers'
+supplementary appendices, which are copyrighted and mostly paywalled, so they cannot be
+redistributed here. `results/**/ground_truth_text.txt` and `results/**/*.pdf` are gitignored. What
+this repository ships is the input side (short statements of each paper's hypotheses), the
+pipeline's own output, and derived measurements — never the published survey text. Anyone
+reproducing the AI-vs-human comparison has to obtain the appendices themselves; see
+`results/shani_feinstein_2022/README.md` for the procedure on paper 02.
+
 **Caveat on comparability.** The stored report for paper 02 contains human-survey columns
 (`human_question_count`, `human_score`, `overall_coverage_human`). Those came from an earlier
 evaluation run that had the paywalled supplementary PDF available as ground truth. The current
